@@ -1,0 +1,42 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+@mixin placeholder {
+    ::-webkit-input-placeholder {
+        @content
+    }
+
+    :-moz-placeholder {
+        @content
+    }
+
+    ::-moz-placeholder {
+        @content
+    }
+
+    :-ms-input-placeholder {
+        @content
+    }
+
+}
+.filter-wrp .filer-btn{
+   
+    &:hover{
+        border: 1px solid #F05895;
+    }
+    
+}
+
+.filter-wrp .filer-btn[aria-expanded="true"]{
+    border: 1px solid #F05895;
+
+}
+
+
+.filter-cover{
+    background-color: #FFFDFD;
+    border: 1px solid #FFE2ED;
+    border-radius: 11px;
+    padding: 25px;
+    margin-bottom: 5px;
+    }
