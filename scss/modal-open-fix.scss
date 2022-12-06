@@ -1,0 +1,10 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+.secondOpened{
+    display: block !important;
+    opacity: 1 !important;
+    &.modal.fade .modal-dialog {
+         transform: none !important;
+    }
+}
