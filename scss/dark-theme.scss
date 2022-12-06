@@ -7,126 +7,164 @@ $text-white: #fff;
 $text-darklight: #888888;
 $dropdown-bg: #181B1F;
 $dark-sec-color: #D53871;
-.dark-theme{
+
+.dark-theme {
     background-color: #161819;
+
     // layout dark
-     .side-nav-wrapper, header, .db-content-inner .custom-card-wapper .custom-card-list .custom-card-block, 
-     .db-content-inner .chart-card-wapper .chart-card-item{
+    .side-nav-wrapper,
+    header,
+    .db-content-inner .custom-card-wapper .custom-card-list .custom-card-block,
+    .db-content-inner .chart-card-wapper .chart-card-item {
         background: $layout-dark;
     }
+
     // text white
-    .db-content-inner .custom-card-wapper .custom-card-list .custom-card-block .card-list-count, 
-    .db-content-inner .chart-card-wapper .chart-card-item .chart-card-header p, header .top-header .user-area .user-header .user-txt button h4,
-    .db-title-wrapper .title-block, header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-body ul li .dropdown-item .list .details h4, 
-    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-header .notification-header-title{
+    .db-content-inner .custom-card-wapper .custom-card-list .custom-card-block .card-list-count,
+    .db-content-inner .chart-card-wapper .chart-card-item .chart-card-header p,
+    header .top-header .user-area .user-header .user-txt button h4,
+    .db-title-wrapper .title-block,
+    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-body ul li .dropdown-item .list .details h4,
+    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-header .notification-header-title,
+    header .top-header .right-block .user-area .user-header .user-txt button h4 span ,
+    .vendor-info-modal .vendor-info-body-content .block-left .left-block-col .inner-card-sm .text-block-sm .rating-point{
         color: $text-white;
     }
+
     // text light dark
-    .db-content-inner .custom-card-wapper .custom-card-list .custom-card-block .card-list-count-description, 
-    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-body ul li .dropdown-item .list .details p{
+    .db-content-inner .custom-card-wapper .custom-card-list .custom-card-block .card-list-count-description,
+    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-body ul li .dropdown-item .list .details p {
         color: $text-darklight;
     }
 
 
-    .side-nav-wrapper .nav-link .indication{
+    .side-nav-wrapper .side-navigation .nav-item .nav-link .indication {
         color: #7B7B7B;
     }
+
     .side-nav-wrapper .nav-link:hover {
         background: #171717 !important;
     }
+
     .side-nav-wrapper .nav-link figure {
         background: #101010 !important;
     }
+
     .side-nav-wrapper .nav-link.active {
         background: #171717 !important;
     }
+
     header .logo-wrap .logo-block .main-logo.light-logo {
         display: none;
     }
+
     header .logo-wrap .logo-block .main-logo.dark-logo {
         display: block;
     }
+
+    header.isactive .logo-wrap .logo-block .main-logo.dark-logo {
+        display: none;
+    }
+
     header .logo-wrap .sidebarCollapse {
         background: transparent linear-gradient(180deg, #310619 0%, #171717 100%);
     }
+
     header .top-header .left-block .search-block .form-control {
         background: $body-dark;
         border: none;
         color: $text-white;
     }
-    header .top-header .right-block .user-area .notification-header .btn img{
+
+    header .top-header .right-block .user-area .notification-header .btn img {
         filter: brightness(0) invert(1);
     }
-    header .top-header .right-block .user-area .notification-header .badge{
+
+    header .top-header .right-block .user-area .notification-header .badge {
         border: none;
     }
-    .user-header .dropdown-menu .dropdown-item{
+
+    .user-header .dropdown-menu .dropdown-item {
         color: $text-darklight;
     }
-    .user-header .dropdown-menu .dropdown-item:hover{
+
+    .user-header .dropdown-menu .dropdown-item:hover {
         background: #25272b;
     }
+
     header .top-header .form-check-input {
         background-color: $body-dark !important;
     }
-    header .top-header .left-block .search-block .search-box-icon .btn img{
+
+    header .top-header .left-block .search-block .search-box-icon .btn img {
         filter: brightness(0) invert(.6);
     }
+
     .side-nav-wrapper .nav-dropdown::after {
         background: url(../img/arrow-down.svg) $dropdown-bg no-repeat center center !important;
     }
-    header .top-header .right-block .user-area .notification-header .dropdown-menu{
+
+    header .top-header .right-block .user-area .notification-header .dropdown-menu {
         background-color: $dropdown-bg;
         box-shadow: 6px 12px 22px #000000D6;
     }
+
     header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-body ul li .dropdown-item:hover {
         background: #25272b;
     }
+
     header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-body ul li {
         border-color: #2F2F2F;
     }
-    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-header .notification-header-mark{
+
+    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-header .notification-header-mark {
         color: #CA3C74;
     }
-    header .top-header .right-block .user-area .notification-header .dropdown-menu::before{
+
+    header .top-header .right-block .user-area .notification-header .dropdown-menu::before {
         border-bottom-color: $dropdown-bg;
     }
 
     .custom-scroll::-webkit-scrollbar-track {
         background: #ccc;
     }
-    
+
     .custom-scroll::-webkit-scrollbar-thumb {
         background: #7B7B7B;
     }
-    
+
     .custom-scroll::-webkit-scrollbar-thumb:hover {
         background: #da9dfd;
     }
-    .user-header .dropdown-menu{
+
+    .user-header .dropdown-menu {
         background-color: $dropdown-bg;
         box-shadow: 6px 12px 22px #000000D6;
     }
-    header .top-header .left-block .switch-block .form-switch .form-check-input:checked::before{
+
+    header .top-header .left-block .switch-block .form-switch .form-check-input:checked::before {
         opacity: .7;
     }
-    header .top-header .left-block .switch-block .form-switch .form-check-input::after{
+
+    header .top-header .left-block .switch-block .form-switch .form-check-input::after {
         opacity: .7;
     }
+
     .side-nav-wrapper .side-navigation .nav-item .nav-link figure img {
         filter: brightness(120%);
     }
-    .db-content-inner .custom-card-wapper .custom-card-list .custom-card-block .custom-card-icon-box, 
-    header .top-header .right-block .user-area .notification-header .badge{
+
+    .db-content-inner .custom-card-wapper .custom-card-list .custom-card-block .custom-card-icon-box,
+    header .top-header .right-block .user-area .notification-header .badge {
         background-color: $dark-sec-color;
     }
-    .dark-theme header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-header .notification-header-mark, 
-    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-body ul li .dropdown-item .list .details span, 
-    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-footer .view-all{
+
+    .dark-theme header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-header .notification-header-mark,
+    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-body ul li .dropdown-item .list .details span,
+    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-footer .view-all {
         color: $dark-sec-color;
     }
 
-<<<<<<< HEAD
     header .top-header .right-block .user-area .user-header .dropdown-toggle::after {
         border-top-color: #fff;
     }
@@ -169,176 +207,205 @@ $dark-sec-color: #D53871;
     }
 
     // Vendor modal info end
-}
-=======
->>>>>>> 45416c66afc30de3ff855cbcaed49095aaf096bc
 
-    // Page Vendor Management
 
-    .db-title-wrapper .custom-search-box .search-control,.db-title-wrapper .custom-search-box .input-group-text,.db-title-wrapper .filter-wrp .filer-btn,
-    .db-title-wrapper .export-wrp .btn{
+    .db-title-wrapper .custom-search-box .search-control,
+    .db-title-wrapper .custom-search-box .input-group-text,
+    .db-title-wrapper .filter-wrp .filer-btn,
+    .db-title-wrapper .export-wrp .btn {
         background: $layout-dark;
         border-color: #2F2F2F;
     }
-    .db-title-wrapper .custom-search-box .search-control{
+
+    .db-title-wrapper .custom-search-box .search-control {
         color: #fff;
     }
-    .db-title-wrapper .custom-search-box{
+
+    .db-title-wrapper .custom-search-box {
         border: 1px solid #2F2F2F;
         background-color: transparent;
     }
-    .db-title-wrapper .vendor-create-wrp .btn{
+
+    .db-title-wrapper .vendor-create-wrp .btn {
         background-color: $dark-sec-color;
     }
-    .filter-cover{
-  background-color: $layout-dark;
-  border-color: #2F2F2F;
+
+    .filter-cover {
+        background-color: $layout-dark;
+        border-color: #2F2F2F;
     }
-    .forms-cover{
-  border-color: #2F2F2F;   
+
+    .forms-cover {
+        border-color: #2F2F2F;
     }
-    .checkbox-cover .check-box,.radio-cover .radio-btn{
+
+    .checkbox-cover .check-box,
+    .radio-cover .radio-btn {
         color: #fff;
     }
-    .button-grp .primary-btn{
+
+    .button-grp .primary-btn {
         background-color: $dropdown-bg;
     }
 
-    .button-grp .primary-btn.light-bg{
-background: #272A2E;
+    .button-grp .primary-btn.light-bg {
+        background: #272A2E;
     }
-    .button-grp .primary-btn.dark-bg{
+
+    .button-grp .primary-btn.dark-bg {
         background-color: $dark-sec-color;
     }
-    .select-otr .form_controler{
+
+    .select-otr .form_controler {
         background-color: $dropdown-bg;
         color: #fff;
         border-color: #2F2F2F;
     }
+
     .custom-table-cover {
         border-radius: 8px;
         background: #FFFFFF;
         border: 1px solid #FFE2ED;
     }
-    .custom-table-cover{
+
+    .custom-table-cover {
         background-color: $layout-dark;
         border-color: #2F2F2F;
     }
+
     .custom-table-cover .custom-listing-table tbody tr:nth-child(even) {
         background: $body-dark;
     }
+
     .custom-table-cover .custom-listing-table tbody tr td .user-img-block .usr-name,
-    .custom-table-cover .custom-listing-table tbody tr td{
+    .custom-table-cover .custom-listing-table tbody tr td {
         color: #E0E0E0;
     }
-    .custom-table-cover .custom-listing-table tbody tr td.action-btn-group .btn{
+
+    .custom-table-cover .custom-listing-table tbody tr td.action-btn-group .btn {
         background-color: #101010;
     }
-    .custom-table-cover .custom-listing-table thead tr th{
+
+    .custom-table-cover .custom-listing-table thead tr th {
         background: $body-dark;
 
     }
-    .custom-table-cover .custom-listing-table thead tr{
+
+    .custom-table-cover .custom-listing-table thead tr {
         border-color: #2F2F2F;
 
     }
-    .db-title-wrapper .export-wrp .btn,.db-title-wrapper .filter-wrp .filer-btn{
+
+    .db-title-wrapper .export-wrp .btn,
+    .db-title-wrapper .filter-wrp .filer-btn {
         color: $dark-sec-color;
     }
-    .table-pagination{
+
+    .table-pagination {
         background-color: $layout-dark;
     }
-    .table-pagination .pagination .page-link{
+
+    .table-pagination .pagination .page-link {
         background-color: transparent;
     }
-    .table-pagination .pagination .page-link.active{
+
+    .table-pagination .pagination .page-link.active {
         background-color: $dark-sec-color;
     }
-    
+
 
     // modal 
-    .form-control[type=file]{
+    .form-control[type=file] {
         color: #fff;
     }
-    .custom-modal { 
+
+    .custom-modal {
         .modal-content {
-            background-color:$layout-dark;
+            background-color: $layout-dark;
         }
-        .modal-title
-        {
-            color:$text-white;
+
+        .modal-title {
+            color: $text-white;
         }
-        .modal-forms
-        {
+
+        .modal-forms {
             input[type="file"]::file-selector-button {
                 background-color: #2F2F2F !important;
                 color: #fff;
             }
-            .label
-            {
-                color:$text-white;
+
+            .label {
+                color: $text-white;
             }
-            .form_controler
-            {
+
+            .form_controler {
                 background-color: #1F2125;
                 border: 1px solid #373737;
                 color: #fff;
-                
+
             }
+
             .ph-group .select-custom:after {
                 right: auto;
                 left: 8px;
                 top: 21px;
             }
-            .ph-group select
-            {
+
+            .ph-group select {
                 height: 40px;
                 background: #33333312;
                 color: #fff;
             }
+
             .ph-group .phone {
                 padding-left: 15px;
                 height: 40px;
                 background: transparent;
                 color: #fff;
             }
+
             .ph-group .select-custom {
                 border-right: 1px solid #645c5c;
             }
-        
+
         }
     }
 
-    .btn-close{
+    .btn-close {
         background-color: #2F2F2F;
     }
-    .modal-footer .btn-secondary{
+
+    .modal-footer .btn-secondary {
         background-color: transparent;
     }
 
-    .small-modal .modal-content{
+    .small-modal .modal-content {
         background-color: $layout-dark;
     }
-    .small-modal .small-modal-content .paragraph{
+
+    .small-modal .small-modal-content .paragraph {
         color: #E0E0E0;
     }
-    .small-modal .small-modal-content h3{
+
+    .small-modal .small-modal-content h3 {
         color: #fff;
     }
-    .small-modal .small-modal-content .otp-input-group .otp-input{
+
+    .small-modal .small-modal-content .otp-input-group .otp-input {
         border: 1px solid #333333;
         background-color: transparent;
         color: #fff;
     }
-    .small-modal .small-modal-content i img{
+
+    .small-modal .small-modal-content i img {
         opacity: 0.7;
     }
 }
 
+// Page Vendor Management
 
-<<<<<<< HEAD
-.small-modal .small-modal-content i img {
-    opacity: 0.7;
+@media ($sm-767) {
+    .dark-theme header .logo-wrap .logo-block .main-logo.dark-logo{
+        display: none;
+    }
 }
-=======
->>>>>>> 45416c66afc30de3ff855cbcaed49095aaf096bc
