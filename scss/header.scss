@@ -35,7 +35,7 @@ header {
         }
 
         @media ($sm-767) {
-            min-width: 140px;
+            min-width: 80px;
             padding-left: 20px;
         }
 
@@ -84,7 +84,9 @@ header {
                 width: 36px;
                 height: 36px;
             }
-
+            @media ($sm-767){
+                display: none;
+            }
             img {
                 height: 15px;
                 width: 15px;
@@ -177,6 +179,9 @@ header {
                 @media ($sm-991) {
                     margin-left: 20px;
                     width: 240px;
+                }
+                @media ($sm-767) {
+                    display: none;
                 }
 
                 .form-control {
@@ -452,9 +457,6 @@ header {
     }
 }
 
-.dark-theme .isactive .main-logo{
-    display: none !important;
-}
 
 
 header .top-header .left-block .switch-block .form-switch .form-check-input {

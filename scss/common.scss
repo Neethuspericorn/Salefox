@@ -115,9 +115,11 @@ body {
     @media ($sm-479) {
         max-width: calc(100% - 70px);
     }
-    &.isactive{
+
+    &.isactive {
         max-width: calc(100% - 65px);
     }
+
     .db-content-inner {
         padding: 50px 30px;
 
@@ -321,9 +323,16 @@ body {
             font-size: 14px;
             font-family: 'sf-regular';
             color: #FFFFFF;
+            height: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
 
             img {
                 margin-left: 18px;
+            }
+            span{
+                line-height: 0;
             }
         }
     }

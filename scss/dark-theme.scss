@@ -36,8 +36,8 @@ $dark-sec-color: #D53871;
     }
 
 
-    .side-nav-wrapper .nav-link .indication {
-        color: #7B7B7B !important;
+    .side-nav-wrapper .side-navigation .nav-item .nav-link .indication {
+        color: #7B7B7B;
     }
 
     .side-nav-wrapper .nav-link:hover {
@@ -58,6 +58,14 @@ $dark-sec-color: #D53871;
 
     header .logo-wrap .logo-block .main-logo.dark-logo {
         display: block;
+
+        @media ($sm-767) {
+            display: none;
+        }
+    }
+
+    header.isactive .logo-wrap .logo-block .main-logo.dark-logo {
+        display: none;
     }
 
     header .logo-wrap .sidebarCollapse {
@@ -174,8 +182,12 @@ $dark-sec-color: #D53871;
         display: none !important;
     }
 
-    .main-logo.dark-logo {
+    .dark-theme header .logo-block .main-logo.dark-logo {
         display: block !important;
+    }
+
+    .dark-theme .isactive .logo-block .main-logo {
+        display: none !important;
     }
 
     .authentication-right-block {
@@ -211,7 +223,7 @@ $dark-sec-color: #D53871;
     }
 
     .form-check-input {
-        background: #1F1F1F !important;
+        background-color: #1F1F1F !important;
         border: 1px solid #3c3d40 !important;
     }
 
@@ -241,5 +253,199 @@ $dark-sec-color: #D53871;
             }
         }
     }
+}
 
+// Page Vendor Management
+
+.db-title-wrapper .custom-search-box .search-control,
+.db-title-wrapper .custom-search-box .input-group-text,
+.db-title-wrapper .filter-wrp .filer-btn,
+.db-title-wrapper .export-wrp .btn {
+    background: $layout-dark;
+    border-color: #2F2F2F;
+}
+
+.db-title-wrapper .custom-search-box .search-control {
+    color: #fff;
+}
+
+.db-title-wrapper .custom-search-box {
+    border: 1px solid #2F2F2F;
+    background-color: transparent;
+}
+
+.db-title-wrapper .vendor-create-wrp .btn {
+    background-color: $dark-sec-color;
+}
+
+.filter-cover {
+    background-color: $layout-dark;
+    border-color: #2F2F2F;
+}
+
+.forms-cover {
+    border-color: #2F2F2F;
+
+}
+
+.checkbox-cover .check-box,
+.radio-cover .radio-btn {
+    color: #fff;
+}
+
+.button-grp .primary-btn {
+    background-color: $dropdown-bg;
+}
+
+.button-grp .primary-btn.light-bg {
+    background: #272A2E;
+}
+
+.button-grp .primary-btn.dark-bg {
+    background-color: $dark-sec-color;
+}
+
+.select-otr .form_controler {
+    background-color: $dropdown-bg;
+    color: #fff;
+    border-color: #2F2F2F;
+}
+
+.custom-table-cover {
+    border-radius: 8px;
+    background: #FFFFFF;
+    border: 1px solid #FFE2ED;
+}
+
+.custom-table-cover {
+    background-color: $layout-dark;
+    border-color: #2F2F2F;
+}
+
+.custom-table-cover .custom-listing-table tbody tr:nth-child(even) {
+    background: $body-dark;
+}
+
+.custom-table-cover .custom-listing-table tbody tr td .user-img-block .usr-name,
+.custom-table-cover .custom-listing-table tbody tr td {
+    color: #E0E0E0;
+}
+
+.custom-table-cover .custom-listing-table tbody tr td.action-btn-group .btn {
+    background-color: #101010;
+}
+
+.custom-table-cover .custom-listing-table thead tr th {
+    background: $body-dark;
+
+}
+
+.custom-table-cover .custom-listing-table thead tr {
+    border-color: #2F2F2F;
+
+}
+
+.db-title-wrapper .export-wrp .btn,
+.db-title-wrapper .filter-wrp .filer-btn {
+    color: $dark-sec-color;
+}
+
+.table-pagination {
+    background-color: $layout-dark;
+}
+
+.table-pagination .pagination .page-link {
+    background-color: transparent;
+}
+
+.table-pagination .pagination .page-link.active {
+    background-color: $dark-sec-color;
+}
+
+
+// modal 
+.form-control[type=file] {
+    color: #fff;
+}
+
+.custom-modal {
+    .modal-content {
+        background-color: $layout-dark;
+    }
+
+    .modal-title {
+        color: $text-white;
+    }
+
+    .modal-forms {
+        input[type="file"]::file-selector-button {
+            background-color: #2F2F2F !important;
+            color: #fff;
+        }
+
+        .label {
+            color: $text-white;
+        }
+
+        .form_controler {
+            background-color: #1F2125;
+            border: 1px solid #373737;
+            color: #fff;
+
+        }
+
+        .ph-group .select-custom:after {
+            right: auto;
+            left: 8px;
+            top: 21px;
+        }
+
+        .ph-group select {
+            height: 40px;
+            background: #33333312;
+            color: #fff;
+        }
+
+        .ph-group .phone {
+            padding-left: 15px;
+            height: 40px;
+            background: transparent;
+            color: #fff;
+        }
+
+        .ph-group .select-custom {
+            border-right: 1px solid #645c5c;
+        }
+
+    }
+}
+
+.btn-close {
+    background-color: #2F2F2F;
+}
+
+.modal-footer .btn-secondary {
+    background-color: transparent;
+}
+
+.small-modal .modal-content {
+    background-color: $layout-dark;
+}
+
+.small-modal .small-modal-content .paragraph {
+    color: #E0E0E0;
+}
+
+.small-modal .small-modal-content h3 {
+    color: #fff;
+}
+
+.small-modal .small-modal-content .otp-input-group .otp-input {
+    border: 1px solid #333333;
+    background-color: transparent;
+    color: #fff;
+}
+
+.small-modal .small-modal-content i img {
+    opacity: 0.7;
 }

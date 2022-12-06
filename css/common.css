@@ -244,9 +244,15 @@ body {
       border-radius: 9px;
       font-size: 14px;
       font-family: 'sf-regular';
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center; }
       .db-title-wrapper .vendor-create-wrp .btn img {
         margin-left: 18px; }
+      .db-title-wrapper .vendor-create-wrp .btn span {
+        line-height: 0; }
 
 .btn {
   border-radius: 38px;

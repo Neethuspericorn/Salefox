@@ -45,7 +45,7 @@ header {
         min-width: 260px; } }
     @media (max-width: 767px) {
       header .logo-wrap {
-        min-width: 140px;
+        min-width: 80px;
         padding-left: 20px; } }
     header .logo-wrap .logo-block .main-logo {
       max-width: 110px;
@@ -78,6 +78,9 @@ header {
         header .logo-wrap .sidebarCollapse {
           width: 36px;
           height: 36px; } }
+      @media (max-width: 767px) {
+        header .logo-wrap .sidebarCollapse {
+          display: none; } }
       header .logo-wrap .sidebarCollapse img {
         height: 15px;
         width: 15px; }
@@ -146,6 +149,9 @@ header {
           header .top-header .left-block .search-block {
             margin-left: 20px;
             width: 240px; } }
+        @media (max-width: 767px) {
+          header .top-header .left-block .search-block {
+            display: none; } }
         header .top-header .left-block .search-block .form-control {
           padding-left: 40px;
           text-align: left;
@@ -331,9 +337,6 @@ header {
       display: block; }
     header.isactive .logo-wrap .logo-block .main-logo {
       display: none; }
-
-.dark-theme .isactive .main-logo {
-  display: none !important; }
 
 header .top-header .left-block .switch-block .form-switch .form-check-input {
   position: relative; }
