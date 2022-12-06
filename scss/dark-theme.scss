@@ -26,8 +26,8 @@ $dark-sec-color: #D53871;
     .db-title-wrapper .title-block,
     header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-body ul li .dropdown-item .list .details h4,
     header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-header .notification-header-title,
-    header .top-header .right-block .user-area .user-header .user-txt button h4 span ,
-    .vendor-info-modal .vendor-info-body-content .block-left .left-block-col .inner-card-sm .text-block-sm .rating-point{
+    header .top-header .right-block .user-area .user-header .user-txt button h4 span,
+    .vendor-info-modal .vendor-info-body-content .block-left .left-block-col .inner-card-sm .text-block-sm .rating-point {
         color: $text-white;
     }
 
@@ -400,12 +400,93 @@ $dark-sec-color: #D53871;
     .small-modal .small-modal-content i img {
         opacity: 0.7;
     }
+
+    // authentication dark color
+    .authentication {
+        background-image: url(../img/authenticationdarkBg.jpg),
+            linear-gradient(180deg, #0F0000 0%, #0B0B0B 100%) !important;
+    }
+
+    .main-logo.light-logo {
+        display: none !important;
+    }
+
+    .main-logo.dark-logo {
+        display: block !important;
+    }
+
+    .authentication-right-block {
+        background: #151618 !important;
+    }
+
+    .title,
+    .forgot,
+    .form-check-label,
+    .form-label,
+    .forgot-password-txt h4,
+    .forgot-password-txt p,
+    .forgot-password-body .back-btn,
+    .opt-form-block .otp-txt p,
+    .resend-code-block p,
+    .authentication-form-footer .back-btn {
+        color: $white-color !important;
+    }
+
+    .opt-form-block .otp-txt p span,
+    .resend-code-block p span {
+        color: #EA4986 !important;
+    }
+
+    .form-control {
+        background: #161819 !important;
+        border: 1px solid #2F2F2F !important;
+        color: #E0E0E0 !important;
+    }
+
+    .btn-primary {
+        background: #D53871 !important;
+    }
+
+    .form-check-input {
+        background: #1F1F1F !important;
+        border: 1px solid #3c3d40 !important;
+    }
+
+    .or-option {
+        &::before {
+            background: #2F2F2F !important;
+        }
+
+        span {
+            background: #151618 !important;
+            color: $white-color !important;
+        }
+    }
+
+    .btn-otp {
+        border: 1px solid #4E4E4E !important;
+        background: #151619 !important;
+        color: $white-color !important;
+    }
+
+    .authentication-conditions {
+        .indication {
+            color: $white-color !important;
+
+            &:first-child::after {
+                background: $white-color !important;
+            }
+        }
+    }
+    .authentication .authentication-right-block .authentication-form .authentication-form-header .logo-wrap small{
+        color: #fff;
+    }
 }
 
 // Page Vendor Management
 
 @media ($sm-767) {
-    .dark-theme header .logo-wrap .logo-block .main-logo.dark-logo{
+    .dark-theme header .logo-wrap .logo-block .main-logo.dark-logo {
         display: none;
     }
 }

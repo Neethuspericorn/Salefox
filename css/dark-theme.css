@@ -229,6 +229,52 @@
     color: #fff; }
   .dark-theme .small-modal .small-modal-content i img {
     opacity: 0.7; }
+  .dark-theme .authentication {
+    background-image: url(../img/authenticationdarkBg.jpg), linear-gradient(180deg, #0F0000 0%, #0B0B0B 100%) !important; }
+  .dark-theme .main-logo.light-logo {
+    display: none !important; }
+  .dark-theme .main-logo.dark-logo {
+    display: block !important; }
+  .dark-theme .authentication-right-block {
+    background: #151618 !important; }
+  .dark-theme .title,
+  .dark-theme .forgot,
+  .dark-theme .form-check-label,
+  .dark-theme .form-label,
+  .dark-theme .forgot-password-txt h4,
+  .dark-theme .forgot-password-txt p,
+  .dark-theme .forgot-password-body .back-btn,
+  .dark-theme .opt-form-block .otp-txt p,
+  .dark-theme .resend-code-block p,
+  .dark-theme .authentication-form-footer .back-btn {
+    color: #fff !important; }
+  .dark-theme .opt-form-block .otp-txt p span,
+  .dark-theme .resend-code-block p span {
+    color: #EA4986 !important; }
+  .dark-theme .form-control {
+    background: #161819 !important;
+    border: 1px solid #2F2F2F !important;
+    color: #E0E0E0 !important; }
+  .dark-theme .btn-primary {
+    background: #D53871 !important; }
+  .dark-theme .form-check-input {
+    background: #1F1F1F !important;
+    border: 1px solid #3c3d40 !important; }
+  .dark-theme .or-option::before {
+    background: #2F2F2F !important; }
+  .dark-theme .or-option span {
+    background: #151618 !important;
+    color: #fff !important; }
+  .dark-theme .btn-otp {
+    border: 1px solid #4E4E4E !important;
+    background: #151619 !important;
+    color: #fff !important; }
+  .dark-theme .authentication-conditions .indication {
+    color: #fff !important; }
+    .dark-theme .authentication-conditions .indication:first-child::after {
+      background: #fff !important; }
+  .dark-theme .authentication .authentication-right-block .authentication-form .authentication-form-header .logo-wrap small {
+    color: #fff; }
 
 @media (max-width: 767px) {
   .dark-theme header .logo-wrap .logo-block .main-logo.dark-logo {
