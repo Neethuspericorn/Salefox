@@ -126,6 +126,52 @@ $dark-sec-color: #D53871;
         color: $dark-sec-color;
     }
 
+<<<<<<< HEAD
+    header .top-header .right-block .user-area .user-header .dropdown-toggle::after {
+        border-top-color: #fff;
+    }
+
+    // Vendor modal info
+    .vendor-info-modal .modal-content {
+        background-color: $dropdown-bg;
+        box-shadow: 6px 12px 22px #000000D6;
+    }
+
+    .vendor-info-modal .vendor-info-body-content .block-left .left-block-col .inner-card-sm .card-title-sm .t-cover {
+        background-color: $dropdown-bg;
+    }
+
+    .vendor-info-modal .modal-title,
+    .vendor-info-modal .vendor-info-body-content .inner-card-sm .card-title-sm {
+        color: $text-white;
+    }
+
+    .vendor-info-modal .vendor-info-body-content .inner-card-sm .text-block-sm {
+        color: #939393;
+    }
+
+    .vendor-info-modal .vendor-info-body-content .block-right .right-content-cover .sec-title-sm {
+        color: #EA4986;
+    }
+
+    .vendor-info-modal .vendor-info-body-content .block-left .left-block-col .inner-card-sm .card-title-sm::before,
+    .vendor-info-modal .vendor-info-body-content .block-right .btm-line::before {
+        background-color: rgba($color: #7B7B7B, $alpha: 0.27);
+    }
+
+    .vendor-info-modal .vendor-info-body-content .nodata-sm,
+    .vendor-info-modal .modal-footer .info-modal-btn {
+        background-color: rgba($color: #646464, $alpha: 0.27);
+    }
+
+    .vendor-info-modal .btn-close {
+        background-color: #2F2A2C;
+    }
+
+    // Vendor modal info end
+}
+=======
+>>>>>>> 45416c66afc30de3ff855cbcaed49095aaf096bc
 
     // Page Vendor Management
 
@@ -290,3 +336,9 @@ background: #272A2E;
 }
 
 
+<<<<<<< HEAD
+.small-modal .small-modal-content i img {
+    opacity: 0.7;
+}
+=======
+>>>>>>> 45416c66afc30de3ff855cbcaed49095aaf096bc
