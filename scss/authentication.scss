@@ -64,16 +64,30 @@
             width: 100%;
 
             .authentication-form-header {
-                .main-logo {
-                    max-width: 160px;
-                    margin-bottom: 35px;
+                .logo-wrap {
+                    padding-bottom: 35px;
+
+
+                    .main-logo {
+                        max-width: 160px;
 
                     &.light-logo {
                         display: block;
                     }
 
-                    &.dark-logo {
-                        display: none;
+                        &.dark-logo {
+                            display: none;
+                        }
+                    }
+
+                    small {
+                        font-size: 12px;
+                        font-family: 'sf-regular';
+                        text-transform: uppercase;
+                        color: #1E1B1E;
+                        text-indent: 46px;
+                        display: block;
+                        transform: translate(0px, -7px);
                     }
                 }
 
@@ -396,7 +410,6 @@
     }
 
     .authentication .authentication-right-block .authentication-form .authentication-form-header .main-logo {
-        margin-bottom: 25px;
         max-width: 140px;
     }
 
@@ -564,7 +577,6 @@
     }
 
     .authentication .authentication-right-block .authentication-form .authentication-form-header .main-logo {
-        margin-bottom: 15px;
         max-width: 120px;
     }
 }
