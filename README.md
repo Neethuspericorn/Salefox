@@ -1,0 +1,2 @@
+# Salefox
+Angular project
