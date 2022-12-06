@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="icon" type="image/x-icon" href="./img/fav_icon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/side-nav.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+</head>
+
+<body class="dark-theme">
+
+    <header>
+        <div class="logo-wrap">
+            <div class="logo-block">
+                <img src="img/logo.svg" class="main-logo light-logo" alt="logo">
+                <img src="img/logo_white_text.svg" class="main-logo dark-logo" alt="logo">
+                <img src="img/fox-logo.svg" class="mob-logo" alt="logo">
+            </div>
+            <button class="btn sidebarCollapse">
+                <img src="img/ham_menu.svg" alt="ham_menu">
+            </button>
+        </div>
+        <div class="top-header">
+            <div class="left-block">
+                <div class="switch-block">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes"
+                            checked>
+                        <span class="switch-img">
+                        </span>
+                    </div>
+                </div>
+                <div class="search-block">
+                    <input type="text" class="form-control" placeholder="Search for anything…">
+                    <div class="search-box-icon">
+                        <button class="btn">
+                            <img src="img/Icons-Search.svg" alt="search ">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-block">
+                <div class="user-area">
+                    <div class="notification-header dropdown">
+                        <button class="btn" data-bs-toggle="dropdown" aria-expanded="true">
+                            <img src="img/Icons-Bell.svg" alt="notification">
+                            <span class="badge badge-secondary">6</span>
+                        </button>
+                        <div class="dropdown-menu" data-popper-placement="bottom-start">
+                            <div class="notification-header">
+                                <h4 class="notification-header-title">Notifications</h4>
+                                <span class="notification-header-mark">Mark all as read</span>
+                            </div>
+                            <div class="notification-body custom-scroll">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="notification-footer">
+                                <span class="view-all">
+                                    View All Notifications
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-header">
+                        <div class="user-txt">
+                            <div class="dropdown">
+                                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                    <img src="img/Profile.svg" alt="user">
+                                    <h4>Bradley Robin <span>Administrator</span></h4>
+
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="side-nav-wrapper">
+            <div class="side-navigation custom-scroll">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link active">
+                            <figure>
+                                <img src="img/nav-icons/Dashboard.svg" alt="dashboard">
+                            </figure>
+                            <span class="indication">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="vendor_management_list.html" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Vendor-Management.svg" alt="Vendor Management">
+                            </figure>
+                            <span class="indication">Vendor Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/sales-person.svg" alt="Salesperson Management">
+                            </figure>
+                            <span class="indication">Salesperson Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Campaigns.svg" alt="Campaigns">
+                            </figure>
+                            <span class="indication">Campaigns</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/payment.svg" alt="Payment Management">
+                            </figure>
+                            <span class="indication">Payment Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Subscription-Management.svg" alt="Subscription Management">
+                            </figure>
+                            <span class="indication">Subscription Management</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Reports-and-Analytics.svg" alt="Reports and Analytics">
+                            </figure>
+                            <span class="indication">Reports and Analytics</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#noti-drop">
+                            <figure>
+                                <img src="img/nav-icons/notification.svg" alt="Notification">
+                            </figure>
+                            <span class="indication">Notification</span>
+                        </a>
+                        <!-- <div id="noti-drop" class="collapse">
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav-link">Sub menu</a>
+                                </li>
+                            </ul>
+                        </div> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/settings.svg" alt="Settings">
+                            </figure>
+                            <span class="indication">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dashboard-content custom-scroll">
+            <div class="db-content-inner">
+                <div class="db-title-wrapper d-flex">
+                    <div class="title-block">
+                        Dashboard
+                    </div>
+                </div>
+
+                <div class="custom-card-wapper">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="custom-card-list">
+                                <div class="custom-card-block">
+                                    <div class="custom-card-icon-box">
+                                        <img src="img/vendor.svg" class="custom-card-icon" alt="vendor">
+                                    </div>
+                                    <div class="custom-card-txt">
+                                        <div class="card-list-count">458</div>
+                                        <div class="card-list-count-description">Vendors</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="custom-card-list">
+                                <div class="custom-card-block">
+                                    <div class="custom-card-icon-box">
+                                        <img src="img/vendor.svg" class="custom-card-icon" alt="vendor">
+                                    </div>
+                                    <div class="custom-card-txt">
+                                        <div class="card-list-count">458</div>
+                                        <div class="card-list-count-description">Sales Persons</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="custom-card-list">
+                                <div class="custom-card-block">
+                                    <div class="custom-card-icon-box">
+                                        <img src="img/vendor.svg" class="custom-card-icon" alt="vendor">
+                                        <img src="img/Premium.svg" class="premium-icon" alt="vendor">
+                                    </div>
+                                    <div class="custom-card-txt">
+                                        <div class="card-list-count">458</div>
+                                        <div class="card-list-count-description">Premium Vendors</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="custom-card-list">
+                                <div class="custom-card-block">
+                                    <div class="custom-card-icon-box">
+                                        <img src="img/vendor.svg" class="custom-card-icon" alt="vendor">
+                                        <img src="img/Premium.svg" class="premium-icon" alt="vendor">
+                                    </div>
+                                    <div class="custom-card-txt">
+                                        <div class="card-list-count">458</div>
+                                        <div class="card-list-count-description">Premium Sales Persons</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-card-wapper">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="chart-card-item">
+                                <div class="chart-card-header">
+                                    <p>Total No of Campaigns</p>
+                                    <span>14456</span>
+                                </div>
+                                <div class="chart-card-body">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="chart-card-item">
+                                <div class="chart-card-header">
+                                    <p>Total Revenue</p>
+                                    <span>₹4,300,000</span>
+                                </div>
+                                <div class="chart-card-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Js/vendor/bootstrap.min.js"></script>
+</body>
+
+</html>

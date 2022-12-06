@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="13" viewBox="0 0 14 13">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3296" data-name="Rectangle 3296" width="14" height="13" transform="translate(-0.324 0.141)" fill="#ffc6dc"/>
+    </clipPath>
+  </defs>
+  <g id="Moon" transform="translate(0.324 -0.141)" clip-path="url(#clip-path)">
+    <path id="Icon_ionic-md-moon" data-name="Icon ionic-md-moon" d="M7.82,5.758a5.6,5.6,0,0,1,.438-2.179,6.116,6.116,0,1,0,7.386,7.386A5.644,5.644,0,0,1,7.82,5.758Z" transform="translate(-2.989 -2.983)" fill="#fff"/>
+  </g>
+</svg>

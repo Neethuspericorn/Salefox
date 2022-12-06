@@ -1,0 +1,132 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+// Brand Font
+@font-face {
+    font-family: 'sf-bold';
+    src: url('../fonts/SFProText-Bold.eot');
+    src: url('../fonts/SFProText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProText-Bold.woff2') format('woff2'),
+        url('../fonts/SFProText-Bold.woff') format('woff'),
+        url('../fonts/SFProText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-pro-light';
+    src: url('../fonts/SFProText-Light.eot');
+    src: url('../fonts/SFProText-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProText-Light.woff2') format('woff2'),
+        url('../fonts/SFProText-Light.woff') format('woff'),
+        url('../fonts/SFProText-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-medium';
+    src: url('../fonts/SFProText-Medium.eot');
+    src: url('../fonts/SFProText-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProText-Medium.woff2') format('woff2'),
+        url('../fonts/SFProText-Medium.woff') format('woff'),
+        url('../fonts/SFProText-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'sf-regular';
+    src: url('../fonts/SFProText-Regular.eot');
+    src: url('../fonts/SFProText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProText-Regular.woff2') format('woff2'),
+        url('../fonts/SFProText-Regular.woff') format('woff'),
+        url('../fonts/SFProText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "sf-Regular";
+    background-color: #F3F8FF;
+}
+
+::selection {
+    background: #6F109E;
+    color: #bdbdbd;
+}
+
+.pr-0 {
+    padding-right: 0;
+}
+
+.btn {
+    border-radius: 38px;
+    box-shadow: none;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    &-primary {
+        background-color: #5F2095;
+        border-color: #5F2095;
+        color: #ffffff;
+        &:active {
+            background-color: #7431af;
+            border-color: #7431af;
+        }
+        &:hover {
+            background-color: #7431af;
+            border-color: #7431af;
+        }
+        
+        &:focus{
+            background-color: #7431af;
+            border-color: #7431af;
+        }
+    }
+}
+
+
+
+img {
+    max-width: 100%;
+}
+
+.db-title {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+
+    .db-title-left {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        .db-title-txt {
+            font-size: 23px;
+            font-family: "sf-medium";
+            text-align: left;
+            color: #6F109E;
+            span {
+                font-family: "sf-regular";
+                color: #6F109E;
+            }
+        }
+    }
+
+
+}
+
+@media ($sm-1679) {
+    .db-title .db-title-left .db-title-txt {
+        font-size: 20px;
+    }
+}

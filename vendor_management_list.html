@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Management</title>
+    <link rel="icon" type="image/x-icon" href="./img/fav_icon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/side-nav.css">
+    <link rel="stylesheet" href="css/vendor-list.css">
+    <link rel="stylesheet" href="css/filter-style.css">
+    <link rel="stylesheet" href="css/forms-style.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+</head>
+
+<body class="dark-theme">
+    <header>
+        <div class="logo-wrap">
+            <div class="logo-block">
+                <img src="img/logo.svg" class="main-logo light-logo" alt="logo">
+                <img src="img/logo_white_text.svg" class="main-logo dark-logo" alt="logo">
+                <img src="img/fox-logo.svg" class="mob-logo" alt="logo">
+            </div>
+            <button class="btn sidebarCollapse">
+                <img src="img/ham_menu.svg" alt="ham_menu">
+            </button>
+        </div>
+        <div class="top-header">
+            <div class="left-block">
+                <div class="switch-block">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes"
+                            checked>
+                        <span class="switch-img">
+                        </span>
+                    </div>
+                </div>
+                <div class="search-block">
+                    <input type="text" class="form-control" placeholder="Search for anything…">
+                    <div class="search-box-icon">
+                        <button class="btn">
+                            <img src="img/Icons-Search.svg" alt="search ">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-block">
+                <div class="user-area">
+                    <div class="notification-header dropdown">
+                        <button class="btn" data-bs-toggle="dropdown" aria-expanded="true">
+                            <img src="img/Icons-Bell.svg" alt="notification">
+                            <span class="badge badge-secondary">6</span>
+                        </button>
+                        <div class="dropdown-menu" data-popper-placement="bottom-start">
+                            <div class="notification-header">
+                                <h4 class="notification-header-title">Notifications</h4>
+                                <span class="notification-header-mark">Mark all as read</span>
+                            </div>
+                            <div class="notification-body custom-scroll">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="notification-footer">
+                                <span class="view-all">
+                                    View All Notifications
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-header">
+                        <div class="user-txt">
+                            <div class="dropdown">
+                                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                    <img src="img/Profile.svg" alt="user">
+                                    <h4>Bradley Robin <span>Administrator</span></h4>
+
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="side-nav-wrapper">
+            <div class="side-navigation custom-scroll">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Dashboard.svg" alt="dashboard">
+                            </figure>
+                            <span class="indication">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="vendor_management_list.html" class="nav-link active">
+                            <figure>
+                                <img src="img/nav-icons/Vendor-Management.svg" alt="Vendor Management">
+                            </figure>
+                            <span class="indication">Vendor Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/sales-person.svg" alt="Salesperson Management">
+                            </figure>
+                            <span class="indication">Salesperson Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Campaigns.svg" alt="Campaigns">
+                            </figure>
+                            <span class="indication">Campaigns</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/payment.svg" alt="Payment Management">
+                            </figure>
+                            <span class="indication">Payment Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Subscription-Management.svg" alt="Subscription Management">
+                            </figure>
+                            <span class="indication">Subscription Management</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Reports-and-Analytics.svg" alt="Reports and Analytics">
+                            </figure>
+                            <span class="indication">Reports and Analytics</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#noti-drop">
+                            <figure>
+                                <img src="img/nav-icons/notification.svg" alt="Notification">
+                            </figure>
+                            <span class="indication">Notification</span>
+                        </a>
+                        <!-- <div id="noti-drop" class="collapse">
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav-link">Sub menu</a>
+                                </li>
+                            </ul>
+                        </div> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/settings.svg" alt="Settings">
+                            </figure>
+                            <span class="indication">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dashboard-content custom-scroll">
+            <div class="db-content-inner">
+                <div class="db-title-wrapper d-flex">
+                    <div class="title-block">
+                        Vendor Management
+                    </div>
+                    <div class="title-block-right d-flex ms-sm-auto">
+                        <div class="custom-search-box input-group"><span class="input-group-text" id="basic-addon1"><img
+                                    src="img/Icons-Search.svg" alt="Search"></span><input type="text"
+                                class="form-control search-control" placeholder="Search Courts" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class=" filter-wrp">
+                            <button class="filer-btn collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#demo">
+                                <img src="img/Filter.svg" alt="Filter"> Filter
+                            </button>
+
+
+                        </div>
+                        <div class="export-wrp">
+                            <buttton class="btn">
+                                <img src="img/Export.svg" alt="Export">
+                                <span>Export</span>
+                            </buttton>
+                        </div>
+                        <div class="vendor-create-wrp">
+                            <buttton class="btn  btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <span>Create Vendor</span>
+                                <img src="img/Create-Vendor.svg" alt="Vendor">
+                            </buttton>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="demo" class="collapse filer-btn-collapse">
+                    <form>
+                        <div class="filter-cover">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="radio-cover">
+                                        <span class="sort-by">Sort By :</span>
+                                        <label class="radio-btn radio-gap">Ascending
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="radio-btn radio-gap">Ascending
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-7">
+                                    <div class="checkbox-cover">
+                                        <label class="check-box check-gap">Show premium vendors only
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="check-box check-gap">Show blocked vendors only :
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="forms-cover">
+                                        <div class="select-otr">
+                                            <div class="input-holder sm-form-col">
+                                                <div class="select-custom">
+                                                    <select name="" id="" class="form_controler">
+                                                        <option value="">State</option>
+                                                        <option value="">option</option>
+                                                        <option value="">option</option>
+                                                        <option value="">option</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="input-holder sm-form-col">
+                                                <div class="select-custom">
+                                                    <select name="" id="" class="form_controler">
+                                                        <option value="">Rating</option>
+                                                        <option value="">option</option>
+                                                        <option value="">option</option>
+                                                        <option value="">option</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="input-holder sm-form-col">
+                                                <div class="select-custom">
+                                                    <select name="" id="" class="form_controler">
+                                                        <option value="">XP</option>
+                                                        <option value="">option</option>
+                                                        <option value="">option</option>
+                                                        <option value="">option</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="button-grp">
+                                            <button class="primary-btn">Close</button>
+                                            <button class="primary-btn light-bg">Reset</button>
+                                            <button class="primary-btn dark-bg">Apply</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </form>
+                </div>
+                <div class="table-cover custom-scroll custom-table-cover">
+                    <table class="custom-listing-table vendor-list-tbl">
+                        <thead>
+                            <tr>
+                                <th class="text-start">Business name</th>
+                                <th class="user-email-title">Business Email</th>
+                                <th>Phone Number</th>
+                                <th>option</th>
+                                <th>Seller Ranking</th>
+                                <th>Seller XP</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Sara’s Food Pvt.Ltd
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Loremipsum@gmail.com</td>
+                                <td>+91 8129398422</td>
+                                <td>Kerala</td>
+                                <td></td>
+                                <td>5</td>
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+                                    <button class="btn block-btn">
+                                        <img src="img/block.svg" alt="">
+                                    </button>
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Sara’s Food Pvt.Ltd
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Loremipsum@gmail.com</td>
+                                <td>+91 8129398422</td>
+                                <td>Kerala</td>
+                                <td></td>
+                                <td>5</td>
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+                                    <button class="btn block-btn">
+                                        <img src="img/block.svg" alt="">
+                                    </button>
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Sara’s Food Pvt.Ltd
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Loremipsum@gmail.com</td>
+                                <td>+91 8129398422</td>
+                                <td>Kerala</td>
+                                <td></td>
+                                <td>5</td>
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+                                    <button class="btn block-btn">
+                                        <img src="img/block.svg" alt="">
+                                    </button>
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Sara’s Food Pvt.Ltd
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Loremipsum@gmail.com</td>
+                                <td>+91 8129398422</td>
+                                <td>Kerala</td>
+                                <td></td>
+                                <td>5</td>
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+                                    <button class="btn block-btn">
+                                        <img src="img/block.svg" alt="">
+                                    </button>
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Sara’s Food Pvt.Ltd
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Loremipsum@gmail.com</td>
+                                <td>+91 8129398422</td>
+                                <td>Kerala</td>
+                                <td></td>
+                                <td>5</td>
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+                                    <button class="btn block-btn">
+                                        <img src="img/block.svg" alt="">
+                                    </button>
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Sara’s Food Pvt.Ltd
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Loremipsum@gmail.com</td>
+                                <td>+91 8129398422</td>
+                                <td>Kerala</td>
+                                <td></td>
+                                <td>5</td>
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+                                    <button class="btn block-btn">
+                                        <img src="img/block.svg" alt="">
+                                    </button>
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Sara’s Food Pvt.Ltd
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Loremipsum@gmail.com</td>
+                                <td>+91 8129398422</td>
+                                <td>Kerala</td>
+                                <td></td>
+                                <td>5</td>
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+                                    <button class="btn block-btn">
+                                        <img src="img/block.svg" alt="">
+                                    </button>
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Sara’s Food Pvt.Ltd
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Loremipsum@gmail.com</td>
+                                <td>+91 8129398422</td>
+                                <td>Kerala</td>
+                                <td></td>
+                                <td>5</td>
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+                                    <button class="btn block-btn">
+                                        <img src="img/block.svg" alt="">
+                                    </button>
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-pagination">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link link-disabled previous-link" href="#" aria-label="Previous">
+                                <img src="img/Icon-arrow-left.svg" alt="arrow-left">
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link link-dots" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">22</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <img src="img/Icon-arrow-left.svg" alt="arrow-left">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Create Vendor Modal -->
+    <div class="modal fade modal-forms custom-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" role="dialog" style="z-index: 1400;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Create Vendor
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="modal-forms">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-title">Business Information</div>
+                                </div>
+                            </div>
+                            <div class="form-otr">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Business Name <span
+                                                    class="mandatory">*</span></label>
+                                            <input type="text" class="form_controler">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Business Category <span
+                                                    class="mandatory">*</span></label>
+                                            <div class="select-custom">
+                                                <select name="" id="" class="form_controler">
+                                                    <option value="">Hardware</option>
+                                                    <option value="">option</option>
+                                                    <option value="">option</option>
+                                                    <option value="">option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Company Files <small>(Brochures, Flyers
+                                                    etc)</small></label>
+                                            <div class="file-otr form_controler">
+                                                <label for="formFile" class="form-label"></label>
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Website</label>
+                                            <input type="text" class="form_controler">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Phone Number <span
+                                                    class="mandatory">*</span></label>
+                                            <div class="ph-group form_controler">
+                                                <div class="ph-select">
+                                                    <div class="select-custom">
+                                                        <select name="" id="">
+                                                            <option value="">+91</option>
+                                                            <option value="">+92</option>
+                                                            <option value="">+93</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" class="phone">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Landline <small>(optional)</small></label>
+                                            <input type="text" class="form_controler">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Email <span class="mandatory">*</span></label>
+                                            <input type="text" class="form_controler">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Address <span class="mandatory">*</span></label>
+                                            <input type="text" class="form_controler">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Country <span class="mandatory">*</span></label>
+                                            <div class="select-custom">
+                                                <select name="" id="" class="form_controler">
+                                                    <option value="">India</option>
+                                                    <option value="">USA</option>
+                                                    <option value="">option</option>
+                                                    <option value="">option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">option/Province <span
+                                                    class="mandatory">*</span></label>
+                                            <input type="text" class="form_controler">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Zip Code <span
+                                                    class="mandatory">*</span></label>
+                                            <input type="text" class="form_controler">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Company Logo</label>
+                                            <div class="file-otr form_controler">
+                                                <label for="formFile-1" class="form-label"></label>
+                                                <input class="form-control" type="file" id="formFile-1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-title">Point of Contact</div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">First Name <span
+                                                    class="mandatory">*</span></label>
+                                            <input type="text" class="form_controler">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Last Name <span
+                                                    class="mandatory">*</span></label>
+                                            <input type="text" class="form_controler">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Designation</label>
+                                            <input type="text" class="form_controler">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Phone Number <span
+                                                    class="mandatory">*</span></label>
+                                            <div class="ph-group form_controler">
+                                                <div class="ph-select">
+                                                    <div class="select-custom">
+                                                        <select name="" id="">
+                                                            <option value="">+91</option>
+                                                            <option value="">+92</option>
+                                                            <option value="">+93</option>
+                                                        </select>
+                                                    </div>
+                                                    <input type="text" class="phone">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Email Address <span
+                                                    class="mandatory">*</span></label>
+                                            <input type="text" class="form_controler">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-title">Verification</div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Email Address <span
+                                                    class="mandatory">*</span></label>
+                                            <input type="text" class="form_controler">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Choose any Government ID’s <span
+                                                    class="mandatory">*</span></label>
+                                            <div class="select-custom">
+                                                <select name="" id="" class="form_controler">
+                                                    <option value="">PAN</option>
+                                                    <option value="">option</option>
+                                                    <option value="">option</option>
+                                                    <option value="">option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4">
+                                        <label for="" class="label">Browse File</label>
+                                        <div class="file-otr form_controler">
+                                            <label for="formFile" class="form-label"></label>
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">Save</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- OTP Modal -->
+    <div class="modal fade small-modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="small-modal-content">
+                        <h3>Enter the OTP Received on your Number</h3>
+                        <p class="paragraph">Lorem Ipsum is simply dummy text of the prin</p>
+                        <div class="otp-input-group">
+                            <input type="text" class="otp-input">
+                            <input type="text" class="otp-input">
+                            <input type="text" class="otp-input">
+                            <input type="text" class="otp-input">
+                            <input type="text" class="otp-input">
+                        </div>
+                        <button class="primary-btn-modal" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdropGst">Ok</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- GST Number Verification Successful Modal -->
+    <div class="modal fade small-modal" id="staticBackdropGst" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="small-modal-content">
+                        <i><img src="img/ok-icon.svg" alt="ok-icon"></i>
+                        <h3>GST Number Verification Successful</h3>
+                        <p class="paragraph">Lorem Ipsum is simply dummy text of the prin</p>
+
+                        <button class="primary-btn-modal" data-bs-toggle="modal"
+                            data-bs-target="#VendorSuccessfully">Ok</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Vendor Created Successfully Modal -->
+    <div class="modal fade small-modal" id="VendorSuccessfully" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="small-modal-content">
+                        <i><img src="img/ok-icon.svg" alt="ok-icon"></i>
+                        <h3>Vendor Created Successfully</h3>
+                        <p class="paragraph">Lorem Ipsum is simply dummy text of the prin</p>
+
+                        <button data-bs-toggle="modal" class="primary-btn-modal">Ok</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="Js/vendor/bootstrap.min.js"></script>
+    <script src="Js/vendor/jquery.min.js"></script>
+    <script src="Js/vendor/script.js"></script>
+</body>
+
+</html>

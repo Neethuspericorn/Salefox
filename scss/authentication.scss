@@ -1,0 +1,694 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+.authentication { 
+    position: relative;
+    min-height: 100vh;
+    background-image: url(../img/authenticationBg.jpg), linear-gradient(180deg, #E672A3 0%, #9B1B4E 100%);
+    background-size: cover;
+    padding: 30px;
+    display: flex;
+    background-position: bottom;
+    background-size: contain;
+
+    .authentication-left-block {
+        flex: 1 1 100%;
+
+        .copyright {
+            text-align: center;
+            font-family: 'sf-pro-light';
+            font-size: 16px;
+            color: #FFFFFF;
+            display: block;
+        }
+
+        .authentication-left-txt {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100%;
+            padding-left: 130px;
+
+            h4 {
+                font-size: 36px;
+                font-family: 'sf-bold';
+                text-align: left;
+                color: #FFFFFF;
+
+                span {
+                    font-family: 'sf-pro-light';
+                }
+            }
+
+            p {
+                font-size: 17px;
+                font-family: 'sf-regular';
+                text-align: left;
+                color: #FFFFFF;
+                max-width: 592px;
+            }
+        }
+    }
+
+    .authentication-right-block {
+        background: #FFFFFF;
+        border-radius: 27px;
+        width: 750px;
+        padding: 60px;
+        height: calc(100vh - 60px);
+        display: flex;
+        align-items: center;
+
+        .authentication-form {
+            width: 100%;
+
+            .authentication-form-header {
+                .main-logo {
+                    max-width: 160px;
+                    margin-bottom: 35px;
+
+                    &.light-logo {
+                        display: block;
+                    }
+
+                    &.dark-logo {
+                        display: none;
+                    }
+                }
+
+                .title {
+                    text-align: left;
+                    font-size: 30px;
+                    font-family: 'sf-regular';
+                    color: #1E1B1E;
+                    margin-bottom: 20px;
+
+                    span {
+                        font-family: 'sf-pro-light';
+                    }
+                }
+            }
+
+            .authentication-form-body {
+                .form-box {
+                    padding-bottom: 30px;
+                    position: relative;
+
+                    .form-label {
+                        font-size: 14px;
+                        font-family: 'sf-regular';
+                        letter-spacing: 0px;
+                        color: #1E1B1E;
+                        margin: 0;
+                    }
+
+                    .form-control {
+                        background: #FFFAFC;
+                        border: 1px solid #FFE6F0;
+                        border-radius: 18px;
+                        padding: 10px 10px 10px 55px;
+                        height: 54px;
+                        text-align: left;
+                        font-family: 'sf-medium';
+                        font-size: 18px;
+                        letter-spacing: 0px;
+                        color: #A4A4A4;
+                    }
+
+                    .form-icons {
+                        position: absolute;
+                        height: 22px;
+                        margin: auto;
+                        top: 0;
+                        padding-left: 25px;
+                        bottom: 0;
+                    }
+
+                    .password-view {
+                        padding: 0;
+                        display: block;
+                        position: absolute;
+                        right: 20px;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        height: 28px;
+                    }
+
+                    .error-txt {
+                        font-size: 13px;
+                        font-family: 'sf-medium';
+                        color: #E93445;
+                        position: absolute;
+                        left: 10px;
+                        bottom: 0px;
+                    }
+
+
+                }
+
+                .opt-form-block {
+                    margin-top: 100px;
+
+                    .otp-txt {
+                        p {
+                            max-width: 280px;
+                            display: block;
+                            margin: auto;
+                            text-align: center;
+                            font-size: 19px;
+                            font-family: 'sf-medium';
+                            color: #1E1B1E;
+                            margin-bottom: 50px;
+
+                            span {
+                                color: #BA4773;
+                            }
+                        }
+                    }
+
+                    .resend-code-block {
+                        margin-top: 40px;
+
+                        p {
+                            display: block;
+                            margin: auto;
+                            text-align: center;
+                            font-size: 19px;
+                            font-family: 'sf-medium';
+                            color: #1E1B1E;
+                            margin-bottom: 50px;
+
+                            span {
+                                color: #BA4773;
+                            }
+                        }
+                    }
+
+                    .otp-input-box {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 15px;
+
+                        .form-control {
+                            width: 65px;
+                            height: 68px;
+                            margin-right: 20px;
+                            background: #FFFAFC;
+                            border: 1px solid #FFE6F0;
+                            border-radius: 8px;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .btn-primary {
+                    background: #BA4773;
+                    border-radius: 18px;
+                    height: 54px;
+                    margin: 30px 0;
+                    font-size: 20px;
+                    font-family: 'sf-medium';
+                    color: #FFFFFF;
+                }
+            }
+
+            .forgot-password-body {
+                .forgot-password-txt {
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+
+                    h4 {
+                        text-align: left;
+                        font-size: 30px;
+                        font-family: 'sf-regular';
+                        color: #1E1B1E;
+                        margin-bottom: 20px;
+
+                        span {
+                            font-family: 'sf-pro-light';
+                        }
+                    }
+
+                    p {
+                        text-align: left;
+                        font-size: 14px;
+                        font-family: 'sf-regular';
+                        color: #808080;
+
+                    }
+                }
+
+                .back-btn {
+                    font-size: 17px;
+                    font-family: 'sf-regular';
+                    text-align: center;
+                    color: #BA4773;
+                    display: block;
+                    margin: auto;
+                }
+            }
+
+            .authentication-form-footer {
+                .form-check-box {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0;
+
+                    .form-check {
+                        display: flex;
+                        align-items: center;
+                        padding: 0;
+                        margin: 0;
+
+                        .form-check-input {
+                            width: 26px;
+                            height: 26px;
+                            // background-color: #FBF9FB;
+                            border: 1px solid #D8D8D8;
+                            border-radius: 4px;
+                            float: none;
+                            margin: 0;
+                            margin-right: 17px;
+
+                            &:checked {
+                                background-image: url('../img/Icon-awesome-check.svg');
+                                background-color: #FBF9FB;
+                            }
+                        }
+
+                        .form-check-label {
+                            font-family: 'sf-regular';
+                            font-size: 17px;
+                            color: #1E1B1E;
+                        }
+                    }
+
+                    .forgot {
+                        font-family: 'sf-regular';
+                        font-size: 17px;
+                        color: #AC4F72;
+                    }
+
+
+                }
+
+                .or-option-block {
+                    .or-option {
+                        font-size: 18px;
+                        font-family: 'sf-medium';
+                        text-align: center;
+                        color: #1E1B1E;
+                        display: block;
+                        margin: 13px 0;
+                        position: relative;
+                        z-index: 99;
+
+                        &::before {
+                            content: '';
+                            background: #FFE6F0;
+                            width: 100%;
+                            height: 1px;
+                            position: absolute;
+                            inset: 0;
+                            margin: auto;
+                            z-index: -1;
+                        }
+
+                        span {
+                            background: #ffffff;
+                            display: block;
+                            width: fit-content;
+                            margin: auto;
+                            padding: 0 10px;
+                        }
+                    }
+
+                    .btn-otp {
+                        height: 54px;
+                        border: 1px solid #FFE6F0;
+                        border-radius: 18px;
+                        background: #fff;
+                        font-size: 17px;
+                        font-family: 'sf-medium';
+                        text-align: center;
+                        color: #BA4773;
+                        width: 100%;
+                    }
+                }
+
+                .authentication-conditions {
+                    margin-top: 30px;
+                    display: flex;
+                    justify-content: center;
+
+                    .indication {
+                        font-size: 14px;
+                        font-family: 'sf-regular';
+                        text-align: left;
+                        color: #AC4F72;
+                        text-transform: capitalize;
+                        padding-right: 15px;
+                        margin-right: 15px;
+                        position: relative;
+
+                        &:first-child::after {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            right: 0;
+                            width: 1px;
+                            height: 30px;
+                            background: #AC4F72;
+                            top: -5px;
+                        }
+                    }
+                }
+
+                .back-btn {
+                    font-size: 17px;
+                    font-family: 'sf-regular';
+                    text-align: center;
+                    color: #BA4773;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        display: none;
+    }
+}
+
+
+
+@media ($sm-1679) {
+    .authentication .authentication-right-block {
+        padding: 40px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-header .title {
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-header .main-logo {
+        margin-bottom: 25px;
+        max-width: 140px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-body .form-box {
+        padding-bottom: 20px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-body .form-box .form-control {
+        height: 48px;
+        font-size: 16px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-body .btn-primary {
+        height: 48px;
+        margin: 20px 0;
+        font-size: 18px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-footer .form-check-box .form-check .form-check-input {
+        width: 22px;
+        height: 22px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-footer .form-check-box .form-check .form-check-label,
+    .authentication .authentication-right-block .authentication-form .authentication-form-footer .form-check-box .forgot {
+        font-size: 15px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-footer .or-option-block .btn-otp {
+        height: 48px;
+        font-size: 15px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-footer .or-option-block .or-option {
+        font-size: 16px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-footer .authentication-conditions {
+        margin-top: 20px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-footer .authentication-conditions .indication:first-child::after {
+        height: 25px;
+        top: 0;
+    }
+
+    .authentication .authentication-left-block .authentication-left-txt {
+        padding-left: 90px;
+    }
+
+    .authentication .authentication-left-block .authentication-left-txt h4 {
+        font-size: 32px;
+    }
+
+    .authentication .authentication-left-block .authentication-left-txt p {
+        font-size: 15px;
+        max-width: 562px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-body .opt-form-block {
+        margin-top: 70px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-body .opt-form-block .otp-input-box .form-control {
+        height: 48px;
+        font-size: 16px;
+        width: 48px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-body .opt-form-block .resend-code-block p {
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-footer .back-btn {
+        font-size: 15px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .forgot-password-body .forgot-password-txt h4 {
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+}
+
+@media ($sm-1367) {
+    .authentication .authentication-left-block .authentication-left-txt h4 {
+        font-size: 28px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .forgot-password-body .forgot-password-txt {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .forgot-password-body .forgot-password-txt h4 {
+        margin-bottom: 8px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .forgot-password-body .back-btn {
+        font-size: 15px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-body .opt-form-block .resend-code-block {
+        margin-top: 30px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .forgot-password-body .forgot-password-txt h4 {
+        font-size: 22px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-body .opt-form-block .resend-code-block p {
+        margin-bottom: 30px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-body .opt-form-block .otp-txt p {
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+    .authentication .authentication-left-block .authentication-left-txt {
+        padding-left: 60px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-header .title {
+        font-size: 24px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-body .form-box .form-control {
+        height: 44px;
+        font-size: 14px;
+    }
+
+    .authentication .authentication-left-block .copyright {
+        font-size: 14px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-body .btn-primary {
+        height: 44px;
+        margin: 15px 0;
+        font-size: 16px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-footer .form-check-box .form-check .form-check-label,
+    .authentication .authentication-right-block .authentication-form .authentication-form-footer .form-check-box .forgot {
+        font-size: 13px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-footer .form-check-box .form-check .form-check-input {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-footer .or-option-block .or-option {
+        font-size: 14px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-footer .or-option-block .btn-otp {
+        height: 44px;
+        font-size: 14px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-footer .authentication-conditions {
+        margin-top: 15px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-header .main-logo {
+        margin-bottom: 15px;
+        max-width: 120px;
+    }
+}
+
+@media ($sm-1281) {
+    .authentication .authentication-right-block {
+        padding: 30px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-header .title,
+    .authentication .authentication-right-block .authentication-form .forgot-password-body .forgot-password-txt h4 {
+        font-size: 20px;
+    }
+
+    .authentication .authentication-left-block .authentication-left-txt {
+        padding-left: 40px;
+    }
+
+    .authentication .authentication-left-block .authentication-left-txt p {
+        font-size: 13px;
+        max-width: 482px;
+    }
+
+    .authentication .authentication-left-block .authentication-left-txt h4 {
+        font-size: 24px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-header .title {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-header .main-logo {
+        max-width: 100px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-body .btn-primary {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-footer .form-check-box .form-check .form-check-input {
+        width: 16px;
+        height: 16px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-footer .or-option-block .btn-otp {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-body .form-box .form-control {
+        height: 38px;
+        font-size: 14px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-body .form-box .form-icons img {
+        width: 12px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-body .form-box .form-icons {
+        height: 28px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-body .opt-form-block {
+        margin-top: 50px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-body .opt-form-block .otp-txt p {
+        margin-bottom: 30px;
+    }
+}
+
+@media ($sm-991) {
+    .authentication .authentication-right-block {
+        width: 100%;
+    }
+
+    .authentication .authentication-left-block .authentication-left-txt h4 {
+        font-size: 22px;
+    }
+
+    .authentication .authentication-left-block .authentication-left-txt {
+        padding-left: 0px;
+    }
+
+    .authentication .authentication-left-block .copyright {
+        font-size: 12px;
+    }
+
+    .authentication .authentication-left-block .authentication-left-txt p {
+        max-width: 80%;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-body .opt-form-block .otp-txt p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-footer .back-btn {
+        font-size: 14px;
+    }
+}
+
+
+@media ($sm-767) {
+    .authentication {
+        flex-direction: column;
+    }
+
+    .authentication .authentication-left-block .copyright {
+        display: none;
+    }
+
+    .authentication .copyright {
+        text-align: center;
+        font-family: 'sf-pro-light';
+        font-size: 12px;
+        color: #FFFFFF;
+        display: block;
+        margin-top: 15px;
+    }
+
+    .authentication .authentication-left-block .authentication-left-txt p {
+        max-width: 100%;
+    }
+}

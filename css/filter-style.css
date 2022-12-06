@@ -1,0 +1,33 @@
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.filter-wrp .filer-btn:hover {
+  border: 1px solid #F05895; }
+
+.filter-wrp .filer-btn[aria-expanded="true"] {
+  border: 1px solid #F05895; }
+
+.filter-cover {
+  background-color: #FFFDFD;
+  border: 1px solid #FFE2ED;
+  border-radius: 11px;
+  padding: 25px;
+  margin-bottom: 5px; }
+
+/*# sourceMappingURL=filter-style.css.map */

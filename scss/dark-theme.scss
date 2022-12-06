@@ -1,0 +1,245 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+$body-dark: #161819;
+$layout-dark: #1F2125;
+$text-white: #fff;
+$text-darklight: #888888;
+$dropdown-bg: #181B1F;
+$dark-sec-color: #D53871;
+
+.dark-theme {
+    background-color: #161819;
+
+    // layout dark
+    .side-nav-wrapper,
+    header,
+    .db-content-inner .custom-card-wapper .custom-card-list .custom-card-block,
+    .db-content-inner .chart-card-wapper .chart-card-item {
+        background: $layout-dark;
+    }
+
+    // text white
+    .db-content-inner .custom-card-wapper .custom-card-list .custom-card-block .card-list-count,
+    .db-content-inner .chart-card-wapper .chart-card-item .chart-card-header p,
+    header .top-header .user-area .user-header .user-txt button h4,
+    .db-title-wrapper .title-block,
+    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-body ul li .dropdown-item .list .details h4,
+    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-header .notification-header-title {
+        color: $text-white;
+    }
+
+    // text light dark
+    .db-content-inner .custom-card-wapper .custom-card-list .custom-card-block .card-list-count-description,
+    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-body ul li .dropdown-item .list .details p {
+        color: $text-darklight;
+    }
+
+
+    .side-nav-wrapper .nav-link .indication {
+        color: #7B7B7B !important;
+    }
+
+    .side-nav-wrapper .nav-link:hover {
+        background: #171717 !important;
+    }
+
+    .side-nav-wrapper .nav-link figure {
+        background: #101010 !important;
+    }
+
+    .side-nav-wrapper .nav-link.active {
+        background: #171717 !important;
+    }
+
+    header .logo-wrap .logo-block .main-logo.light-logo {
+        display: none;
+    }
+
+    header .logo-wrap .logo-block .main-logo.dark-logo {
+        display: block;
+    }
+
+    header .logo-wrap .sidebarCollapse {
+        background: transparent linear-gradient(180deg, #310619 0%, #171717 100%);
+    }
+
+    header .top-header .left-block .search-block .form-control {
+        background: $body-dark;
+        border: none;
+        color: $text-white;
+    }
+
+    header .top-header .right-block .user-area .notification-header .btn img {
+        filter: brightness(0) invert(1);
+    }
+
+    header .top-header .right-block .user-area .notification-header .badge {
+        border: none;
+    }
+
+    .user-header .dropdown-menu .dropdown-item {
+        color: $text-darklight;
+    }
+
+    .user-header .dropdown-menu .dropdown-item:hover {
+        background: #25272b;
+    }
+
+    header .top-header .form-check-input {
+        background-color: $body-dark !important;
+    }
+
+    header .top-header .left-block .search-block .search-box-icon .btn img {
+        filter: brightness(0) invert(.6);
+    }
+
+    .side-nav-wrapper .nav-dropdown::after {
+        background: url(../img/arrow-down.svg) $dropdown-bg no-repeat center center !important;
+    }
+
+    header .top-header .right-block .user-area .notification-header .dropdown-menu {
+        background-color: $dropdown-bg;
+        box-shadow: 6px 12px 22px #000000D6;
+    }
+
+    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-body ul li .dropdown-item:hover {
+        background: #25272b;
+    }
+
+    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-body ul li {
+        border-color: #2F2F2F;
+    }
+
+    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-header .notification-header-mark {
+        color: #CA3C74;
+    }
+
+    header .top-header .right-block .user-area .notification-header .dropdown-menu::before {
+        border-bottom-color: $dropdown-bg;
+    }
+
+    .custom-scroll::-webkit-scrollbar-track {
+        background: #ccc;
+    }
+
+    .custom-scroll::-webkit-scrollbar-thumb {
+        background: #7B7B7B;
+    }
+
+    .custom-scroll::-webkit-scrollbar-thumb:hover {
+        background: #da9dfd;
+    }
+
+    .user-header .dropdown-menu {
+        background-color: $dropdown-bg;
+        box-shadow: 6px 12px 22px #000000D6;
+    }
+
+    header .top-header .left-block .switch-block .form-switch .form-check-input:checked::before {
+        opacity: .7;
+    }
+
+    header .top-header .left-block .switch-block .form-switch .form-check-input::after {
+        opacity: .7;
+    }
+
+    .side-nav-wrapper .side-navigation .nav-item .nav-link figure img {
+        filter: brightness(120%);
+    }
+
+    .db-content-inner .custom-card-wapper .custom-card-list .custom-card-block .custom-card-icon-box,
+    header .top-header .right-block .user-area .notification-header .badge {
+        background-color: $dark-sec-color;
+    }
+
+    .dark-theme header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-header .notification-header-mark,
+    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-body ul li .dropdown-item .list .details span,
+    header .top-header .right-block .user-area .notification-header .dropdown-menu .notification-footer .view-all {
+        color: $dark-sec-color;
+    }
+
+    header .top-header .right-block .user-area .user-header .dropdown-toggle::after {
+        border-top-color: #fff;
+    }
+}
+
+.dark-theme {
+    .authentication {
+        background-image: url(../img/authenticationdarkBg.jpg),
+            linear-gradient(180deg, #0F0000 0%, #0B0B0B 100%) !important;
+    }
+
+    .main-logo.light-logo {
+        display: none !important;
+    }
+
+    .main-logo.dark-logo {
+        display: block !important;
+    }
+
+    .authentication-right-block {
+        background: #151618 !important;
+    }
+
+    .title,
+    .forgot,
+    .form-check-label,
+    .form-label,
+    .forgot-password-txt h4,
+    .forgot-password-txt p,
+    .forgot-password-body .back-btn,
+    .opt-form-block .otp-txt p,
+    .resend-code-block p,
+    .authentication-form-footer .back-btn {
+        color: $white-color !important;
+    }
+
+    .opt-form-block .otp-txt p span,
+    .resend-code-block p span {
+        color: #EA4986 !important;
+    }
+
+    .form-control {
+        background: #161819 !important;
+        border: 1px solid #2F2F2F !important;
+        color: #E0E0E0 !important;
+    }
+
+    .btn-primary {
+        background: #D53871 !important;
+    }
+
+    .form-check-input {
+        background: #1F1F1F !important;
+        border: 1px solid #3c3d40 !important;
+    }
+
+    .or-option {
+        &::before {
+            background: #2F2F2F !important;
+        }
+
+        span {
+            background: #151618 !important;
+            color: $white-color !important;
+        }
+    }
+
+    .btn-otp {
+        border: 1px solid #4E4E4E !important;
+        background: #151619 !important;
+        color: $white-color !important;
+    }
+
+    .authentication-conditions {
+        .indication {
+            color: $white-color !important;
+
+            &:first-child::after {
+                background: $white-color !important;
+            }
+        }
+    }
+
+}
