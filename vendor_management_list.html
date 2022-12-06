@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/dark-theme.css">
 </head>
 
-<body class="dark-theme">
+<body class="">
     <header>
         <div class="logo-wrap">
             <div class="logo-block">
@@ -380,7 +380,7 @@
                                 <td></td>
                                 <td>5</td>
                                 <td class="action-btn-group">
-                                    <button class="btn view-btn">
+                                    <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#vendorInfo">
                                         <img src="img/eye.svg" alt="">
                                     </button>
                                     <button class="btn edit-btn">
@@ -411,7 +411,7 @@
                                 <td></td>
                                 <td>5</td>
                                 <td class="action-btn-group">
-                                    <button class="btn view-btn">
+                                    <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#vendorInfo">
                                         <img src="img/eye.svg" alt="">
                                     </button>
                                     <button class="btn edit-btn">
@@ -442,7 +442,7 @@
                                 <td></td>
                                 <td>5</td>
                                 <td class="action-btn-group">
-                                    <button class="btn view-btn">
+                                    <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#vendorInfo">
                                         <img src="img/eye.svg" alt="">
                                     </button>
                                     <button class="btn edit-btn">
@@ -473,7 +473,7 @@
                                 <td></td>
                                 <td>5</td>
                                 <td class="action-btn-group">
-                                    <button class="btn view-btn">
+                                    <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#vendorInfo">
                                         <img src="img/eye.svg" alt="">
                                     </button>
                                     <button class="btn edit-btn">
@@ -504,7 +504,7 @@
                                 <td></td>
                                 <td>5</td>
                                 <td class="action-btn-group">
-                                    <button class="btn view-btn">
+                                    <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#vendorInfo">
                                         <img src="img/eye.svg" alt="">
                                     </button>
                                     <button class="btn edit-btn">
@@ -535,7 +535,7 @@
                                 <td></td>
                                 <td>5</td>
                                 <td class="action-btn-group">
-                                    <button class="btn view-btn">
+                                    <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#vendorInfo">
                                         <img src="img/eye.svg" alt="">
                                     </button>
                                     <button class="btn edit-btn">
@@ -566,7 +566,7 @@
                                 <td></td>
                                 <td>5</td>
                                 <td class="action-btn-group">
-                                    <button class="btn view-btn">
+                                    <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#vendorInfo">
                                         <img src="img/eye.svg" alt="">
                                     </button>
                                     <button class="btn edit-btn">
@@ -597,7 +597,7 @@
                                 <td></td>
                                 <td>5</td>
                                 <td class="action-btn-group">
-                                    <button class="btn view-btn">
+                                    <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#vendorInfo">
                                         <img src="img/eye.svg" alt="">
                                     </button>
                                     <button class="btn edit-btn">
@@ -960,6 +960,249 @@
             </div>
         </div>
     </div>
+
+
+    <!--  Vendor Info Modal -->
+    <div class="modal fade modal-forms vendor-info-modal" id="vendorInfo" tabindex="-1"
+        aria-labelledby="vendorInfoLabel" aria-hidden="true" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vendorInfoLabel">
+                        Vendor Info
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="vendor-info-body-content d-flex">
+                        <div class="block-left">
+                            <div class="img-block">
+                                <span class="prof-img-cover">
+                                    <img class="prof-img" src="img/prof-mod.png" alt="">
+                                </span>
+                            </div>
+                            <div class="left-block-col row">
+                                <div class="inner-card-sm col-sm-6 col-md-12">
+                                    <div class="card-title-sm">
+                                        <span class="t-cover">Seller Ranking</span>
+                                    </div>
+                                    <div class="text-block-sm">
+                                        <div class="rating-row">
+                                            <img src="img/yellow_star.svg" alt="">
+                                            <img src="img/yellow_star.svg" alt="">
+                                            <img src="img/yellow_star.svg" alt="">
+                                            <img src="img/yellow_star.svg" alt="">
+                                            <img src="img/grey_star.svg" alt="">
+                                            <span class="rating-point">4.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="inner-card-sm col-sm-6 col-md-12">
+                                    <div class="card-title-sm">
+                                        <span class="t-cover">Seller XP</span>
+                                    </div>
+                                    <div class="text-block-sm">
+                                        5
+                                    </div>
+                                </div>
+                                <div class="inner-card-sm col-sm-6 col-md-12">
+                                    <div class="card-title-sm">
+                                        <span class="t-cover">GST Number</span>
+                                    </div>
+                                    <div class="text-block-sm">
+                                        AAAAA0000A
+                                    </div>
+                                </div>
+                                <div class="inner-card-sm col-sm-6 col-md-12">
+                                    <div class="card-title-sm">
+                                        <span class="t-cover">PAN</span>
+                                    </div>
+                                    <div class="text-block-sm">
+                                        ABCTY1234D
+                                    </div>
+                                </div>
+
+                                <div class="inner-card-sm col-sm-6 col-md-12">
+                                    <div class="card-title-sm">
+                                        <span class="t-cover">Company File</span>
+                                    </div>
+                                    <div class="text-block-sm">
+                                        <div class="nodata-sm">
+                                            <img src="img/no_data.svg" alt=""> No data
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="block-right">
+                            <div class="right-content-cover btm-line">
+                                <h4 class="sec-title-sm">Business Info</h4>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Business Name :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                Cake Hut
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Business Category :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                Food
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Website :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                www.cakehut.in
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Phone Number :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                +91 8129399999
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Email :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                Cakehut@gmail.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Address :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                Temple Road, Vaduthala PO, Kochi
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Landline :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                0484-402017
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                State/Province :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                Kerala
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Zip :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                683512
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Country :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                India
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="right-content-cover">
+                                <h4 class="sec-title-sm">Point of Contact</h4>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Name :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                Sara Mathew
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Designation :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                Owner/Manager of Sara Foods Pvt Ltd
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Phone :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                +91 8129398429
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Email :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                Saramathewfoods@gmail.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="info-modal-btn"><img src="img/block-sm.svg" alt=""> Block This
+                        Vendor</button>
+                    <button type="button" class="info-modal-btn"><img src="img/edit-sm.svg" alt=""> Edit</button>
+                    <button type="button" class="info-modal-btn"><img src="img/delete-sm.svg" alt=""> Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="Js/vendor/bootstrap.min.js"></script>
     <script src="Js/vendor/jquery.min.js"></script>
     <script src="Js/vendor/script.js"></script>
