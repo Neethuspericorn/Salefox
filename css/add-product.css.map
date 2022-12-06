@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/add-product.scss",
+        "../scss/partials/_variables.scss",
+        "../scss/partials/_mixins.scss"
+    ],
+    "names": [],
+    "file": "add-product.css"
+}

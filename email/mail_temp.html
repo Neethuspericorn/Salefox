@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no"> <!-- Tell iOS not to automatically link certain text strings. -->
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <title>Email Template</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings> 
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 23 - 41 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+
+        /* What it does: Tells the email client that only light styles are provided but the client can transform them to dark. A duplicate of meta color-scheme meta tag above. */
+        :root {
+          color-scheme: light;
+          supported-color-schemes: light;
+        }
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+        /* What it does: forces Samsung Android mail clients to use the entire viewport */
+        #MessageViewBody, #MessageWebViewDiv{
+            width: 100% !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode:bicubic;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        a[x-apple-data-detectors],  /* iOS */
+        .unstyle-auto-detected-links a,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+        .im {
+            color: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+        /* If the above doesn't work, add a .g-img class to any image in question. */
+        img.g-img + div {
+            display: none !important;
+        }
+
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u ~ div .email-container {
+                min-width: 320px !important;
+            }
+        }
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u ~ div .email-container {
+                min-width: 375px !important;
+            }
+        }
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            u ~ div .email-container {
+                min-width: 414px !important;
+            }
+        }
+
+    </style>
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+    <style>
+
+	    /* What it does: Hover styles for buttons */
+	    .button-td,
+	    .button-a {
+	        transition: all 100ms ease-in;
+	    }
+	    .button-td-primary:hover,
+	    .button-a-primary:hover {
+	        background: #555555 !important;
+	        border-color: #555555 !important;
+	    }
+
+	    /* Media Queries */
+	    @media screen and (max-width: 480px) {
+	        /* What it does: Forces table cells into full-width rows. */
+	        .stack-column,
+	        .stack-column-center {
+	            display: block !important;
+	            width: 100% !important;
+	            max-width: 100% !important;
+	            direction: ltr !important;
+	        }
+	        /* And center justify these ones. */
+	        .stack-column-center {
+	            text-align: center !important;
+	        }
+
+	        /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+	        .center-on-narrow {
+	            text-align: center !important;
+	            display: block !important;
+	            margin-left: auto !important;
+	            margin-right: auto !important;
+	            float: none !important;
+	        }
+	        table.center-on-narrow {
+	            display: inline-block !important;
+	        }
+
+	         
+	        .email-container p {
+	            font-size: 13px !important;
+	        }
+	    }
+
+        .content-padding{
+            padding-left: 55px !important;
+            padding-right: 55px !important
+        }
+        .logo-image{
+            padding-top: 55px;
+            padding-bottom: 55px;
+        }
+
+        @media screen and (max-width: 480px) {
+            .content-padding{
+                padding-left: 15px !important;
+                padding-right: 15px !important
+            } 
+            .logo-image{
+                padding-top: 30px !important;
+                padding-bottom: 15px !important;
+            }
+        } 
+
+        div, td, p, *{
+         font-family: sans-serif, 'sf-pro';
+        }
+        [style*="sf-pro"]{
+            font-family: 'sf-pro', sans-serif !important;
+        }
+
+        @media (prefers-color-scheme: dark ) {
+            .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+
+            .light-img { display:none; display:none !important; }
+
+            .darkmode { background-color: #272623 !important; }
+            
+            h1, h2, h3, p, span, a, b { color: #ffffff !important; }
+            
+            .link { color: #91ADD4 !important; }
+        }
+
+        [data-ogsc] .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+ 
+        [data-ogsc] .light-img { display:none; display:none !important; }
+        
+        [data-ogsc] .darkmode { background-color: #272623 !important; }
+
+        [data-ogsc] h1, [data-ogsc] h2, [data-ogsc] p, [data-ogsc] h3, [data-ogsc] span, [data-ogsc] a, [data-ogsc] b { color: #ffffff !important; }
+        
+        [data-ogsc] .link { color: #91ADD4 !important; }
+
+    </style>
+    <!-- Progressive Enhancements : END -->
+
+
+    <!-- MSO dark mode fix :  use the class name for texts to remain in white -->
+    <!--[if mso ]>
+    <style>
+        a{
+            line-height: normal !important;
+            text-decoration: none !important;
+        }
+        .ms-whiteX {
+            mso-style-textfill-type:gradient;
+            mso-style-textfill-fill-gradientfill-stoplist:"0 \#FFFFFF 0 100000\,100000 \#FFFFFF 0 100000";
+        }
+    </style>
+    <![endif]-->
+
+</head>
+<!--
+	The email background color (#222222) is defined in three places:
+	1. body tag: for most email clients
+	2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+	3. mso conditional: For Windows 10 Mail
+-->
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly;">
+    <center role="article" aria-roledescription="email" lang="en" style="width: 100%;">
+    <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:800px">
+    <tr>
+    <td>
+    <![endif]-->
+
+        <!-- Visually Hidden Preheader Text : BEGIN -->
+        <div style="max-height:0; overflow:hidden; mso-hide:all;" aria-hidden="true">
+            Your account is now ready. Please download the Salefox app From the Googleplay store/App Store
+        </div>
+        <!-- Visually Hidden Preheader Text : END -->
+
+        <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
+        <!-- Preview Text Spacing Hack : BEGIN -->
+        <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+	        &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+        </div>
+        <!-- Preview Text Spacing Hack : END -->
+
+        <div style="max-width: 800px; margin: 0 auto; background-color: #C44374; padding-top: 35px; background-image: url(https://lh3.googleusercontent.com/fife/AAbDypBNGkEwRHSKAPRZdumyPJCFtQmlPoHlNtb-60lH3OTh7yk9mczOswQ1SiM1k7WbK5j6l297vYgpGLzcSpolT4sSVxkztxQA99Eigei0F8F6B5xG3v25Pt_opt9hlRvgrTAdezVHozWMwaid2LxE2s9FZu2Wr8W7z6XUfC4bXAgzLfSsv4m2DWH0tg7XhkFkFUrxPyFjnyB-Ppekea60-Y-ezbfi_UrW5tyIbFEwTULMQj6cwKdQV4jIvpQY3wKDbiAal5cK7yamm_xPBLxI4JFQ9PjmjF1c06Fd89IIFQdJ5k2dQNE_6pf7OOzZnzgKmluYt1yVHqLKgNbWkugN4V72guBzrEf7fWgOkeflnxYmxAe2BytYBc07X1qRHwzAH3slMYbfnhGFN2rrunfK1sk2eK9wR5aqlEmRjwapO7eoxuaQsZQZqZwfqYlnH6-yWTK4lExLtaameqHadS-XdyzQ3E7X-jr-47ezEbyJPjQCUga-2JXbd2SHWbiOIRJb_C1abQRNS2ckry7l2KMzfeH3iFk5vBeVlGPWfWoaPCVE3hTV_uGFW7aKap1qhGoHkJs66mV3_bvC3bYa9dX7DN0iHGpUhbZb3E8y8Ji0i1kX5a_uYBM2w5RmhpRDUMmRvniLIwJeFlv2xicfMBWtl-ZgD-R3gGGwXkBxDcskwQP3hRn3OisIHV84MFznYvFeuyqOMGv9I-8ceNnt2Dr0Zq5hV-D5_j2IZZkR4CB0Uas-hkHrwqkf4Rxsr4ao3_cKr-sCVEprJ5b0Ku1RdpKGvJynzh_V6m_zzk4iXsbJIgglOq8mC8_itV_TYsHVwDW6CWRmCf4edVBNHz88kxS47O3b32Dm8JSM8RyQswkkBch9GwVFeJy_xwZ2se3wcK46Zb9USmJ43--M3UBrvU8J9508VdOft6HlheikK1tmTgkAcdW2oPNEZYByPU-dJcQ3r3ug9yv-Fv73LIUvmc5cJNB2ge3rnp77J4_DB0DD7HltD4ZYUHjZ_2g9oBDJ5u-A0uE35QiROi3wh8XQO0AIzTy10VY-a-mL3gKE6fG_ZiF6NVRUs-CzTmFjF1URV--iJAdVCspvdQhCnUldrYzJIZSqFku4DOcRsUSUddBI8hSUyzRYWHtcxkF5LiWNuIxo52cGmIWTCXAK13IghxeOY_wGU2Dqxogn4anplN-U6u2ID2TD4o8sRV1fC6fyfaC4MU0_soc2wdDzMHxM_9APRdg7P_Rz2dfRZ5P4HTyeP2UMCFdrOlm8AuOYte5-hp9F0SptbP0XwQInGFwtjGjtzOy0o1Mg0V1wTguLeigtOX6O64GNINYHyBqmJHLaGye0TxIMylGQjhSwcjEeKuBhL-2BEb9bjyQA6G1YKlV1LnG2zyubzyn4RYRL67tCnz7HZdDYDv4mTgdzuUsPc_-Ymw7IZo5axREGhGHKz1BvS27Cd2xzcw9pwblC3971QMHIUrM9JpZzjeVKMadIrm4=w1920-h969); background-repeat: no-repeat; background-position: center top; background-size: cover" class="email-container">
+                <!--[if mso]>
+                <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="background-color: #C44374; width: 800px;">
+                    <tr>
+                         <td>
+                            <div style="height: 40px;"> &nbsp;</div>
+                <![endif]-->
+
+                <!-- Email Body : BEGIN -->
+                <div class="padding-wrap" style="padding-left: 20px; padding-right: 20px;">
+                    <div class="email-wrap darkmode" style="margin: auto; max-width: 732px; border-radius: 25px; background-color: #ffffff;">
+
+                    <!--[if mso]>
+                    <table align="center" class="darkmode" role="presentation" cellspacing="0" cellpadding="0" border="0"  style="background-color: #ffffff; margin: auto;">
+                        <tr>
+                            <td  style="width: 732px">
+                            
+                    <![endif]-->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+                    <!-- Email Header : BEGIN -->
+                    <tr>
+                        <td style="text-align: right; padding-top: 55px; padding-bottom: 55px" class="content-padding logo-image">
+                            <img src="img/salefox_logo.png" width="140" height="43" alt="alt_text" border="0" style="height: auto;font-family: sans-serif; font-size: 15px; line-height: 15px;">
+                            
+                        </td>
+                    </tr>
+                    <!-- Email Header : END -->
+
+
+                    <!-- 1 Column Text + Button : BEGIN -->
+                    <tr>
+                        <td>
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px;">
+                                        <!--[if mso]>
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="660px" align="center">
+                                            <tr>
+                                                <td>
+                                        <![endif]-->
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 660px">
+                                            <tr>
+                                                <td style="font-family: sans-serif; text-align: center;"  class="content-padding">
+                                                    <h1 style="margin: 0 0 10px; font-size: 25px; line-height: 30px; color: #000000; font-weight: bold;">"Congratulations Jacob" 
+                                                     <img src="img/party-popper.png" alt="Congratulations" width="20" height="20">   
+                                                    </h1>
+                                                    <!--[if mso]>
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                        <tr>
+                                                            <td style="width: 440px;">
+                                                    <![endif]-->
+                                                    <p style="margin: 0 auto 10px; max-width: 440px; text-align: center; font-family: sans-serif, 'sf-pro'; color: #000000;">
+                                                        Your account is now ready. Please download the Salefox app From the Googleplay store/App Store
+                                                    </p>
+                                                     <!--[if mso]>
+                                                        </td>
+                                                        </tr>
+                                                    </table>
+                                                    <![endif]-->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!--[if mso]>
+                                            </td>
+                                            </tr>
+                                        </table>
+                                        <![endif]-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px; font-family: sans-serif; font-size: 15px; line-height: 20px;">
+                                        <!--[if mso]>
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="660px" align="center">
+                                            <tr>
+                                                <td>
+                                        <![endif]-->
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width: 660px">
+                                            <tr>
+                                                <td style="font-family: sans-serif; text-align: center;"  class="content-padding">
+                                                    <img src="img/image.png" alt="salefox" width="193" height="160">
+
+                                                    <!--[if mso]>
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                        <tr>
+                                                            <td style="width: 450px;">
+                                                    <![endif]-->
+
+                                                    <p style="margin: 0 auto 10px; max-width: 450px; font-size: 14px; text-align: center; line-height: 23px; font-family: sans-serif, 'sf-pro'; color: #000000;">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
+                                                    </p>
+                                                    <!--[if mso]>
+                                                        </td>
+                                                        </tr>
+                                                    </table>
+                                                    <![endif]-->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!--[if mso]>
+                                            </td>
+                                            </tr>
+                                        </table>
+                                        <![endif]-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0 20px 20px;" align="center"  class="content-padding">
+
+                                        <!-- Button : BEGIN -->
+                                        <div style="margin-left: auto; margin-right: auto;">
+                                        <!--[if mso]>
+                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#" style="height:42px;v-text-anchor:middle;width:240px;" arcsize="65%" stroke="f" fillcolor="#C44374">
+                                                    <w:anchorlock/>
+                                                    <center>
+                                            <![endif]-->
+                                            
+                                            <a href="#"
+                                            style="background-color:#C44374;border-radius:27px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:15px;font-weight:normal;line-height:42px;text-align:center;text-decoration:none;width:240px;-webkit-text-size-adjust:none; text-decoration: none !important;">Download the App</a>
+                                                <!--[if mso]>
+                                                </center>
+                                                </v:roundrect>
+                                            <![endif]-->
+                                                
+                                        </div>
+                                        <!-- Button : END -->
+                                    </td>
+                                </tr>
+
+                                
+
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- 1 Column Text + Button : END -->
+    
+
+                    <!-- 1 Column Text : BEGIN -->
+                    <tr>
+                        <td>
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td class="content-padding">
+                                        <h3 style="font-family: sans-serif; font-size: 15px; line-height: 29px; color: #000000;">Thanks, <br>
+                                        The Salefox Team</h3>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="content-padding">
+                                        <hr style="background-color: #eeeeee; border: none; height: 1px">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 55px; font-family: sans-serif; font-size: 13px; line-height: 21px; color: #5D5D5D;" class="content-padding">
+                                        <p style="margin: 0 0 10px 0;">
+                                            DISCLAIMER: This email may contain privileged information and is intended solely for the addressee, and any disclosure of this information is strictly prohibited, and may be unlawful. If you have received this mail by mistake, please inform the sender immediately and delete this mail. Any information expressed in this mail does not necessarily reflect the views of Inclusive360.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- 1 Column Text : END -->
+                    </table>
+
+                    <!-- Email Body : END -->
+                    <!--[if mso]>
+                        <br/>
+                         
+                        </td>
+                        </tr>
+                        </table>
+                    <![endif]-->
+                    </div>
+                </div>
+
+                <!-- END -->
+                <!--[if mso]>
+                     <div style="height: 35px">&nbsp;</div>
+                    </td>
+                    </tr>
+                    </table>
+                <![endif]-->
+
+                <!-- Email Social Media : BEGIN  -->
+
+                <!-- use a table dedicated for social media  -->
+                 <!--[if mso | IE]>
+                <center>
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0"  style="width:800px; margin: auto !important; text-align: center; background: #C44374; background-color: #C44374;">
+                <tr>
+                <td>
+                <![endif]-->
+                <table width="100%" style="background: #8e204e; background-color: #761a3e9e; margin-top: 35px !important;">
+                    <tr>
+                        <td style="height: 80px;">
+                            <table role="presentation" cellspacing="0" cellpadding="10" border="0"  align="center" height="50"  style="max-width: 200px; height: 80px;">
+                                <tr>
+                                    <td height="70" valign="center" style="padding-top: 0 !important; padding-bottom: 0px !important; text-align: center">
+                                       <a href="#" style="color:#ffffff; display: block; width: 43px; height: 43px; margin: auto;">
+                                            <img src="img/fb.png" alt="facebook" width="43px" height="43px">
+                                        </a>
+                                    </td>
+                                    <td height="70" valign="center"  style="padding-top: 0 !important; padding-bottom: 0px !important; text-align: center">
+                                        <a href="#"  style=" color:#ffffff; display: block; width: 43px; height: 43px;  margin: auto;">
+                                            <img src="img/instagram.png" alt="insta" width="43px" height="43px">
+                                        </a>
+                                     </td>
+                                      
+                                     <td height="70" valign="center"  style="padding-top: 0 !important; padding-bottom: 0px !important; text-align: center;">
+                                        <a href="#"  style=" color:#ffffff; display: block; width: 43px; height: 43px; margin: auto;">
+                                            <img src="img/linkedin.png" alt="linkedin" width="43px" height="43px">
+                                        </a>
+                                     </td>
+                                </tr>
+                            </table>  
+                        </td>
+                    </tr>
+                </table>
+                <!--[if mso]>
+                    <center>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+                
+                <!-- Email Social Media : END -->
+
+                
+                <!-- Email Footer : END -->
+
+                <!--[if mso]>
+                </td>
+                </tr>
+                </table>
+                <![endif]-->
+            
+        </div>
+    <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+    </center>
+</body>
+</html>

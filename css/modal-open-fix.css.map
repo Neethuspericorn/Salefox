@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,aAAa,AAAA,CACT,OAAO,CAAE,gBAAgB,CACzB,OAAO,CAAE,YAAY,CAIxB,AAND,AAGI,aAHS,AAGR,MAAM,AAAA,KAAK,CAAC,aAAa,AAAC,CACtB,SAAS,CAAE,eAAe,CAC9B",
+    "sources": [
+        "../scss/modal-open-fix.scss",
+        "../scss/partials/_variables.scss",
+        "../scss/partials/_mixins.scss"
+    ],
+    "names": [],
+    "file": "modal-open-fix.css"
+}
