@@ -736,3 +736,10 @@ width: 100%;
 }
 
 }
+
+@media(max-width:579px){
+    .select-otr{
+      flex-direction: column;
+    }
+    
+    }

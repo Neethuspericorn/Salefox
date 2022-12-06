@@ -1,0 +1,39 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+textarea.form_controler{
+    min-height: 50px;
+    height: unset !important;
+}
+
+.prodModal{
+    .modal-dialog{
+        max-width: 1064px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.photos-wrap{
+    display: flex;
+    gap: 12px;
+}
+.photo-item{
+    width: 115px;
+    height: 115px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    .upload-btn{
+        border: 1px dashed #E5BFCE;
+        position: absolute;
+        inset: 0;
+        border-radius: 10px;
+    }
+    .photo-upload{
+        opacity: 0;
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        cursor: pointer;
+    }
+}
