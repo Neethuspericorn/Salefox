@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/filter-style.css">
     <link rel="stylesheet" href="css/forms-style.css">
     <link rel="stylesheet" href="css/products.css">
-    <link rel="stylesheet" href="css/dark-theme.css">
+    <!-- <link rel="stylesheet" href="css/dark-theme.css"> -->
 </head>
 
 <body class="">
@@ -682,71 +682,114 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="input-holder">
-                                <label for="" class="label">Product Name <span class="mandatory">*</span></label>
-                                <input type="text" class="form_controler">
-                            </div>
-                        </div>
 
-                        <div class="col-lg-6 col-md-6">
-                            <div class="input-holder">
-                                <label for="" class="label">Category <span class="mandatory">*</span></label>
-                                <div class="select-custom">
-                                    <select name="" id="" class="form_controler">
-                                        <option value="">Select</option> 
-                                        <option value="">Category 1</option>
-                                        <option value="">option</option>
-                                        <option value="">option</option>
-                                    </select>
+                    <div class="products-details">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-holder">
+                                    <label for="" class="label">Product Name <span class="mandatory">*</span></label>
+                                    <input type="text" class="form_controler">
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-holder">
+                                    <label for="" class="label">Category <span class="mandatory">*</span></label>
+                                    <div class="select-custom">
+                                        <select name="" id="" class="form_controler">
+                                            <option value="">Select</option> 
+                                            <option value="">Category 1</option>
+                                            <option value="">option</option>
+                                            <option value="">option</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="input-holder">
-                                <label for="" class="label">Maximum Retail Price <span class="mandatory">*</span></label>
-                                <input type="text" class="form_controler">
+    
+    
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-holder">
+                                    <label for="" class="label">Maximum Retail Price <span class="mandatory">*</span></label>
+                                    <input type="text" class="form_controler">
+                                </div>
+                            </div>
+        
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-holder">
+                                    <label for="" class="label">Whole Sale Price <span class="mandatory">*</span></label>
+                                    <input type="text" class="form_controler">
+                                </div>
                             </div>
                         </div>
     
-                        <div class="col-lg-6 col-md-6">
-                            <div class="input-holder">
-                                <label for="" class="label">Whole Sale Price <span class="mandatory">*</span></label>
-                                <input type="text" class="form_controler">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-holder">
+                                    <label for="" class="label">Offer Price</label>
+                                    <input type="text" class="form_controler">
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="input-holder">
-                                <label for="" class="label">Offer Price</label>
-                                <input type="text" class="form_controler">
+        
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-holder">
+                                    <label for="" class="label">Document  <span class="mandatory">*</span></label>
+                                    <div class="file-otr form_controler">
+                                        <label for="formFile" class="form-label"></label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
     
-                        <div class="col-lg-6 col-md-6">
-                            <label for="" class="label">Document  <span class="mandatory">*</span></label>
-                            <div class="file-otr form_controler">
-                                <label for="formFile" class="form-label"></label>
-                                <input class="form-control" type="file" id="formFile">
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-holder">
+                                    <label for="" class="label">Short Description</label>
+                                    <textarea type="text" class="form_controler" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+
+                    <div class="catalogue-details d-none">
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-holder">
+                                    <div class="alert-box">
+                                        <h3 class="title"> <span><img src="img/block.svg" alt="to_change"></span> Important Note</h3>
+                                        <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-holder">
+                                    <label for="" class="label">Catalogue Upload  <span class="mandatory">*</span></label>
+                                    <div class="file-otr form_controler">
+                                        <label for="catlUpload" class="form-label"></label>
+                                        <input class="form-control" type="file" id="catlUpload">
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-lg-6 col-md-6">
+                                <div class="input-holder">
+                                    <label for="" class="label">Price List Catalogue  <span class="mandatory">*</span></label>
+                                    <div class="file-otr form_controler">
+                                        <label for="priceListCat" class="form-label"></label>
+                                        <input class="form-control" type="file" id="priceListCat">
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col">
-                            <div class="input-holder">
-                                <label for="" class="label">Short Description</label>
-                                <textarea type="text" class="form_controler" rows="5"></textarea>
-                            </div>
-                        </div>
-                    </div>
-
+                    
                     <div class="row">
                         <div class="col">
                             <div class="input-holder">
@@ -758,7 +801,7 @@
                                     <div class="photo-item">
                                         <input class="photo-upload" type="file" id="photosInput">
                                         <div class="upload-btn">
-
+                                            <img src="img/add-img.svg" alt="add" class="uploadIcon">
                                         </div>
                                         
                                     </div>
@@ -766,7 +809,6 @@
                             </div>
                         </div>
                     </div>
-                    
                 </div>
     
              </div>

@@ -28,6 +28,13 @@ textarea.form_controler{
         position: absolute;
         inset: 0;
         border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .uploadIcon{
+            width: 45px;
+            height: 45px;
+        }
     }
     .photo-upload{
         opacity: 0;
@@ -35,5 +42,29 @@ textarea.form_controler{
         inset: 0;
         z-index: 1;
         cursor: pointer;
+    }
+}
+.alert-box{
+    background-color: #FFE3EF;
+    border-radius: 12px;
+    padding: 30px;
+
+    .title{
+        font-size: 14px;
+        color: #CA3C74;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        img{
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+    }
+
+    .text{
+        font-size: 12px;
+        color: #CA3C74;
     }
 }
