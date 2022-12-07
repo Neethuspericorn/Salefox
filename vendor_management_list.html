@@ -860,7 +860,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" aria-label="Close" data-bs-backdrop="static" data-bs-keyboard="false"></button>
                 </div>
                 <div class="modal-body">
                     <div class="small-modal-content">
@@ -889,7 +889,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" aria-label="Close" data-bs-backdrop="static" data-bs-keyboard="false" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="small-modal-content">
@@ -912,7 +912,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" aria-label="Close" data-bs-backdrop="static" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="small-modal-content">
@@ -1174,19 +1174,17 @@
     <script src="Js/vendor/jquery.min.js"></script>
     <script src="Js/vendor/script.js"></script>
 
-    
+
     <script>
         saveBtn = document.getElementById('saveBtn');
         firstModal = document.getElementById('exampleModal');
         secondClose = document.getElementById('secondClose');
-        console.log(firstModal);
         saveBtn.onclick = function (){
             firstModal.classList.add('secondOpened');   
         }
         secondClose.onclick = function (){
             firstModal.classList.remove('secondOpened');
         }
-
     </script>
 </body>
 
