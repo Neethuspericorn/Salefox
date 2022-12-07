@@ -513,3 +513,45 @@ $dark-sec-color: #D53871;
     }
     
 }
+
+
+
+// edtis by Antony: 07 Dec 2022
+    // sidenav submenu dark mode fix
+    .dark-theme{
+        .side-nav-wrapper{
+            .side-navigation{
+                .nav-item{
+                    .nav-link{
+                        &.nav-dropdown[aria-expanded=true]{
+                            background: #171717 !important; 
+                        }
+                    }
+
+                    .submenu{
+                        ul{
+                            a{
+                                color: #7B7B7B;
+                                &:hover{
+                                    background-color: transparent !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // sidenav submenu dark mode fix end
+
+    //products cataloges dark mode fix
+    .dark-theme{
+        .alert-box{
+            background-color: #161819;
+            .title{
+                color: #CA3C74 !important;
+            }
+        }
+    }
+    //products cataloges dark mode fix ends
+// edtis by Antony: 07 Dec 2022 ends
