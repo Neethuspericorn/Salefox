@@ -17,21 +17,5 @@
 /* @include transition (.2s ease-out all); */
 /*    @include flexbox();
     @include justify-content (center);*/
-.secondOpened {
-  display: block !important;
-  opacity: 1 !important; }
-  .secondOpened.modal.fade .modal-dialog {
-    transform: none !important; }
 
-.backdrop-cstm:before {
-  content: "";
-  position: absolute;
-  background: #000;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
-  opacity: 0.3; }
-
-/*# sourceMappingURL=modal-open-fix.css.map */
+/*# sourceMappingURL=salesperson-management.css.map */

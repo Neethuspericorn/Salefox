@@ -513,3 +513,92 @@ $dark-sec-color: #D53871;
     }
     
 }
+
+
+// Department page
+
+.dark-theme .modal-forms .form_controler {
+    background-color: $dropdown-bg;
+    color: $text-white;
+    border-color: #2F2F2F;
+}
+.dark-theme .modal-forms .label{
+    color: $text-white;
+}
+.dark-theme .add-department-modal .designation-modal-accordion .card .card-header .accordion-button{
+    background-color: #2b2e34;
+    color: #E0E0E0;
+    border: 1px solid #373737;
+}
+.dark-theme .add-department-modal .designation-modal-accordion .card .card-body .designation-modal-list .designation-modal-items{
+    background-color: #2b2e34;
+    border: 1px solid #373737;
+    color: $text-white;
+}
+.dark-theme .add-department-modal .designation-modal-accordion .card .card-body .designation-modal-list .designation-modal-items .titles{
+    color: #E0E0E0;
+}
+.dark-theme .add-department-modal .designation-modal-accordion .card .card-header .accordion-button::after{
+    border-color: #373737;
+    background-color: #181B1F;
+    background-image: url('../img/down-acc-wht.svg');
+}
+// Department page end
+
+// edtis by Antony: 07 Dec 2022
+    // sidenav submenu dark mode fix
+    .dark-theme{
+        .side-nav-wrapper{
+            .side-navigation{
+                .nav-item{
+                    .nav-link{
+                        &.nav-dropdown[aria-expanded=true]{
+                            background: #171717 !important; 
+                        }
+                    }
+
+                    .submenu{
+                        ul{
+                            a{
+                                color: #7B7B7B;
+                                &:hover{
+                                    background-color: transparent !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // sidenav submenu dark mode fix end
+
+    //products cataloges dark mode fix
+    .dark-theme{
+        .alert-box{
+            background-color: #161819;
+            .title{
+                color: #CA3C74 !important;
+            }
+        }
+    }
+    //products cataloges dark mode fix ends
+// edtis by Antony: 07 Dec 2022 ends
+
+// page salesperson :niyas-07-12-22
+
+.dark-theme .salesperson-content.vendor-info-body-content .download-file{
+    background-color: rgba(100, 100, 100, 0.27);
+}
+.dark-theme .salesperson-content.vendor-info-body-content .text-block-sm .view-btn{
+    background-color: rgba(100, 100, 100, 0.27);
+}
+.dark-theme .salesperson-content.vendor-info-body-content .user-status-drp .form_controler, .dark-theme .salesperson-content.vendor-info-body-content .user-status-drp .input-group-prepend .input-group-text{
+    border-color: #373737;
+    background-color: #1F2125;
+    color: #fff;
+}
+
+// page salesperson :niyas-07-12-22
+
+

@@ -4,4 +4,5 @@ $(document).ready(function () {
         $(".dashboard-content").toggleClass("isactive");
         $("header").toggleClass("isactive");
     });
+    
 });
