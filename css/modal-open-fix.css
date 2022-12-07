@@ -1,2 +1,37 @@
-.secondOpened{display:block !important;opacity:1 !important}.secondOpened.modal.fade .modal-dialog{-webkit-transform:none !important;transform:none !important}
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.secondOpened {
+  display: block !important;
+  opacity: 1 !important; }
+  .secondOpened.modal.fade .modal-dialog {
+    transform: none !important; }
+
+.backdrop-cstm:before {
+  content: "";
+  position: absolute;
+  background: #000;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0.3; }
+
 /*# sourceMappingURL=modal-open-fix.css.map */
