@@ -318,7 +318,6 @@
     .vendor-info-modal .modal-content {
         padding: 20px 10px;
     }
-
     .custom-table-cover .custom-listing-table tbody tr td.action-btn-group .btn {
         margin-right: 7px;
     }
@@ -391,7 +390,6 @@
     .vendor-info-modal .modal-content {
         padding: 20px 0;
     }
-
     .vendor-info-modal .modal-footer .info-modal-btn {
         margin-left: 5px;
         height: 34px;
@@ -431,13 +429,13 @@
 // Vendor info modal end
 // Department modal
 .add-department-modal {
+
     .modal-footer {
         border: none;
     }
 
     .form_controler {
         height: 51px;
-
         @media ($sm-1679) {
             height: 47px;
         }
@@ -466,7 +464,6 @@
                     padding: 15px 30px;
                     display: flex;
                     align-items: center;
-
                     @media ($sm-1679) {
                         padding: 12px 30px;
                     }
@@ -481,7 +478,7 @@
                         border: solid 1px #E5BFCE;
                         border-radius: 50%;
                         background-color: #FFF2F8;
-                        background-size: 10px;
+                        background-size: 8px;
                         background-position: center;
                         background-repeat: no-repeat;
                         background-image: url('../img/down-acc.svg');
@@ -514,15 +511,10 @@
                         right: 60px;
                     }
 
-                    @media ($sm-1679) {
-                        right: 50px;
-                    }
-
                     .form-check-input {
                         background-color: #F7DCE6;
                         border: none !important;
                         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-
                         &:checked {
                             background-color: #CA3C74;
                             border: none !important;
@@ -602,5 +594,5 @@
             }
         }
     }
-
 }
+
