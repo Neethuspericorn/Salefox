@@ -347,10 +347,11 @@ $dark-sec-color: #D53871;
 
             .ph-group .select-custom:after {
                 right: auto;
-                left: 8px;
                 top: 21px;
             }
-
+            .ph-select option{
+                color: #000;
+            }
             .ph-group select {
                 height: 40px;
                 background: #33333312;
