@@ -525,20 +525,20 @@ $dark-sec-color: #D53871;
 .dark-theme .modal-forms .label{
     color: $text-white;
 }
-.add-department-modal .designation-modal-accordion .card .card-header .accordion-button{
+.dark-theme .add-department-modal .designation-modal-accordion .card .card-header .accordion-button{
     background-color: #2b2e34;
     color: #E0E0E0;
     border: 1px solid #373737;
 }
-.add-department-modal .designation-modal-accordion .card .card-body .designation-modal-list .designation-modal-items{
+.dark-theme .add-department-modal .designation-modal-accordion .card .card-body .designation-modal-list .designation-modal-items{
     background-color: #2b2e34;
     border: 1px solid #373737;
     color: $text-white;
 }
-.add-department-modal .designation-modal-accordion .card .card-body .designation-modal-list .designation-modal-items .titles{
+.dark-theme .add-department-modal .designation-modal-accordion .card .card-body .designation-modal-list .designation-modal-items .titles{
     color: #E0E0E0;
 }
-.add-department-modal .designation-modal-accordion .card .card-header .accordion-button::after{
+.dark-theme .add-department-modal .designation-modal-accordion .card .card-header .accordion-button::after{
     border-color: #373737;
     background-color: #181B1F;
     background-image: url('../img/down-acc-wht.svg');
