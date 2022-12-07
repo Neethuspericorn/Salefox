@@ -207,7 +207,7 @@
     padding-right: 15px;
 
     .modal-content {
-        padding: 20px 30px 50px;
+        padding: 20px 30px 30px;
     }
 
     .btn-close {
@@ -224,204 +224,11 @@
 
     .modal-header {
         border-bottom: 0;
-        margin-bottom: 25px;
     }
 
     .modal-title {
         font-family: 'sf-medium';
         font-size: 20px;
-    }
-
-    .modal-body {
-        padding-bottom: 0;
-    }
-
-    .vendor-info-body-content {
-        flex-wrap: wrap;
-
-        .inner-card-sm {
-            margin-bottom: 40px;
-
-            .card-title-sm {
-                color: #292929;
-                font-family: 'sf-medium';
-                font-size: 14px;
-            }
-
-            .text-block-sm {
-                color: #939393;
-                font-family: 'sf-medium';
-                font-size: 14px;
-                padding-top: 10px;
-            }
-        }
-
-        .nodata-sm {
-            margin-top: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #CA3C74;
-            width: 100%;
-            font-size: 12px;
-            font-family: 'sf-regular';
-            border-radius: 7px;
-            background-color: #FFE2ED;
-            padding: 5px 10px;
-            height: 38px;
-
-            img {
-                margin-right: 8px;
-            }
-        }
-
-        .block-left {
-            width: 210px;
-            flex: 0 0 auto;
-
-            &:last-child {
-                .inner-card-sm {
-                    margin-bottom: 15px;
-                }
-            }
-
-            .img-block {
-                margin-bottom: 35px;
-
-                .prof-img-cover {
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    overflow: hidden;
-                    border: solid 6px #FFE2ED;
-                    border-radius: 50%;
-                    width: 174px;
-                    height: 174px;
-                }
-
-                .prof-img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    overflow: hidden;
-                    object-position: center;
-                    border-radius: 50%;
-                }
-            }
-
-            .left-block-col {
-
-                .inner-card-sm {
-                    .card-title-sm {
-                        position: relative;
-                        z-index: 1;
-
-                        &::before {
-                            content: '';
-                            position: absolute;
-                            left: 0;
-                            width: 100%;
-                            height: 1px;
-                            background-color: rgba($color: #F298BA, $alpha: 0.27);
-                            bottom: 0;
-                            top: 0;
-                            margin: auto;
-                            z-index: -1;
-                        }
-
-                        .t-cover {
-                            padding-right: 15px;
-                            display: inline-block;
-                            background-color: #fff;
-                        }
-
-                    }
-
-                    .text-block-sm {
-                        .rating-row {
-                            display: flex;
-                            align-items: center;
-
-                            img {
-                                margin-right: 5px;
-                            }
-                        }
-
-                        .rating-point {
-                            display: inline-block;
-                            padding-left: 10px;
-                            color: #401928;
-                            font-size: 15px;
-                        }
-                    }
-                }
-            }
-        }
-
-        .block-right {
-            padding-left: 70px;
-            flex: 1 1 auto;
-            width: calc(100% - 210px);
-
-            .btm-line {
-                position: relative;
-                margin-bottom: 40px;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-                    width: calc(100% - 15px);
-                    height: 1px;
-                    background-color: rgba($color: #F298BA, $alpha: 0.27);
-                }
-            }
-
-            .right-content-cover {
-                .sec-title-sm {
-                    color: #CA3C74;
-                    font-size: 17px;
-                    font-family: 'sf-medium';
-                    margin-bottom: 40px;
-                }
-            }
-        }
-
-
-    }
-
-    .modal-footer {
-        border-top: 0;
-        padding-top: 5px;
-
-        .info-modal-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            height: 38px;
-            padding: 5px 20px;
-            background-color: #FFE2ED;
-            border-radius: 11px;
-            margin-left: 15px;
-            border: none;
-            transition: .3s;
-            color: #CA3C74;
-            font-size: 12px;
-            font-family: 'sf-regular';
-
-            &:first-child {
-                margin-left: 0;
-            }
-
-            &:hover {
-                opacity: .8;
-            }
-
-            img {
-                margin-right: 8px;
-            }
-        }
     }
 }
 
@@ -435,26 +242,18 @@
         height: 155px;
     }
 
-    .vendor-info-modal .modal-header {
-        margin-bottom: 15px;
-    }
-
     .vendor-info-modal .vendor-info-body-content .inner-card-sm,
     .vendor-info-modal .vendor-info-body-content .block-right .right-content-cover .sec-title-sm {
         margin-bottom: 35px;
     }
 
     .vendor-info-modal .modal-content {
-        padding: 20px 30px 40px;
+        padding: 20px 30px;
     }
 
 }
 
 @media (max-width: 1481px) {
-    .vendor-info-modal .modal-header {
-        margin-bottom: 0;
-    }
-
     .vendor-info-modal .vendor-info-body-content .block-left .img-block .prof-img-cover {
         width: 135px;
         height: 135px;
@@ -516,6 +315,9 @@
 }
 
 @media ($sm-1199) {
+    .vendor-info-modal .modal-content {
+        padding: 20px 10px;
+    }
     .custom-table-cover .custom-listing-table tbody tr td.action-btn-group .btn {
         margin-right: 7px;
     }
@@ -574,9 +376,18 @@
     .vendor-info-modal .vendor-info-body-content .block-right .btm-line::before {
         width: 100%;
     }
+    .vendor-info-modal .modal-header{
+        padding-right: 50px;
+    }
 }
 
 @media ($sm-579) {
+    .vendor-info-modal .modal-title {
+        font-size: 16px;
+    }
+    .vendor-info-modal .modal-content {
+        padding: 20px 0;
+    }
     .vendor-info-modal .modal-footer .info-modal-btn {
         margin-left: 5px;
         height: 34px;
@@ -585,10 +396,6 @@
     .vendor-info-modal {
         padding-left: 0;
         padding-right: 0;
-    }
-
-    .vendor-info-modal .modal-content {
-        padding: 20px 0 30px;
     }
 
     .vendor-info-modal .modal-header {
@@ -615,16 +422,20 @@
         margin-left: 0;
         margin-top: 5px;
     }
-
-    .vendor-info-modal .modal-content {
-        padding: 20px 0 25px;
-    }
 }
 
 // Vendor info modal end
 // Department modal
 .add-department-modal {
-    .dep-modal-body {}
+    .modal-footer{
+        border: none;
+    }
+    .form_controler{
+        height: 51px;
+        @media ($sm-1679) {
+            height: 47px;
+        }
+    }
 
     .designation-modal-accordion {
         padding-top: 25px;
@@ -639,27 +450,36 @@
                 padding: 0;
                 border: none;
                 margin-bottom: 12px;
-
-                .accordion-button {
-
+                background-color: transparent;
+                
+                .accordion-button {         
+                    box-shadow: none;
                     border: 1px solid #E5BFCE;
                     border-radius: 12px;
                     background: #FFF8FB;
                     padding: 15px 30px;
                     display: flex;
                     align-items: center;
-                }
-
-                @media ($sm-1367) {
-                    padding: 15px 30px;
-                }
-
-                @media ($sm-1281) {
-                    padding: 10px 30px;
+                    @media ($sm-1679) {
+                        padding: 12px 30px;
+                    }
+                    @media ($sm-579) {
+                        padding: 12px 20px;
+                    }
+                    &::after{
+                        width: 22px;
+                        height: 22px;
+                        border: solid 1px #E5BFCE;
+                        border-radius: 50%;
+                        background-color: #FFF2F8;
+                        background-size: 8px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-image: url('../img/down-acc.svg');
+                    }
                 }
 
                 .btn {
-                    // padding: 0;
                     font-size: 14px;
                     text-align: left;
                     font-family: 'sf-regular';
@@ -669,9 +489,6 @@
                         font-size: 12px;
                     }
                 }
-
-
-
                 .form-switch {
                     height: 23px;
                     position: absolute;
@@ -682,12 +499,13 @@
                     margin-right: 0;
                     margin-left: auto;
                     z-index: 100;
-
+                    @media ($sm-1679) {
+                        right: 60px;
+                    }
                     .form-check-input {
                         background-color: #F7DCE6;
                         border: none !important;
                         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-
                         &:checked {
                             background-color: #CA3C74;
                             border: none !important;
@@ -706,7 +524,7 @@
                 margin-bottom: 4px;
 
                 @media ($sm-767) {
-                    padding: 0 25px;
+                    padding: 0 7px;
                 }
 
                 .designation-modal-list {
@@ -750,7 +568,6 @@
                                 background-color: #F7DCE6;
                                 border: none !important;
                                 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-
                                 &:checked {
                                     background-color: #CA3C74;
                                     border: none !important;
@@ -767,5 +584,4 @@
             }
         }
     }
-
 }
