@@ -55,7 +55,7 @@ textarea.form_controler{
         font-weight: bold;
         display: flex;
         align-items: center;
-        gap: 5px;
+        gap: 10px;
         img{
             width: 20px;
             height: 20px;
@@ -66,5 +66,15 @@ textarea.form_controler{
     .text{
         font-size: 12px;
         color: #CA3C74;
+    }
+}
+
+// dark mode fix
+.dark-theme{
+    .alert-box{
+        background-color: #161819;
+        .title{
+            color: #CA3C74 !important;
+        }
     }
 }
