@@ -371,7 +371,10 @@ $dark-sec-color: #D53871;
 
         }
     }
-
+.file-otr .form-control{
+   border-color: transparent !important;
+    background-color: transparent !important;
+}
     .btn-close {
         background-color: #2F2F2F;
     }

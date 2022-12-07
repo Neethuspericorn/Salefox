@@ -214,6 +214,9 @@
     color: #fff; }
   .dark-theme .custom-modal .modal-forms .ph-group .select-custom {
     border-right: 1px solid #645c5c; }
+  .dark-theme .file-otr .form-control {
+    border-color: transparent !important;
+    background-color: transparent !important; }
   .dark-theme .btn-close {
     background-color: #2F2F2F; }
   .dark-theme .modal-footer .btn-secondary {
