@@ -250,7 +250,9 @@ input[type="file"]::file-selector-button {
   margin: 0 8px;
   box-shadow: none !important; }
 .modal-footer .btn-primary {
-  color: #fff; }
+  color: #fff;
+  background: #BA4773;
+  border: 0; }
 .modal-footer .btn-secondary {
   background: #fff;
   border: 1px solid #CA3C74;
@@ -308,7 +310,8 @@ input[type="file"]::file-selector-button {
   height: 33px;
   border-radius: 50%;
   opacity: 1;
-  padding: 0 !important; }
+  padding: 0 !important;
+  box-shadow: none !important; }
   .btn-close:hover {
     opacity: 0.9; }
 
