@@ -134,7 +134,7 @@ $dark-sec-color: #D53871;
     }
 
     .custom-scroll::-webkit-scrollbar-thumb:hover {
-        background: #da9dfd;
+        background: #575656;
     }
 
     .user-header .dropdown-menu {
@@ -448,8 +448,12 @@ $dark-sec-color: #D53871;
     }
 
     .form-check-input {
-        background: #1F1F1F !important;
+        background-color: #1F1F1F !important;
         border: 1px solid #3c3d40 !important;
+    }
+
+    header .top-header .left-block .switch-block .form-switch .form-check-input::after {
+        right: 4px;
     }
 
     .or-option {
@@ -478,15 +482,30 @@ $dark-sec-color: #D53871;
             }
         }
     }
-    .authentication .authentication-right-block .authentication-form .authentication-form-header .logo-wrap small{
+
+    .authentication .authentication-right-block .authentication-form .authentication-form-header .logo-wrap small {
         color: #fff;
     }
 }
 
 // Page Vendor Management
 
+@media ($sm-1367) {
+    .dark-theme {
+        .top-header .left-block .switch-block .form-switch .form-check-input:checked {
+            background-position: 35px center, right center;
+            background-size: 12px, auto;
+        }
+        header .top-header .left-block .switch-block .form-switch .form-check-input {
+            background-size: 12px, auto;
+            background-position: 5px center, left center;
+        }
+    }
+}
+
 @media ($sm-767) {
     .dark-theme header .logo-wrap .logo-block .main-logo.dark-logo {
-        display: none;
+        display: none !important;
     }
+    
 }
