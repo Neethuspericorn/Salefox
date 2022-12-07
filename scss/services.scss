@@ -1,0 +1,22 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+textarea.form_controler{
+    min-height: 50px;
+    height: unset !important;
+}
+
+.serviceModal{
+    .modal-dialog{
+        max-width: 1040px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .modal-content{
+        
+        @media screen and (min-width: 1441px){
+            padding-left: 55px;
+            padding-right: 55px;
+        }
+    }
+}

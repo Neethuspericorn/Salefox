@@ -1,0 +1,136 @@
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.custom-table-cover .custom-listing-table tbody tr td.address {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+.custom-table-cover .custom-listing-table tbody tr td.action-btn-group.four-items {
+  min-width: 200px; }
+.custom-table-cover .custom-listing-table tbody tr td.tel-col {
+  min-width: 150px; }
+.custom-table-cover .custom-listing-table tbody tr td.status {
+  text-align: left; }
+  .custom-table-cover .custom-listing-table tbody tr td.status span {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #B2B2B2;
+    margin-right: 5px; }
+    .custom-table-cover .custom-listing-table tbody tr td.status span.success {
+      background-color: #00B49E; }
+    .custom-table-cover .custom-listing-table tbody tr td.status span.rejected {
+      background-color: #FF6C6C; }
+@media (max-width: 1550px) {
+  .custom-table-cover .custom-listing-table tbody tr td {
+    font-size: 13px; } }
+.custom-table-cover .custom-listing-table tbody tr td .user-img-block .usr-name {
+  text-align: left; }
+  @media (max-width: 1550px) {
+    .custom-table-cover .custom-listing-table tbody tr td .user-img-block .usr-name {
+      font-size: 13px; } }
+
+.salesperson-content.vendor-info-body-content .user-status-drp {
+  position: relative; }
+  .salesperson-content.vendor-info-body-content .user-status-drp .form_controler {
+    width: calc(100% - 30px);
+    background-color: transparent;
+    border-left: 0px; }
+    .salesperson-content.vendor-info-body-content .user-status-drp .form_controler option:selected {
+      padding-left: 0px; }
+  .salesperson-content.vendor-info-body-content .user-status-drp .input-group-prepend .input-group-text {
+    height: 40px;
+    background-color: transparent;
+    border-right: 0px;
+    border-color: #E5BFCE;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    padding-right: 0px; }
+  .salesperson-content.vendor-info-body-content .user-status-drp span.status {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #B2B2B2;
+    margin-right: 5px; }
+  .salesperson-content.vendor-info-body-content .user-status-drp span.success {
+    background-color: #00B49E; }
+  .salesperson-content.vendor-info-body-content .user-status-drp span.rejected {
+    background-color: #FF6C6C; }
+  .salesperson-content.vendor-info-body-content .user-status-drp:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #CA3C74;
+    position: absolute;
+    right: 0;
+    top: 58%;
+    right: 15px;
+    transform: translate(-50%, -50%);
+    border-radius: 5px; }
+.salesperson-content.vendor-info-body-content .text-block-sm .view-btn {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background-color: #ffe2ed59;
+  width: 27px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px; }
+  .salesperson-content.vendor-info-body-content .text-block-sm .view-btn img {
+    max-width: unset; }
+.salesperson-content.vendor-info-body-content .download-file {
+  background-color: #ffe2ed59;
+  border-radius: 9px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #CA3C74;
+  padding: 0 15px;
+  margin-right: 5px;
+  font-size: 12px;
+  min-width: 175px;
+  flex: 1; }
+  .salesperson-content.vendor-info-body-content .download-file span {
+    margin-right: 10px; }
+    .salesperson-content.vendor-info-body-content .download-file span img {
+      max-width: unset; }
+  .salesperson-content.vendor-info-body-content .download-file:hover {
+    color: #e4729f; }
+.salesperson-content.vendor-info-body-content .block-left {
+  width: 250px; }
+  @media (max-width: 767px) {
+    .salesperson-content.vendor-info-body-content .block-left {
+      width: 100%; } }
+.salesperson-content.vendor-info-body-content .block-right {
+  width: calc(100% - 250px); }
+  @media (max-width: 767px) {
+    .salesperson-content.vendor-info-body-content .block-right {
+      width: 100%; } }
+.salesperson-content.vendor-info-body-content .inner-card-sm .card-title-sm.no-line::before {
+  display: none; }
+
+/*# sourceMappingURL=salesperson-management.css.map */
