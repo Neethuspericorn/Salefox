@@ -200,8 +200,9 @@
     color: #fff; }
   .dark-theme .custom-modal .modal-forms .ph-group .select-custom:after {
     right: auto;
-    left: 8px;
     top: 21px; }
+  .dark-theme .custom-modal .modal-forms .ph-select option {
+    color: #000; }
   .dark-theme .custom-modal .modal-forms .ph-group select {
     height: 40px;
     background: #33333312;
@@ -213,6 +214,9 @@
     color: #fff; }
   .dark-theme .custom-modal .modal-forms .ph-group .select-custom {
     border-right: 1px solid #645c5c; }
+  .dark-theme .file-otr .form-control {
+    border-color: transparent !important;
+    background-color: transparent !important; }
   .dark-theme .btn-close {
     background-color: #2F2F2F; }
   .dark-theme .modal-footer .btn-secondary {
