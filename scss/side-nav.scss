@@ -6,7 +6,7 @@
     min-width: 343px;
     background: #FFFFFF;
     border-radius: 0px 0px 78px 0px;
-
+    transition: all ease-in-out 0.2s;
     @media ($sm-1679) {
         min-width: 320px;
     }
@@ -59,20 +59,25 @@
                 padding-right: 18px;
             }
 
-            .collapse {
-                ul {
-                    background: #ffd8e8;
-                    border-radius: 5px;
+            .submenu {
+                padding-left: 70px;
+                @media ($sm-1367) {
+                    padding-left: 56px;
+                }
+                ul { 
                     position: relative;
-                    top: -6px;
-
                     a {
                         font-family: "sf-regular";
                         font-size: 16px;
                         text-align: left;
                         color: #393939;
                         padding-left: 14px;
-
+                        &.nav-link{
+                            &:hover, &.active{
+                                background-color: unset;
+                                color: #BD356A;
+                            }
+                        }
                         @media ($sm-1367) {
                             font-size: 14px;
                             padding-left: 10px;
@@ -106,7 +111,9 @@
 
                 &.nav-dropdown {
                     position: relative;
-
+                    &[aria-expanded='true']{
+                        background-color: #FFF5F9;
+                    }
                     &::after {
                         content: '';
                         background: url(../img/arrow-down.svg) #FCF5F9 no-repeat center center;
@@ -116,13 +123,18 @@
                         height: 6px;
                         padding: 10px;
                         border-radius: 100px;
+                        width: 28px;
+                        height: 28px;
                         @media ($sm-767) {
+                            opacity: 0;
                             right: -10px;
                             padding: 5px;
                             background-position: 1px 4px;
                             background-size: 8px;
                         }
                     }
+
+                    
                 }
 
                 &.active {
@@ -196,37 +208,79 @@
     &.isactive {
         min-width: 70px;
         border-radius: 0px 0px 38px 0px;
-
+        position: absolute;
+        top: 80px;
+        bottom: 0;
+        z-index: 999;
+        &:hover{
+            min-width: 343px;
+            @media ($sm-1679) {
+                min-width: 320px;
+            }
+        
+            @media ($sm-1367) {
+                min-width: 295px;
+            }
+        
+            @media ($sm-1281) {
+                min-width: 265px;
+            }
+        
+            @media ($sm-1023) {
+                min-width: 265px;
+            }
+        }
         .side-navigation {
-            margin-top: 20px;
-
             .nav-link {
-                padding: 10px 0 10px 10px;
-
                 &.nav-dropdown {
                     &::after {
-                        right: -10px;
-                        padding: 5px;
-                        background-position: 1px 4px;
-                        background-size: 8px;
+                        opacity: 1;
                     }
-                }
-
-                figure {
-                    width: 25px;
-                    height: 25px;
-
-                    img {
-                        width: 10px;
-                    }
-                }
-
-                .indication {
-                    display: none;
                 }
             }
-
         }
+        &:not(:hover){
+            .side-navigation {
+                // margin-top: 20px;
+                .nav-item{
+                    padding-right: 15px;
+                }
+                .nav-link {
+                    padding: 10px 15px 10px 20px;
+                    
+                    &.nav-dropdown {
+                        &::after {
+                            opacity: 0;
+                            right: -10px;
+                            padding: 5px;
+                            background-position: 1px 4px;
+                            background-size: 8px;
+                        }
+                    }
+                    figure {
+                        width: 25px;
+                        height: 25px;
+                        img {
+                            width: 10px;
+                        }
+                    }
+    
+                    .indication {
+                        display: none;
+                    }
+                }
+    
+            }
+        }
+        
     }
 }
+
+.dashboard-content.isactive{
+    margin-left: auto;
+}
+
+
+
+
 
