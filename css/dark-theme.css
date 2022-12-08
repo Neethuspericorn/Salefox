@@ -241,6 +241,17 @@
     display: block !important; }
   .dark-theme .authentication-right-block {
     background: #151618 !important; }
+  .dark-theme .designation-modal .modal-forms .designation-modal-accordion .card .card-body .designation-modal-list .designation-modal-items .titles,
+  .dark-theme .designation-modal .modal-forms .designation-modal-accordion .card .card-header .accordion-button {
+    color: #fff; }
+  .dark-theme .designation-modal .modal-forms .designation-modal-accordion .card .card-body .designation-modal-list .designation-modal-items,
+  .dark-theme .designation-modal .modal-forms .designation-modal-accordion .card .card-header .btn {
+    background-color: #2b2e34;
+    border: 1px solid #373737; }
+  .dark-theme .designation-modal .modal-forms .designation-modal-accordion .card .card-header .accordion-button::after {
+    background-color: #1F2125;
+    border: 1px solid #373737;
+    background-image: url(../img/down-acc-wht.svg); }
   .dark-theme .title,
   .dark-theme .forgot,
   .dark-theme .form-check-label,
@@ -336,7 +347,8 @@
 .dark-theme .salesperson-content.vendor-info-body-content .text-block-sm .view-btn {
   background-color: rgba(100, 100, 100, 0.27); }
 
-.dark-theme .salesperson-content.vendor-info-body-content .user-status-drp .form_controler, .dark-theme .salesperson-content.vendor-info-body-content .user-status-drp .input-group-prepend .input-group-text {
+.dark-theme .salesperson-content.vendor-info-body-content .user-status-drp .form_controler,
+.dark-theme .salesperson-content.vendor-info-body-content .user-status-drp .input-group-prepend .input-group-text {
   border-color: #373737;
   background-color: #1F2125;
   color: #fff; }
