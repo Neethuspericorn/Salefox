@@ -34,4 +34,16 @@
   top: 0;
   opacity: 0.3; }
 
+.custombackdrop:before {
+  content: "";
+  position: absolute;
+  background: #000;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0.3;
+  z-index: 99; }
+
 /*# sourceMappingURL=modal-open-fix.css.map */
