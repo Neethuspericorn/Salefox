@@ -218,6 +218,29 @@ input[type="file"]::file-selector-button {
   padding-left: 12px;
   padding-right: 12px;
   margin-bottom: 25px; }
+  @media (max-width: 1367px) {
+    .custom-modal .modal-header {
+      margin-bottom: 20px; } }
+  @media (max-width: 1199px) {
+    .custom-modal .modal-header {
+      margin-bottom: 15px; } }
+  @media (max-width: 1367px) {
+    .custom-modal .modal-header .btn-close {
+      background-size: 12px;
+      width: 28px;
+      height: 28px; } }
+  @media (max-width: 767px) {
+    .custom-modal .modal-header .btn-close {
+      background-size: 10px;
+      width: 24px;
+      height: 24px; } }
+  .custom-modal .modal-header .modal-title {
+    font-family: 'sf-medium';
+    font-size: 20px;
+    color: #000000; }
+    @media (max-width: 1281px) {
+      .custom-modal .modal-header .modal-title {
+        font-size: 16px; } }
 .custom-modal .modal-footer {
   border: 0; }
 .custom-modal .modal-content {
@@ -240,7 +263,8 @@ input[type="file"]::file-selector-button {
 .custom-modal .input-holder {
   margin-bottom: 40px; }
 
-.modal-footer .btn-primary, .modal-footer .btn-secondary {
+.modal-footer .btn-primary,
+.modal-footer .btn-secondary {
   border-radius: 11px;
   min-width: 165px;
   font-family: 'sf-regular';
@@ -312,6 +336,16 @@ input[type="file"]::file-selector-button {
   opacity: 1;
   padding: 0 !important;
   box-shadow: none !important; }
+  @media (max-width: 1367px) {
+    .btn-close {
+      background-size: 12px;
+      width: 28px;
+      height: 28px; } }
+  @media (max-width: 767px) {
+    .btn-close {
+      background-size: 10px;
+      width: 24px;
+      height: 24px; } }
   .btn-close:hover {
     opacity: 0.9; }
 
@@ -389,7 +423,8 @@ input[type="file"]::file-selector-button {
   .small-modal .small-modal-content i img {
     width: 100px; }
 
-  .modal-footer .btn-primary, .modal-footer .btn-secondary {
+  .modal-footer .btn-primary,
+  .modal-footer .btn-secondary {
     border-radius: 5px;
     min-width: 135px;
     height: 40px; }
@@ -431,6 +466,15 @@ input[type="file"]::file-selector-button {
 
   .button-grp .primary-btn {
     margin-left: 5px; } }
+@media (max-width: 1367px) {
+  .check-gap {
+    margin-right: 40px; } }
+@media (max-width: 1281px) {
+  .custom-modal .form_controler {
+    height: 40px; }
+
+  .custom-modal .input-holder {
+    margin-bottom: 30px; } }
 @media (max-width: 1199px) {
   .radio-gap {
     margin-left: 10px; }
@@ -460,8 +504,8 @@ input[type="file"]::file-selector-button {
 @media (max-width: 1023px) {
   .sort-by {
     width: 100%;
-    margin-bottom: 15px; } }
-@media (max-width: 991px) {
+    margin-bottom: 15px; }
+
   .checkbox-cover .check-box {
     text-align: left; }
 
@@ -515,7 +559,15 @@ input[type="file"]::file-selector-button {
 
   .button-grp {
     padding-right: 0px; } }
+@media (max-width: 991px) {
+  .custom-modal .modal-forms .form-title {
+    font-size: 16px;
+    margin-bottom: 12px; } }
 @media (max-width: 767px) {
+  .custom-modal .modal-dialog {
+    transform: none;
+    padding: 0 20px; }
+
   .forms-cover {
     margin-top: 5px; }
 
@@ -556,7 +608,8 @@ input[type="file"]::file-selector-button {
   .small-modal .modal-body {
     padding: 0 5px; }
 
-  .modal-footer .btn-primary, .modal-footer .btn-secondary {
+  .modal-footer .btn-primary,
+  .modal-footer .btn-secondary {
     min-width: 95px;
     height: 35px; }
 
