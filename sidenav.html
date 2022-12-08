@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/dark-theme.css">
 </head>
 
-<body class="dark-theme">
+<body class="">
 
     <header>
         <div class="logo-wrap">
@@ -166,12 +166,29 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#campaign-drop" aria-expanded="false">
                             <figure>
                                 <img src="img/nav-icons/Campaigns.svg" alt="Campaigns">
                             </figure>
                             <span class="indication">Campaigns</span>
                         </a>
+                        <!-- collapse -->
+                        <div id="campaign-drop" class="submenu collapse">
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav-link">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">Campaigns</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">
@@ -199,19 +216,26 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#noti-drop">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#noti-drop" aria-expanded="false">
                             <figure>
                                 <img src="img/nav-icons/notification.svg" alt="Notification">
                             </figure>
                             <span class="indication">Notification</span>
                         </a>
-                        <!-- <div id="noti-drop" class="collapse">
+                        <!-- collapse -->
+                        <div id="noti-drop" class="submenu collapse">
                             <ul>
                                 <li class="nav-item">
                                     <a class="nav-link">Sub menu</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">Sub menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link">Sub menu</a>
+                                </li>
                             </ul>
-                        </div> -->
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link">
@@ -234,7 +258,7 @@
 
                 <div class="custom-card-wapper">
                     <div class="row">
-                        <div class="col-lg-3 gx-3">
+                        <div class="col-lg-3">
                             <div class="custom-card-list">
                                 <div class="custom-card-block">
                                     <div class="custom-card-icon-box">
@@ -247,7 +271,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 gx-3">
+                        <div class="col-lg-3">
                             <div class="custom-card-list">
                                 <div class="custom-card-block">
                                     <div class="custom-card-icon-box">
@@ -260,7 +284,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 gx-3">
+                        <div class="col-lg-3">
                             <div class="custom-card-list">
                                 <div class="custom-card-block">
                                     <div class="custom-card-icon-box">
@@ -274,7 +298,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 gx-3">
+                        <div class="col-lg-3">
                             <div class="custom-card-list">
                                 <div class="custom-card-block">
                                     <div class="custom-card-icon-box">
@@ -292,7 +316,7 @@
                 </div>
                 <div class="chart-card-wapper">
                     <div class="row">
-                        <div class="col-lg-6 gx-2">
+                        <div class="col-lg-6">
                             <div class="chart-card-item">
                                 <div class="chart-card-header">
                                     <p>Total No of Campaigns</p>
@@ -303,7 +327,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 gx-2">
+                        <div class="col-lg-6">
                             <div class="chart-card-item">
                                 <div class="chart-card-header">
                                     <p>Total Revenue</p>
@@ -315,6 +339,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
