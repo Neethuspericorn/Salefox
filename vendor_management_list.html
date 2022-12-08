@@ -639,14 +639,14 @@
     </div>
 
     <!--  Create Vendor Modal -->
-    <div class="modal fade modal-forms custom-modal firstModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade modal-forms custom-modal firstModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-modal-stack="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">
                 Business Information
             </h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="mainModalRemove"></button>
             </div>
             <div class="modal-body">
               <form action="">
@@ -864,7 +864,7 @@
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="mainModalCancel">Cancel</button>
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="saveBtn">Save</button>
               
             </div>
@@ -877,7 +877,8 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="btn-close" aria-label="Close" data-bs-backdrop="static" data-bs-keyboard="false"></button>
+                    <button type="button" class="btn-close" aria-label="Close" data-bs-backdrop="static" data-bs-keyboard="false" 
+                    data-bs-dismiss="modal" id="backDropAdd" ></button>
                 </div>
                 <div class="modal-body">
                     <div class="small-modal-content">
@@ -906,7 +907,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="btn-close" aria-label="Close" data-bs-backdrop="static" data-bs-keyboard="false" aria-label="Close"></button>
+                    <button type="button" class="btn-close" id="backDropAddSecond" data-bs-dismiss="modal" aria-label="Close" data-bs-backdrop="static" data-bs-keyboard="false" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="small-modal-content">
@@ -929,7 +930,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="btn-close" aria-label="Close" data-bs-backdrop="static" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" id="backDropAddThird" aria-label="Close" data-bs-backdrop="static" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="small-modal-content">
@@ -1196,13 +1197,43 @@
         saveBtn = document.getElementById('saveBtn');
         firstModal = document.getElementById('exampleModal');
         secondClose = document.getElementById('secondClose');
+        backDropAdd = document.getElementById('backDropAdd');
+        backDropAddSecond = document.getElementById('backDropAddSecond');
+        backDropAddThird= document.getElementById('backDropAddThird');
+        mainModalRemove = document.getElementById('mainModalRemove');
+        mainModalCancel = document.getElementById('mainModalCancel');
+        backDropAdd.onclick = function (){
+            document.body.classList.add('custombackdrop');   
+        }
         saveBtn.onclick = function (){
             firstModal.classList.add('secondOpened');   
         }
         secondClose.onclick = function (){
             firstModal.classList.remove('secondOpened');
+            document.body.classList.remove('custombackdrop');  
+        }
+        mainModalRemove.onclick = function (){
+            document.body.classList.remove('custombackdrop');  
+            firstModal.classList.remove('secondOpened');
+        }
+        mainModalCancel.onclick = function (){
+            document.body.classList.remove('custombackdrop');  
+            firstModal.classList.remove('secondOpened');
+        }
+        backDropAddSecond.onclick = function (){
+            document.body.classList.add('custombackdrop');  
+            
+        }
+        backDropAddThird.onclick = function (){
+            document.body.classList.add('custombackdrop');  
+            
         }
     </script>
+
+<style>
+
+</style>
+
 </body>
 
 </html>
