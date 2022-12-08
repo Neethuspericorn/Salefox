@@ -63,7 +63,7 @@ $dark-sec-color: #D53871;
     }
 
     header.isactive .logo-wrap .logo-block .main-logo.dark-logo {
-        display: none;
+        display: none !important;
     }
 
     header .logo-wrap .sidebarCollapse {

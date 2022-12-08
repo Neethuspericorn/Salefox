@@ -49,7 +49,7 @@
   .dark-theme header .logo-wrap .logo-block .main-logo.dark-logo {
     display: block; }
   .dark-theme header.isactive .logo-wrap .logo-block .main-logo.dark-logo {
-    display: none; }
+    display: none !important; }
   .dark-theme header .logo-wrap .sidebarCollapse {
     background: transparent linear-gradient(180deg, #310619 0%, #171717 100%); }
   .dark-theme header .top-header .left-block .search-block .form-control {
