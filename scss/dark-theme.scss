@@ -63,7 +63,7 @@ $dark-sec-color: #D53871;
     }
 
     header.isactive .logo-wrap .logo-block .main-logo.dark-logo {
-        display: none;
+        display: none !important;
     }
 
     header .logo-wrap .sidebarCollapse {
@@ -349,9 +349,11 @@ $dark-sec-color: #D53871;
                 right: auto;
                 top: 21px;
             }
-            .ph-select option{
+
+            .ph-select option {
                 color: #000;
             }
+
             .ph-group select {
                 height: 40px;
                 background: #33333312;
@@ -371,10 +373,12 @@ $dark-sec-color: #D53871;
 
         }
     }
-.file-otr .form-control{
-   border-color: transparent !important;
-    background-color: transparent !important;
-}
+
+    .file-otr .form-control {
+        border-color: transparent !important;
+        background-color: transparent !important;
+    }
+
     .btn-close {
         background-color: #2F2F2F;
     }
@@ -422,7 +426,24 @@ $dark-sec-color: #D53871;
     .authentication-right-block {
         background: #151618 !important;
     }
+    .designation-modal .modal-forms .designation-modal-accordion .card .card-body .designation-modal-list .designation-modal-items .titles,
+    .designation-modal .modal-forms .designation-modal-accordion .card .card-header .accordion-button {
+        color: $white-color;
+    }
 
+
+    .designation-modal .modal-forms .designation-modal-accordion .card .card-body .designation-modal-list .designation-modal-items,
+    .designation-modal .modal-forms .designation-modal-accordion .card .card-header .btn {
+        background-color: #2b2e34;
+        border: 1px solid #373737;
+    }
+
+    .designation-modal .modal-forms .designation-modal-accordion .card .card-header .accordion-button::after {
+        background-color: #1F2125;
+        border: 1px solid #373737;
+        background-image: url(../img/down-acc-wht.svg);
+
+    }
     .title,
     .forgot,
     .form-check-label,
@@ -500,6 +521,7 @@ $dark-sec-color: #D53871;
             background-position: 35px center, right center;
             background-size: 12px, auto;
         }
+
         header .top-header .left-block .switch-block .form-switch .form-check-input {
             background-size: 12px, auto;
             background-position: 5px center, left center;
@@ -511,7 +533,7 @@ $dark-sec-color: #D53871;
     .dark-theme header .logo-wrap .logo-block .main-logo.dark-logo {
         display: none !important;
     }
-    
+
 }
 
 
@@ -522,48 +544,54 @@ $dark-sec-color: #D53871;
     color: $text-white;
     border-color: #2F2F2F;
 }
-.dark-theme .modal-forms .label{
+
+.dark-theme .modal-forms .label {
     color: $text-white;
 }
-.dark-theme .add-department-modal .designation-modal-accordion .card .card-header .accordion-button{
+
+.dark-theme .add-department-modal .designation-modal-accordion .card .card-header .accordion-button {
     background-color: #2b2e34;
     color: #E0E0E0;
     border: 1px solid #373737;
 }
-.dark-theme .add-department-modal .designation-modal-accordion .card .card-body .designation-modal-list .designation-modal-items{
+
+.dark-theme .add-department-modal .designation-modal-accordion .card .card-body .designation-modal-list .designation-modal-items {
     background-color: #2b2e34;
     border: 1px solid #373737;
     color: $text-white;
 }
-.dark-theme .add-department-modal .designation-modal-accordion .card .card-body .designation-modal-list .designation-modal-items .titles{
+
+.dark-theme .add-department-modal .designation-modal-accordion .card .card-body .designation-modal-list .designation-modal-items .titles {
     color: #E0E0E0;
 }
-.dark-theme .add-department-modal .designation-modal-accordion .card .card-header .accordion-button::after{
+
+.dark-theme .add-department-modal .designation-modal-accordion .card .card-header .accordion-button::after {
     border-color: #373737;
     background-color: #181B1F;
     background-image: url('../img/down-acc-wht.svg');
 }
+
 // Department page end
 
 // edtis by Antony: 07 Dec 2022
-    // sidenav submenu dark mode fix
-    .dark-theme{
-        .side-nav-wrapper{
-            .side-navigation{
-                .nav-item{
-                    .nav-link{
-                        &.nav-dropdown[aria-expanded=true]{
-                            background: #171717 !important; 
-                        }
+// sidenav submenu dark mode fix
+.dark-theme {
+    .side-nav-wrapper {
+        .side-navigation {
+            .nav-item {
+                .nav-link {
+                    &.nav-dropdown[aria-expanded=true] {
+                        background: #171717 !important;
                     }
+                }
 
-                    .submenu{
-                        ul{
-                            a{
-                                color: #7B7B7B;
-                                &:hover{
-                                    background-color: transparent !important;
-                                }
+                .submenu {
+                    ul {
+                        a {
+                            color: #7B7B7B;
+
+                            &:hover {
+                                background-color: transparent !important;
                             }
                         }
                     }
@@ -571,34 +599,39 @@ $dark-sec-color: #D53871;
             }
         }
     }
-    // sidenav submenu dark mode fix end
+}
 
-    //products cataloges dark mode fix
-    .dark-theme{
-        .alert-box{
-            background-color: #161819;
-            .title{
-                color: #CA3C74 !important;
-            }
+// sidenav submenu dark mode fix end
+
+//products cataloges dark mode fix
+.dark-theme {
+    .alert-box {
+        background-color: #161819;
+
+        .title {
+            color: #CA3C74 !important;
         }
     }
-    //products cataloges dark mode fix ends
+}
+
+//products cataloges dark mode fix ends
 // edtis by Antony: 07 Dec 2022 ends
 
 // page salesperson :niyas-07-12-22
 
-.dark-theme .salesperson-content.vendor-info-body-content .download-file{
+.dark-theme .salesperson-content.vendor-info-body-content .download-file {
     background-color: rgba(100, 100, 100, 0.27);
 }
-.dark-theme .salesperson-content.vendor-info-body-content .text-block-sm .view-btn{
+
+.dark-theme .salesperson-content.vendor-info-body-content .text-block-sm .view-btn {
     background-color: rgba(100, 100, 100, 0.27);
 }
-.dark-theme .salesperson-content.vendor-info-body-content .user-status-drp .form_controler, .dark-theme .salesperson-content.vendor-info-body-content .user-status-drp .input-group-prepend .input-group-text{
+
+.dark-theme .salesperson-content.vendor-info-body-content .user-status-drp .form_controler,
+.dark-theme .salesperson-content.vendor-info-body-content .user-status-drp .input-group-prepend .input-group-text {
     border-color: #373737;
     background-color: #1F2125;
     color: #fff;
 }
 
 // page salesperson :niyas-07-12-22
-
-

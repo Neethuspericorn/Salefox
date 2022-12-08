@@ -36,6 +36,19 @@
             margin-bottom: 15px;
         }
 
+        .btn-close {
+            @media ($sm-1367) {
+                background-size: 12px;
+                width: 28px;
+                height: 28px;
+            }
+            @media ($sm-767) {
+                background-size: 10px;
+                width: 24px;
+                height: 24px;
+            }
+        }
+
         .modal-title {
             font-family: 'sf-medium';
             font-size: 20px;
@@ -222,29 +235,6 @@
     }
 }
 
-.dark-theme {
-
-    .designation-modal .modal-forms .designation-modal-accordion .card .card-body .designation-modal-list .designation-modal-items .titles,
-    .designation-modal .modal-forms .designation-modal-accordion .card .card-header .accordion-button {
-        color: $white-color;
-    }
-
-    .designation-modal .modal-forms .designation-modal-accordion .card .card-header {
-        background: #171717;
-        border-color: #2F2F2F;
-    }
-
-    .designation-modal .modal-forms .designation-modal-accordion .card .card-body .designation-modal-list .designation-modal-items,
-    .designation-modal .modal-forms .designation-modal-accordion .card .card-header .btn {
-        background-color: #2b2e34;
-        border: 1px solid #373737;
-    }
-
-    .designation-modal .modal-forms .designation-modal-accordion .card .card-header .accordion-button::after {
-        background-color: #1F2125;
-        border: 1px solid #373737;
-    }
-}
 
 @media ($sm-1023) {
     .designation-content-inner .db-title-wrapper {
