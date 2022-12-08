@@ -59,6 +59,10 @@
                 padding-right: 18px;
             }
 
+            @media ($sm-767) {
+                padding-right: 10px;
+            }
+
             .submenu {
                 padding-left: 70px;
                 @media ($sm-1367) {
@@ -106,7 +110,7 @@
                     padding: 8px 0 8px 25px;
                 }
                 @media ($sm-767) {
-                    padding: 8px 0 8px 10px;
+                    padding: 8px 0 8px 18px;
                 }
 
                 &.nav-dropdown {
@@ -176,9 +180,8 @@
                     img {
                         display: block;
                         margin: auto;
-                        @media ($sm-767)  {
-                            width: 10px;
-                        }
+                        max-width: 60%;
+                        object-fit: contain;
                     }
                 }
 
@@ -212,6 +215,9 @@
         top: 80px;
         bottom: 0;
         z-index: 999;
+        @media ($sm-1367) {
+            top: 60px;
+        }
         &:hover{
             min-width: 343px;
             @media ($sm-1679) {
@@ -239,41 +245,43 @@
                 }
             }
         }
-        &:not(:hover){
-            .side-navigation {
-                // margin-top: 20px;
-                .nav-item{
-                    padding-right: 10px;
-                }
-                .nav-link {
-                   // padding: 10px 15px 10px 20px;
-                   padding-left: 16px;
-                   padding-right: 16px;
-                    &.nav-dropdown {
-                        &::after {
-                            opacity: 0;
-                            right: -10px;
-                            padding: 5px;
-                            background-position: 1px 4px;
-                            background-size: 8px;
+        @media screen and (min-width: 768px){
+            &:not(:hover){
+                .side-navigation {
+                    // margin-top: 20px;
+                    .nav-item{
+                        padding-right: 10px;
+                    }
+                    .nav-link {
+                       // padding: 10px 15px 10px 20px;
+                       padding-left: 16px;
+                       padding-right: 16px;
+                        &.nav-dropdown {
+                            &::after {
+                                opacity: 0;
+                                right: -10px;
+                                padding: 5px;
+                                background-position: 1px 4px;
+                                background-size: 8px;
+                            }
+                        }
+                        figure {
+                            // width: 25px;
+                            // height: 25px;
+                            // img {
+                            //     width: 10px;
+                            // }
+                        }
+        
+                        .indication {
+                            display: none;
                         }
                     }
-                    figure {
-                        // width: 25px;
-                        // height: 25px;
-                        // img {
-                        //     width: 10px;
-                        // }
-                    }
-    
-                    .indication {
-                        display: none;
-                    }
+        
                 }
-    
             }
         }
-        
+       
     }
 }
 
