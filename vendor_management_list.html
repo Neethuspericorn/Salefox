@@ -56,7 +56,7 @@
                             <img src="img/Icons-Bell.svg" alt="notification">
                             <span class="badge badge-secondary">6</span>
                         </button>
-                        <div class="dropdown-menu" data-popper-placement="bottom-start">
+                        <!-- <div class="dropdown-menu" data-popper-placement="bottom-start">
                             <div class="notification-header">
                                 <h4 class="notification-header-title">Notifications</h4>
                                 <span class="notification-header-mark">Mark all as read</span>
@@ -115,7 +115,7 @@
                                     View All Notifications
                                 </span>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="user-header">
@@ -192,6 +192,7 @@
                             </ul>
                         </div>
                     </li>
+                    
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                             <figure>
@@ -240,6 +241,25 @@
                         </div>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#Permission-drop" aria-expanded="false">
+                            <figure>
+                                <img src="img/nav-icons/permission.svg" alt="Permission">
+                            </figure>
+                            <span class="indication">Permission</span>
+                        </a>
+                        <!-- collapse -->
+                        <div id="Permission-drop" class="submenu collapse">
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="department-list.html">Department</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="designation.html">Designation</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link">
                             <figure>
                                 <img src="img/nav-icons/settings.svg" alt="Settings">
@@ -250,7 +270,7 @@
                 </ul>
             </div>
         </div>
-        <div class="dashboard-content custom-scroll">
+        <div class="dashboard-content custom-scroll ">
             <div class="db-content-inner">
                 <div class="db-title-wrapper d-flex">
                     <div class="title-block">
@@ -374,7 +394,7 @@
 
                     </form>
                 </div>
-                <div class="table-cover custom-scroll custom-table-cover">
+                <div class="table-cover custom-scroll custom-table-cover custom-scroll-h">
                     <table class="custom-listing-table vendor-list-tbl">
                         <thead>
                             <tr>

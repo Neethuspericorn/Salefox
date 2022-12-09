@@ -202,7 +202,7 @@
 
 // Vendor info modal
 .vendor-info-modal {
-    padding-left: 15px;
+    padding-left: 15px !important;
     padding-right: 15px;
 
     .modal-content {
@@ -537,7 +537,7 @@
     }
 
     .vendor-info-modal .vendor-info-body-content .block-right {
-        padding-left: 0;
+        padding-left: 0 !important;
         padding-top: 20px;
         width: 100%;
     }
@@ -572,7 +572,7 @@
     }
 
     .vendor-info-modal {
-        padding-left: 0;
+        padding-left: 0 !important;
         padding-right: 0;
     }
 
