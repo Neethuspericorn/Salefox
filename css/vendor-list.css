@@ -48,6 +48,8 @@
           @media (max-width: 1441px) {
             .custom-table-cover .custom-listing-table thead tr th:first-child {
               padding-left: 35px; } }
+        .custom-table-cover .custom-listing-table thead tr th.campaign-td {
+          min-width: 150px; }
     .custom-table-cover .custom-listing-table tbody tr td {
       font-family: 'sf-regular';
       color: #330948;

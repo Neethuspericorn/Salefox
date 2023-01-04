@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/dark-theme.css">
 </head>
 
-<body class="">
+<body class="dark-theme">
     <header>
         <div class="logo-wrap">
             <div class="logo-block">
@@ -168,7 +168,8 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#campaign-drop" aria-expanded="false">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#campaign-drop"
+                            aria-expanded="false">
                             <figure>
                                 <img src="img/nav-icons/Campaigns.svg" alt="Campaigns">
                             </figure>
@@ -192,7 +193,7 @@
                             </ul>
                         </div>
                     </li>
-                    
+
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                             <figure>
@@ -202,7 +203,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a  href="#" class="nav-link">
+                        <a href="#" class="nav-link">
                             <figure>
                                 <img src="img/nav-icons/Subscription-Management.svg" alt="Subscription Management">
                             </figure>
@@ -219,7 +220,8 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#noti-drop" aria-expanded="false">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#noti-drop"
+                            aria-expanded="false">
                             <figure>
                                 <img src="img/nav-icons/notification.svg" alt="Notification">
                             </figure>
@@ -241,7 +243,8 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#Permission-drop" aria-expanded="false">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#Permission-drop"
+                            aria-expanded="false">
                             <figure>
                                 <img src="img/nav-icons/permission.svg" alt="Permission">
                             </figure>
@@ -274,7 +277,7 @@
             <div class="db-content-inner">
                 <div class="db-title-wrapper d-flex">
                     <div class="title-block">
-                        Salesperson Management
+                        Campaigns
                     </div>
                     <div class="title-block-right d-flex ms-sm-auto">
                         <div class="custom-search-box input-group"><span class="input-group-text" id="basic-addon1"><img
@@ -289,15 +292,10 @@
                                     <img src="img/Filter.svg" alt="Filter"> <span>Filter</span>
                                 </button>
                             </div>
-                            <div class="export-wrp">
-                                <buttton class="btn">
-                                    <img src="img/Export.svg" alt="Export">
-                                    <span>Export</span>
-                                </buttton>
-                            </div>
                             <div class="vendor-create-wrp">
-                                <buttton class="btn  btn-primary" data-bs-toggle="modal" data-bs-target="#addSalespersonModal">
-                                    <span>Add a Salesperson</span>
+                                <buttton class="btn  btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#addSalespersonModal">
+                                    <span>Create Campaign</span>
                                     <img src="img/Create-Vendor.svg" alt="Vendor">
                                 </buttton>
                             </div>
@@ -398,12 +396,14 @@
                     <table class="custom-listing-table vendor-list-tbl">
                         <thead>
                             <tr>
-                                <th class="text-start">Name</th>
-                                <th class="user-email-title">Address</th>
-                                <th>Email Address</th>
-                                <th>Phone Number</th>
+                                <th class="text-start">Vendor Name</th>
+                                <th class="campaign-td">Campaign Name</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Price</th>
                                 <th class="text-start">Status</th>
-                                <th></th>
+                                <th>Overall rating</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -418,12 +418,15 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td class="address">Akshya Nagar 1st Block 1st Cross, Ram…</td>
-                                <td>dummyemail@gmail.com</td>
+                                <td>Lorem ipusm</td>
+                                <td>01 Mar 2022</td>
+                                <td>31 June 2022</td>
+                                <td>₹ 350</td>
                                 <td class="tel-col">+91 8129398422</td>
-                                <td class="status"><span class="success"></span>Passed</td>
+                                <td></td>
                                 <td class="action-btn-group four-items">
-                                    <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#salespersonInfo">
+                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                        data-bs-target="#campaigns-modal">
                                         <img src="img/eye.svg" alt="">
                                     </button>
                                     <button class="btn edit-btn">
@@ -437,6 +440,7 @@
                                     </button>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td>
                                     <div class="user-img-block d-flex">
@@ -444,16 +448,19 @@
                                             <img src="img/Profile.svg" alt="profile">
                                         </div>
                                         <div class="usr-name">
-                                            Halton Luiz
+                                            Jacob Wilston
                                         </div>
                                     </div>
                                 </td>
-                                <td class="address">Akshya Nagar 1st Block 1st Cross, Ram…</td>
-                                <td>dummyemail@gmail.com</td>
-                                <td>+91 8129398324</td>
-                                <td class="status"><span class="success"></span>Passed</td>
-                                <td class="action-btn-group">
-                                    <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#salespersonInfo">
+                                <td>Lorem ipusm</td>
+                                <td>01 Mar 2022</td>
+                                <td>31 June 2022</td>
+                                <td>₹ 350</td>
+                                <td class="tel-col">+91 8129398422</td>
+                                <td></td>
+                                <td class="action-btn-group four-items">
+                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                        data-bs-target="#campaigns-modal">
                                         <img src="img/eye.svg" alt="">
                                     </button>
                                     <button class="btn edit-btn">
@@ -467,6 +474,7 @@
                                     </button>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td>
                                     <div class="user-img-block d-flex">
@@ -474,16 +482,19 @@
                                             <img src="img/Profile.svg" alt="profile">
                                         </div>
                                         <div class="usr-name">
-                                            Simson Rodrigues
+                                            Jacob Wilston
                                         </div>
                                     </div>
                                 </td>
-                                <td class="address">Akshya Nagar 1st Block 1st Cross, Ram…</td>
-                                <td>dummyemail@gmail.com</td>
-                                <td>+91 8129393244</td>
-                                <td class="status"><span class="rejected"></span> Rejected</td>
-                                <td class="action-btn-group">
-                                    <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#salespersonInfo">
+                                <td>Lorem ipusm</td>
+                                <td>01 Mar 2022</td>
+                                <td>31 June 2022</td>
+                                <td>₹ 350</td>
+                                <td class="tel-col">+91 8129398422</td>
+                                <td></td>
+                                <td class="action-btn-group four-items">
+                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                        data-bs-target="#campaigns-modal">
                                         <img src="img/eye.svg" alt="">
                                     </button>
                                     <button class="btn edit-btn">
@@ -497,6 +508,7 @@
                                     </button>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td>
                                     <div class="user-img-block d-flex">
@@ -504,16 +516,19 @@
                                             <img src="img/Profile.svg" alt="profile">
                                         </div>
                                         <div class="usr-name">
-                                            Joemon Luiz
+                                            Jacob Wilston
                                         </div>
                                     </div>
                                 </td>
-                                <td class="address">Akshya Nagar 1st Block 1st Cross, Ram…</td>
-                                <td>dummyemail@gmail.com</td>
-                                <td>+91 8129399899</td>
-                                <td class="status"><span></span>Awaiting interview</td>
-                                <td class="action-btn-group">
-                                    <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#salespersonInfo">
+                                <td>Lorem ipusm</td>
+                                <td>01 Mar 2022</td>
+                                <td>31 June 2022</td>
+                                <td>₹ 350</td>
+                                <td class="tel-col">+91 8129398422</td>
+                                <td></td>
+                                <td class="action-btn-group four-items">
+                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                        data-bs-target="#campaigns-modal">
                                         <img src="img/eye.svg" alt="">
                                     </button>
                                     <button class="btn edit-btn">
@@ -527,6 +542,7 @@
                                     </button>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td>
                                     <div class="user-img-block d-flex">
@@ -534,16 +550,19 @@
                                             <img src="img/Profile.svg" alt="profile">
                                         </div>
                                         <div class="usr-name">
-                                            Shelton Lopez
+                                            Jacob Wilston
                                         </div>
                                     </div>
                                 </td>
-                                <td class="address">Akshya Nagar 1st Block 1st Cross, Ram…</td>
-                                <td>dummyemail@gmail.com</td>
-                                <td>+91 81293912311</td>
-                                <td class="status"><span></span>Awaiting interview</td>
-                                <td class="action-btn-group">
-                                    <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#salespersonInfo">
+                                <td>Lorem ipusm</td>
+                                <td>01 Mar 2022</td>
+                                <td>31 June 2022</td>
+                                <td>₹ 350</td>
+                                <td class="tel-col">+91 8129398422</td>
+                                <td></td>
+                                <td class="action-btn-group four-items">
+                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                        data-bs-target="#campaigns-modal">
                                         <img src="img/eye.svg" alt="">
                                     </button>
                                     <button class="btn edit-btn">
@@ -557,6 +576,7 @@
                                     </button>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td>
                                     <div class="user-img-block d-flex">
@@ -564,16 +584,19 @@
                                             <img src="img/Profile.svg" alt="profile">
                                         </div>
                                         <div class="usr-name">
-                                            Laxen Mendez
+                                            Jacob Wilston
                                         </div>
                                     </div>
                                 </td>
-                                <td class="address">Akshya Nagar 1st Block 1st Cross, Ram…</td>
-                                <td>dummyemail@gmail.com</td>
-                                <td>+91 8129392566</td>
-                                <td class="status"><span class="rejected"></span>Rejected</td>
-                                <td class="action-btn-group">
-                                    <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#salespersonInfo">
+                                <td>Lorem ipusm</td>
+                                <td>01 Mar 2022</td>
+                                <td>31 June 2022</td>
+                                <td>₹ 350</td>
+                                <td class="tel-col">+91 8129398422</td>
+                                <td></td>
+                                <td class="action-btn-group four-items">
+                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                        data-bs-target="#campaigns-modal">
                                         <img src="img/eye.svg" alt="">
                                     </button>
                                     <button class="btn edit-btn">
@@ -587,6 +610,7 @@
                                     </button>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td>
                                     <div class="user-img-block d-flex">
@@ -594,16 +618,19 @@
                                             <img src="img/Profile.svg" alt="profile">
                                         </div>
                                         <div class="usr-name">
-                                            Brian Correya
+                                            Jacob Wilston
                                         </div>
                                     </div>
                                 </td>
-                                <td class="address">Akshya Nagar 1st Block 1st Cross, Ram…</td>
-                                <td>dummyemail@gmail.com</td>
-                                <td>+91 8129394324</td>
-                                <td class="status"><span></span>Awaiting interview</td>
-                                <td class="action-btn-group">
-                                    <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#salespersonInfo">
+                                <td>Lorem ipusm</td>
+                                <td>01 Mar 2022</td>
+                                <td>31 June 2022</td>
+                                <td>₹ 350</td>
+                                <td class="tel-col">+91 8129398422</td>
+                                <td></td>
+                                <td class="action-btn-group four-items">
+                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                        data-bs-target="#campaigns-modal">
                                         <img src="img/eye.svg" alt="">
                                     </button>
                                     <button class="btn edit-btn">
@@ -617,6 +644,7 @@
                                     </button>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td>
                                     <div class="user-img-block d-flex">
@@ -624,16 +652,19 @@
                                             <img src="img/Profile.svg" alt="profile">
                                         </div>
                                         <div class="usr-name">
-                                            Rexalin Joseph
+                                            Jacob Wilston
                                         </div>
                                     </div>
                                 </td>
-                                <td>Akshya Nagar 1st Block 1st Cross, Ram…</td>
-                                <td>dummyemail@gmail.com</td>
-                                <td>+91 8129390000</td>
-                                <td class="status"><span class="success"></span>Passed</td>
-                                <td class="action-btn-group">
-                                    <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#salespersonInfo">
+                                <td>Lorem ipusm</td>
+                                <td>01 Mar 2022</td>
+                                <td>31 June 2022</td>
+                                <td>₹ 350</td>
+                                <td class="tel-col">+91 8129398422</td>
+                                <td></td>
+                                <td class="action-btn-group four-items">
+                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                        data-bs-target="#campaigns-modal">
                                         <img src="img/eye.svg" alt="">
                                     </button>
                                     <button class="btn edit-btn">
@@ -647,6 +678,7 @@
                                     </button>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td>
                                     <div class="user-img-block d-flex">
@@ -654,16 +686,19 @@
                                             <img src="img/Profile.svg" alt="profile">
                                         </div>
                                         <div class="usr-name">
-                                            Nikhil Sharma
+                                            Jacob Wilston
                                         </div>
                                     </div>
                                 </td>
-                                <td class="address">Akshya Nagar 1st Block 1st Cross, Ram…</td>
-                                <td>dummyemail@gmail.com</td>
-                                <td>+91 8129390000</td>
-                                <td class="status"><span class="success"></span>Passed</td>
-                                <td class="action-btn-group">
-                                    <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#salespersonInfo">
+                                <td>Lorem ipusm</td>
+                                <td>01 Mar 2022</td>
+                                <td>31 June 2022</td>
+                                <td>₹ 350</td>
+                                <td class="tel-col">+91 8129398422</td>
+                                <td></td>
+                                <td class="action-btn-group four-items">
+                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                        data-bs-target="#campaigns-modal">
                                         <img src="img/eye.svg" alt="">
                                     </button>
                                     <button class="btn edit-btn">
@@ -677,6 +712,177 @@
                                     </button>
                                 </td>
                             </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Jacob Wilston
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Lorem ipusm</td>
+                                <td>01 Mar 2022</td>
+                                <td>31 June 2022</td>
+                                <td>₹ 350</td>
+                                <td class="tel-col">+91 8129398422</td>
+                                <td></td>
+                                <td class="action-btn-group four-items">
+                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                        data-bs-target="#campaigns-modal">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+                                    <button class="btn block-btn">
+                                        <img src="img/block.svg" alt="">
+                                    </button>
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Jacob Wilston
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Lorem ipusm</td>
+                                <td>01 Mar 2022</td>
+                                <td>31 June 2022</td>
+                                <td>₹ 350</td>
+                                <td class="tel-col">+91 8129398422</td>
+                                <td></td>
+                                <td class="action-btn-group four-items">
+                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                        data-bs-target="#campaigns-modal">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+                                    <button class="btn block-btn">
+                                        <img src="img/block.svg" alt="">
+                                    </button>
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Jacob Wilston
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Lorem ipusm</td>
+                                <td>01 Mar 2022</td>
+                                <td>31 June 2022</td>
+                                <td>₹ 350</td>
+                                <td class="tel-col">+91 8129398422</td>
+                                <td></td>
+                                <td class="action-btn-group four-items">
+                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                        data-bs-target="#campaigns-modal">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+                                    <button class="btn block-btn">
+                                        <img src="img/block.svg" alt="">
+                                    </button>
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Jacob Wilston
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Lorem ipusm</td>
+                                <td>01 Mar 2022</td>
+                                <td>31 June 2022</td>
+                                <td>₹ 350</td>
+                                <td class="tel-col">+91 8129398422</td>
+                                <td></td>
+                                <td class="action-btn-group four-items">
+                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                        data-bs-target="#campaigns-modal">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+                                    <button class="btn block-btn">
+                                        <img src="img/block.svg" alt="">
+                                    </button>
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Jacob Wilston
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Lorem ipusm</td>
+                                <td>01 Mar 2022</td>
+                                <td>31 June 2022</td>
+                                <td>₹ 350</td>
+                                <td class="tel-col">+91 8129398422</td>
+                                <td></td>
+                                <td class="action-btn-group four-items">
+                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                        data-bs-target="#campaigns-modal">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+                                    <button class="btn block-btn">
+                                        <img src="img/block.svg" alt="">
+                                    </button>
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+
                         </tbody>
                     </table>
                 </div>
@@ -704,8 +910,8 @@
     </div>
 
     <!--  Create Vendor Modal -->
-    <div class="modal fade modal-forms custom-modal" id="addSalespersonModal" tabindex="-1" aria-labelledby="addSalespersonModal"
-        aria-hidden="true" role="dialog" style="z-index: 1400;">
+    <div class="modal fade modal-forms custom-modal" id="addSalespersonModal" tabindex="-1"
+        aria-labelledby="addSalespersonModal" aria-hidden="true" role="dialog" style="z-index: 1400;">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -726,8 +932,7 @@
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4">
                                         <div class="input-holder">
-                                            <label for="" class="label">Name <span
-                                                    class="mandatory">*</span></label>
+                                            <label for="" class="label">Name <span class="mandatory">*</span></label>
                                             <input type="text" class="form_controler">
                                         </div>
                                     </div>
@@ -754,8 +959,7 @@
 
                                     <div class="col-lg-4 col-md-4">
                                         <div class="input-holder">
-                                            <label for="" class="label">Image <span
-                                                class="mandatory">*</span></label>
+                                            <label for="" class="label">Image <span class="mandatory">*</span></label>
                                             <div class="file-otr form_controler">
                                                 <label for="formFile" class="form-label"></label>
                                                 <input class="form-control" type="file" id="formFile">
@@ -767,7 +971,7 @@
                                     <div class="col-lg-4 col-md-4">
                                         <div class="input-holder">
                                             <label for="" class="label">Street address <span
-                                                class="mandatory">*</span></label>
+                                                    class="mandatory">*</span></label>
                                             <input type="text" class="form_controler">
                                         </div>
                                     </div>
@@ -776,7 +980,7 @@
                                         <div class="input-holder">
                                             <label for="" class="label">Town/City <span
                                                     class="mandatory">*</span></label>
-                                                    <input type="text" class="form_controler">
+                                            <input type="text" class="form_controler">
                                             <!-- <div class="ph-group form_controler">
                                                 <div class="ph-select">
                                                     <div class="select-custom">
@@ -795,7 +999,7 @@
                                     <div class="col-lg-4 col-md-4">
                                         <div class="input-holder">
                                             <label for="" class="label">Postal Code <span
-                                                class="mandatory">*</span></label>
+                                                    class="mandatory">*</span></label>
                                             <input type="text" class="form_controler">
                                         </div>
                                     </div>
@@ -810,7 +1014,8 @@
 
                                     <div class="col-lg-4 col-md-4">
                                         <div class="input-holder">
-                                            <label for="" class="label">Phone Number<span class="mandatory">*</span></label>
+                                            <label for="" class="label">Phone Number<span
+                                                    class="mandatory">*</span></label>
                                             <div class="ph-group form_controler">
                                                 <div class="ph-select">
                                                     <div class="select-custom">
@@ -828,7 +1033,8 @@
 
                                     <div class="col-lg-4 col-md-4">
                                         <div class="input-holder">
-                                            <label for="" class="label">Aadhaar Number <span class="mandatory">*</span></label>
+                                            <label for="" class="label">Aadhaar Number <span
+                                                    class="mandatory">*</span></label>
                                             <input type="text" class="form_controler">
                                             <!-- <div class="select-custom">
                                                 <select name="" id="" class="form_controler">
@@ -846,14 +1052,14 @@
                                         <div class="input-holder">
                                             <label for="" class="label">Education Qualification <span
                                                     class="mandatory">*</span></label>
-                                                    <div class="select-custom">
-                                                        <select name="" id="" class="form_controler">
-                                                            <option value="">Master Degree</option>
-                                                            <option value="">Master Degree</option>
-                                                            <option value="">option</option>
-                                                            <option value="">option</option>
-                                                        </select>
-                                                    </div>
+                                            <div class="select-custom">
+                                                <select name="" id="" class="form_controler">
+                                                    <option value="">Master Degree</option>
+                                                    <option value="">Master Degree</option>
+                                                    <option value="">option</option>
+                                                    <option value="">option</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -861,20 +1067,20 @@
                                         <div class="input-holder">
                                             <label for="" class="label">Proficiency <span
                                                     class="mandatory">*</span></label>
-                                                    <div class="select-custom">
-                                                        <select name="" id="" class="form_controler">
-                                                            <option value="">Experienced</option>
-                                                            <option value="">Experienced</option>
-                                                            <option value="">option</option>
-                                                            <option value="">option</option>
-                                                        </select>
-                                                    </div>
+                                            <div class="select-custom">
+                                                <select name="" id="" class="form_controler">
+                                                    <option value="">Experienced</option>
+                                                    <option value="">Experienced</option>
+                                                    <option value="">option</option>
+                                                    <option value="">option</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    
+
                                 </div>
-                            
+
 
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4">
@@ -905,17 +1111,17 @@
                                         <div class="input-holder">
                                             <label for="" class="label">Area of Interest <span
                                                     class="mandatory">*</span></label>
-                                                    <div class="select-custom">
-                                                        <select name="" id="" class="form_controler">
-                                                            <option value="">Select</option>
-                                                            <option value="">Select</option>
-                                                            <option value="">option</option>
-                                                            <option value="">option</option>
-                                                        </select>
-                                                    </div>
+                                            <div class="select-custom">
+                                                <select name="" id="" class="form_controler">
+                                                    <option value="">Select</option>
+                                                    <option value="">Select</option>
+                                                    <option value="">option</option>
+                                                    <option value="">option</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
 
@@ -961,9 +1167,8 @@
     </div>
 
 
-    <!-- GST Number Verification Successful Modal -->
-    <div class="modal fade small-modal" id="staticBackdropGst" data-bs-backdrop="static" data-bs-keyboard="false"
-        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade small-modal campaigns-modal-wrap" id="campaigns-modal" data-bs-backdrop="static"
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -971,261 +1176,20 @@
                 </div>
                 <div class="modal-body">
                     <div class="small-modal-content">
-                        <i><img src="img/ok-icon.svg" alt="ok-icon"></i>
-                        <h3>GST Number Verification Successful</h3>
-                        <p class="paragraph">Lorem Ipsum is simply dummy text of the prin</p>
-
-                        <button class="primary-btn-modal" data-bs-toggle="modal"
-                            data-bs-target="#VendorSuccessfully">Ok</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Vendor Created Successfully Modal -->
-    <div class="modal fade small-modal" id="VendorSuccessfully" data-bs-backdrop="static" data-bs-keyboard="false"
-        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="small-modal-content">
-                        <i><img src="img/ok-icon.svg" alt="ok-icon"></i>
-                        <h3>Vendor Created Successfully</h3>
-                        <p class="paragraph">Lorem Ipsum is simply dummy text of the prin</p>
-
-                        <button data-bs-toggle="modal" class="primary-btn-modal">Ok</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <!--  Vendor Info Modal -->
-    <div class="modal fade modal-forms vendor-info-modal" id="salespersonInfo" tabindex="-1"
-        aria-labelledby="salespersonInfoLabel" aria-hidden="true" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="salespersonInfoLabel">
-                        Salesperson Info
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="vendor-info-body-content salesperson-content d-flex">
-                        <div class="block-left">
-                            <div class="img-block">
-                                <span class="prof-img-cover">
-                                    <img class="prof-img" src="img/profile-salesperson.jpg" alt="">
-                                </span>
-                            </div>
-                            <div class="left-block-col row">
-                                <div class="inner-card-sm col-sm-6 col-md-12">
-                                    <div class="card-title-sm no-line">
-                                        <span class="">Status</span>
-                                    </div>
-                                    <div class="user-status-drp text-block-sm">
-                                        <div class="input-group mb-3">
-                                            <div class="input-group-prepend">
-                                            <label class="input-group-text" for="inputGroupSelect01"><span class="status"></span></label>
-                                            </div>
-                                            <select class="custom-select form_controler" id="inputGroupSelect01">
-                                            <option selected>Awaiting interview</option>
-                                            <option value="1">Option</option>
-                                            <option value="2">Option</option>
-                                            <option value="3">Option</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="text-block-sm">
-                                        <div class="rating-row">
-                                            <img src="img/yellow_star.svg" alt="">
-                                            <img src="img/yellow_star.svg" alt="">
-                                            <img src="img/yellow_star.svg" alt="">
-                                            <img src="img/yellow_star.svg" alt="">
-                                            <img src="img/grey_star.svg" alt="">
-                                            <span class="rating-point">4.0</span>
-                                        </div>
-                                    </div> -->
-                                </div>
-
-                                <div class="inner-card-sm col-sm-6 col-md-12">
-                                    <div class="card-title-sm">
-                                        <span class="t-cover">Curriculum vitae</span>
-                                    </div>
-                                    <div class="text-block-sm d-flex align-items-center">
-                                        <a href="#" class="download-file"><span><img src="img/pdf-file.svg"></span>Resume.PDF</a>
-                                        <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#salespersonInfo">
-                                            <img src="img/eye.svg" alt="">
-                                        </button>
-                                        <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#salespersonInfo">
-                                            <img src="img/direct-download.svg" alt="">
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="inner-card-sm col-sm-6 col-md-12">
-                                    <div class="card-title-sm">
-                                        <span class="t-cover">Certificate</span>
-                                    </div>
-                                    <div class="text-block-sm d-flex align-items-center">
-                                        <a href="#" class="download-file"><span><img src="img/pdf-file.svg"></span>Experience_cert..PDF</a>
-                                        <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#salespersonInfo">
-                                            <img src="img/eye.svg" alt="">
-                                        </button>
-                                        <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#salespersonInfo">
-                                            <img src="img/direct-download.svg" alt="">
-                                        </button>
-                                    </div>
-                                </div>
-                                
-
-                                
-                            </div>
-
-                        </div>
-                        <div class="block-right">
-                            <div class="right-content-cover">
-                                <!-- <h4 class="sec-title-sm">Business Info</h4> -->
-                                <div class="row">
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="inner-card-sm">
-                                            <div class="card-title-sm">
-                                                Name :
-                                            </div>
-                                            <div class="text-block-sm">
-                                                Jacob Wilston
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="inner-card-sm">
-                                            <div class="card-title-sm">
-                                                Street Address :
-                                            </div>
-                                            <div class="text-block-sm">
-                                                711-2880 Nulla St
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="inner-card-sm">
-                                            <div class="card-title-sm">
-                                                Town/City :
-                                            </div>
-                                            <div class="text-block-sm">
-                                                Mankato Mississippi
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="inner-card-sm">
-                                            <div class="card-title-sm">
-                                                Postal Code :
-                                            </div>
-                                            <div class="text-block-sm">
-                                                3567576
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="inner-card-sm">
-                                            <div class="card-title-sm">
-                                                Email :
-                                            </div>
-                                            <div class="text-block-sm">
-                                                Cakehut@gmail.com
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="inner-card-sm">
-                                            <div class="card-title-sm">
-                                                Phone Number :
-                                            </div>
-                                            <div class="text-block-sm">
-                                                +91 8129399999
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="inner-card-sm">
-                                            <div class="card-title-sm">
-                                                Aadhaar Number :
-                                            </div>
-                                            <div class="text-block-sm">
-                                                1234/12345/12345
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="inner-card-sm">
-                                            <div class="card-title-sm">
-                                                Educational Qualification :
-                                            </div>
-                                            <div class="text-block-sm">
-                                                Master Degree
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="inner-card-sm">
-                                            <div class="card-title-sm">
-                                                Proficiency :
-                                            </div>
-                                            <div class="text-block-sm">
-                                                Experienced
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-
-                            <div class="right-content-cover">
-                                <div class="row">
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="inner-card-sm">
-                                            <div class="card-title-sm">
-                                                Work History :
-                                            </div>
-                                            <div class="text-block-sm">
-                                                Data Management Executive, Senior Sales Executive
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="inner-card-sm">
-                                            <div class="card-title-sm">
-                                                Area of Interest :
-                                            </div>
-                                            <div class="text-block-sm">
-                                                Data Entry, Answering Phones, Billing, Scheduling, Sales
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <img src="img/campaign-image.svg" alt="campaign">
+                        <h3>Campaign created successfully</h3>
+                        <p class="paragraph">Woohoo! Congratulation!! You have Unlocked Upto <strong>250</strong> off on your next campaign</p>
+                        <div class="action-btn">
+                            <button data-bs-toggle="modal" class="btn primary-btn-modal">Take a Look</button>
+                            <button data-bs-toggle="modal" class="btn primary-btn-later">Maybe Later</button>
                         </div>
                     </div>
-
-
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="info-modal-btn"><img src="img/block-sm.svg" alt=""> Block This
-                        Vendor</button>
-                    <button type="button" class="info-modal-btn"><img src="img/edit-sm.svg" alt=""> Edit</button>
-                    <button type="button" class="info-modal-btn"><img src="img/delete-sm.svg" alt=""> Delete</button>
-                </div>
+
             </div>
         </div>
     </div>
+
 
     <script src="Js/vendor/bootstrap.min.js"></script>
     <script src="Js/vendor/jquery.min.js"></script>
