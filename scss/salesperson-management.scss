@@ -21,49 +21,69 @@
 }
 
 
-.custom-table-cover{
+.custom-table-cover {
     .custom-listing-table {
-        tbody{
+        tbody {
             tr {
-                td{
-                    &.address{
-                        text-align: left;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
+                td {
+                    &:first-child {
+                        min-width: 200px;
                     }
-                    &.action-btn-group{
-                        &.four-items{
-                            min-width: 200px;
+
+                    &.address {
+                        width: 200px;
+                        text-align: left;
+
+                        @media (max-width:1199px) {
+                            width: auto;
                         }
                     }
-                    &.tel-col{
+
+                    &.action-btn-group {
+                        &.four-items {
+                            min-width: 170px;
+
+                            .btn {
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+
+                    &.tel-col {
                         min-width: 150px;
                     }
-                    &.status{
+
+                    &.status {
+                        min-width: 150px;
                         text-align: left;
-                        span{
+
+                        span {
                             width: 12px;
                             height: 12px;
                             display: inline-block;
                             border-radius: 50%;
                             background-color: #B2B2B2;
                             margin-right: 5px;
-                            &.success{
+
+                            &.success {
                                 background-color: #00B49E;
                             }
-                            &.rejected{
+
+                            &.rejected {
                                 background-color: #FF6C6C;
                             }
                         }
                     }
-                    @media (max-width:1550px){
+
+                    @media (max-width:1550px) {
                         font-size: 13px;
                     }
+
                     .user-img-block {
-                        .usr-name{
+                        .usr-name {
                             text-align: left;
-                            @media (max-width:1550px){
+
+                            @media (max-width:1550px) {
                                 font-size: 13px;
                             }
                         }
@@ -73,24 +93,28 @@
         }
     }
 }
-.salesperson-content{
 
-    &.vendor-info-body-content{
+.salesperson-content {
 
-        .user-status-drp{
+    &.vendor-info-body-content {
+
+        .user-status-drp {
             position: relative;
-            .form_controler{
+
+            .form_controler {
                 width: calc(100% - 30px);
                 background-color: transparent;
                 border-left: 0px;
-                option{
-                    &:selected{
+
+                option {
+                    &:selected {
                         padding-left: 0px;
                     }
                 }
             }
-            .input-group-prepend{
-                .input-group-text{
+
+            .input-group-prepend {
+                .input-group-text {
                     height: 40px;
                     background-color: transparent;
                     border-right: 0px;
@@ -100,8 +124,9 @@
                     padding-right: 0px;
                 }
             }
-            span{
-                &.status{
+
+            span {
+                &.status {
                     width: 12px;
                     height: 12px;
                     display: inline-block;
@@ -109,13 +134,16 @@
                     background-color: #B2B2B2;
                     margin-right: 5px;
                 }
-                &.success{
+
+                &.success {
                     background-color: #00B49E;
                 }
-                &.rejected{
+
+                &.rejected {
                     background-color: #FF6C6C;
                 }
             }
+
             &:after {
                 content: "";
                 width: 0;
@@ -131,26 +159,28 @@
                 border-radius: 5px;
             }
         }
-        
-        .text-block-sm{
-            .view-btn{
+
+        .text-block-sm {
+            .view-btn {
                 border-radius: 50%;
                 -webkit-border-radius: 50%;
                 -moz-border-radius: 50%;
-            background-color: #ffe2ed59;
-            width: 27px;
-            height: 27px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 5px;
-            img{
-                max-width: unset;
-            }
-        
+                background-color: #ffe2ed59;
+                width: 27px;
+                height: 27px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 5px;
+
+                img {
+                    max-width: unset;
+                }
+
             }
         }
-        .download-file{
+
+        .download-file {
             background-color: #ffe2ed59;
             border-radius: 9px;
             height: 38px;
@@ -163,37 +193,47 @@
             font-size: 12px;
             min-width: 175px;
             flex: 1;
-            span{
+
+            span {
                 margin-right: 10px;
-                img{
+
+                img {
                     max-width: unset;
                 }
             }
-            &:hover{
+
+            &:hover {
                 color: #e4729f;
             }
         }
 
         .block-left {
             width: 250px;
-            @media ($sm-767){
+
+            @media ($sm-767) {
                 width: 100%;
             }
         }
+
         .block-right {
             width: calc(100% - 250px);
-            @media ($sm-767){
+            padding-top: 50px;
+
+            
+            @media ($sm-767) {
                 width: 100%;
+                padding-top: 25px;
             }
         }
-        .inner-card-sm{
-            .card-title-sm{
-            &.no-line{
-                &::before{
-                    display: none;
+
+        .inner-card-sm {
+            .card-title-sm {
+                &.no-line {
+                    &::before {
+                        display: none;
+                    }
                 }
             }
-        }
         }
     }
 }

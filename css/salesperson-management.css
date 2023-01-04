@@ -17,16 +17,22 @@
 /* @include transition (.2s ease-out all); */
 /*    @include flexbox();
     @include justify-content (center);*/
-.custom-table-cover .custom-listing-table tbody tr td.address {
-  text-align: left;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; }
-.custom-table-cover .custom-listing-table tbody tr td.action-btn-group.four-items {
+.custom-table-cover .custom-listing-table tbody tr td:first-child {
   min-width: 200px; }
+.custom-table-cover .custom-listing-table tbody tr td.address {
+  width: 200px;
+  text-align: left; }
+  @media (max-width: 1199px) {
+    .custom-table-cover .custom-listing-table tbody tr td.address {
+      width: auto; } }
+.custom-table-cover .custom-listing-table tbody tr td.action-btn-group.four-items {
+  min-width: 170px; }
+  .custom-table-cover .custom-listing-table tbody tr td.action-btn-group.four-items .btn {
+    margin-right: 5px; }
 .custom-table-cover .custom-listing-table tbody tr td.tel-col {
   min-width: 150px; }
 .custom-table-cover .custom-listing-table tbody tr td.status {
+  min-width: 150px;
   text-align: left; }
   .custom-table-cover .custom-listing-table tbody tr td.status span {
     width: 12px;
@@ -126,10 +132,12 @@
     .salesperson-content.vendor-info-body-content .block-left {
       width: 100%; } }
 .salesperson-content.vendor-info-body-content .block-right {
-  width: calc(100% - 250px); }
+  width: calc(100% - 250px);
+  padding-top: 50px; }
   @media (max-width: 767px) {
     .salesperson-content.vendor-info-body-content .block-right {
-      width: 100%; } }
+      width: 100%;
+      padding-top: 25px; } }
 .salesperson-content.vendor-info-body-content .inner-card-sm .card-title-sm.no-line::before {
   display: none; }
 

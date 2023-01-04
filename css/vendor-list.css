@@ -137,7 +137,7 @@
         transform: rotate(180deg); }
 
 .vendor-info-modal {
-  padding-left: 15px;
+  padding-left: 15px !important;
   padding-right: 15px; }
   .vendor-info-modal .modal-content {
     padding: 20px 30px 50px; }
@@ -365,7 +365,7 @@
     width: 100%; }
 
   .vendor-info-modal .vendor-info-body-content .block-right {
-    padding-left: 0;
+    padding-left: 0 !important;
     padding-top: 20px;
     width: 100%; }
 
@@ -391,7 +391,7 @@
     height: 34px; }
 
   .vendor-info-modal {
-    padding-left: 0;
+    padding-left: 0 !important;
     padding-right: 0; }
 
   .vendor-info-modal .modal-content {
