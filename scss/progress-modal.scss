@@ -1,0 +1,136 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+$progress-border: #CA3C74;
+$progress-border-empty: #E3E6EE;
+
+$color_1: #999;
+$color_2: #fff;
+$font-family_1: inherit;
+
+.route-mark{
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+.progress-container {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	margin:0 auto 50px;
+	max-width: 828px;
+	min-width: 280px;
+	&::before {
+		content: '';
+		background-color: $progress-border-empty;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		height: 4px;
+		width: 100%;
+		z-index: 1;
+	}
+}
+.progress {
+	background-color: $progress-border;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	height: 4px;
+	width: 0;
+	z-index: 1;
+	transition: .4s ease;
+}
+.circle {
+	background-color: #fff;
+	color: $color_1;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 3px solid $progress-border-empty;
+	transition: .4s ease;
+    z-index: 2;
+
+    span{
+        position: absolute;
+        top: 40px;
+        white-space: nowrap;
+        font-size: 15px;
+        line-height: 18px;
+        font-family: "sf-regular";
+        color: #C1A9B2;
+    }
+
+    &.active {
+        border-color: $progress-border;
+        background-color: $progress-border;
+        color: #fff;
+        span{
+            color: $progress-border;
+        }
+    }
+    &.checked{
+        border-color: $progress-border-empty;
+        text-indent: -9999px;
+        span{
+            text-indent: 0;
+        }
+        &:after{
+            content: "";
+            background:url(/img/check.png) no-repeat center;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            
+        }
+    }
+}
+.btn {
+	background-color: $progress-border;
+	color: #fff;
+	border: 0;
+	border-radius: 6px;
+	cursor: pointer;
+	font-family: $font-family_1;
+	padding: 8px 30px;
+	margin: 5px;
+	font-size: 14px;
+	&:active {
+		transform: scale(0.98);
+	}
+	&:focus {
+		outline: 0;
+	}
+	&:disabled {
+		background-color: $progress-border-empty;
+		cursor: not-allowed;
+	}
+}
+
+// location modal style
+
+.campaign-modal-location{
+    .input-holder{
+        margin-bottom: 20px;
+    }
+    .map-holder{
+        border-radius: 11px;
+        border:1px solid #FFE2ED;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        padding: 22px;
+        min-height: 500px;
+        overflow: hidden;
+        @media ($sm-1679){
+            min-height: auto;
+        }
+    }
+}

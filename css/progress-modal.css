@@ -1,0 +1,126 @@
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.route-mark {
+  max-width: 580px;
+  margin: 0 auto; }
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 auto 50px;
+  max-width: 828px;
+  min-width: 280px; }
+  .progress-container::before {
+    content: '';
+    background-color: #E3E6EE;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: 1; }
+
+.progress {
+  background-color: #CA3C74;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0;
+  z-index: 1;
+  transition: .4s ease; }
+
+.circle {
+  background-color: #fff;
+  color: #999;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #E3E6EE;
+  transition: .4s ease;
+  z-index: 2; }
+  .circle span {
+    position: absolute;
+    top: 40px;
+    white-space: nowrap;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: "sf-regular";
+    color: #C1A9B2; }
+  .circle.active {
+    border-color: #CA3C74;
+    background-color: #CA3C74;
+    color: #fff; }
+    .circle.active span {
+      color: #CA3C74; }
+  .circle.checked {
+    border-color: #E3E6EE;
+    text-indent: -9999px; }
+    .circle.checked span {
+      text-indent: 0; }
+    .circle.checked:after {
+      content: "";
+      background: url(/img/check.png) no-repeat center;
+      width: 15px;
+      height: 15px;
+      position: absolute; }
+
+.btn {
+  background-color: #CA3C74;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px; }
+  .btn:active {
+    transform: scale(0.98); }
+  .btn:focus {
+    outline: 0; }
+  .btn:disabled {
+    background-color: #E3E6EE;
+    cursor: not-allowed; }
+
+.campaign-modal-location .input-holder {
+  margin-bottom: 20px; }
+.campaign-modal-location .map-holder {
+  border-radius: 11px;
+  border: 1px solid #FFE2ED;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 22px;
+  min-height: 500px;
+  overflow: hidden; }
+  @media (max-width: 1679px) {
+    .campaign-modal-location .map-holder {
+      min-height: auto; } }
+
+/*# sourceMappingURL=progress-modal.css.map */
