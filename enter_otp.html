@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Management</title>
+    <link rel="icon" type="image/x-icon" href="./img/fav_icon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/side-nav.css">
+    <link rel="stylesheet" href="css/payable-form.css">
+    <link rel="stylesheet" href="css/forms-style.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+</head>
+
+<body class="dark-theme">
+    <header>
+        <div class="logo-wrap">
+            <div class="logo-block">
+                <img src="img/logo.svg" class="main-logo light-logo" alt="logo">
+                <img src="img/logo_white_text.svg" class="main-logo dark-logo" alt="logo">
+                <img src="img/fox-logo.svg" class="mob-logo" alt="logo">
+            </div>
+            <!-- <button class="btn sidebarCollapse">
+                <img src="img/ham_menu.svg" alt="ham_menu">
+            </button> -->
+        </div>
+        <div class="top-header">
+            <div class="left-block">
+            </div>
+            <div class="right-block">
+                <div class="user-area">
+                    <div class="notification-header dropdown">
+                        <button class="btn" data-bs-toggle="dropdown" aria-expanded="true">
+                            <img src="img/Icons-Bell.svg" alt="notification">
+                            <span class="badge badge-secondary">6</span>
+                        </button>
+                        <div class="dropdown-menu" data-popper-placement="bottom-start">
+                            <div class="notification-header">
+                                <h4 class="notification-header-title">Notifications</h4>
+                                <span class="notification-header-mark">Mark all as read</span>
+                            </div>
+                            <div class="notification-body custom-scroll">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="notification-footer">
+                                <span class="view-all">
+                                    View All Notifications
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-header">
+                        <div class="user-txt">
+                            <div class="dropdown">
+                                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                    <img src="img/Profile.svg" alt="user">
+                                    <h4>Bradley Robin <span>Administrator</span></h4>
+
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="enter-otp-block">
+            <div class="payable-amount-block">
+                <h3>Total Payable Amount <span>₹2726.5</span></h3>
+                <div class="bank-block">
+                    <img src="img/icici.png" class="bankimg" alt="icici">
+                    <h4>ICICI BANK</h4>
+                </div>
+                <div class="payable-form-block">
+                    <div class="input-holder">
+                        <label for="" class="label">Enter OTP sent to ******8428</label>
+                        <input type="text" class="form_controler">
+                    </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#campaigns-modal">Validate your OTP</button>
+                    <p>OTP will expire in <span class="time-txt">4:50</span> Minutes</p>
+                </div>
+                <div class="payable-footer-block">
+                    <p>You can always complete the transaction on your Bank’s website.
+                        <span>payable-footer-block</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="powered-block">
+            <img src="img/powereds.png" class="light" alt="powereds">
+            <img src="img/powereds-grey.png" class="dark" alt="powereds">
+        </div>
+    </div>
+    <div class="modal fade small-modal otp-modal-wrap" id="campaigns-modal" data-bs-backdrop="static"
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="small-modal-content">
+                        <img src="img/campaign-image.svg" alt="campaign">
+                        <h3>Campaign created successfully</h3>
+                        <p class="paragraph">Woohoo! Congratulation!! You have Unlocked Upto <strong>250</strong> off on
+                            your next campaign</p>
+                        <div class="action-btn">
+                            <button data-bs-toggle="modal" class="btn primary-btn-modal">Take a Look</button>
+                            <button data-bs-toggle="modal" class="btn primary-btn-later">Maybe Later</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="Js/vendor/bootstrap.min.js"></script>
+    <script src="Js/vendor/jquery.min.js"></script>
+    <script src="Js/vendor/script.js"></script>
+    </script>
+</body>
+
+</html>

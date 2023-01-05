@@ -422,7 +422,92 @@
             }
         }
     }
+
+    &.campaigns-modal-wrap {
+        .vendor-info-body-content {
+            .block-left {
+                .left-block-col {
+                    .inner-card-sm {
+                        .card-title-sm {
+                            img {
+                                margin-right: 10px;
+                            }
+
+                            &::before {
+                                background: transparent !important;
+                            }
+                        }
+
+                        .campaign-text-block {
+                            color: #FF4B4B;
+                        }
+
+                        .shop-text-block {
+                            color: #23BEAC;
+                        }
+
+                        .available-text-block {
+                            color: #CA3C74;
+                        }
+                    }
+                }
+
+                .img-block {
+                    .prof-img-cover {
+                        position: relative;
+                        overflow: visible;
+
+                        .premium-img {
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            width: 35px;
+                            height: 35px;
+
+                            @media ($sm-1679) {
+                                width: 28px;
+                                height: 28px;
+                            }
+
+                            @media ($sm-1367) {
+                                width: 24px;
+                                height: 24px;
+                                right: 5px;
+                                bottom: 5px;
+                            }
+                            @media ($sm-1199) {
+                                width: 20px;
+                                height: 20px;
+                            }
+                            @media ($sm-1199) {
+                                right: 0px;
+                                bottom: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .block-right {
+                .btm-line {
+                    &::before {
+                        border: none;
+                        background: transparent !important;
+                    }
+                }
+            }
+        }
+
+        .modal-footer {
+            .btn-primary {
+                background: #CA3C74;
+                color: #fff;
+            }
+        }
+    }
 }
+
+
 
 @media ($sm-1679) {
     .vendor-info-modal .modal-title {
@@ -495,42 +580,52 @@
         background-size: 10px;
     }
 }
+
 @media ($sm-1367) {
-    .custom-table-cover .custom-listing-table tbody tr td.action-btn-group .btn{
+    .custom-table-cover .custom-listing-table tbody tr td.action-btn-group .btn {
         margin-right: 10px;
     }
+
     .table-pagination .pagination .page-link {
         width: 28px;
         height: 28px;
     }
 }
+
 @media ($sm-1281) {
     .custom-table-cover .custom-listing-table tbody tr td .user-img-block .usr-icon img {
         width: 34px;
         height: 34px;
     }
 }
+
 @media ($sm-1199) {
-    .custom-table-cover .custom-listing-table tbody tr td.action-btn-group .btn{
+    .custom-table-cover .custom-listing-table tbody tr td.action-btn-group .btn {
         margin-right: 7px;
     }
+
     .custom-table-cover .custom-listing-table tbody tr td .user-img-block .usr-name {
         padding-left: 5px;
         font-size: 12px;
     }
+
     .custom-table-cover .custom-listing-table {
         min-width: max-content;
     }
-    .custom-table-cover .custom-listing-table thead tr th, .custom-table-cover .custom-listing-table tbody tr td{
+
+    .custom-table-cover .custom-listing-table thead tr th,
+    .custom-table-cover .custom-listing-table tbody tr td {
         font-size: 12px;
     }
 }
+
 @media ($sm-991) {
     .table-pagination .pagination .page-link {
         width: 24px;
         height: 24px;
     }
 }
+
 @media ($sm-767) {
     .vendor-info-modal .vendor-info-body-content .block-left {
         width: 100%;

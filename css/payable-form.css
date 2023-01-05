@@ -1,0 +1,156 @@
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.enter-otp-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin: auto;
+  position: relative; }
+  .enter-otp-block .payable-amount-block h3 {
+    text-align: center;
+    font-family: 'sf-medium';
+    font-size: 21px;
+    color: #000000;
+    margin-bottom: 40px; }
+    @media (max-width: 1441px) {
+      .enter-otp-block .payable-amount-block h3 {
+        margin-bottom: 30px; } }
+    @media (max-width: 1281px) {
+      .enter-otp-block .payable-amount-block h3 {
+        font-size: 18px;
+        margin-bottom: 20px; } }
+    .enter-otp-block .payable-amount-block h3 span {
+      font-family: 'sf-bold'; }
+  .enter-otp-block .payable-amount-block .bank-block {
+    margin-bottom: 50px; }
+    @media (max-width: 1441px) {
+      .enter-otp-block .payable-amount-block .bank-block {
+        margin-bottom: 30px; } }
+    @media (max-width: 1281px) {
+      .enter-otp-block .payable-amount-block .bank-block {
+        margin-bottom: 20px; } }
+    @media (max-width: 1023px) {
+      .enter-otp-block .payable-amount-block .bank-block {
+        margin-bottom: 10px; } }
+    .enter-otp-block .payable-amount-block .bank-block .bankimg {
+      display: block;
+      margin: auto; }
+      @media (max-width: 1281px) {
+        .enter-otp-block .payable-amount-block .bank-block .bankimg {
+          width: 50px; } }
+      @media (max-width: 1023px) {
+        .enter-otp-block .payable-amount-block .bank-block .bankimg {
+          width: 40px; } }
+    .enter-otp-block .payable-amount-block .bank-block h4 {
+      font-family: 'sf-regular';
+      font-size: 18px;
+      text-align: center;
+      letter-spacing: 0.09px;
+      color: #000000;
+      margin-top: 10px; }
+  .enter-otp-block .payable-amount-block .payable-form-block {
+    margin-bottom: 60px; }
+    @media (max-width: 1441px) {
+      .enter-otp-block .payable-amount-block .payable-form-block {
+        margin-bottom: 40px; } }
+    @media (max-width: 1281px) {
+      .enter-otp-block .payable-amount-block .payable-form-block {
+        margin-bottom: 30px; } }
+    @media (max-width: 1023px) {
+      .enter-otp-block .payable-amount-block .payable-form-block {
+        margin-bottom: 20px; } }
+    .enter-otp-block .payable-amount-block .payable-form-block .input-holder label {
+      font-family: 'sf-medium';
+      font-size: 16px;
+      text-align: left;
+      color: #000000;
+      margin-bottom: 8px; }
+      @media (max-width: 1281px) {
+        .enter-otp-block .payable-amount-block .payable-form-block .input-holder label {
+          font-size: 14px; } }
+      @media (max-width: 991px) {
+        .enter-otp-block .payable-amount-block .payable-form-block .input-holder label {
+          margin-bottom: 8px; } }
+    .enter-otp-block .payable-amount-block .payable-form-block .input-holder .form_controler {
+      width: 100%;
+      height: 51px;
+      border: 1px solid #E5BFCE;
+      background: #fff;
+      border-radius: 12px; }
+      @media (max-width: 1441px) {
+        .enter-otp-block .payable-amount-block .payable-form-block .input-holder .form_controler {
+          height: 46px; } }
+      @media (max-width: 1281px) {
+        .enter-otp-block .payable-amount-block .payable-form-block .input-holder .form_controler {
+          height: 42px;
+          font-size: 14px; } }
+    .enter-otp-block .payable-amount-block .payable-form-block .btn-primary {
+      width: 100%;
+      height: 51px;
+      background: #CA3C74;
+      border-radius: 11px;
+      margin-top: 27px; }
+      @media (max-width: 1441px) {
+        .enter-otp-block .payable-amount-block .payable-form-block .btn-primary {
+          height: 46px;
+          margin-top: 20px; } }
+      @media (max-width: 1281px) {
+        .enter-otp-block .payable-amount-block .payable-form-block .btn-primary {
+          height: 42px;
+          margin-top: 15px; } }
+    .enter-otp-block .payable-amount-block .payable-form-block p {
+      font-size: 16px;
+      text-align: center;
+      font-family: 'sf-medium';
+      color: #000000;
+      margin: 18px 0 0 0; }
+      @media (max-width: 1281px) {
+        .enter-otp-block .payable-amount-block .payable-form-block p {
+          font-size: 14px; } }
+      .enter-otp-block .payable-amount-block .payable-form-block p span {
+        color: #FF0505; }
+  .enter-otp-block .payable-amount-block .payable-footer-block p {
+    font-size: 14px;
+    font-family: 'sf-medium';
+    text-align: center;
+    color: #696969;
+    max-width: 350px;
+    margin: auto; }
+    .enter-otp-block .payable-amount-block .payable-footer-block p span {
+      color: #CA3C74; }
+
+.powered-block {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center; }
+  .powered-block img {
+    display: block;
+    text-align: center;
+    margin: auto; }
+    .powered-block img.light {
+      display: block; }
+    .powered-block img.dark {
+      display: none; }
+
+/*# sourceMappingURL=payable-form.css.map */
