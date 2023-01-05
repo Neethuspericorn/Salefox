@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/dark-theme.css">
 </head>
 
-<body class="">
+<body class="dark-theme">
     <header>
         <div class="logo-wrap">
             <div class="logo-block">
@@ -272,6 +272,8 @@
         </div>
         <div class="dashboard-content custom-scroll">
             <div class="db-content-inner">
+                
+
                 <div class="db-title-wrapper d-flex">
                     <div class="title-block">
                         Payment Management
@@ -282,10 +284,68 @@
                                 Export
                             </button>
                             <ul class="dropdown-menu export-dropdown" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Excel</a></li>
-                                <li><a class="dropdown-item" href="#">CSV</a></li>
-                                <li><a class="dropdown-item" href="#">PDF</a></li>
+                                <li><a class="dropdown-item" href="#"><img src="img/excel_with_bg.svg" alt="Excel"> Excel</a></li>
+                                <li><a class="dropdown-item" href="#"><img src="img/csv_with_bg.svg" alt="csv"> CSV</a></li>
+                                <li><a class="dropdown-item" href="#"><img src="img/pdf_with_bg.svg" alt="pdf"> PDF</a></li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-infos custom-card-wapper">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 gx-3">
+                            <div class="custom-card-list">
+                                <div class="custom-card-block">
+                                    <div class="custom-card-txt">
+                                        <div class="card-list-count-description">Total Income</div>
+                                        <div class="card-list-count income">₹8,30,500</div>
+                                    </div>
+                                    <div class="custom-card-icon-box">
+                                        <img src="img/income.svg" class="custom-card-icon" alt="income">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3  col-sm-6  gx-3">
+                            <div class="custom-card-list">
+                                <div class="custom-card-block">
+                                    <div class="custom-card-txt">
+                                        <div class="card-list-count-description">Total Expenses</div>
+                                        <div class="card-list-count expense">₹1,10,000</div>
+                                    </div>
+                                    <div class="custom-card-icon-box">
+                                        <img src="img/expense.svg" class="custom-card-icon" alt="expense">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3  col-sm-6  gx-3">
+                            <div class="custom-card-list">
+                                <div class="custom-card-block">
+                                    <div class="custom-card-txt">
+                                        <div class="card-list-count-description">Pending Payments</div>
+                                        <div class="card-list-count pending_pay">₹2,50,454</div>
+                                    </div>
+                                    <div class="custom-card-icon-box">
+                                        <img src="img/pending.svg" class="custom-card-icon" alt="pending">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3  col-sm-6  gx-3">
+                            <div class="custom-card-list">
+                                <div class="custom-card-block">
+                                    <div class="custom-card-txt">
+                                        <div class="card-list-count-description">Invoices</div>
+                                        <div class="card-list-count invoices">450</div>
+                                    </div>
+                                    <div class="custom-card-icon-box">
+                                        <img src="img/invoice.svg" class="custom-card-icon" alt="invoices">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -294,7 +354,7 @@
                     <form>
                         <div class="filter-cover">
                             <div class="row">
-                                <div class="col-lg-3 col-md-12">
+                                <div class="col-xxl-4 col-lg-5  col-sm-12">
                                     <div class="radio-cover">
                                         <span class="sort-by">Sort By :</span>
                                         <label class="radio-btn radio-gap">Debit
@@ -309,7 +369,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-7 col-md-12">
+                                <div class="col-xxl-8 col-lg-7  col-sm-12">
                                     <div class="checkbox-cover">
                                         <label class="check-box check-gap">Show Favorites only
                                             <input type="checkbox">
@@ -350,6 +410,9 @@
                                                     </select>
                                                 </div>
                                             </div>
+                                            <div class="input-holder sm-form-col">
+                                                <input type="text" class="form_controler">
+                                            </div>
                                         </div>
 
 
@@ -378,7 +441,7 @@
                                 <th>Date and Time</th>
                                 <th>Category</th>
                                 <th>Remarks</th>
-                                <th>Action</th>
+                                <th></th>
                                 
                             </tr>
                         </thead>
@@ -394,28 +457,285 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td>Lorem ipsum</td>
-                                <td>Jacob Wilston</td>
+                                <td>Vendor</td>
                                 <td>
-                                    Lorem ipsum dolor sit amet.
+                                    <div class="amt-val-wrp d-flex">
+                                        <span class="amt-val"> ₹6324.00 </span> <span class="amt-ico"><img src="img/arrow_down_green.svg" alt="amt"></span>
+                                    </div>
+                                    
                                 </td>
-                                <td>₹ 350</td>
+                                <td>
+                                    21 January 2021 11.21 AM
+                                </td>
+                                <td>New Campaign</td>
+                                <td> Lorem ipsum is a dum…</td>
                                
                                  
                                 <td class="action-btn-group">
-                                    <button class="btn view-btn">
-                                        <img src="img/eye.svg" alt="">
-                                    </button>
-                                    <button class="btn edit-btn">
-                                        <img src="img/edit.svg" alt="">
-                                    </button>
+                                    <div class="d-flex">
+                                        <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#paymentInfo">
+                                            <img src="img/eye.svg" alt="">
+                                        </button>
+                                        <button class="btn edit-btn">
+                                            <img src="img/heart-fill.svg" alt="">
+
+                                            <!-- ^^ use heart-line-icon.svg for unselected item -->
+                                        </button>
+                                       
+                                        <button class="btn download-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download Proforma Invoice">
+                                            <img src="img/pdf-icon.svg" alt="">
+                                        </button>
+                                    </div>
                                     
-                                    <button class="btn delete-btn">
-                                        <img src="img/delit.svg" alt="">
-                                    </button>
                                 </td>
                             </tr>
                              
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Sara’s Food Pvt.Ltd
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Vendor</td>
+                                <td>
+                                    <div class="amt-val-wrp d-flex">
+                                        <span class="amt-val"> ₹6324.00 </span> <span class="amt-ico"><img src="img/arrow_up_red.svg" alt="amt"></span>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    21 January 2021 11.21 AM
+                                </td>
+                                <td>New Campaign</td>
+                                <td> Lorem ipsum is a dum…</td>
+                               
+                                 
+                                <td class="action-btn-group">
+                                    <div class="d-flex">
+                                        <button class="btn view-btn">
+                                            <img src="img/eye.svg" alt="">
+                                        </button>
+                                        <button class="btn edit-btn">
+                                            <img src="img/heart-line-icon.svg" alt="">
+                                        </button>
+                                       
+                                        <button class="btn download-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download Proforma Invoice">
+                                            <img src="img/pdf-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Sara’s Food Pvt.Ltd
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Vendor</td>
+                                <td>
+                                    <div class="amt-val-wrp d-flex">
+                                        <span class="amt-val"> ₹6324.00 </span> <span class="amt-ico"><img src="img/arrow_up_red.svg" alt="amt"></span>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    21 January 2021 11.21 AM
+                                </td>
+                                <td>New Campaign</td>
+                                <td> Lorem ipsum is a dum…</td>
+                               
+                                 
+                                <td class="action-btn-group">
+                                    <div class="d-flex">
+                                        <button class="btn view-btn">
+                                            <img src="img/eye.svg" alt="">
+                                        </button>
+                                        <button class="btn edit-btn">
+                                            <img src="img/heart-fill.svg" alt="">
+                                        </button>
+                                       
+                                        <button class="btn download-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download Proforma Invoice">
+                                            <img src="img/pdf-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Sara’s Food Pvt.Ltd
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Vendor</td>
+                                <td>
+                                    <div class="amt-val-wrp d-flex">
+                                        <span class="amt-val"> ₹6324.00 </span> <span class="amt-ico"><img src="img/arrow_down_green.svg" alt="amt"></span>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    21 January 2021 11.21 AM
+                                </td>
+                                <td>New Campaign</td>
+                                <td> Lorem ipsum is a dum…</td>
+                               
+                                 
+                                <td class="action-btn-group">
+                                    <div class="d-flex">
+                                        <button class="btn view-btn">
+                                            <img src="img/eye.svg" alt="">
+                                        </button>
+                                        <button class="btn edit-btn">
+                                            <img src="img/heart-fill.svg" alt="">
+                                        </button>
+                                       
+                                        <button class="btn download-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download Proforma Invoice">
+                                            <img src="img/pdf-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Sara’s Food Pvt.Ltd
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Vendor</td>
+                                <td>
+                                    <div class="amt-val-wrp d-flex">
+                                        <span class="amt-val"> ₹6324.00 </span> <span class="amt-ico"><img src="img/arrow_up_red.svg" alt="amt"></span>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    21 January 2021 11.21 AM
+                                </td>
+                                <td>New Campaign</td>
+                                <td> Lorem ipsum is a dum…</td>
+                               
+                                 
+                                <td class="action-btn-group">
+                                    <div class="d-flex">
+                                        <button class="btn view-btn">
+                                            <img src="img/eye.svg" alt="">
+                                        </button>
+                                        <button class="btn edit-btn">
+                                            <img src="img/heart-fill.svg" alt="">
+                                        </button>
+                                       
+                                        <button class="btn download-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download Proforma Invoice">
+                                            <img src="img/pdf-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Sara’s Food Pvt.Ltd
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Vendor</td>
+                                <td>
+                                    <div class="amt-val-wrp d-flex">
+                                        <span class="amt-val"> ₹6324.00 </span> <span class="amt-ico"><img src="img/arrow_down_green.svg" alt="amt"></span>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    21 January 2021 11.21 AM
+                                </td>
+                                <td>New Campaign</td>
+                                <td> Lorem ipsum is a dum…</td>
+                               
+                                 
+                                <td class="action-btn-group">
+                                    <div class="d-flex">
+                                        <button class="btn view-btn">
+                                            <img src="img/eye.svg" alt="">
+                                        </button>
+                                        <button class="btn edit-btn">
+                                            <img src="img/heart-line-icon.svg" alt="">
+                                        </button>
+                                       
+                                        <button class="btn download-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download Proforma Invoice">
+                                            <img src="img/pdf-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Sara’s Food Pvt.Ltd
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Vendor</td>
+                                <td>
+                                    <div class="amt-val-wrp d-flex">
+                                        <span class="amt-val"> ₹6324.00 </span> <span class="amt-ico"><img src="img/arrow_up_red.svg" alt="amt"></span>
+                                    </div>
+                                    
+                                </td>
+                                <td>
+                                    21 January 2021 11.21 AM
+                                </td>
+                                <td>New Campaign</td>
+                                <td> Lorem ipsum is a dum…</td>
+                               
+                                 
+                                <td class="action-btn-group">
+                                    <div class="d-flex">
+                                        <button class="btn view-btn">
+                                            <img src="img/eye.svg" alt="">
+                                        </button>
+                                        <button class="btn edit-btn">
+                                            <img src="img/heart-line-icon.svg" alt="">
+                                        </button>
+                                       
+                                        <button class="btn download-btn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download Proforma Invoice">
+                                            <img src="img/pdf-icon.svg" alt="">
+                                        </button>
+                                    </div>
+                                    
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -442,114 +762,130 @@
         </div>
     </div>
 
-    <!--  Add services Modal -->
-    <div class="modal fade modal-forms custom-modal serviceModal" id="exampleModal" tabindex="-1"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+
+    <!--  payment Info Modal -->
+    <div class="modal fade modal-forms vendor-info-modal payment-info-modal" id="paymentInfo" tabindex="-1"
+        aria-labelledby="paymentInfoLabelLabel" aria-hidden="true" role="dialog">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                        Add Service
+                    <h5 class="modal-title" id="paymentInfoLabel">
+                        Payment Info
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="">
-                        <div class="modal-forms">
+                    <div class="vendor-info-body-content   d-flex">
+                        <div class="block-left">
+                            <div class="img-block">
+                                <span class="prof-img-cover">
+                                    <img class="prof-img" src="img/profile-salesperson.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="left-block-col row">
+                                
 
-                            <div class="form-otr">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="input-holder">
-                                            <label for="" class="label">Select Vendor <span
-                                                    class="mandatory">*</span></label>
-                                            <div class="select-custom">
-                                                <select name="" id="" class="form_controler">
-                                                    <option value="">Select</option>
-                                                    <option value="">Vendor 1</option>
-                                                    <option value="">option</option>
-                                                    <option value="">option</option>
-                                                </select>
-                                            </div>
-                                        </div>
+                                <div class="inner-card-sm col-sm-6 col-md-12">
+                                    <div class="card-title-sm">
+                                        <span class="t-cover">Invoice</span>
                                     </div>
-
-                                    <div class="col-lg-6 col-md-6">
-                                        
+                                    <div class="text-block-sm d-flex align-items-center">
+                                        <a href="#" class="download-file"><span><img src="img/pdf-file.svg"></span>Proforma_Invoice.PDF</a>
+                                        <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#salespersonInfo">
+                                            <img src="img/eye.svg" alt="">
+                                        </button>
+                                        <button class="btn view-btn" data-bs-toggle="modal" data-bs-target="#salespersonInfo">
+                                            <img src="img/direct-download.svg" alt="">
+                                        </button>
                                     </div>
                                 </div>
-
-                                <div class="products-details">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="input-holder">
-                                                <label for="" class="label">Service Name <span
-                                                        class="mandatory">*</span></label>
-                                                <input type="text" class="form_controler">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="input-holder">
-                                                <label for="" class="label">Type of Service <span class="mandatory">*</span></label>
-                                                <div class="select-custom">
-                                                    <select name="" id="" class="form_controler">
-                                                        <option value="">Select</option>
-                                                        <option value="">service type 1</option>
-                                                        <option value="">service type 1</option>
-                                                        <option value="">service type 1</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="input-holder">
-                                                <label for="" class="label">Service Area <span class="mandatory">*</span></label>
-                                                <div class="select-custom">
-                                                    <select name="" id="" class="form_controler">
-                                                        <option value="">Select</option>
-                                                        <option value="">service type 1</option>
-                                                        <option value="">service type 1</option>
-                                                        <option value="">service type 1</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="input-holder">
-                                                <label for="" class="label">Price <span
-                                                        class="mandatory">*</span></label>
-                                                <input type="text" class="form_controler">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="input-holder">
-                                                <label for="" class="label">Short Description</label>
-                                                <textarea type="text" class="form_controler" rows="5"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                 
+                                
+                                
                             </div>
 
                         </div>
-                    </form>
+                        <div class="block-right">
+                            <div class="right-content-cover">
+                                <!-- <h4 class="sec-title-sm">Business Info</h4> -->
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Type :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                Vendor
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Category :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                Refund
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Date and Time :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                11 June 2021 04.21 PM
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Phone Number :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                +91 909099999
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Email :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                sales@burgerking.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                     
+                                    
+                                </div>
+                            </div>
+
+                            <div class="right-content-cover">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Remarks :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
+                                            </div>
+                                        </div>
+                                    </div>
+                                     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary">Save</button>
-
+                     
                 </div>
             </div>
         </div>

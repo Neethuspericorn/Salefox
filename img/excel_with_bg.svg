@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_57875" data-name="Group 57875" transform="translate(-1542.057 -301.563)">
+    <circle id="Ellipse_574" data-name="Ellipse 574" cx="12" cy="12" r="12" transform="translate(1542.057 301.563)" fill="#fbe6ef"/>
+    <g id="excel-file" transform="translate(1549.461 308.965)">
+      <path id="Path_10056" data-name="Path 10056" d="M19.24,3H16V4.055h1.072v.718H16v.7h1.061v.707H16V6.89h1.061V7.6H16V8.3h1.061v.707H16v1.061h3.24a.3.3,0,0,0,.3-.308V3.308A.3.3,0,0,0,19.24,3Zm-.411,6.012H17.415V8.3h1.415Zm0-1.415H17.415V6.89h1.415Zm0-1.415H17.415V5.475h1.415Zm0-1.415H17.415V4.061h1.415Z" transform="translate(-10.342 -1.939)" fill="#ca3c74"/>
+      <path id="Path_10057" data-name="Path 10057" d="M0,1.022V8.173L5.3,9.194V0ZM3.355,6.394,2.738,5.227a1.035,1.035,0,0,1-.072-.24h-.01a1.816,1.816,0,0,1-.083.25L1.954,6.394H.993L2.134,4.6,1.09,2.812h.982l.512,1.074a1.876,1.876,0,0,1,.108.3H2.7q.03-.105.112-.312l.569-1.064h.9L3.208,4.587l1.1,1.806Z" fill="#ca3c74"/>
+    </g>
+  </g>
+</svg>

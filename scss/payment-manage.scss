@@ -22,9 +22,31 @@
     box-shadow: 0px 3px 6px #00000043;
     border: 1px solid #FFD8E7;
     border-radius: 9px;
+    padding-top: 0;
+    padding-bottom: 0;
+    li{
+        & + li{
+            .dropdown-item{
+                border-top: 1px solid #ff93c124;
+            }
+        }
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .dropdown-item{
         font-size: 14px;
         color: #CA3C74;
+        padding: 10px 0px;
+        transition: all ease-in-out 0.2s;
+        img{
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+        &:hover{
+            background-color: unset;
+        }
     }
 }
 .export-btn{
@@ -36,3 +58,168 @@
     width: 50vw;
     max-width: 132px;
 }
+
+.payment-infos{
+    &.custom-card-wapper {
+        margin-bottom: 15px;
+    
+        @media ($sm-991) {
+            margin-bottom: 0;
+        }
+    
+        .custom-card-list {
+            @media ($sm-991) {
+                margin-bottom: 20px;
+            }
+    
+            .custom-card-block {
+                background: #FFFFFF;
+                border-radius: 15px;
+                padding: 22px 28px;
+                display: flex;
+                align-items: center;
+                @media ($sm-1679) {
+                    padding: 38px 22px;
+                }
+    
+                @media ($sm-1367) {
+                    padding: 28px 14px;
+                }
+                @media ($sm-1199) {
+                    padding: 18px 10px;
+                }
+    
+                .custom-card-icon-box {
+                    margin-left: auto; 
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 0;
+                    margin-right: 0;
+                    position: relative;
+                    padding: 0;
+                    background-color: transparent !important;
+                    @media ($sm-1679) {
+                        width: 30px;
+                        height: 30px;
+                    }
+    
+                    @media ($sm-1367) {
+                        width: 24px;
+                        height: 24px;
+                         
+                    }
+                }
+    
+                .premium-icon {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    @media ($sm-1367) {
+                        width: 15px;
+                    }
+                    @media ($sm-1023) {
+                        width: 12px;
+                    }
+                }
+    
+                .card-list-count {
+                    font-family: 'sf-bold';
+                    font-size: 20px;
+                    color: #393939;
+                    &.income{color: #00C417 !important;}
+                    &.expense{color: #FF2727 !important;}
+                    &.pending_pay{color: #FF7600 !important;}
+                    &.invoices{color: #23BEAC !important;}
+                    @media ($sm-1367) {
+                        font-size: 18px;
+                    }
+                     
+                }
+    
+                .card-list-count-description {
+                    font-size: 15px;
+                    font-family: 'sf-medium';
+                    color: #393939;
+    
+                    @media ($sm-1679) {
+                        font-size: 14px;
+                    }
+    
+                    @media ($sm-1281) {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.payment-info-modal{
+    .text-block-sm {
+        .view-btn {
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            background-color: #ffe2ed59;
+            width: 27px;
+            height: 27px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 5px;
+
+            img {
+                max-width: unset;
+            }
+
+        }
+    }
+    .download-file {
+        background-color: #ffe2ed59;
+        border-radius: 9px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: #CA3C74;
+        padding: 0 15px;
+        margin-right: 5px;
+        font-size: 12px;
+        min-width: 175px;
+        flex: 1;
+    
+        span {
+            margin-right: 10px;
+    
+            img {
+                max-width: unset;
+            }
+        }
+    
+        &:hover {
+            color: #e4729f;
+        }
+    }
+
+    .vendor-info-body-content {
+        .block-left {
+            
+            @media screen and (min-width: 768px){
+                width: 260px;
+            }
+        }
+
+        .block-right {
+            width: calc(100% - 260px);
+        }
+    }
+}
+ .amt-val-wrp{
+    gap: 10px;
+    align-items: center;
+ }
+
