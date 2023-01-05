@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Management</title>
+    <link rel="icon" type="image/x-icon" href="./img/fav_icon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/side-nav.css">
+    <link rel="stylesheet" href="css/vendor-list.css">
+    <link rel="stylesheet" href="css/filter-style.css">
+    <link rel="stylesheet" href="css/forms-style.css">
+    <link rel="stylesheet" href="css/payment-manage.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+</head>
+
+<body class="">
+    <header>
+        <div class="logo-wrap">
+            <div class="logo-block">
+                <img src="img/logo.svg" class="main-logo light-logo" alt="logo">
+                <img src="img/logo_white_text.svg" class="main-logo dark-logo" alt="logo">
+                <img src="img/fox-logo.svg" class="mob-logo" alt="logo">
+            </div>
+            <button class="btn sidebarCollapse">
+                <img src="img/ham_menu.svg" alt="ham_menu">
+            </button>
+        </div>
+        <div class="top-header">
+            <div class="left-block">
+                <div class="switch-block">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes"
+                            checked>
+                        <span class="switch-img">
+                        </span>
+                    </div>
+                </div>
+                <div class="search-block">
+                    <input type="text" class="form-control" placeholder="Search for anything…">
+                    <div class="search-box-icon">
+                        <button class="btn">
+                            <img src="img/Icons-Search.svg" alt="search ">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-block">
+                <div class="user-area">
+                    <div class="notification-header dropdown">
+                        <button class="btn" data-bs-toggle="dropdown" aria-expanded="true">
+                            <img src="img/Icons-Bell.svg" alt="notification">
+                            <span class="badge badge-secondary">6</span>
+                        </button>
+                        <div class="dropdown-menu" data-popper-placement="bottom-start">
+                            <div class="notification-header">
+                                <h4 class="notification-header-title">Notifications</h4>
+                                <span class="notification-header-mark">Mark all as read</span>
+                            </div>
+                            <div class="notification-body custom-scroll">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="notification-footer">
+                                <span class="view-all">
+                                    View All Notifications
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-header">
+                        <div class="user-txt">
+                            <div class="dropdown">
+                                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                    <img src="img/Profile.svg" alt="user">
+                                    <h4>Bradley Robin <span>Administrator</span></h4>
+
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="side-nav-wrapper">
+            <div class="side-navigation custom-scroll">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link active">
+                            <figure>
+                                <img src="img/nav-icons/Dashboard.svg" alt="dashboard">
+                            </figure>
+                            <span class="indication">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="vendor_management_list.html" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Vendor-Management.svg" alt="Vendor Management">
+                            </figure>
+                            <span class="indication">Vendor Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="salesperson-management.html" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/sales-person.svg" alt="Salesperson Management">
+                            </figure>
+                            <span class="indication">Salesperson Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#campaign-drop" aria-expanded="false">
+                            <figure>
+                                <img src="img/nav-icons/Campaigns.svg" alt="Campaigns">
+                            </figure>
+                            <span class="indication">Campaigns</span>
+                        </a>
+                        <!-- collapse -->
+                        <div id="campaign-drop" class="submenu collapse">
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="products.html">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="campaigns.html">Campaigns</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/payment.svg" alt="Payment Management">
+                            </figure>
+                            <span class="indication">Payment Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a  href="#" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Subscription-Management.svg" alt="Subscription Management">
+                            </figure>
+                            <span class="indication">Subscription Management</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Reports-and-Analytics.svg" alt="Reports and Analytics">
+                            </figure>
+                            <span class="indication">Reports and Analytics</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#noti-drop" aria-expanded="false">
+                            <figure>
+                                <img src="img/nav-icons/notification.svg" alt="Notification">
+                            </figure>
+                            <span class="indication">Notification</span>
+                        </a>
+                        <!-- collapse -->
+                        <div id="noti-drop" class="submenu collapse">
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sub menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sub menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sub menu</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#Permission-drop" aria-expanded="false">
+                            <figure>
+                                <img src="img/nav-icons/permission.svg" alt="Permission">
+                            </figure>
+                            <span class="indication">Permission</span>
+                        </a>
+                        <!-- collapse -->
+                        <div id="Permission-drop" class="submenu collapse">
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="department-list.html">Department</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="designation.html">Designation</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/settings.svg" alt="Settings">
+                            </figure>
+                            <span class="indication">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dashboard-content custom-scroll">
+            <div class="db-content-inner">
+                <div class="db-title-wrapper d-flex">
+                    <div class="title-block">
+                        Payment Management
+                    </div>
+                    <div class="title-block-right d-flex ms-sm-auto">
+                        <div class="button-grp filter-wrp  dropdown">
+                            <button class="primary-btn light-bg dropdown-toggle export-btn" type="button"  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Export
+                            </button>
+                            <ul class="dropdown-menu export-dropdown" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Excel</a></li>
+                                <li><a class="dropdown-item" href="#">CSV</a></li>
+                                <li><a class="dropdown-item" href="#">PDF</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filer-btn-collapse">
+                    <form>
+                        <div class="filter-cover">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-12">
+                                    <div class="radio-cover">
+                                        <span class="sort-by">Sort By :</span>
+                                        <label class="radio-btn radio-gap">Debit
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="radio-btn radio-gap">Credit
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="checkbox-cover">
+                                        <label class="check-box check-gap">Show Favorites only
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="forms-cover">
+                                        <div class="select-otr">
+                                            <div class="input-holder sm-form-col">
+                                                <div class="form_controler p-0 input-group">
+                                                    <span class="input-group-text" id="basic-addon1">
+                                                        <img src="img/Icons-Search.svg" alt="Search">
+                                                    </span>
+                                                    <input type="text" class="search-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+                                            <div class="input-holder sm-form-col">
+                                                <div class="select-custom">
+                                                    <select name="" id="" class="form_controler">
+                                                        <option value="">Salesperson</option>
+                                                        <option value="">option</option>
+                                                        <option value="">option</option>
+                                                        <option value="">option</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="input-holder sm-form-col">
+                                                <div class="select-custom">
+                                                    <select name="" id="" class="form_controler">
+                                                        <option value="">Category</option>
+                                                        <option value="">option</option>
+                                                        <option value="">option</option>
+                                                        <option value="">option</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="button-grp">
+                                            <button class="primary-btn light-bg">Reset</button>
+                                            <button class="primary-btn dark-bg">Apply</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </form>
+                </div>
+                <div class="table-cover custom-scroll custom-table-cover custom-scroll-h">
+                    <table class="custom-listing-table vendor-list-tbl">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Vendor/Salesperson</th>
+                                <th>Amount</th>
+                                <th>Date and Time</th>
+                                <th>Category</th>
+                                <th>Remarks</th>
+                                <th>Action</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="user-img-block d-flex">
+                                        <div class="usr-icon">
+                                            <img src="img/Profile.svg" alt="profile">
+                                        </div>
+                                        <div class="usr-name">
+                                            Sara’s Food Pvt.Ltd
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Lorem ipsum</td>
+                                <td>Jacob Wilston</td>
+                                <td>
+                                    Lorem ipsum dolor sit amet.
+                                </td>
+                                <td>₹ 350</td>
+                               
+                                 
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+                                    
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                             
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-pagination">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link link-disabled previous-link" href="#" aria-label="Previous">
+                                <img src="img/Icon-arrow-left.svg" alt="arrow-left">
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link link-dots" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">22</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <img src="img/Icon-arrow-left.svg" alt="arrow-left">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Add services Modal -->
+    <div class="modal fade modal-forms custom-modal serviceModal" id="exampleModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        Add Service
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="modal-forms">
+
+                            <div class="form-otr">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Select Vendor <span
+                                                    class="mandatory">*</span></label>
+                                            <div class="select-custom">
+                                                <select name="" id="" class="form_controler">
+                                                    <option value="">Select</option>
+                                                    <option value="">Vendor 1</option>
+                                                    <option value="">option</option>
+                                                    <option value="">option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="products-details">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="input-holder">
+                                                <label for="" class="label">Service Name <span
+                                                        class="mandatory">*</span></label>
+                                                <input type="text" class="form_controler">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="input-holder">
+                                                <label for="" class="label">Type of Service <span class="mandatory">*</span></label>
+                                                <div class="select-custom">
+                                                    <select name="" id="" class="form_controler">
+                                                        <option value="">Select</option>
+                                                        <option value="">service type 1</option>
+                                                        <option value="">service type 1</option>
+                                                        <option value="">service type 1</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="input-holder">
+                                                <label for="" class="label">Service Area <span class="mandatory">*</span></label>
+                                                <div class="select-custom">
+                                                    <select name="" id="" class="form_controler">
+                                                        <option value="">Select</option>
+                                                        <option value="">service type 1</option>
+                                                        <option value="">service type 1</option>
+                                                        <option value="">service type 1</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="input-holder">
+                                                <label for="" class="label">Price <span
+                                                        class="mandatory">*</span></label>
+                                                <input type="text" class="form_controler">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="input-holder">
+                                                <label for="" class="label">Short Description</label>
+                                                <textarea type="text" class="form_controler" rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                 
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <script src="Js/vendor/bootstrap.min.js"></script>
+    <script src="Js/vendor/jquery.min.js"></script>
+    <script src="Js/vendor/script.js"></script>
+    </script>
+</body>
+
+</html>
