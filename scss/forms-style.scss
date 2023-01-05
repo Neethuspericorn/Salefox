@@ -305,7 +305,7 @@ input[type="file"]::file-selector-button {
         }
 
         .btn-close {
-
+            
             @media ($sm-1367) {
                 background-size: 12px;
                 width: 28px;
@@ -475,7 +475,6 @@ input[type="file"]::file-selector-button {
     opacity: 1;
     padding: 0 !important;
     box-shadow: none !important;
-
     @media ($sm-1367) {
         background-size: 12px;
         width: 28px;
@@ -487,7 +486,6 @@ input[type="file"]::file-selector-button {
         width: 24px;
         height: 24px;
     }
-
     &:hover {
         opacity: 0.9;
     }
@@ -629,11 +627,6 @@ input[type="file"]::file-selector-button {
              min-width: 30px;
              max-width: 30px;
              margin-right: 10px;
-.campaigns-modal-wrap {
-.otp-modal-wrap{
-    .modal-dialog {
-        max-width: 887px;
-    }
 
    
         }
@@ -658,8 +651,7 @@ input[type="file"]::file-selector-button {
 
     }
 }
-}
-}
+
 @media(max-width:1679px) {
     .dropdown-select .dropdown-menu{
         font-size: 13px;
@@ -876,7 +868,6 @@ input[type="file"]::file-selector-button {
         margin-bottom: 12px;
     }
 }
-
 @media(max-width:767px) {
     .custom-modal .modal-dialog {
         transform: none;
