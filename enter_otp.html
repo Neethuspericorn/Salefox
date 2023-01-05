@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/side-nav.css">
     <link rel="stylesheet" href="css/payable-form.css">
+    <link rel="stylesheet" href="css/forms-style.css">
     <link rel="stylesheet" href="css/dark-theme.css">
 </head>
 
@@ -133,11 +134,12 @@
                         <label for="" class="label">Enter OTP sent to ******8428</label>
                         <input type="text" class="form_controler">
                     </div>
-                    <button type="button" class="btn btn-primary">Validate your OTP</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#campaigns-modal">Validate your OTP</button>
                     <p>OTP will expire in <span class="time-txt">4:50</span> Minutes</p>
                 </div>
                 <div class="payable-footer-block">
-                    <p>You can always complete the transaction on your Bank’s website. 
+                    <p>You can always complete the transaction on your Bank’s website.
                         <span>payable-footer-block</span>
                     </p>
                 </div>
@@ -148,7 +150,29 @@
             <img src="img/powereds-grey.png" class="dark" alt="powereds">
         </div>
     </div>
+    <div class="modal fade small-modal otp-modal-wrap" id="campaigns-modal" data-bs-backdrop="static"
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="small-modal-content">
+                        <img src="img/campaign-image.svg" alt="campaign">
+                        <h3>Campaign created successfully</h3>
+                        <p class="paragraph">Woohoo! Congratulation!! You have Unlocked Upto <strong>250</strong> off on
+                            your next campaign</p>
+                        <div class="action-btn">
+                            <button data-bs-toggle="modal" class="btn primary-btn-modal">Take a Look</button>
+                            <button data-bs-toggle="modal" class="btn primary-btn-later">Maybe Later</button>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </div>
 
     <script src="Js/vendor/bootstrap.min.js"></script>
     <script src="Js/vendor/jquery.min.js"></script>
