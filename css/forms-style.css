@@ -606,14 +606,14 @@ input[type=file]::file-selector-button {
   max-width: 30px;
   margin-right: 10px;
 }
-.dropdown-select .dropdown-menu .dropdown-item .mode-card .campaigns-modal-wrap .modal-dialog {
+.dropdown-select .dropdown-menu .dropdown-item .mode-card .campaigns-modal-wrap .otp-modal-wrap .modal-dialog {
   max-width: 887px;
 }
-.dropdown-select .dropdown-menu .dropdown-item.active, .dropdown-select .dropdown-menu .dropdown-item:hover {
+.dropdown-select .dropdown-menu .dropdown-item .dropdown-item.active, .dropdown-select .dropdown-menu .dropdown-item .dropdown-item:hover {
   color: #1e2125;
   background-color: #f7f7f7;
 }
-.dropdown-select .btn-dropdown {
+.dropdown-select .dropdown-menu .btn-dropdown {
   width: 100%;
   text-align: left;
   background-color: transparent;
@@ -624,7 +624,7 @@ input[type=file]::file-selector-button {
       -ms-flex-align: center;
           align-items: center;
 }
-.dropdown-select .btn-dropdown .mode-card {
+.dropdown-select .dropdown-menu .btn-dropdown .mode-card {
   margin-right: 15px;
   max-width: 30px;
 }

@@ -10,10 +10,10 @@ $dark-sec-color: #D53871;
 
 .dark-theme {
     background-color: #161819;
-    .enter-otp-block .payable-amount-block h3, .enter-otp-block .payable-amount-block .bank-block h4, .enter-otp-block .payable-amount-block .payable-form-block .input-holder label, .enter-otp-block .payable-amount-block .payable-form-block p, .enter-otp-block .payable-amount-block .payable-footer-block p, .campaigns-modal-wrap .modal-content .small-modal-content h3{
+    .enter-otp-block .payable-amount-block h3, .enter-otp-block .payable-amount-block .bank-block h4, .enter-otp-block .payable-amount-block .payable-form-block .input-holder label, .enter-otp-block .payable-amount-block .payable-form-block p, .enter-otp-block .payable-amount-block .payable-footer-block p, .otp-modal-wrap .modal-content .small-modal-content h3{
         color: $text-white;
     }
-    .campaigns-modal-wrap .modal-content .small-modal-content p{
+    .otp-modal-wrap .modal-content .small-modal-content p{
         color: #71747A !important;
     }
     .enter-otp-block .payable-amount-block .payable-form-block p span {

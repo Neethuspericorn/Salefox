@@ -630,6 +630,7 @@ input[type="file"]::file-selector-button {
              max-width: 30px;
              margin-right: 10px;
 .campaigns-modal-wrap {
+.otp-modal-wrap{
     .modal-dialog {
         max-width: 887px;
     }
@@ -656,6 +657,7 @@ input[type="file"]::file-selector-button {
     .dropdown-item.active, .dropdown-item:active{
 
     }
+}
 }
 }
 @media(max-width:1679px) {
