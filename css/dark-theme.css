@@ -20,6 +20,25 @@
 .dark-theme {
   background-color: #161819;
 }
+.dark-theme .enter-otp-block .payable-amount-block h3, .dark-theme .enter-otp-block .payable-amount-block .bank-block h4, .dark-theme .enter-otp-block .payable-amount-block .payable-form-block .input-holder label, .dark-theme .enter-otp-block .payable-amount-block .payable-form-block p, .dark-theme .enter-otp-block .payable-amount-block .payable-footer-block p, .dark-theme .campaigns-modal-wrap .modal-content .small-modal-content h3 {
+  color: #fff;
+}
+.dark-theme .campaigns-modal-wrap .modal-content .small-modal-content p {
+  color: #71747A !important;
+}
+.dark-theme .enter-otp-block .payable-amount-block .payable-form-block p span {
+  color: #FA5555;
+}
+.dark-theme .enter-otp-block .payable-amount-block .payable-form-block .input-holder .form_controler {
+  border: 1px solid #373737;
+  background: #161819;
+}
+.dark-theme .powered-block img.light {
+  display: none;
+}
+.dark-theme .powered-block img.dark {
+  display: block;
+}
 .dark-theme .side-nav-wrapper,
 .dark-theme header,
 .dark-theme .db-content-inner .custom-card-wapper .custom-card-list .custom-card-block,

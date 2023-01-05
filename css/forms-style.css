@@ -606,12 +606,14 @@ input[type=file]::file-selector-button {
   max-width: 30px;
   margin-right: 10px;
 }
-.dropdown-select .dropdown-item.active, .dropdown-select .dropdown-item:hover {
+.dropdown-select .dropdown-menu .dropdown-item .mode-card .campaigns-modal-wrap .modal-dialog {
+  max-width: 887px;
+}
+.dropdown-select .dropdown-menu .dropdown-item.active, .dropdown-select .dropdown-menu .dropdown-item:hover {
   color: #1e2125;
   background-color: #f7f7f7;
 }
-
-.btn-dropdown {
+.dropdown-select .btn-dropdown {
   width: 100%;
   text-align: left;
   background-color: transparent;
@@ -622,7 +624,7 @@ input[type=file]::file-selector-button {
       -ms-flex-align: center;
           align-items: center;
 }
-.btn-dropdown .mode-card {
+.dropdown-select .btn-dropdown .mode-card {
   margin-right: 15px;
   max-width: 30px;
 }
