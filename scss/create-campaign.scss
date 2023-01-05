@@ -39,7 +39,7 @@ line-height: 28px;
 letter-spacing: 0px;
 color: #000000;
 padding-left: 30px;
-border-bottom: 1px solid rgb(221 221 221 / 49%);
+border-bottom: 1px solid rgba(221, 221, 221, 0.49);
 width: 100%;
 }
 
@@ -551,7 +551,7 @@ position: relative;
 						padding: 0;
 					}
 					&.sales{
-						color: #23beac;
+						color: #126A60;
 					}
 					span{
 						font-size: 30px;
@@ -580,6 +580,9 @@ position: relative;
         font-family: 'sf-medium';
         font-weight: 500;
         font-size: 20px;
+        @media (max-width:767px){
+            font-size: 14px;
+        }
 	}
 	img{
 		&.info{
