@@ -580,6 +580,9 @@ position: relative;
         font-family: 'sf-medium';
         font-weight: 500;
         font-size: 20px;
+        @media (max-width:767px){
+            font-size: 14px;
+        }
 	}
 	img{
 		&.info{

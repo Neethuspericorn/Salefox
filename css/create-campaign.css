@@ -452,6 +452,9 @@
   font-family: 'sf-medium';
   font-weight: 500;
   font-size: 20px; }
+  @media (max-width: 767px) {
+    .create-campaign .currency {
+      font-size: 14px; } }
 .create-campaign img.info {
   max-height: 10px;
   margin-left: 5px; }
