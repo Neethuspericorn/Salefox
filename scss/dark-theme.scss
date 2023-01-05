@@ -508,8 +508,80 @@ $dark-sec-color: #D53871;
         }
     }
 
-    .authentication .authentication-right-block .authentication-form .authentication-form-header .logo-wrap small {
+    .authentication .authentication-right-block .authentication-form .authentication-form-header .logo-wrap small,
+    .create-campaign .payment-method .payment-title .payment-hd,.create-campaign .apply-coupon .apply-tag b,.create-campaign .apply-coupon .apply-tag {
         color: #fff;
+    }
+
+    // Create Campaign
+    .create-campaign .payment-details{
+        background-color: #111;
+    }
+    .create-campaign .payment-details .title-pay,.create-campaign .payment-details .price-list ul li p,.create-campaign .ftr-info strong,
+    .create-campaign .apply-coupon .coupon-list li .content .cpn-title strong{
+        color: #fff;
+    }
+    .create-campaign .ftr-info .total{
+        background-color: #1F2125;
+    }
+    .create-campaign .payment-details{
+        border-color: transparent;
+    }
+    .create-campaign .payment-details .title-pay{
+        border-bottom: 1px solid rgb(221 221 221 / 15%);
+    }
+    .create-campaign .ftr-info{
+        border-top: 1px solid rgb(221 221 221 / 15%);
+
+    }
+    .create-campaign .apply-coupon .apply-tag{
+        background-color: #6c2945;
+    }
+    .create-campaign .apply-coupon .apply-tag .close{
+  background-color: #621533;
+   img{
+    filter:  brightness(0) invert(1);
+   }
+    }
+    .create-campaign .pay-btn-otr .poweard-stripe img, .btn-dropdown .mode-card img{
+        filter: brightness(0) invert(1);
+    }
+    .create-campaign .apply-coupon .coupon-grp .coupon-field{
+        background-color: #1F2125;
+    border: 1px solid #373737;
+    color: #fff;
+    }
+    .create-campaign .apply-coupon .coupon-grp .error-msg{
+        color: #FF6060;
+    }
+    .create-campaign .apply-coupon .coupon-list li .content p{
+        color: #91959D;
+    }
+    .create-campaign .apply-coupon .coupon-list li .copy-btn{
+        background-color: #101010;
+    }
+    .create-campaign .apply-coupon .coupon-list li{
+        border-color: #373737;
+    }
+    .dropdown-select .dropdown-menu .dropdown-item{
+        background-color: #111;
+        color: #fff;
+    }
+    .dropdown-select .dropdown-menu li{
+        border-color: #373737;
+    }
+    .dropdown-select .dropdown-item.active, .dropdown-select .dropdown-item:hover{
+        background-color: #1F2125;
+
+    }
+
+    .create-campaign .apply-coupon .apply-tag b{
+        font-weight: 500;
+    }
+
+    .create-campaign .info img{
+        filter: brightness(0) invert(1);
+
     }
 }
 
