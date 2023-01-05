@@ -370,7 +370,7 @@
       text-indent: 0; }
     .circle.checked:after {
       content: "";
-      background: url(/img/check.png) no-repeat center;
+      background: url(../img/check.png) no-repeat center;
       width: 15px;
       height: 15px;
       position: absolute; }
@@ -399,11 +399,11 @@
   max-height: 400px;
   position: relative; }
   .create-campaign .chk-list-wrp::-webkit-scrollbar {
-    width: 10px; }
+    width: 4px; }
   .create-campaign .chk-list-wrp::-webkit-scrollbar-track {
     background-color: rgba(213, 213, 213, 0.3); }
   .create-campaign .chk-list-wrp::-webkit-scrollbar-thumb {
-    box-shadow: inset 0 0 6px rgba(244, 244, 244, 0.3); }
+    box-shadow: inset 0 0 6px white; }
 .create-campaign .results-wrp {
   border-radius: 12px;
   border: 1px solid #FFE2ED;
@@ -450,7 +450,7 @@
 .create-campaign .currency {
   color: #CA3C74;
   font-family: 'sf-medium';
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px; }
   @media (max-width: 767px) {
     .create-campaign .currency {
