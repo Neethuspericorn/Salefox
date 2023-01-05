@@ -19,9 +19,9 @@
     @include justify-content (center);*/
 .dark-theme {
   background-color: #161819; }
-  .dark-theme .enter-otp-block .payable-amount-block h3, .dark-theme .enter-otp-block .payable-amount-block .bank-block h4, .dark-theme .enter-otp-block .payable-amount-block .payable-form-block .input-holder label, .dark-theme .enter-otp-block .payable-amount-block .payable-form-block p, .dark-theme .enter-otp-block .payable-amount-block .payable-footer-block p, .dark-theme .campaigns-modal-wrap .modal-content .small-modal-content h3 {
+  .dark-theme .enter-otp-block .payable-amount-block h3, .dark-theme .enter-otp-block .payable-amount-block .bank-block h4, .dark-theme .enter-otp-block .payable-amount-block .payable-form-block .input-holder label, .dark-theme .enter-otp-block .payable-amount-block .payable-form-block p, .dark-theme .enter-otp-block .payable-amount-block .payable-footer-block p, .dark-theme .otp-modal-wrap .modal-content .small-modal-content h3 {
     color: #fff; }
-  .dark-theme .campaigns-modal-wrap .modal-content .small-modal-content p {
+  .dark-theme .otp-modal-wrap .modal-content .small-modal-content p {
     color: #71747A !important; }
   .dark-theme .enter-otp-block .payable-amount-block .payable-form-block p span {
     color: #FA5555; }

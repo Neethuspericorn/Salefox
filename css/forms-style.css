@@ -416,37 +416,37 @@ input[type="file"]::file-selector-button {
     opacity: 0.9;
     outline: none; }
 
-.campaigns-modal-wrap .modal-dialog {
+.otp-modal-wrap .modal-dialog {
   max-width: 887px; }
-.campaigns-modal-wrap .modal-content {
+.otp-modal-wrap .modal-content {
   padding: 100px 0; }
   @media (max-width: 1679px) {
-    .campaigns-modal-wrap .modal-content {
+    .otp-modal-wrap .modal-content {
       padding: 80px 0; } }
   @media (max-width: 1367px) {
-    .campaigns-modal-wrap .modal-content {
+    .otp-modal-wrap .modal-content {
       padding: 50px 0; } }
   @media (max-width: 1199px) {
-    .campaigns-modal-wrap .modal-content {
+    .otp-modal-wrap .modal-content {
       padding: 30px 0; } }
   @media (max-width: 1023px) {
-    .campaigns-modal-wrap .modal-content {
+    .otp-modal-wrap .modal-content {
       padding: 20px 0; } }
-  .campaigns-modal-wrap .modal-content .modal-header {
+  .otp-modal-wrap .modal-content .modal-header {
     padding: 0; }
-  .campaigns-modal-wrap .modal-content .small-modal-content {
+  .otp-modal-wrap .modal-content .small-modal-content {
     max-width: 450px;
     margin: auto; }
     @media (max-width: 1679px) {
-      .campaigns-modal-wrap .modal-content .small-modal-content img {
+      .otp-modal-wrap .modal-content .small-modal-content img {
         width: 200px; } }
     @media (max-width: 1367px) {
-      .campaigns-modal-wrap .modal-content .small-modal-content img {
+      .otp-modal-wrap .modal-content .small-modal-content img {
         width: 160px; } }
     @media (max-width: 1199px) {
-      .campaigns-modal-wrap .modal-content .small-modal-content img {
+      .otp-modal-wrap .modal-content .small-modal-content img {
         width: 140px; } }
-    .campaigns-modal-wrap .modal-content .small-modal-content h3 {
+    .otp-modal-wrap .modal-content .small-modal-content h3 {
       font-family: 'sf-medium';
       font-size: 23px;
       text-align: left;
@@ -455,14 +455,14 @@ input[type="file"]::file-selector-button {
       margin: 0;
       margin-top: 22px; }
       @media (max-width: 1367px) {
-        .campaigns-modal-wrap .modal-content .small-modal-content h3 {
+        .otp-modal-wrap .modal-content .small-modal-content h3 {
           font-size: 20px;
           margin-top: 18px; } }
       @media (max-width: 1023px) {
-        .campaigns-modal-wrap .modal-content .small-modal-content h3 {
+        .otp-modal-wrap .modal-content .small-modal-content h3 {
           font-size: 18px;
           margin-top: 15px; } }
-    .campaigns-modal-wrap .modal-content .small-modal-content p {
+    .otp-modal-wrap .modal-content .small-modal-content p {
       font-family: 'sf-pro-light';
       font-size: 19px;
       text-align: center;
@@ -470,24 +470,24 @@ input[type="file"]::file-selector-button {
       margin: 0;
       margin-top: 23px; }
       @media (max-width: 1367px) {
-        .campaigns-modal-wrap .modal-content .small-modal-content p {
+        .otp-modal-wrap .modal-content .small-modal-content p {
           font-size: 16px;
           margin-top: 18px;
           max-width: 380px; } }
       @media (max-width: 1199px) {
-        .campaigns-modal-wrap .modal-content .small-modal-content p {
+        .otp-modal-wrap .modal-content .small-modal-content p {
           font-size: 14px; } }
-    .campaigns-modal-wrap .modal-content .small-modal-content .action-btn {
+    .otp-modal-wrap .modal-content .small-modal-content .action-btn {
       display: flex;
       width: 100%;
       margin-top: 35px; }
       @media (max-width: 1367px) {
-        .campaigns-modal-wrap .modal-content .small-modal-content .action-btn {
+        .otp-modal-wrap .modal-content .small-modal-content .action-btn {
           margin-top: 25px; } }
       @media (max-width: 1199px) {
-        .campaigns-modal-wrap .modal-content .small-modal-content .action-btn {
+        .otp-modal-wrap .modal-content .small-modal-content .action-btn {
           margin-top: 20px; } }
-      .campaigns-modal-wrap .modal-content .small-modal-content .action-btn .btn {
+      .otp-modal-wrap .modal-content .small-modal-content .action-btn .btn {
         width: 50%;
         height: 47px;
         border-radius: 9px;
@@ -495,15 +495,15 @@ input[type="file"]::file-selector-button {
         text-align: center;
         font-size: 15px; }
         @media (max-width: 1367px) {
-          .campaigns-modal-wrap .modal-content .small-modal-content .action-btn .btn {
+          .otp-modal-wrap .modal-content .small-modal-content .action-btn .btn {
             height: 40px; } }
-        .campaigns-modal-wrap .modal-content .small-modal-content .action-btn .btn:hover {
+        .otp-modal-wrap .modal-content .small-modal-content .action-btn .btn:hover {
           opacity: 0.8; }
-        .campaigns-modal-wrap .modal-content .small-modal-content .action-btn .btn.primary-btn-modal {
+        .otp-modal-wrap .modal-content .small-modal-content .action-btn .btn.primary-btn-modal {
           background: #CA3C74; }
-          .campaigns-modal-wrap .modal-content .small-modal-content .action-btn .btn.primary-btn-modal:hover {
+          .otp-modal-wrap .modal-content .small-modal-content .action-btn .btn.primary-btn-modal:hover {
             color: #fff; }
-        .campaigns-modal-wrap .modal-content .small-modal-content .action-btn .btn.primary-btn-later {
+        .otp-modal-wrap .modal-content .small-modal-content .action-btn .btn.primary-btn-later {
           border: 1px solid #CA3C74;
           color: #CA3C74;
           margin-left: 12px; }
