@@ -305,7 +305,7 @@ input[type="file"]::file-selector-button {
         }
 
         .btn-close {
-            
+
             @media ($sm-1367) {
                 background-size: 12px;
                 width: 28px;
@@ -475,6 +475,7 @@ input[type="file"]::file-selector-button {
     opacity: 1;
     padding: 0 !important;
     box-shadow: none !important;
+
     @media ($sm-1367) {
         background-size: 12px;
         width: 28px;
@@ -486,6 +487,7 @@ input[type="file"]::file-selector-button {
         width: 24px;
         height: 24px;
     }
+
     &:hover {
         opacity: 0.9;
     }
@@ -590,6 +592,128 @@ input[type="file"]::file-selector-button {
     }
 }
 
+.campaigns-modal-wrap {
+    .modal-dialog {
+        max-width: 887px;
+    }
+
+    .modal-content {
+        padding: 100px 0;
+
+        @media ($sm-1679) {
+            padding: 80px 0;
+        }
+
+        @media ($sm-1367) {
+            padding: 50px 0;
+        }
+        @media ($sm-1199) {
+            padding: 30px 0;
+        }
+        @media ($sm-1023) {
+            padding: 20px 0;
+        }
+        .modal-header{
+            padding: 0;
+        }
+        .small-modal-content {
+            max-width: 450px;
+            margin: auto;
+
+            img {
+                @media ($sm-1679) {
+                    width: 200px;
+                }
+
+                @media ($sm-1367) {
+                    width: 160px;
+                }
+                @media ($sm-1199) {
+                    width: 140px;
+                }
+            }
+
+            h3 {
+                font-family: 'sf-medium';
+                font-size: 23px;
+                text-align: left;
+                letter-spacing: 0px;
+                color: #6E062F;
+                margin: 0;
+                margin-top: 22px;
+
+                @media ($sm-1367) {
+                    font-size: 20px;
+                    margin-top: 18px;
+                }
+                @media ($sm-1023) {
+                    font-size: 18px;
+                    margin-top: 15px;
+                }
+            }
+
+            p {
+                font-family: 'sf-pro-light';
+                font-size: 19px;
+                text-align: center;
+                color: #171717;
+                margin: 0;
+                margin-top: 23px;
+
+                @media ($sm-1367) {
+                    font-size: 16px;
+                    margin-top: 18px;
+                    max-width: 380px;
+                }
+                @media ($sm-1199) {
+                    font-size: 14px;
+                }
+            }
+
+            .action-btn {
+                display: flex;
+                width: 100%;
+                margin-top: 35px;
+                @media ($sm-1367) {
+                    margin-top: 25px;
+                }
+                @media ($sm-1199) {
+                    margin-top: 20px;
+                }
+                .btn {
+                    width: 50%;
+                    height: 47px;
+                    border-radius: 9px;
+                    font-family: 'sf-regular';
+                    text-align: center;
+                    font-size: 15px;
+
+                    @media ($sm-1367) {
+                        height: 40px;
+                    }
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+
+                    &.primary-btn-modal {
+                        background: #CA3C74;
+
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+
+                    &.primary-btn-later {
+                        border: 1px solid #CA3C74;
+                        color: #CA3C74;
+                        margin-left: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 @media(max-width:1679px) {
@@ -805,6 +929,7 @@ input[type="file"]::file-selector-button {
         margin-bottom: 12px;
     }
 }
+
 @media(max-width:767px) {
     .custom-modal .modal-dialog {
         transform: none;
