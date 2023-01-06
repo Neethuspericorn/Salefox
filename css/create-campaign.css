@@ -329,50 +329,49 @@
     width: 0;
     z-index: 1;
     transition: .4s ease; }
-
-.circle {
-  background-color: #fff;
-  color: #999;
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #E3E6EE;
-  transition: .4s ease;
-  z-index: 2; }
-  .circle span {
-    position: absolute;
-    top: 40px;
-    white-space: nowrap;
-    font-size: 15px;
-    line-height: 18px;
-    font-family: "sf-regular";
-    color: #C1A9B2; }
-    @media (max-width: 767px) {
-      .circle span {
-        font-size: 12px; } }
-    @media (max-width: 579px) {
-      .circle span {
-        display: none; } }
-  .circle.active {
-    border-color: #CA3C74;
-    background-color: #CA3C74;
-    color: #fff; }
-    .circle.active span {
-      color: #CA3C74; }
-  .circle.checked {
-    border-color: #E3E6EE;
-    text-indent: -9999px; }
-    .circle.checked span {
-      text-indent: 0; }
-    .circle.checked:after {
-      content: "";
-      background: url(../img/check.png) no-repeat center;
-      width: 15px;
-      height: 15px;
-      position: absolute; }
+  .progress-container .circle {
+    background-color: #fff;
+    color: #999;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E3E6EE;
+    transition: .4s ease;
+    z-index: 2; }
+    .progress-container .circle span {
+      position: absolute;
+      top: 40px;
+      white-space: nowrap;
+      font-size: 15px;
+      line-height: 18px;
+      font-family: "sf-regular";
+      color: #C1A9B2; }
+      @media (max-width: 767px) {
+        .progress-container .circle span {
+          font-size: 12px; } }
+      @media (max-width: 579px) {
+        .progress-container .circle span {
+          display: none; } }
+    .progress-container .circle.active {
+      border-color: #CA3C74;
+      background-color: #CA3C74;
+      color: #fff; }
+      .progress-container .circle.active span {
+        color: #CA3C74; }
+    .progress-container .circle.checked {
+      border-color: #E3E6EE;
+      text-indent: -9999px; }
+      .progress-container .circle.checked span {
+        text-indent: 0; }
+      .progress-container .circle.checked:after {
+        content: "";
+        background: url(../img/check.png) no-repeat center;
+        width: 15px;
+        height: 15px;
+        position: absolute; }
 
 .create-campaign .chk-list-wrp {
   overflow-y: scroll;
@@ -497,7 +496,8 @@
       min-height: auto; } }
 .create-campaign .switch-block {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  height: 45px; }
   .create-campaign .switch-block .delete-btn {
     margin-left: auto;
     margin-right: 10px; }
@@ -581,8 +581,7 @@
   .create-campaign .pay-btn-otr {
     margin-top: 30px; } }
 @media (max-width: 991px) {
-  .form-spacing-01,
-  .form-spacing-02 {
+  .form-spacing-01, .form-spacing-02 {
     padding: 0; }
 
   .create-campaign .payment-method {
@@ -598,8 +597,7 @@
   .create-campaign .payment-method {
     margin-top: 35px; } }
 @media (max-width: 479px) {
-  .create-campaign .payment-details .price-list ul,
-  .create-campaign .payment-details .title-pay {
+  .create-campaign .payment-details .price-list ul, .create-campaign .payment-details .title-pay {
     padding: 0; }
 
   .create-campaign .ftr-info {
@@ -627,8 +625,7 @@
   .create-campaign .apply-coupon .coupon-list li .content {
     padding-right: 5px; }
 
-  .create-campaign .payment-details,
-  .create-campaign .apply-coupon .coupon-list li {
+  .create-campaign .payment-details, .create-campaign .apply-coupon .coupon-list li {
     border-radius: 8px; }
 
   .create-campaign .apply-coupon .coupon-list li {
