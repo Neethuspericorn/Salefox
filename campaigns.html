@@ -1168,84 +1168,237 @@
     </div>
 
 
-    <div class="modal fade small-modal campaigns-modal-wrap" id="campaigns-modal" data-bs-backdrop="static"
-        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+    <div class="modal fade modal-forms vendor-info-modal campaigns-modal-wrap" id="campaigns-modal" tabindex="-1"
+        aria-labelledby="vendorInfoLabel" aria-hidden="true" role="dialog">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
+                    <h5 class="modal-title" id="vendorInfoLabel">
+                        Campaign Preview
+                    </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="small-modal-content">
-                        <img src="img/campaign-image.svg" alt="campaign">
-                        <h3>Campaign created successfully</h3>
-                        <p class="paragraph">Woohoo! Congratulation!! You have Unlocked Upto <strong>250</strong> off on your next campaign</p>
-                        <div class="action-btn">
-                            <button data-bs-toggle="modal" class="btn primary-btn-modal">Take a Look</button>
-                            <button data-bs-toggle="modal" class="btn primary-btn-later">Maybe Later</button>
+                    <div class="vendor-info-body-content d-flex">
+                        <div class="block-left">
+                            <div class="img-block">
+                                <span class="prof-img-cover">
+                                    <img class="prof-img" src="img/prof-mod.png" alt="">
+                                    <img class="premium-img" src="img/Premium.svg" alt="">
+                                </span>
+
+                            </div>
+                            <div class="left-block-col row">
+                                <div class="inner-card-sm col-sm-6 col-md-12">
+                                    <div class="card-title-sm">
+                                        <img src="img/calendar.svg" alt="calendar">
+                                        <span class="t-cover">Campaign Start date</span>
+                                    </div>
+                                    <div class="text-block-sm">
+                                        05 December 2022
+                                    </div>
+                                </div>
+
+                                <div class="inner-card-sm col-sm-6 col-md-12">
+                                    <div class="card-title-sm">
+                                        <img src="img/calendar.svg" alt="calendar">
+                                        <span class="t-cover">Campaign End date</span>
+                                    </div>
+                                    <div class="text-block-sm campaign-text-block">
+                                        06 March 2023
+                                    </div>
+                                </div>
+                                <div class="inner-card-sm col-sm-6 col-md-12">
+                                    <div class="card-title-sm">
+                                        <img src="img/store.svg" alt="store">
+                                        <span class="t-cover">Shops Targeted</span>
+                                    </div>
+                                    <div class="text-block-sm shop-text-block">
+                                        234
+                                    </div>
+                                </div>
+                                <div class="inner-card-sm col-sm-6 col-md-12">
+                                    <div class="card-title-sm">
+                                        <img src="img/salesman.svg" alt="salesman">
+                                        <span class="t-cover">No. of SE Available</span>
+                                    </div>
+                                    <div class="text-block-sm available-text-block">
+                                        78
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="block-right">
+                            <div class="right-content-cover btm-line">
+                                <h4 class="sec-title-sm">Campaign Info</h4>
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Name :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                Ripple Tea Brochure Delivery
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Vendor Name :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                Ripple Tea
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Portfolio :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                Brochures
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-sm-12">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Information
+                                            </div>
+                                            <div class="text-block-sm">
+                                                The main purpose of this job is to reach maximum number of shops related
+                                                to dummy text Lorem Ipsum is simply dummy text of the printing and
+                                                typesetting industry. Lorem Ipsum has been the industry’s standard dummy
+                                                text ever since the 1500s, when an unknown printer took a galley of type
+                                                and scrambled it to make a type specimen book. It has survived not only
+                                                five centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged. It was popularised in the 1960s
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="right-content-cover">
+                                <h4 class="sec-title-sm">Location</h4>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                State :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                Kerala
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                District :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                Ernakulam
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="card-title-sm">
+                                                Area :
+                                            </div>
+                                            <div class="text-block-sm">
+                                                Kakkanad, Vytilla, Edapally
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="right-content-cover">
+                                <h4 class="sec-title-sm">Checklists</h4>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="inner-card-sm">
+                                            <div class="text-block-sm">
+                                                Shop Name, Phone, Visiting card, Email Address, Shop Image
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="info-modal-btn"> Go Back</button>
+                    <a href="enter_otp.html" class="info-modal-btn btn btn-primary">Proceed to Pay ₹2726.5</a>
+                </div>
             </div>
         </div>
     </div>
 
     <!--  create campaign modal -->
     <div class="modal fade modal-forms custom-modal prodModal create-campaign" id="create-campaign-modal"
-    aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="">
-                    Create Campaign
-                </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="route-mark">
-                    <div class="progress-container">
-                        <div class="progress" id="progress" style="width:33.33%"></div>
-                        <div class="circle checked">1<span>Basic Info</span></div>
-                        <div class="circle active">2<span>Location/Area</span></div>
-                        <div class="circle">3<span>Checklist</span></div>
-                        <div class="circle">4<span>Payment</span></div>
-                    </div>
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="">
+                        Create Campaign
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form action="">
-                    
-                    <div class="modal-forms">
+                <div class="modal-body">
+                    <div class="route-mark">
+                        <div class="progress-container">
+                            <div class="progress" id="progress" style="width:33.33%"></div>
+                            <div class="circle checked">1<span>Basic Info</span></div>
+                            <div class="circle active">2<span>Location/Area</span></div>
+                            <div class="circle">3<span>Checklist</span></div>
+                            <div class="circle">4<span>Payment</span></div>
+                        </div>
+                    </div>
+                    <form action="">
 
-                        <div class="form-otr">
-                  
-                            <!-- tab content one -->
-                            <div class="row form-spacing-01 d-none">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="input-holder">
-                                        <label for="" class="label">Select Vendor 
-                                            <span class="mandatory">*</span></label>
-                                        <div class="select-custom">
-                                            <select name="" id="" class="form_controler">
-                                                <option value="">Select</option>
-                                                <option value="">Vendor 1</option>
-                                                <option value="">option</option>
-                                                <option value="">option</option>
-                                            </select>
+                        <div class="modal-forms">
+
+                            <div class="form-otr">
+
+                                <!-- tab content one -->
+                                <div class="row form-spacing-01 d-none">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Select Vendor
+                                                <span class="mandatory">*</span></label>
+                                            <div class="select-custom">
+                                                <select name="" id="" class="form_controler">
+                                                    <option value="">Select</option>
+                                                    <option value="">Vendor 1</option>
+                                                    <option value="">option</option>
+                                                    <option value="">option</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="input-holder">
-                                        <label for="" class="label">Campaign Name <span
-                                            class="mandatory">*</span></label>
-                                        <input type="text" class="form_controler">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Campaign Name <span
+                                                    class="mandatory">*</span></label>
+                                            <input type="text" class="form_controler">
+                                        </div>
                                     </div>
-                                </div>
-                        
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="input-holder">
-                                        <label for="" class="label">Select Portfolio <span
-                                            class="mandatory">*</span></label>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Select Portfolio <span
+                                                    class="mandatory">*</span></label>
                                             <div class="select-custom">
                                                 <select name="" id="" class="form_controler">
                                                     <option value="">Select</option>
@@ -1254,58 +1407,59 @@
                                                     <option value="">option</option>
                                                 </select>
                                             </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="input-holder">
-                                        <label for="" class="label">Campaign Start Date <span
-                                            class="mandatory">*</span></label>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Campaign Start Date <span
+                                                    class="mandatory">*</span></label>
                                             <div class="date-field">
                                                 <input type="text" class="form_controler">
-                                                
-                                            </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="input-holder">
-                                        <!-- Generated markup by the plugin -->
 
-                                        <label for="" class="label">Campaign Expiry <span
-                                            class="mandatory">*</span> 
-                                            <div  class="info" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
-                                                <img src="img/info-black.svg" alt="">
-                                              </div>
-                                            <div class="" data-toggle="tooltip" ></div></label>
-                                            
-                                        <div class=" col-md-12">
-                                            <div class="radio-cover py-3">
-
-                                                <label class="radio-btn me-2">End Date
-                                                    <input type="radio" name="prodType" checked>
-                                                    <span class="checkmark"></span>
-                                                </label>
-
-                                                <label class="radio-btn radio-gap">Duration
-                                                    <input type="radio" name="prodType" >
-                                                    <span class="checkmark"></span>
-                                                </label>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="input-holder">
+                                            <!-- Generated markup by the plugin -->
 
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="input-holder">
-                                        <label for="" class="label">Campaign End date<span
-                                                class="mandatory">*</span></label>
-                                                <div class="date-field">
-                                                    <input type="text" class="form_controler">
+                                            <label for="" class="label">Campaign Expiry <span class="mandatory">*</span>
+                                                <div class="info" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-title="Tooltip on top">
+                                                    <img src="img/info-black.svg" alt="">
                                                 </div>
-                                         </div>
-                                </div>
+                                                <div class="" data-toggle="tooltip"></div>
+                                            </label>
 
-                                <!-- "Campaign Duration" can be seen by clicking on the "Duration" radio button, those sections are commented -->
-                                <!-- <div class="col-lg-6 col-md-6">
+                                            <div class=" col-md-12">
+                                                <div class="radio-cover py-3">
+
+                                                    <label class="radio-btn me-2">End Date
+                                                        <input type="radio" name="prodType" checked>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+
+                                                    <label class="radio-btn radio-gap">Duration
+                                                        <input type="radio" name="prodType">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Campaign End date<span
+                                                    class="mandatory">*</span></label>
+                                            <div class="date-field">
+                                                <input type="text" class="form_controler">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- "Campaign Duration" can be seen by clicking on the "Duration" radio button, those sections are commented -->
+                                    <!-- <div class="col-lg-6 col-md-6">
                                     <div class="input-holder">
                                         <label for="" class="label">Campaign Duration<span
                                                 class="mandatory">*</span></label>
@@ -1320,138 +1474,38 @@
                                           </div>
                                     </div> -->
 
-                                 <div class="col-12">
+                                    <div class="col-12">
                                         <div class="input-holder">
                                             <label for="" class="label">Additional Information</label>
                                             <textarea type="text" class="form_controler" rows="5"></textarea>
                                         </div>
                                     </div>
-                            </div>
-                            <!-- tab content one End -->
+                                </div>
+                                <!-- tab content one End -->
 
-                            <!-- tab content Two-->
-                            <div class="row">
-                                <div class="col-lg-5 col-md-5">
-                                    <div class="input-holder">
-                                        <label for="" class="label">Select State<span
-                                                class="mandatory">*</span></label>
-                                        <div class="select-custom">
-                                            <select name="" id="" class="form_controler">
-                                                <option value="">Select</option>
-                                                <option value="">Vendor 1</option>
-                                                <option value="">option</option>
-                                                <option value="">option</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="input-holder">
-                                                <label for="" class="label">Select State<span
-                                                        class="mandatory">*</span></label>
-                                                <div class="select-custom">
-                                                    <select name="" id="" class="form_controler">
-                                                        <option value="">Select</option>
-                                                        <option value="">Vendor 1</option>
-                                                        <option value="">option</option>
-                                                        <option value="">option</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-md-6">
-                                            <div class="input-holder">
-                                                <label for="" class="label">Select State<span
-                                                        class="mandatory">*</span></label>
-                                                <div class="select-custom">
-                                                    <select name="" id="" class="form_controler">
-                                                        <option value="">Select</option>
-                                                        <option value="">Vendor 1</option>
-                                                        <option value="">option</option>
-                                                        <option value="">option</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="input-holder">
-                                        <label for="" class="label">Select State<span
-                                                class="mandatory">*</span></label>
-                                        <div class="select-custom">
-                                            <select name="" id="" class="form_controler">
-                                                <option value="">Select</option>
-                                                <option value="">Vendor 1</option>
-                                                <option value="">option</option>
-                                                <option value="">option</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="results-wrp">
-
-                                        <h4 class="title-txt">Results</h4>
-                                        <div class="info-wrp">
-                                            <div class="count">
-                                                <div class="blks">
-                                                    <h5>Shops</h5>
-                                                    <div class="data-wrp">
-                                                        <img src="img/store.svg"alt=''/>
-                                                        <span>234</span>
-                                                    </div>
-                                                </div>
-                                                <div class="blks sales">
-                                                    <h5>Sales Representatives</h5>
-                                                    <div class="data-wrp">
-                                                        <img src="img/salesman.svg"alt=''/>
-                                                        <span>78</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="range-slide">
-                                            <label for="customRange2" class="form-label d-flex justify-content-between"><span>0</span> <span>234</span></label>
-                                            <input type="range" class="form-range" min="0" max="5" id="customRange2">
-                                        </div>
-
+                                <!-- tab content Two-->
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5">
                                         <div class="input-holder">
-                                            <label for="" class="label">Estimated Price
-                                                <div  class="info" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
-                                                <img src="img/info-black.svg" alt="">
-                                              </div>
-                                            </label>
-                                            <input type="text" class="form_controler currency" placeholder="" value="&#8377; 4500">
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-7 col-md-7">
-                                    <div class="map-holder">
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- tab content Two End -->
-
-                            <!-- tab content Three -->
-                            <div class="chk-list-wrp">
-                                <div class="row variation-space">
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="row">
-                                            <div class="col-md">
-                                                <div class="input-holder">
-                                                    <label for="" class="label">Field Name<span
-                                                            class="mandatory">*</span></label>
-                                                            <input type="text" class="form_controler" placeholder="" value="Shop name">
-                                                </div>
+                                            <label for="" class="label">Select State<span
+                                                    class="mandatory">*</span></label>
+                                            <div class="select-custom">
+                                                <select name="" id="" class="form_controler">
+                                                    <option value="">Select</option>
+                                                    <option value="">Vendor 1</option>
+                                                    <option value="">option</option>
+                                                    <option value="">option</option>
+                                                </select>
                                             </div>
-                                            <div class="col-md">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
                                                 <div class="input-holder">
-                                                    <label for="" class="label">Field Type<span
+                                                    <label for="" class="label">Select State<span
                                                             class="mandatory">*</span></label>
                                                     <div class="select-custom">
                                                         <select name="" id="" class="form_controler">
-                                                            <option value="">Text</option>
+                                                            <option value="">Select</option>
                                                             <option value="">Vendor 1</option>
                                                             <option value="">option</option>
                                                             <option value="">option</option>
@@ -1459,40 +1513,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
+                                            <div class="col-lg-6 col-md-6">
                                                 <div class="input-holder">
-                                                    <label for="" class="label">Required</label>
-                                                    <div class="switch-block">
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes"
-                                                                checked>
-                                                            <span class="switch-img">
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row variation-space">
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="row">
-                                            <div class="col-md">
-                                                <div class="input-holder">
-                                                    <label for="" class="label">Field Name<span
-                                                            class="mandatory">*</span></label>
-                                                            <input type="text" class="form_controler" placeholder="" value="Phone">
-                                                </div>
-                                            </div>
-                                            <div class="col-md">
-                                                <div class="input-holder">
-                                                    <label for="" class="label">Field Type<span
+                                                    <label for="" class="label">Select State<span
                                                             class="mandatory">*</span></label>
                                                     <div class="select-custom">
                                                         <select name="" id="" class="form_controler">
-                                                            <option value="">Phone Number</option>
+                                                            <option value="">Select</option>
                                                             <option value="">Vendor 1</option>
                                                             <option value="">option</option>
                                                             <option value="">option</option>
@@ -1500,177 +1527,313 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
-                                                <div class="input-holder">
-                                                    <label for="" class="label">Required</label>
-                                                    <div class="switch-block">
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes"
-                                                                checked>
-                                                            <span class="switch-img">
-                                                            </span>
+                                        </div>
+                                        <div class="input-holder">
+                                            <label for="" class="label">Select State<span
+                                                    class="mandatory">*</span></label>
+                                            <div class="select-custom">
+                                                <select name="" id="" class="form_controler">
+                                                    <option value="">Select</option>
+                                                    <option value="">Vendor 1</option>
+                                                    <option value="">option</option>
+                                                    <option value="">option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="results-wrp">
+
+                                            <h4 class="title-txt">Results</h4>
+                                            <div class="info-wrp">
+                                                <div class="count">
+                                                    <div class="blks">
+                                                        <h5>Shops</h5>
+                                                        <div class="data-wrp">
+                                                            <img src="img/store.svg" alt='' />
+                                                            <span>234</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="blks sales">
+                                                        <h5>Sales Representatives</h5>
+                                                        <div class="data-wrp">
+                                                            <img src="img/salesman.svg" alt='' />
+                                                            <span>78</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="range-slide">
+                                                <label for="customRange2"
+                                                    class="form-label d-flex justify-content-between"><span>0</span>
+                                                    <span>234</span></label>
+                                                <input type="range" class="form-range" min="0" max="5"
+                                                    id="customRange2">
+                                            </div>
+
+                                            <div class="input-holder">
+                                                <label for="" class="label">Estimated Price
+                                                    <div class="info" data-bs-toggle="tooltip" data-bs-placement="top"
+                                                        data-bs-title="Tooltip on top">
+                                                        <img src="img/info-black.svg" alt="">
+                                                    </div>
+                                                </label>
+                                                <input type="text" class="form_controler currency" placeholder=""
+                                                    value="&#8377; 4500">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7">
+                                        <div class="map-holder">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- tab content Two End -->
+
+                                <!-- tab content Three -->
+                                <div class="chk-list-wrp">
+                                    <div class="row variation-space">
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="row">
+                                                <div class="col-md">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Field Name<span
+                                                                class="mandatory">*</span></label>
+                                                        <input type="text" class="form_controler" placeholder=""
+                                                            value="Shop name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Field Type<span
+                                                                class="mandatory">*</span></label>
+                                                        <div class="select-custom">
+                                                            <select name="" id="" class="form_controler">
+                                                                <option value="">Text</option>
+                                                                <option value="">Vendor 1</option>
+                                                                <option value="">option</option>
+                                                                <option value="">option</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Required</label>
+                                                        <div class="switch-block">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="mySwitch" name="darkmode" value="yes" checked>
+                                                                <span class="switch-img">
+                                                                </span>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="row variation-space">
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="row">
-                                            <div class="col-md">
-                                                <div class="input-holder">
-                                                    <label for="" class="label">Field Name<span
-                                                            class="mandatory">*</span></label>
-                                                            <input type="text" class="form_controler" placeholder="" value="Visiting Card">
-                                                </div>
-                                            </div>
-                                            <div class="col-md">
-                                                <div class="input-holder">
-                                                    <label for="" class="label">Field Type<span
-                                                            class="mandatory">*</span></label>
-                                                    <div class="select-custom">
-                                                        <select name="" id="" class="form_controler">
-                                                            <option value="">Image Upload</option>
-                                                            <option value="">Vendor 1</option>
-                                                            <option value="">option</option>
-                                                            <option value="">option</option>
-                                                        </select>
+                                    <div class="row variation-space">
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="row">
+                                                <div class="col-md">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Field Name<span
+                                                                class="mandatory">*</span></label>
+                                                        <input type="text" class="form_controler" placeholder=""
+                                                            value="Phone">
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="input-holder">
-                                                    <label for="" class="label">Required</label>
-                                                    <div class="switch-block">
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes"
-                                                                checked>
-                                                            <span class="switch-img">
-                                                            </span>
+                                                <div class="col-md">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Field Type<span
+                                                                class="mandatory">*</span></label>
+                                                        <div class="select-custom">
+                                                            <select name="" id="" class="form_controler">
+                                                                <option value="">Phone Number</option>
+                                                                <option value="">Vendor 1</option>
+                                                                <option value="">option</option>
+                                                                <option value="">option</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Required</label>
+                                                        <div class="switch-block">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="mySwitch" name="darkmode" value="yes" checked>
+                                                                <span class="switch-img">
+                                                                </span>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="row variation-space">
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="row">
-                                            <div class="col-md">
-                                                <div class="input-holder">
-                                                    <label for="" class="label">Field Name<span
-                                                            class="mandatory">*</span></label>
-                                                            <input type="text" class="form_controler" placeholder="" value="Email Address">
-                                                </div>
-                                            </div>
-                                            <div class="col-md">
-                                                <div class="input-holder">
-                                                    <label for="" class="label">Field Type<span
-                                                            class="mandatory">*</span></label>
-                                                    <div class="select-custom">
-                                                        <select name="" id="" class="form_controler">
-                                                            <option value="">Text</option>
-                                                            <option value="">Vendor 1</option>
-                                                            <option value="">option</option>
-                                                            <option value="">option</option>
-                                                        </select>
+                                    <div class="row variation-space">
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="row">
+                                                <div class="col-md">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Field Name<span
+                                                                class="mandatory">*</span></label>
+                                                        <input type="text" class="form_controler" placeholder=""
+                                                            value="Visiting Card">
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="input-holder">
-                                                    <label for="" class="label">Required</label>
-                                                    <div class="switch-block">
-                                                        <div class="form-check form-switch">
-                                                            <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes"
-                                                                checked>
-                                                            <span class="switch-img">
-                                                            </span>
+                                                <div class="col-md">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Field Type<span
+                                                                class="mandatory">*</span></label>
+                                                        <div class="select-custom">
+                                                            <select name="" id="" class="form_controler">
+                                                                <option value="">Image Upload</option>
+                                                                <option value="">Vendor 1</option>
+                                                                <option value="">option</option>
+                                                                <option value="">option</option>
+                                                            </select>
                                                         </div>
-                                                        <button class="delete-btn" fdprocessedid="13dlo4">
-                                                            <img src="img/delete-sm.svg" alt="">
-                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Required</label>
+                                                        <div class="switch-block">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="mySwitch" name="darkmode" value="yes" checked>
+                                                                <span class="switch-img">
+                                                                </span>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="row variation-space">
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="vendor-create-wrp">
-                                            <buttton class="btn  btn-primary">
-                                                <img src="img/add.svg" alt="Vendor">
-                                                <span>Add New Field</span>
-                                            </buttton>
+                                    <div class="row variation-space">
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="row">
+                                                <div class="col-md">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Field Name<span
+                                                                class="mandatory">*</span></label>
+                                                        <input type="text" class="form_controler" placeholder=""
+                                                            value="Email Address">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Field Type<span
+                                                                class="mandatory">*</span></label>
+                                                        <div class="select-custom">
+                                                            <select name="" id="" class="form_controler">
+                                                                <option value="">Text</option>
+                                                                <option value="">Vendor 1</option>
+                                                                <option value="">option</option>
+                                                                <option value="">option</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Required</label>
+                                                        <div class="switch-block">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="mySwitch" name="darkmode" value="yes" checked>
+                                                                <span class="switch-img">
+                                                                </span>
+                                                            </div>
+                                                            <button class="delete-btn" fdprocessedid="13dlo4">
+                                                                <img src="img/delete-sm.svg" alt="">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+
+                                    <div class="row variation-space">
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="vendor-create-wrp">
+                                                <buttton class="btn  btn-primary">
+                                                    <img src="img/add.svg" alt="Vendor">
+                                                    <span>Add New Field</span>
+                                                </buttton>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
+                                <!-- tab content Three End -->
 
-                            </div>
-                            <!-- tab content Three End -->
-
-                            <!-- tab content Four -->
+                                <!-- tab content Four -->
                                 <div class="row form-spacing-02 d-none">
                                     <div class="col-lg-6 col-md-6">
                                         <div class="payment-details">
-                                           <div class="title-pay">Payment Details</div>
-                                           <div class="price-list">
-                                               <ul>
-                                                   <li>
-                                                       <p>Listing Price</p>
-                                                       <p class="price">₹ 2500</p>
-                                                   </li>
-                                                   <li>
-                                                       <p>Vendor Fees</p>
-                                                       <p class="price green">₹ 0</p>
-                                                   </li>
-                                                   <li>
-                                                       <p>Location Charge</p>
-                                                       <p class="price">₹ 16.50</p>
-                                                   </li>
-                                                   <li>
-                                                       <p>Taxable value</p>
-                                                       <p class="price">₹ 16.50</p>
-                                                   </li> 
-                                                   <li>
-                                                       <p>IGST</p>
-                                                       <p class="price">₹ 10.00</p>
-                                                   </li>
-                                                   <li>
-                                                       <p>Coupons</p>
-                                                       <p class="price">—</p>
-                                                   </li>
+                                            <div class="title-pay">Payment Details</div>
+                                            <div class="price-list">
+                                                <ul>
+                                                    <li>
+                                                        <p>Listing Price</p>
+                                                        <p class="price">₹ 2500</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Vendor Fees</p>
+                                                        <p class="price green">₹ 0</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Location Charge</p>
+                                                        <p class="price">₹ 16.50</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Taxable value</p>
+                                                        <p class="price">₹ 16.50</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>IGST</p>
+                                                        <p class="price">₹ 10.00</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Coupons</p>
+                                                        <p class="price">—</p>
+                                                    </li>
 
-                                               </ul>
+                                                </ul>
 
                                             </div>
                                             <div class="ftr-info ">
-                                           
-                                                 <strong>To Pay</strong>
-                                                 <div class="total">₹ 2726.5</div>
-                                            
+
+                                                <strong>To Pay</strong>
+                                                <div class="total">₹ 2726.5</div>
+
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-6">
-                                          <div class="payment-method">
-                                             <div class="payment-title">
+                                        <div class="payment-method">
+                                            <div class="payment-title">
                                                 <div class="payment-hd">
                                                     Payment Method
                                                 </div>
-                                         
+
                                                 <button class="apply-btn">Apply Coupon</button>
-                                             </div>
-                                             
-                                             <!-- Apply Coupon -->
-                                             <!-- <div class="apply-coupon">
+                                            </div>
+
+                                            <!-- Apply Coupon -->
+                                            <!-- <div class="apply-coupon">
                                                 <div class="apply-tag"><b>FOXME250</b>coupon applied <span class="close"><img src="img/close-sm.svg" alt=""></span></div>
                                                <div class="coupon-grp">
                                                 <input class="coupon-field" type="text" placeholder="Coupon Code">
@@ -1718,46 +1881,53 @@
                                                     </li>
                                                 </ul>
                                              </div> -->
-                                          
-                                             <div class="form">
-                                             <div class="input-holder">
-                                                <label for="" class="label">Mode of Payment </label>
-                                                <div class="dropdown-select select-custom">
-                                                    <button class="btn-dropdown form_controler" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                                 <div class="mode-card"> <img src="img/card.svg" alt=""></div>    Debit Card
-                                                    </button>
-                                                    <ul class="dropdown-menu shadow" aria-labelledby="dropdownMenuButton1">
-                                                      <li> 
-                                                        <a class="dropdown-item" href="#">
-                                                            <div class="mode-card"> <img src="img/card.svg" alt=""></div> 
-                                                            Credit Card  
-                                                        </a>
-                                                        </li>
-                                                      <li> 
-                                                        <a class="dropdown-item" href="#">
-                                                            <div class="mode-card"> <img src="img/upi.svg" alt=""></div>
-                                                             UPI
-                                                        </a>
-                                                        </li>
-                                                        <li> 
-                                                            <a class="dropdown-item" href="#">
-                                                                <div class="mode-card"> <img src="img/card.svg" alt=""></div> 
-                                                                Credit Card  
-                                                            </a>
+
+                                            <div class="form">
+                                                <div class="input-holder">
+                                                    <label for="" class="label">Mode of Payment </label>
+                                                    <div class="dropdown-select select-custom">
+                                                        <button class="btn-dropdown form_controler" type="button"
+                                                            id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            <div class="mode-card"> <img src="img/card.svg" alt="">
+                                                            </div> Debit Card
+                                                        </button>
+                                                        <ul class="dropdown-menu shadow"
+                                                            aria-labelledby="dropdownMenuButton1">
+                                                            <li>
+                                                                <a class="dropdown-item" href="#">
+                                                                    <div class="mode-card"> <img src="img/card.svg"
+                                                                            alt=""></div>
+                                                                    Credit Card
+                                                                </a>
                                                             </li>
-                                                          
+                                                            <li>
+                                                                <a class="dropdown-item" href="#">
+                                                                    <div class="mode-card"> <img src="img/upi.svg"
+                                                                            alt=""></div>
+                                                                    UPI
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item" href="#">
+                                                                    <div class="mode-card"> <img src="img/card.svg"
+                                                                            alt=""></div>
+                                                                    Credit Card
+                                                                </a>
+                                                            </li>
 
-                                                     
-                                                    </ul>
-                                                  </div>
-                                            </div>
 
-                                            <div class="input-holder">
-                                                <label for="" class="label">Name on Card</label>
-                                                <input type="text" class="form_controler">
-                                            </div>
-                                            <!-- Your UPI ID payment mode -->
-                                            <!-- <div class="input-holder">
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="input-holder">
+                                                    <label for="" class="label">Name on Card</label>
+                                                    <input type="text" class="form_controler">
+                                                </div>
+                                                <!-- Your UPI ID payment mode -->
+                                                <!-- <div class="input-holder">
                                                 <label for="" class="label">Your UPI ID</label>
                                                  <div class="filed-v-elmt">
                                                      <input type="text" class="form_controler">
@@ -1765,75 +1935,79 @@
                                                  </div>
                                             </div> -->
 
-                                            <div class="input-holder">
-                                                <label for="" class="label">Card Number</label>
-                                                 <div class="filed-v-elmt">
-                                                     <input type="text" class="form_controler">
-                                                     <div class="filed-elmt"><img src="img/visa.svg" alt=""></div>
-                                                 </div>
-                                            </div>
-
-                                           
-
-                                            <div class="row">
-                                                <div class="col-lg-6">
-
-                                                    <div class="input-holder">
-                                                        <label for="" class="label">Card Expiry</label>
-                                                        <input type="text" class="form_controler" placeholder="MM/ YYYY">
+                                                <div class="input-holder">
+                                                    <label for="" class="label">Card Number</label>
+                                                    <div class="filed-v-elmt">
+                                                        <input type="text" class="form_controler">
+                                                        <div class="filed-elmt"><img src="img/visa.svg" alt=""></div>
                                                     </div>
                                                 </div>
 
-                                                <div class="col-lg-6">
 
-                                                    <div class="input-holder">
-                                                        <label for="" class="label">CVV
-                                                          <div  class="info" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
-                                                                <img src="img/info-black.svg" alt="">
-                                                              </div>
+
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+
+                                                        <div class="input-holder">
+                                                            <label for="" class="label">Card Expiry</label>
+                                                            <input type="text" class="form_controler"
+                                                                placeholder="MM/ YYYY">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-6">
+
+                                                        <div class="input-holder">
+                                                            <label for="" class="label">CVV
+                                                                <div class="info" data-bs-toggle="tooltip"
+                                                                    data-bs-placement="top"
+                                                                    data-bs-title="Tooltip on top">
+                                                                    <img src="img/info-black.svg" alt="">
+                                                                </div>
+                                                            </label>
+                                                            <input type="text" class="form_controler"
+                                                                placeholder="Ex: 033">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="input-holder">
+                                                    <div class="checkbox-cover">
+                                                        <label class="check-box">Save my card for future
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
                                                         </label>
-                                                        <input type="text" class="form_controler" placeholder="Ex: 033">
                                                     </div>
                                                 </div>
-                                            </div>
 
-                                            <div class="input-holder">
-                                                <div class="checkbox-cover">
-                                                    <label class="check-box">Save my card for future
-                                                        <input type="checkbox">
-                                                        <span class="checkmark"></span>
-                                                    </label>
+
+                                                <div class="pay-btn-otr">
+                                                    <button class="btn-primary">Pay ₹2726.5</button>
+                                                    <div class="poweard-stripe">
+                                                        <img src="img/poweard-stripe.png" alt="">
+
+                                                    </div>
                                                 </div>
+
                                             </div>
-
-
-                                            <div class="pay-btn-otr">
-                                                <button class="btn-primary">Pay ₹2726.5</button>
-                                                <div class="poweard-stripe">
-                                                    <img src="img/poweard-stripe.png" alt="">
-
-                                                </div>
-                                            </div>
-
                                         </div>
-                                          </div>
                                     </div>
                                 </div>
-                            <!-- tab content Four End -->
+                                <!-- tab content Four End -->
+
+                            </div>
 
                         </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary">Next</button>
 
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-primary">Next</button>
-    
-                    </div>
-                </form>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
     <script src="Js/vendor/bootstrap.min.js"></script>
