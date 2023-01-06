@@ -12,10 +12,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/side-nav.css">
     <link rel="stylesheet" href="css/vendor-list.css">
-    <link rel="stylesheet" href="css/salesperson-management.css">
-    <link rel="stylesheet" href="css/create-campaign.css">
-    <link rel="stylesheet" href="css/filter-style.css">
-    <link rel="stylesheet" href="css/forms-style.css">
+    <link rel="stylesheet" href="css/campaigns-view.css">
     <link rel="stylesheet" href="css/dark-theme.css">
 </head>
 
@@ -281,619 +278,1561 @@
                         Ripple Tea Pvt Ltd
                     </div>
                     <div class="title-block-right d-flex ms-sm-auto">
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15"
-                                aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 30%"
-                                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20"
-                                aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress campaigns-progress">
+                            <div class="progress-bar progress-bar-striped bg-purplle" role="progressbar"
+                                style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success  progress-bar-striped" role="progressbar"
+                                style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-info  progress-bar-striped" role="progressbar"
+                                style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="campaigns-view-wrapper">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="pill" href="#overview">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#progress">Progress</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#campaign">Campaign Result</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#payments">Payments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="#activity">Activity</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="overview">
+                            <div class="overview-wrap">
+                                <div class="overview-body">
+                                    <div class="vendor-info-body-content d-flex">
+                                        <div class="block-left">
+                                            <div class="img-block">
+                                                <span class="prof-img-cover">
+                                                    <img class="prof-img" src="img/prof-mod.png" alt="">
+                                                    <img class="premium-img" src="img/Premium.svg" alt="">
+                                                </span>
+
+                                            </div>
+                                            <div class="left-block-col row">
+                                                <div class="inner-card-sm col-sm-6 col-md-12">
+                                                    <div class="card-title-sm">
+                                                        <img src="img/calendar.svg" alt="calendar">
+                                                        <span class="t-cover">Campaign Start date</span>
+                                                    </div>
+                                                    <div class="text-block-sm">
+                                                        05 December 2022
+                                                    </div>
+                                                </div>
+
+                                                <div class="inner-card-sm col-sm-6 col-md-12">
+                                                    <div class="card-title-sm">
+                                                        <img src="img/calendar.svg" alt="calendar">
+                                                        <span class="t-cover">Campaign End date</span>
+                                                    </div>
+                                                    <div class="text-block-sm campaign-text-block">
+                                                        06 March 2023
+                                                    </div>
+                                                </div>
+                                                <div class="inner-card-sm col-sm-6 col-md-12">
+                                                    <div class="card-title-sm">
+                                                        <img src="img/store.svg" alt="store">
+                                                        <span class="t-cover">Shops Targeted</span>
+                                                    </div>
+                                                    <div class="text-block-sm shop-text-block">
+                                                        234
+                                                    </div>
+                                                </div>
+                                                <div class="inner-card-sm col-sm-6 col-md-12">
+                                                    <div class="card-title-sm">
+                                                        <img src="img/salesman.svg" alt="salesman">
+                                                        <span class="t-cover">No. of SE Available</span>
+                                                    </div>
+                                                    <div class="text-block-sm available-text-block">
+                                                        78
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="block-right">
+                                            <div class="right-content-cover btm-line">
+                                                <h4 class="sec-title-sm">Campaign Info</h4>
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-sm-6">
+                                                        <div class="inner-card-sm">
+                                                            <div class="card-title-sm">
+                                                                Name :
+                                                            </div>
+                                                            <div class="text-block-sm">
+                                                                Ripple Tea Brochure Delivery
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-sm-6">
+                                                        <div class="inner-card-sm">
+                                                            <div class="card-title-sm">
+                                                                Vendor Name :
+                                                            </div>
+                                                            <div class="text-block-sm">
+                                                                Ripple Tea
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-sm-6">
+                                                        <div class="inner-card-sm">
+                                                            <div class="card-title-sm">
+                                                                Status :
+                                                            </div>
+                                                            <div class="text-block-sm status">
+                                                                <span class="success"></span>Completed
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-sm-6">
+                                                        <div class="inner-card-sm">
+                                                            <div class="card-title-sm">
+                                                                Portfolio :
+                                                            </div>
+                                                            <div class="text-block-sm">
+                                                                Brochures
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-sm-12">
+                                                        <div class="inner-card-sm">
+                                                            <div class="card-title-sm">
+                                                                Information
+                                                            </div>
+                                                            <div class="text-block-sm">
+                                                                The main purpose of this job is to reach maximum
+                                                                number of shops related
+                                                                to dummy text Lorem Ipsum is simply dummy text
+                                                                of the printing and
+                                                                typesetting industry. Lorem Ipsum has been the
+                                                                industry’s standard dummy
+                                                                text ever since the 1500s, when an unknown
+                                                                printer took a galley of type
+                                                                and scrambled it to make a type specimen book.
+                                                                It has survived not only
+                                                                five centuries, but also the leap into
+                                                                electronic typesetting, remaining
+                                                                essentially unchanged. It was popularised in the
+                                                                1960s
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="right-content-cover">
+                                                <h4 class="sec-title-sm">Location</h4>
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-sm-6">
+                                                        <div class="inner-card-sm">
+                                                            <div class="card-title-sm">
+                                                                State :
+                                                            </div>
+                                                            <div class="text-block-sm">
+                                                                Kerala
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-sm-6">
+                                                        <div class="inner-card-sm">
+                                                            <div class="card-title-sm">
+                                                                District :
+                                                            </div>
+                                                            <div class="text-block-sm">
+                                                                Ernakulam
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-sm-6">
+                                                        <div class="inner-card-sm">
+                                                            <div class="card-title-sm">
+                                                                Area :
+                                                            </div>
+                                                            <div class="text-block-sm">
+                                                                Kakkanad, Vytilla, Edapally
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="right-content-cover">
+                                                <h4 class="sec-title-sm">Checklists</h4>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-sm-12">
+                                                        <div class="inner-card-sm">
+                                                            <div class="text-block-sm">
+                                                                Shop Name, Phone, Visiting card, Email Address,
+                                                                Shop Image
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="progress">
+                            <div class="progress-wrap">
+                                <div class="left-section">
+                                    <div class="progress-wrap-header">
+                                        <label class="form-label">Select Salesperson</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="progress-wrap-details">
+                                        <div class="progress-details-txt">
+                                            <h3>Joined Date :</h3>
+                                            <span><img src="img/calendar_black.svg" alt="calendar_black">01 January
+                                                2023</span>
+                                        </div>
+                                        <div class="progress-details-txt">
+                                            <h3>State :</h3>
+                                            <span><img src="img/pin_black.svg" alt="pin_black">Kerala</span>
+                                        </div>
+                                        <div class="progress-details-txt">
+                                            <h3>Phone Number :</h3>
+                                            <span><img src="img/phone_black.svg" alt="phone_black">+91 8129399999</span>
+                                        </div>
+                                    </div>
+                                    <div class="progress-list-items">
+                                        <div class="progress-list-img">
+                                            <img src="img/store.svg" alt="store" />
+                                        </div>
+                                        <div class="progress-list-txt">
+                                            <span>No. of shops visited</span>
+                                            <h4>212</h4>
+                                        </div>
+                                    </div>
+                                    <div class="progress-list-items">
+                                        <div class="progress-list-img">
+                                            <img src="img/payment_earned.svg" alt="payment_earned" />
+                                        </div>
+                                        <div class="progress-list-txt">
+                                            <span>Payment Earned</span>
+                                            <h4>8000</h4>
+                                        </div>
+                                    </div>
+                                    <div class="progress-list-items">
+                                        <div class="progress-list-img">
+                                            <img src="img/bonus_earned.svg" alt="payment_earned" />
+                                        </div>
+                                        <div class="progress-list-txt">
+                                            <span>Completion Bonus Earned</span>
+                                            <h4>50,454</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right-section">
+                                    <div class="timeline-block-header">
+                                        <h3 class="title">Timeline</h3>
+                                        <div class="campaigns-progress">
+                                            <div class="progress ">
+                                                <div class="progress-bar progress-bar-striped bg-purplle"
+                                                    role="progressbar" style="width: 15%" aria-valuenow="15"
+                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-success  progress-bar-striped"
+                                                    role="progressbar" style="width: 30%" aria-valuenow="30"
+                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div class="progress-bar bg-info  progress-bar-striped"
+                                                    role="progressbar" style="width: 20%" aria-valuenow="20"
+                                                    aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <span>82%</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-block-body">
+                                        <ul class="custom-scroll">
+                                            <li class="in-view">
+                                                <div class="timeline-list">
+                                                    <div class="timeline-txt">
+                                                        <span>10.00 AM</span>
+                                                        <h3>01. Lead Accepted</h3>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+                                                        <div class="user">
+                                                            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                                                            <div class="user-txt">Christopher Watson</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="timeline-time">
+                                                        <h6>Oct <span>03</span>2023</h6>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="in-view">
+                                                <div class="timeline-list">
+                                                    <div class="timeline-txt">
+                                                        <span>10.00 AM</span>
+                                                        <h3>01. Lead Accepted</h3>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+                                                        <div class="user">
+                                                            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                                                            <div class="user-txt">Christopher Watson</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="timeline-time">
+                                                        <h6>Oct <span>03</span>2023</h6>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="in-view">
+                                                <div class="timeline-list">
+                                                    <div class="timeline-txt">
+                                                        <span>10.00 AM</span>
+                                                        <h3>01. Lead Accepted</h3>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+                                                        <div class="user">
+                                                            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                                                            <div class="user-txt">Christopher Watson</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="timeline-time">
+                                                        <h6>Oct <span>03</span>2023</h6>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="in-view">
+                                                <div class="timeline-list">
+                                                    <div class="timeline-txt">
+                                                        <span>10.00 AM</span>
+                                                        <h3>01. Lead Accepted</h3>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+                                                        <div class="user">
+                                                            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                                                            <div class="user-txt">Christopher Watson</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="timeline-time">
+                                                        <h6>Oct <span>03</span>2023</h6>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="campaign">
+                            <div class="campaign-wrap">
+                                <div class="table-cover custom-scroll custom-scroll-h custom-table-cover">
+                                    <table class="custom-listing-table vendor-list-tbl">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start slno">Sl No.</th>
+                                                <th class="campaign-td">Salesperson</th>
+                                                <th>Shop Name</th>
+                                                <th>CIN</th>
+                                                <th>Contact Person Name</th>
+                                                <th class="text-start">Designation</th>
+                                                <th>Phone Number</th>
+                                                <th>Date and Time</th>
+                                                <th>Overall rating</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>
+                                                    <div class="user-img-block d-flex">
+                                                        <div class="usr-icon">
+                                                            <img src="img/Profile.svg" alt="profile">
+                                                        </div>
+                                                        <div class="usr-name">
+                                                            Jacob Wilston
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Kylie Tiles Pvt ltd</td>
+                                                <td>CIN832545862562</td>
+                                                <td>Shakhin Kumar</td>
+                                                <td>Manager</td>
+                                                <td class="tel-col">+91 8129398422</td>
+                                                <td>01 Mar 22, 12.00 PM</td>
+                                                <td></td>
+                                                <td class="action-btn-group four-items">
+                                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#campaigns-modal">
+                                                        <img src="img/eye.svg" alt="">
+                                                    </button>
+                                                    <button class="btn edit-btn">
+                                                        <img src="img/direct-download.svg" alt="">
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>
+                                                    <div class="user-img-block d-flex">
+                                                        <div class="usr-icon">
+                                                            <img src="img/Profile.svg" alt="profile">
+                                                        </div>
+                                                        <div class="usr-name">
+                                                            Jacob Wilston
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Kylie Tiles Pvt ltd</td>
+                                                <td>CIN832545862562</td>
+                                                <td>Shakhin Kumar</td>
+                                                <td>Manager</td>
+                                                <td class="tel-col">+91 8129398422</td>
+                                                <td>01 Mar 22, 12.00 PM</td>
+                                                <td></td>
+                                                <td class="action-btn-group four-items">
+                                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#campaigns-modal">
+                                                        <img src="img/eye.svg" alt="">
+                                                    </button>
+                                                    <button class="btn edit-btn">
+                                                        <img src="img/direct-download.svg" alt="">
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>
+                                                    <div class="user-img-block d-flex">
+                                                        <div class="usr-icon">
+                                                            <img src="img/Profile.svg" alt="profile">
+                                                        </div>
+                                                        <div class="usr-name">
+                                                            Jacob Wilston
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Kylie Tiles Pvt ltd</td>
+                                                <td>CIN832545862562</td>
+                                                <td>Shakhin Kumar</td>
+                                                <td>Manager</td>
+                                                <td class="tel-col">+91 8129398422</td>
+                                                <td>01 Mar 22, 12.00 PM</td>
+                                                <td></td>
+                                                <td class="action-btn-group four-items">
+                                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#campaigns-modal">
+                                                        <img src="img/eye.svg" alt="">
+                                                    </button>
+                                                    <button class="btn edit-btn">
+                                                        <img src="img/direct-download.svg" alt="">
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>
+                                                    <div class="user-img-block d-flex">
+                                                        <div class="usr-icon">
+                                                            <img src="img/Profile.svg" alt="profile">
+                                                        </div>
+                                                        <div class="usr-name">
+                                                            Jacob Wilston
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Kylie Tiles Pvt ltd</td>
+                                                <td>CIN832545862562</td>
+                                                <td>Shakhin Kumar</td>
+                                                <td>Manager</td>
+                                                <td class="tel-col">+91 8129398422</td>
+                                                <td>01 Mar 22, 12.00 PM</td>
+                                                <td></td>
+                                                <td class="action-btn-group four-items">
+                                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#campaigns-modal">
+                                                        <img src="img/eye.svg" alt="">
+                                                    </button>
+                                                    <button class="btn edit-btn">
+                                                        <img src="img/direct-download.svg" alt="">
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-pagination">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link link-disabled previous-link" href="#"
+                                                aria-label="Previous">
+                                                <img src="img/Icon-arrow-left.svg" alt="arrow-left">
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link link-dots" href="#">...</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">22</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <img src="img/Icon-arrow-left.svg" alt="arrow-left">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="payments">
+                            <div class="campaign-wrap">
+                                <div class="table-cover custom-scroll custom-scroll-h custom-table-cover">
+                                    <table class="custom-listing-table vendor-list-tbl">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Vendor Name</th>
+                                                <th class="campaign-td">Campaign Name</th>
+                                                <th>Start Date</th>
+                                                <th>End Date</th>
+                                                <th>Price</th>
+                                                <th class="text-start">Status</th>
+                                                <th>Overall rating</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="user-img-block d-flex">
+                                                        <div class="usr-icon">
+                                                            <img src="img/Profile.svg" alt="profile">
+                                                        </div>
+                                                        <div class="usr-name">
+                                                            Jacob Wilston
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Lorem ipusm</td>
+                                                <td>01 Mar 2022</td>
+                                                <td>31 June 2022</td>
+                                                <td>₹ 350</td>
+                                                <td class="tel-col">+91 8129398422</td>
+                                                <td></td>
+                                                <td class="action-btn-group four-items">
+                                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#campaigns-modal">
+                                                        <img src="img/eye.svg" alt="">
+                                                    </button>
+                                                    <button class="btn edit-btn">
+                                                        <img src="img/edit.svg" alt="">
+                                                    </button>
+                                                    <button class="btn block-btn">
+                                                        <img src="img/block.svg" alt="">
+                                                    </button>
+                                                    <button class="btn delete-btn">
+                                                        <img src="img/delit.svg" alt="">
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="user-img-block d-flex">
+                                                        <div class="usr-icon">
+                                                            <img src="img/Profile.svg" alt="profile">
+                                                        </div>
+                                                        <div class="usr-name">
+                                                            Jacob Wilston
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Lorem ipusm</td>
+                                                <td>01 Mar 2022</td>
+                                                <td>31 June 2022</td>
+                                                <td>₹ 350</td>
+                                                <td class="tel-col">+91 8129398422</td>
+                                                <td></td>
+                                                <td class="action-btn-group four-items">
+                                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#campaigns-modal">
+                                                        <img src="img/eye.svg" alt="">
+                                                    </button>
+                                                    <button class="btn edit-btn">
+                                                        <img src="img/edit.svg" alt="">
+                                                    </button>
+                                                    <button class="btn block-btn">
+                                                        <img src="img/block.svg" alt="">
+                                                    </button>
+                                                    <button class="btn delete-btn">
+                                                        <img src="img/delit.svg" alt="">
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="user-img-block d-flex">
+                                                        <div class="usr-icon">
+                                                            <img src="img/Profile.svg" alt="profile">
+                                                        </div>
+                                                        <div class="usr-name">
+                                                            Jacob Wilston
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Lorem ipusm</td>
+                                                <td>01 Mar 2022</td>
+                                                <td>31 June 2022</td>
+                                                <td>₹ 350</td>
+                                                <td class="tel-col">+91 8129398422</td>
+                                                <td></td>
+                                                <td class="action-btn-group four-items">
+                                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#campaigns-modal">
+                                                        <img src="img/eye.svg" alt="">
+                                                    </button>
+                                                    <button class="btn edit-btn">
+                                                        <img src="img/edit.svg" alt="">
+                                                    </button>
+                                                    <button class="btn block-btn">
+                                                        <img src="img/block.svg" alt="">
+                                                    </button>
+                                                    <button class="btn delete-btn">
+                                                        <img src="img/delit.svg" alt="">
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="user-img-block d-flex">
+                                                        <div class="usr-icon">
+                                                            <img src="img/Profile.svg" alt="profile">
+                                                        </div>
+                                                        <div class="usr-name">
+                                                            Jacob Wilston
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Lorem ipusm</td>
+                                                <td>01 Mar 2022</td>
+                                                <td>31 June 2022</td>
+                                                <td>₹ 350</td>
+                                                <td class="tel-col">+91 8129398422</td>
+                                                <td></td>
+                                                <td class="action-btn-group four-items">
+                                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#campaigns-modal">
+                                                        <img src="img/eye.svg" alt="">
+                                                    </button>
+                                                    <button class="btn edit-btn">
+                                                        <img src="img/edit.svg" alt="">
+                                                    </button>
+                                                    <button class="btn block-btn">
+                                                        <img src="img/block.svg" alt="">
+                                                    </button>
+                                                    <button class="btn delete-btn">
+                                                        <img src="img/delit.svg" alt="">
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="user-img-block d-flex">
+                                                        <div class="usr-icon">
+                                                            <img src="img/Profile.svg" alt="profile">
+                                                        </div>
+                                                        <div class="usr-name">
+                                                            Jacob Wilston
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Lorem ipusm</td>
+                                                <td>01 Mar 2022</td>
+                                                <td>31 June 2022</td>
+                                                <td>₹ 350</td>
+                                                <td class="tel-col">+91 8129398422</td>
+                                                <td></td>
+                                                <td class="action-btn-group four-items">
+                                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#campaigns-modal">
+                                                        <img src="img/eye.svg" alt="">
+                                                    </button>
+                                                    <button class="btn edit-btn">
+                                                        <img src="img/edit.svg" alt="">
+                                                    </button>
+                                                    <button class="btn block-btn">
+                                                        <img src="img/block.svg" alt="">
+                                                    </button>
+                                                    <button class="btn delete-btn">
+                                                        <img src="img/delit.svg" alt="">
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="user-img-block d-flex">
+                                                        <div class="usr-icon">
+                                                            <img src="img/Profile.svg" alt="profile">
+                                                        </div>
+                                                        <div class="usr-name">
+                                                            Jacob Wilston
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Lorem ipusm</td>
+                                                <td>01 Mar 2022</td>
+                                                <td>31 June 2022</td>
+                                                <td>₹ 350</td>
+                                                <td class="tel-col">+91 8129398422</td>
+                                                <td></td>
+                                                <td class="action-btn-group four-items">
+                                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#campaigns-modal">
+                                                        <img src="img/eye.svg" alt="">
+                                                    </button>
+                                                    <button class="btn edit-btn">
+                                                        <img src="img/edit.svg" alt="">
+                                                    </button>
+                                                    <button class="btn block-btn">
+                                                        <img src="img/block.svg" alt="">
+                                                    </button>
+                                                    <button class="btn delete-btn">
+                                                        <img src="img/delit.svg" alt="">
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="user-img-block d-flex">
+                                                        <div class="usr-icon">
+                                                            <img src="img/Profile.svg" alt="profile">
+                                                        </div>
+                                                        <div class="usr-name">
+                                                            Jacob Wilston
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Lorem ipusm</td>
+                                                <td>01 Mar 2022</td>
+                                                <td>31 June 2022</td>
+                                                <td>₹ 350</td>
+                                                <td class="tel-col">+91 8129398422</td>
+                                                <td></td>
+                                                <td class="action-btn-group four-items">
+                                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#campaigns-modal">
+                                                        <img src="img/eye.svg" alt="">
+                                                    </button>
+                                                    <button class="btn edit-btn">
+                                                        <img src="img/edit.svg" alt="">
+                                                    </button>
+                                                    <button class="btn block-btn">
+                                                        <img src="img/block.svg" alt="">
+                                                    </button>
+                                                    <button class="btn delete-btn">
+                                                        <img src="img/delit.svg" alt="">
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="user-img-block d-flex">
+                                                        <div class="usr-icon">
+                                                            <img src="img/Profile.svg" alt="profile">
+                                                        </div>
+                                                        <div class="usr-name">
+                                                            Jacob Wilston
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Lorem ipusm</td>
+                                                <td>01 Mar 2022</td>
+                                                <td>31 June 2022</td>
+                                                <td>₹ 350</td>
+                                                <td class="tel-col">+91 8129398422</td>
+                                                <td></td>
+                                                <td class="action-btn-group four-items">
+                                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#campaigns-modal">
+                                                        <img src="img/eye.svg" alt="">
+                                                    </button>
+                                                    <button class="btn edit-btn">
+                                                        <img src="img/edit.svg" alt="">
+                                                    </button>
+                                                    <button class="btn block-btn">
+                                                        <img src="img/block.svg" alt="">
+                                                    </button>
+                                                    <button class="btn delete-btn">
+                                                        <img src="img/delit.svg" alt="">
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="user-img-block d-flex">
+                                                        <div class="usr-icon">
+                                                            <img src="img/Profile.svg" alt="profile">
+                                                        </div>
+                                                        <div class="usr-name">
+                                                            Jacob Wilston
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Lorem ipusm</td>
+                                                <td>01 Mar 2022</td>
+                                                <td>31 June 2022</td>
+                                                <td>₹ 350</td>
+                                                <td class="tel-col">+91 8129398422</td>
+                                                <td></td>
+                                                <td class="action-btn-group four-items">
+                                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#campaigns-modal">
+                                                        <img src="img/eye.svg" alt="">
+                                                    </button>
+                                                    <button class="btn edit-btn">
+                                                        <img src="img/edit.svg" alt="">
+                                                    </button>
+                                                    <button class="btn block-btn">
+                                                        <img src="img/block.svg" alt="">
+                                                    </button>
+                                                    <button class="btn delete-btn">
+                                                        <img src="img/delit.svg" alt="">
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="user-img-block d-flex">
+                                                        <div class="usr-icon">
+                                                            <img src="img/Profile.svg" alt="profile">
+                                                        </div>
+                                                        <div class="usr-name">
+                                                            Jacob Wilston
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Lorem ipusm</td>
+                                                <td>01 Mar 2022</td>
+                                                <td>31 June 2022</td>
+                                                <td>₹ 350</td>
+                                                <td class="tel-col">+91 8129398422</td>
+                                                <td></td>
+                                                <td class="action-btn-group four-items">
+                                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#campaigns-modal">
+                                                        <img src="img/eye.svg" alt="">
+                                                    </button>
+                                                    <button class="btn edit-btn">
+                                                        <img src="img/edit.svg" alt="">
+                                                    </button>
+                                                    <button class="btn block-btn">
+                                                        <img src="img/block.svg" alt="">
+                                                    </button>
+                                                    <button class="btn delete-btn">
+                                                        <img src="img/delit.svg" alt="">
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="user-img-block d-flex">
+                                                        <div class="usr-icon">
+                                                            <img src="img/Profile.svg" alt="profile">
+                                                        </div>
+                                                        <div class="usr-name">
+                                                            Jacob Wilston
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Lorem ipusm</td>
+                                                <td>01 Mar 2022</td>
+                                                <td>31 June 2022</td>
+                                                <td>₹ 350</td>
+                                                <td class="tel-col">+91 8129398422</td>
+                                                <td></td>
+                                                <td class="action-btn-group four-items">
+                                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#campaigns-modal">
+                                                        <img src="img/eye.svg" alt="">
+                                                    </button>
+                                                    <button class="btn edit-btn">
+                                                        <img src="img/edit.svg" alt="">
+                                                    </button>
+                                                    <button class="btn block-btn">
+                                                        <img src="img/block.svg" alt="">
+                                                    </button>
+                                                    <button class="btn delete-btn">
+                                                        <img src="img/delit.svg" alt="">
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="user-img-block d-flex">
+                                                        <div class="usr-icon">
+                                                            <img src="img/Profile.svg" alt="profile">
+                                                        </div>
+                                                        <div class="usr-name">
+                                                            Jacob Wilston
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Lorem ipusm</td>
+                                                <td>01 Mar 2022</td>
+                                                <td>31 June 2022</td>
+                                                <td>₹ 350</td>
+                                                <td class="tel-col">+91 8129398422</td>
+                                                <td></td>
+                                                <td class="action-btn-group four-items">
+                                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#campaigns-modal">
+                                                        <img src="img/eye.svg" alt="">
+                                                    </button>
+                                                    <button class="btn edit-btn">
+                                                        <img src="img/edit.svg" alt="">
+                                                    </button>
+                                                    <button class="btn block-btn">
+                                                        <img src="img/block.svg" alt="">
+                                                    </button>
+                                                    <button class="btn delete-btn">
+                                                        <img src="img/delit.svg" alt="">
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="user-img-block d-flex">
+                                                        <div class="usr-icon">
+                                                            <img src="img/Profile.svg" alt="profile">
+                                                        </div>
+                                                        <div class="usr-name">
+                                                            Jacob Wilston
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Lorem ipusm</td>
+                                                <td>01 Mar 2022</td>
+                                                <td>31 June 2022</td>
+                                                <td>₹ 350</td>
+                                                <td class="tel-col">+91 8129398422</td>
+                                                <td></td>
+                                                <td class="action-btn-group four-items">
+                                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#campaigns-modal">
+                                                        <img src="img/eye.svg" alt="">
+                                                    </button>
+                                                    <button class="btn edit-btn">
+                                                        <img src="img/edit.svg" alt="">
+                                                    </button>
+                                                    <button class="btn block-btn">
+                                                        <img src="img/block.svg" alt="">
+                                                    </button>
+                                                    <button class="btn delete-btn">
+                                                        <img src="img/delit.svg" alt="">
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <div class="user-img-block d-flex">
+                                                        <div class="usr-icon">
+                                                            <img src="img/Profile.svg" alt="profile">
+                                                        </div>
+                                                        <div class="usr-name">
+                                                            Jacob Wilston
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Lorem ipusm</td>
+                                                <td>01 Mar 2022</td>
+                                                <td>31 June 2022</td>
+                                                <td>₹ 350</td>
+                                                <td class="tel-col">+91 8129398422</td>
+                                                <td></td>
+                                                <td class="action-btn-group four-items">
+                                                    <button class="btn view-btn" data-bs-toggle="modal"
+                                                        data-bs-target="#campaigns-modal">
+                                                        <img src="img/eye.svg" alt="">
+                                                    </button>
+                                                    <button class="btn edit-btn">
+                                                        <img src="img/edit.svg" alt="">
+                                                    </button>
+                                                    <button class="btn block-btn">
+                                                        <img src="img/block.svg" alt="">
+                                                    </button>
+                                                    <button class="btn delete-btn">
+                                                        <img src="img/delit.svg" alt="">
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-pagination">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link link-disabled previous-link" href="#"
+                                                aria-label="Previous">
+                                                <img src="img/Icon-arrow-left.svg" alt="arrow-left">
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link link-dots" href="#">...</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">22</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <img src="img/Icon-arrow-left.svg" alt="arrow-left">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="activity">
+                            <div class="activity-wrap">
+                                <div class="campaign-wrap">
+                                    <div class="table-cover custom-scroll custom-scroll-h custom-table-cover">
+                                        <table class="custom-listing-table vendor-list-tbl">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-start">Vendor Name</th>
+                                                    <th class="campaign-td">Campaign Name</th>
+                                                    <th>Start Date</th>
+                                                    <th>End Date</th>
+                                                    <th>Price</th>
+                                                    <th class="text-start">Status</th>
+                                                    <th>Overall rating</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="user-img-block d-flex">
+                                                            <div class="usr-icon">
+                                                                <img src="img/Profile.svg" alt="profile">
+                                                            </div>
+                                                            <div class="usr-name">
+                                                                Jacob Wilston
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>Lorem ipusm</td>
+                                                    <td>01 Mar 2022</td>
+                                                    <td>31 June 2022</td>
+                                                    <td>₹ 350</td>
+                                                    <td class="tel-col">+91 8129398422</td>
+                                                    <td></td>
+                                                    <td class="action-btn-group four-items">
+                                                        <button class="btn view-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#campaigns-modal">
+                                                            <img src="img/eye.svg" alt="">
+                                                        </button>
+                                                        <button class="btn edit-btn">
+                                                            <img src="img/edit.svg" alt="">
+                                                        </button>
+                                                        <button class="btn block-btn">
+                                                            <img src="img/block.svg" alt="">
+                                                        </button>
+                                                        <button class="btn delete-btn">
+                                                            <img src="img/delit.svg" alt="">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="user-img-block d-flex">
+                                                            <div class="usr-icon">
+                                                                <img src="img/Profile.svg" alt="profile">
+                                                            </div>
+                                                            <div class="usr-name">
+                                                                Jacob Wilston
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>Lorem ipusm</td>
+                                                    <td>01 Mar 2022</td>
+                                                    <td>31 June 2022</td>
+                                                    <td>₹ 350</td>
+                                                    <td class="tel-col">+91 8129398422</td>
+                                                    <td></td>
+                                                    <td class="action-btn-group four-items">
+                                                        <button class="btn view-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#campaigns-modal">
+                                                            <img src="img/eye.svg" alt="">
+                                                        </button>
+                                                        <button class="btn edit-btn">
+                                                            <img src="img/edit.svg" alt="">
+                                                        </button>
+                                                        <button class="btn block-btn">
+                                                            <img src="img/block.svg" alt="">
+                                                        </button>
+                                                        <button class="btn delete-btn">
+                                                            <img src="img/delit.svg" alt="">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="user-img-block d-flex">
+                                                            <div class="usr-icon">
+                                                                <img src="img/Profile.svg" alt="profile">
+                                                            </div>
+                                                            <div class="usr-name">
+                                                                Jacob Wilston
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>Lorem ipusm</td>
+                                                    <td>01 Mar 2022</td>
+                                                    <td>31 June 2022</td>
+                                                    <td>₹ 350</td>
+                                                    <td class="tel-col">+91 8129398422</td>
+                                                    <td></td>
+                                                    <td class="action-btn-group four-items">
+                                                        <button class="btn view-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#campaigns-modal">
+                                                            <img src="img/eye.svg" alt="">
+                                                        </button>
+                                                        <button class="btn edit-btn">
+                                                            <img src="img/edit.svg" alt="">
+                                                        </button>
+                                                        <button class="btn block-btn">
+                                                            <img src="img/block.svg" alt="">
+                                                        </button>
+                                                        <button class="btn delete-btn">
+                                                            <img src="img/delit.svg" alt="">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="user-img-block d-flex">
+                                                            <div class="usr-icon">
+                                                                <img src="img/Profile.svg" alt="profile">
+                                                            </div>
+                                                            <div class="usr-name">
+                                                                Jacob Wilston
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>Lorem ipusm</td>
+                                                    <td>01 Mar 2022</td>
+                                                    <td>31 June 2022</td>
+                                                    <td>₹ 350</td>
+                                                    <td class="tel-col">+91 8129398422</td>
+                                                    <td></td>
+                                                    <td class="action-btn-group four-items">
+                                                        <button class="btn view-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#campaigns-modal">
+                                                            <img src="img/eye.svg" alt="">
+                                                        </button>
+                                                        <button class="btn edit-btn">
+                                                            <img src="img/edit.svg" alt="">
+                                                        </button>
+                                                        <button class="btn block-btn">
+                                                            <img src="img/block.svg" alt="">
+                                                        </button>
+                                                        <button class="btn delete-btn">
+                                                            <img src="img/delit.svg" alt="">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="user-img-block d-flex">
+                                                            <div class="usr-icon">
+                                                                <img src="img/Profile.svg" alt="profile">
+                                                            </div>
+                                                            <div class="usr-name">
+                                                                Jacob Wilston
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>Lorem ipusm</td>
+                                                    <td>01 Mar 2022</td>
+                                                    <td>31 June 2022</td>
+                                                    <td>₹ 350</td>
+                                                    <td class="tel-col">+91 8129398422</td>
+                                                    <td></td>
+                                                    <td class="action-btn-group four-items">
+                                                        <button class="btn view-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#campaigns-modal">
+                                                            <img src="img/eye.svg" alt="">
+                                                        </button>
+                                                        <button class="btn edit-btn">
+                                                            <img src="img/edit.svg" alt="">
+                                                        </button>
+                                                        <button class="btn block-btn">
+                                                            <img src="img/block.svg" alt="">
+                                                        </button>
+                                                        <button class="btn delete-btn">
+                                                            <img src="img/delit.svg" alt="">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="user-img-block d-flex">
+                                                            <div class="usr-icon">
+                                                                <img src="img/Profile.svg" alt="profile">
+                                                            </div>
+                                                            <div class="usr-name">
+                                                                Jacob Wilston
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>Lorem ipusm</td>
+                                                    <td>01 Mar 2022</td>
+                                                    <td>31 June 2022</td>
+                                                    <td>₹ 350</td>
+                                                    <td class="tel-col">+91 8129398422</td>
+                                                    <td></td>
+                                                    <td class="action-btn-group four-items">
+                                                        <button class="btn view-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#campaigns-modal">
+                                                            <img src="img/eye.svg" alt="">
+                                                        </button>
+                                                        <button class="btn edit-btn">
+                                                            <img src="img/edit.svg" alt="">
+                                                        </button>
+                                                        <button class="btn block-btn">
+                                                            <img src="img/block.svg" alt="">
+                                                        </button>
+                                                        <button class="btn delete-btn">
+                                                            <img src="img/delit.svg" alt="">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="user-img-block d-flex">
+                                                            <div class="usr-icon">
+                                                                <img src="img/Profile.svg" alt="profile">
+                                                            </div>
+                                                            <div class="usr-name">
+                                                                Jacob Wilston
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>Lorem ipusm</td>
+                                                    <td>01 Mar 2022</td>
+                                                    <td>31 June 2022</td>
+                                                    <td>₹ 350</td>
+                                                    <td class="tel-col">+91 8129398422</td>
+                                                    <td></td>
+                                                    <td class="action-btn-group four-items">
+                                                        <button class="btn view-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#campaigns-modal">
+                                                            <img src="img/eye.svg" alt="">
+                                                        </button>
+                                                        <button class="btn edit-btn">
+                                                            <img src="img/edit.svg" alt="">
+                                                        </button>
+                                                        <button class="btn block-btn">
+                                                            <img src="img/block.svg" alt="">
+                                                        </button>
+                                                        <button class="btn delete-btn">
+                                                            <img src="img/delit.svg" alt="">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="user-img-block d-flex">
+                                                            <div class="usr-icon">
+                                                                <img src="img/Profile.svg" alt="profile">
+                                                            </div>
+                                                            <div class="usr-name">
+                                                                Jacob Wilston
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>Lorem ipusm</td>
+                                                    <td>01 Mar 2022</td>
+                                                    <td>31 June 2022</td>
+                                                    <td>₹ 350</td>
+                                                    <td class="tel-col">+91 8129398422</td>
+                                                    <td></td>
+                                                    <td class="action-btn-group four-items">
+                                                        <button class="btn view-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#campaigns-modal">
+                                                            <img src="img/eye.svg" alt="">
+                                                        </button>
+                                                        <button class="btn edit-btn">
+                                                            <img src="img/edit.svg" alt="">
+                                                        </button>
+                                                        <button class="btn block-btn">
+                                                            <img src="img/block.svg" alt="">
+                                                        </button>
+                                                        <button class="btn delete-btn">
+                                                            <img src="img/delit.svg" alt="">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="user-img-block d-flex">
+                                                            <div class="usr-icon">
+                                                                <img src="img/Profile.svg" alt="profile">
+                                                            </div>
+                                                            <div class="usr-name">
+                                                                Jacob Wilston
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>Lorem ipusm</td>
+                                                    <td>01 Mar 2022</td>
+                                                    <td>31 June 2022</td>
+                                                    <td>₹ 350</td>
+                                                    <td class="tel-col">+91 8129398422</td>
+                                                    <td></td>
+                                                    <td class="action-btn-group four-items">
+                                                        <button class="btn view-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#campaigns-modal">
+                                                            <img src="img/eye.svg" alt="">
+                                                        </button>
+                                                        <button class="btn edit-btn">
+                                                            <img src="img/edit.svg" alt="">
+                                                        </button>
+                                                        <button class="btn block-btn">
+                                                            <img src="img/block.svg" alt="">
+                                                        </button>
+                                                        <button class="btn delete-btn">
+                                                            <img src="img/delit.svg" alt="">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="user-img-block d-flex">
+                                                            <div class="usr-icon">
+                                                                <img src="img/Profile.svg" alt="profile">
+                                                            </div>
+                                                            <div class="usr-name">
+                                                                Jacob Wilston
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>Lorem ipusm</td>
+                                                    <td>01 Mar 2022</td>
+                                                    <td>31 June 2022</td>
+                                                    <td>₹ 350</td>
+                                                    <td class="tel-col">+91 8129398422</td>
+                                                    <td></td>
+                                                    <td class="action-btn-group four-items">
+                                                        <button class="btn view-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#campaigns-modal">
+                                                            <img src="img/eye.svg" alt="">
+                                                        </button>
+                                                        <button class="btn edit-btn">
+                                                            <img src="img/edit.svg" alt="">
+                                                        </button>
+                                                        <button class="btn block-btn">
+                                                            <img src="img/block.svg" alt="">
+                                                        </button>
+                                                        <button class="btn delete-btn">
+                                                            <img src="img/delit.svg" alt="">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="user-img-block d-flex">
+                                                            <div class="usr-icon">
+                                                                <img src="img/Profile.svg" alt="profile">
+                                                            </div>
+                                                            <div class="usr-name">
+                                                                Jacob Wilston
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>Lorem ipusm</td>
+                                                    <td>01 Mar 2022</td>
+                                                    <td>31 June 2022</td>
+                                                    <td>₹ 350</td>
+                                                    <td class="tel-col">+91 8129398422</td>
+                                                    <td></td>
+                                                    <td class="action-btn-group four-items">
+                                                        <button class="btn view-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#campaigns-modal">
+                                                            <img src="img/eye.svg" alt="">
+                                                        </button>
+                                                        <button class="btn edit-btn">
+                                                            <img src="img/edit.svg" alt="">
+                                                        </button>
+                                                        <button class="btn block-btn">
+                                                            <img src="img/block.svg" alt="">
+                                                        </button>
+                                                        <button class="btn delete-btn">
+                                                            <img src="img/delit.svg" alt="">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="user-img-block d-flex">
+                                                            <div class="usr-icon">
+                                                                <img src="img/Profile.svg" alt="profile">
+                                                            </div>
+                                                            <div class="usr-name">
+                                                                Jacob Wilston
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>Lorem ipusm</td>
+                                                    <td>01 Mar 2022</td>
+                                                    <td>31 June 2022</td>
+                                                    <td>₹ 350</td>
+                                                    <td class="tel-col">+91 8129398422</td>
+                                                    <td></td>
+                                                    <td class="action-btn-group four-items">
+                                                        <button class="btn view-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#campaigns-modal">
+                                                            <img src="img/eye.svg" alt="">
+                                                        </button>
+                                                        <button class="btn edit-btn">
+                                                            <img src="img/edit.svg" alt="">
+                                                        </button>
+                                                        <button class="btn block-btn">
+                                                            <img src="img/block.svg" alt="">
+                                                        </button>
+                                                        <button class="btn delete-btn">
+                                                            <img src="img/delit.svg" alt="">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="user-img-block d-flex">
+                                                            <div class="usr-icon">
+                                                                <img src="img/Profile.svg" alt="profile">
+                                                            </div>
+                                                            <div class="usr-name">
+                                                                Jacob Wilston
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>Lorem ipusm</td>
+                                                    <td>01 Mar 2022</td>
+                                                    <td>31 June 2022</td>
+                                                    <td>₹ 350</td>
+                                                    <td class="tel-col">+91 8129398422</td>
+                                                    <td></td>
+                                                    <td class="action-btn-group four-items">
+                                                        <button class="btn view-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#campaigns-modal">
+                                                            <img src="img/eye.svg" alt="">
+                                                        </button>
+                                                        <button class="btn edit-btn">
+                                                            <img src="img/edit.svg" alt="">
+                                                        </button>
+                                                        <button class="btn block-btn">
+                                                            <img src="img/block.svg" alt="">
+                                                        </button>
+                                                        <button class="btn delete-btn">
+                                                            <img src="img/delit.svg" alt="">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="user-img-block d-flex">
+                                                            <div class="usr-icon">
+                                                                <img src="img/Profile.svg" alt="profile">
+                                                            </div>
+                                                            <div class="usr-name">
+                                                                Jacob Wilston
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>Lorem ipusm</td>
+                                                    <td>01 Mar 2022</td>
+                                                    <td>31 June 2022</td>
+                                                    <td>₹ 350</td>
+                                                    <td class="tel-col">+91 8129398422</td>
+                                                    <td></td>
+                                                    <td class="action-btn-group four-items">
+                                                        <button class="btn view-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#campaigns-modal">
+                                                            <img src="img/eye.svg" alt="">
+                                                        </button>
+                                                        <button class="btn edit-btn">
+                                                            <img src="img/edit.svg" alt="">
+                                                        </button>
+                                                        <button class="btn block-btn">
+                                                            <img src="img/block.svg" alt="">
+                                                        </button>
+                                                        <button class="btn delete-btn">
+                                                            <img src="img/delit.svg" alt="">
+                                                        </button>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="table-pagination">
+                                        <ul class="pagination">
+                                            <li class="page-item">
+                                                <a class="page-link link-disabled previous-link" href="#"
+                                                    aria-label="Previous">
+                                                    <img src="img/Icon-arrow-left.svg" alt="arrow-left">
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link link-dots" href="#">...</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">22</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <img src="img/Icon-arrow-left.svg" alt="arrow-left">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="demo" class="collapse filer-btn-collapse">
-                    <form>
-                        <div class="filter-cover">
-                            <div class="row">
-                                <div class="col-lg-5">
-                                    <div class="radio-cover">
-                                        <span class="sort-by">Sort By :</span>
-                                        <label class="radio-btn radio-gap">Ascending
-                                            <input type="radio" name="radio">
-                                            <span class="checkmark"></span>
-                                        </label>
 
-                                        <label class="radio-btn radio-gap">Ascending
-                                            <input type="radio" name="radio">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-7">
-                                    <div class="checkbox-cover">
-                                        <label class="check-box check-gap">Show premium vendors only
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </label>
-
-                                        <label class="check-box check-gap">Show blocked vendors only :
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </label>
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="forms-cover">
-                                        <div class="select-otr">
-                                            <div class="input-holder sm-form-col">
-                                                <div class="select-custom">
-                                                    <select name="" id="" class="form_controler">
-                                                        <option value="">State</option>
-                                                        <option value="">option</option>
-                                                        <option value="">option</option>
-                                                        <option value="">option</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="input-holder sm-form-col">
-                                                <div class="select-custom">
-                                                    <select name="" id="" class="form_controler">
-                                                        <option value="">Rating</option>
-                                                        <option value="">option</option>
-                                                        <option value="">option</option>
-                                                        <option value="">option</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="input-holder sm-form-col">
-                                                <div class="select-custom">
-                                                    <select name="" id="" class="form_controler">
-                                                        <option value="">XP</option>
-                                                        <option value="">option</option>
-                                                        <option value="">option</option>
-                                                        <option value="">option</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="button-grp">
-                                            <button class="primary-btn">Close</button>
-                                            <button class="primary-btn light-bg">Reset</button>
-                                            <button class="primary-btn dark-bg">Apply</button>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-                    </form>
-                </div>
-                <div class="table-cover custom-scroll custom-scroll-h custom-table-cover">
-                    <table class="custom-listing-table vendor-list-tbl">
-                        <thead>
-                            <tr>
-                                <th class="text-start">Vendor Name</th>
-                                <th class="campaign-td">Campaign Name</th>
-                                <th>Start Date</th>
-                                <th>End Date</th>
-                                <th>Price</th>
-                                <th class="text-start">Status</th>
-                                <th>Overall rating</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="user-img-block d-flex">
-                                        <div class="usr-icon">
-                                            <img src="img/Profile.svg" alt="profile">
-                                        </div>
-                                        <div class="usr-name">
-                                            Jacob Wilston
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Lorem ipusm</td>
-                                <td>01 Mar 2022</td>
-                                <td>31 June 2022</td>
-                                <td>₹ 350</td>
-                                <td class="tel-col">+91 8129398422</td>
-                                <td></td>
-                                <td class="action-btn-group four-items">
-                                    <button class="btn view-btn" data-bs-toggle="modal"
-                                        data-bs-target="#campaigns-modal">
-                                        <img src="img/eye.svg" alt="">
-                                    </button>
-                                    <button class="btn edit-btn">
-                                        <img src="img/edit.svg" alt="">
-                                    </button>
-                                    <button class="btn block-btn">
-                                        <img src="img/block.svg" alt="">
-                                    </button>
-                                    <button class="btn delete-btn">
-                                        <img src="img/delit.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="user-img-block d-flex">
-                                        <div class="usr-icon">
-                                            <img src="img/Profile.svg" alt="profile">
-                                        </div>
-                                        <div class="usr-name">
-                                            Jacob Wilston
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Lorem ipusm</td>
-                                <td>01 Mar 2022</td>
-                                <td>31 June 2022</td>
-                                <td>₹ 350</td>
-                                <td class="tel-col">+91 8129398422</td>
-                                <td></td>
-                                <td class="action-btn-group four-items">
-                                    <button class="btn view-btn" data-bs-toggle="modal"
-                                        data-bs-target="#campaigns-modal">
-                                        <img src="img/eye.svg" alt="">
-                                    </button>
-                                    <button class="btn edit-btn">
-                                        <img src="img/edit.svg" alt="">
-                                    </button>
-                                    <button class="btn block-btn">
-                                        <img src="img/block.svg" alt="">
-                                    </button>
-                                    <button class="btn delete-btn">
-                                        <img src="img/delit.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="user-img-block d-flex">
-                                        <div class="usr-icon">
-                                            <img src="img/Profile.svg" alt="profile">
-                                        </div>
-                                        <div class="usr-name">
-                                            Jacob Wilston
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Lorem ipusm</td>
-                                <td>01 Mar 2022</td>
-                                <td>31 June 2022</td>
-                                <td>₹ 350</td>
-                                <td class="tel-col">+91 8129398422</td>
-                                <td></td>
-                                <td class="action-btn-group four-items">
-                                    <button class="btn view-btn" data-bs-toggle="modal"
-                                        data-bs-target="#campaigns-modal">
-                                        <img src="img/eye.svg" alt="">
-                                    </button>
-                                    <button class="btn edit-btn">
-                                        <img src="img/edit.svg" alt="">
-                                    </button>
-                                    <button class="btn block-btn">
-                                        <img src="img/block.svg" alt="">
-                                    </button>
-                                    <button class="btn delete-btn">
-                                        <img src="img/delit.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="user-img-block d-flex">
-                                        <div class="usr-icon">
-                                            <img src="img/Profile.svg" alt="profile">
-                                        </div>
-                                        <div class="usr-name">
-                                            Jacob Wilston
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Lorem ipusm</td>
-                                <td>01 Mar 2022</td>
-                                <td>31 June 2022</td>
-                                <td>₹ 350</td>
-                                <td class="tel-col">+91 8129398422</td>
-                                <td></td>
-                                <td class="action-btn-group four-items">
-                                    <button class="btn view-btn" data-bs-toggle="modal"
-                                        data-bs-target="#campaigns-modal">
-                                        <img src="img/eye.svg" alt="">
-                                    </button>
-                                    <button class="btn edit-btn">
-                                        <img src="img/edit.svg" alt="">
-                                    </button>
-                                    <button class="btn block-btn">
-                                        <img src="img/block.svg" alt="">
-                                    </button>
-                                    <button class="btn delete-btn">
-                                        <img src="img/delit.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="user-img-block d-flex">
-                                        <div class="usr-icon">
-                                            <img src="img/Profile.svg" alt="profile">
-                                        </div>
-                                        <div class="usr-name">
-                                            Jacob Wilston
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Lorem ipusm</td>
-                                <td>01 Mar 2022</td>
-                                <td>31 June 2022</td>
-                                <td>₹ 350</td>
-                                <td class="tel-col">+91 8129398422</td>
-                                <td></td>
-                                <td class="action-btn-group four-items">
-                                    <button class="btn view-btn" data-bs-toggle="modal"
-                                        data-bs-target="#campaigns-modal">
-                                        <img src="img/eye.svg" alt="">
-                                    </button>
-                                    <button class="btn edit-btn">
-                                        <img src="img/edit.svg" alt="">
-                                    </button>
-                                    <button class="btn block-btn">
-                                        <img src="img/block.svg" alt="">
-                                    </button>
-                                    <button class="btn delete-btn">
-                                        <img src="img/delit.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="user-img-block d-flex">
-                                        <div class="usr-icon">
-                                            <img src="img/Profile.svg" alt="profile">
-                                        </div>
-                                        <div class="usr-name">
-                                            Jacob Wilston
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Lorem ipusm</td>
-                                <td>01 Mar 2022</td>
-                                <td>31 June 2022</td>
-                                <td>₹ 350</td>
-                                <td class="tel-col">+91 8129398422</td>
-                                <td></td>
-                                <td class="action-btn-group four-items">
-                                    <button class="btn view-btn" data-bs-toggle="modal"
-                                        data-bs-target="#campaigns-modal">
-                                        <img src="img/eye.svg" alt="">
-                                    </button>
-                                    <button class="btn edit-btn">
-                                        <img src="img/edit.svg" alt="">
-                                    </button>
-                                    <button class="btn block-btn">
-                                        <img src="img/block.svg" alt="">
-                                    </button>
-                                    <button class="btn delete-btn">
-                                        <img src="img/delit.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="user-img-block d-flex">
-                                        <div class="usr-icon">
-                                            <img src="img/Profile.svg" alt="profile">
-                                        </div>
-                                        <div class="usr-name">
-                                            Jacob Wilston
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Lorem ipusm</td>
-                                <td>01 Mar 2022</td>
-                                <td>31 June 2022</td>
-                                <td>₹ 350</td>
-                                <td class="tel-col">+91 8129398422</td>
-                                <td></td>
-                                <td class="action-btn-group four-items">
-                                    <button class="btn view-btn" data-bs-toggle="modal"
-                                        data-bs-target="#campaigns-modal">
-                                        <img src="img/eye.svg" alt="">
-                                    </button>
-                                    <button class="btn edit-btn">
-                                        <img src="img/edit.svg" alt="">
-                                    </button>
-                                    <button class="btn block-btn">
-                                        <img src="img/block.svg" alt="">
-                                    </button>
-                                    <button class="btn delete-btn">
-                                        <img src="img/delit.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="user-img-block d-flex">
-                                        <div class="usr-icon">
-                                            <img src="img/Profile.svg" alt="profile">
-                                        </div>
-                                        <div class="usr-name">
-                                            Jacob Wilston
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Lorem ipusm</td>
-                                <td>01 Mar 2022</td>
-                                <td>31 June 2022</td>
-                                <td>₹ 350</td>
-                                <td class="tel-col">+91 8129398422</td>
-                                <td></td>
-                                <td class="action-btn-group four-items">
-                                    <button class="btn view-btn" data-bs-toggle="modal"
-                                        data-bs-target="#campaigns-modal">
-                                        <img src="img/eye.svg" alt="">
-                                    </button>
-                                    <button class="btn edit-btn">
-                                        <img src="img/edit.svg" alt="">
-                                    </button>
-                                    <button class="btn block-btn">
-                                        <img src="img/block.svg" alt="">
-                                    </button>
-                                    <button class="btn delete-btn">
-                                        <img src="img/delit.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="user-img-block d-flex">
-                                        <div class="usr-icon">
-                                            <img src="img/Profile.svg" alt="profile">
-                                        </div>
-                                        <div class="usr-name">
-                                            Jacob Wilston
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Lorem ipusm</td>
-                                <td>01 Mar 2022</td>
-                                <td>31 June 2022</td>
-                                <td>₹ 350</td>
-                                <td class="tel-col">+91 8129398422</td>
-                                <td></td>
-                                <td class="action-btn-group four-items">
-                                    <button class="btn view-btn" data-bs-toggle="modal"
-                                        data-bs-target="#campaigns-modal">
-                                        <img src="img/eye.svg" alt="">
-                                    </button>
-                                    <button class="btn edit-btn">
-                                        <img src="img/edit.svg" alt="">
-                                    </button>
-                                    <button class="btn block-btn">
-                                        <img src="img/block.svg" alt="">
-                                    </button>
-                                    <button class="btn delete-btn">
-                                        <img src="img/delit.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="user-img-block d-flex">
-                                        <div class="usr-icon">
-                                            <img src="img/Profile.svg" alt="profile">
-                                        </div>
-                                        <div class="usr-name">
-                                            Jacob Wilston
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Lorem ipusm</td>
-                                <td>01 Mar 2022</td>
-                                <td>31 June 2022</td>
-                                <td>₹ 350</td>
-                                <td class="tel-col">+91 8129398422</td>
-                                <td></td>
-                                <td class="action-btn-group four-items">
-                                    <button class="btn view-btn" data-bs-toggle="modal"
-                                        data-bs-target="#campaigns-modal">
-                                        <img src="img/eye.svg" alt="">
-                                    </button>
-                                    <button class="btn edit-btn">
-                                        <img src="img/edit.svg" alt="">
-                                    </button>
-                                    <button class="btn block-btn">
-                                        <img src="img/block.svg" alt="">
-                                    </button>
-                                    <button class="btn delete-btn">
-                                        <img src="img/delit.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="user-img-block d-flex">
-                                        <div class="usr-icon">
-                                            <img src="img/Profile.svg" alt="profile">
-                                        </div>
-                                        <div class="usr-name">
-                                            Jacob Wilston
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Lorem ipusm</td>
-                                <td>01 Mar 2022</td>
-                                <td>31 June 2022</td>
-                                <td>₹ 350</td>
-                                <td class="tel-col">+91 8129398422</td>
-                                <td></td>
-                                <td class="action-btn-group four-items">
-                                    <button class="btn view-btn" data-bs-toggle="modal"
-                                        data-bs-target="#campaigns-modal">
-                                        <img src="img/eye.svg" alt="">
-                                    </button>
-                                    <button class="btn edit-btn">
-                                        <img src="img/edit.svg" alt="">
-                                    </button>
-                                    <button class="btn block-btn">
-                                        <img src="img/block.svg" alt="">
-                                    </button>
-                                    <button class="btn delete-btn">
-                                        <img src="img/delit.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="user-img-block d-flex">
-                                        <div class="usr-icon">
-                                            <img src="img/Profile.svg" alt="profile">
-                                        </div>
-                                        <div class="usr-name">
-                                            Jacob Wilston
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Lorem ipusm</td>
-                                <td>01 Mar 2022</td>
-                                <td>31 June 2022</td>
-                                <td>₹ 350</td>
-                                <td class="tel-col">+91 8129398422</td>
-                                <td></td>
-                                <td class="action-btn-group four-items">
-                                    <button class="btn view-btn" data-bs-toggle="modal"
-                                        data-bs-target="#campaigns-modal">
-                                        <img src="img/eye.svg" alt="">
-                                    </button>
-                                    <button class="btn edit-btn">
-                                        <img src="img/edit.svg" alt="">
-                                    </button>
-                                    <button class="btn block-btn">
-                                        <img src="img/block.svg" alt="">
-                                    </button>
-                                    <button class="btn delete-btn">
-                                        <img src="img/delit.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="user-img-block d-flex">
-                                        <div class="usr-icon">
-                                            <img src="img/Profile.svg" alt="profile">
-                                        </div>
-                                        <div class="usr-name">
-                                            Jacob Wilston
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Lorem ipusm</td>
-                                <td>01 Mar 2022</td>
-                                <td>31 June 2022</td>
-                                <td>₹ 350</td>
-                                <td class="tel-col">+91 8129398422</td>
-                                <td></td>
-                                <td class="action-btn-group four-items">
-                                    <button class="btn view-btn" data-bs-toggle="modal"
-                                        data-bs-target="#campaigns-modal">
-                                        <img src="img/eye.svg" alt="">
-                                    </button>
-                                    <button class="btn edit-btn">
-                                        <img src="img/edit.svg" alt="">
-                                    </button>
-                                    <button class="btn block-btn">
-                                        <img src="img/block.svg" alt="">
-                                    </button>
-                                    <button class="btn delete-btn">
-                                        <img src="img/delit.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="user-img-block d-flex">
-                                        <div class="usr-icon">
-                                            <img src="img/Profile.svg" alt="profile">
-                                        </div>
-                                        <div class="usr-name">
-                                            Jacob Wilston
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>Lorem ipusm</td>
-                                <td>01 Mar 2022</td>
-                                <td>31 June 2022</td>
-                                <td>₹ 350</td>
-                                <td class="tel-col">+91 8129398422</td>
-                                <td></td>
-                                <td class="action-btn-group four-items">
-                                    <button class="btn view-btn" data-bs-toggle="modal"
-                                        data-bs-target="#campaigns-modal">
-                                        <img src="img/eye.svg" alt="">
-                                    </button>
-                                    <button class="btn edit-btn">
-                                        <img src="img/edit.svg" alt="">
-                                    </button>
-                                    <button class="btn block-btn">
-                                        <img src="img/block.svg" alt="">
-                                    </button>
-                                    <button class="btn delete-btn">
-                                        <img src="img/delit.svg" alt="">
-                                    </button>
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-                <div class="table-pagination">
-                    <ul class="pagination">
-                        <li class="page-item">
-                            <a class="page-link link-disabled previous-link" href="#" aria-label="Previous">
-                                <img src="img/Icon-arrow-left.svg" alt="arrow-left">
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link link-dots" href="#">...</a></li>
-                        <li class="page-item"><a class="page-link" href="#">22</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <img src="img/Icon-arrow-left.svg" alt="arrow-left">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
     </div>

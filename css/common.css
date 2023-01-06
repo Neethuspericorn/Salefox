@@ -108,6 +108,17 @@ body {
 .db-title-wrapper {
   padding: 0 0 15px;
   flex-wrap: wrap; }
+  .db-title-wrapper .campaigns-progress {
+    width: 432px;
+    height: 10px;
+    background: #FFFFFF;
+    border-radius: 7px; }
+    .db-title-wrapper .campaigns-progress .bg-purplle {
+      background-color: #BA4773; }
+    .db-title-wrapper .campaigns-progress .bg-success {
+      background-color: #23BEAC !important; }
+    .db-title-wrapper .campaigns-progress .bg-info {
+      background-color: #4D8BED !important; }
   @media (max-width: 1023px) {
     .db-title-wrapper {
       display: block !important; } }
