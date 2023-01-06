@@ -126,6 +126,7 @@ body {
         @media ($sm-1367) {
             padding: 30px 25px;
         }
+
         @media ($sm-991) {
             padding: 20px 15px;
         }
@@ -135,6 +136,22 @@ body {
 .db-title-wrapper {
     padding: 0 0 15px;
     flex-wrap: wrap;
+
+    .campaigns-progress {
+        width: 432px;
+        height: 10px;
+        background: #FFFFFF;
+        border-radius: 7px;
+        .bg-purplle{
+            background-color: $primary-color;
+        }
+        .bg-success{
+            background-color: #23BEAC !important;
+        }
+        .bg-info{
+            background-color: #4D8BED !important;
+        }
+    }
 
     @media ($sm-1023) {
         display: block !important;

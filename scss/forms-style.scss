@@ -75,7 +75,6 @@
     }
 
 
-    .radio-btn input:checked~.checkmark {}
 
     .radio-btn input:checked~.checkmark:after {
         display: block;
@@ -139,7 +138,6 @@
     }
 
 
-    .check-box input:checked~.checkmark {}
 
     .check-box input:checked~.checkmark:after {
         display: block;
@@ -358,7 +356,6 @@ input[type="file"]::file-selector-button {
         }
     }
 
-    .form-otr {}
 
     .form_controler {
         background-color: #fff;
@@ -647,9 +644,6 @@ input[type="file"]::file-selector-button {
         margin-right: 15px;
         max-width: 30px;
      }
-    .dropdown-item.active, .dropdown-item:active{
-
-    }
 }
 .otp-modal-wrap{
     .modal-dialog {
@@ -863,10 +857,6 @@ input[type="file"]::file-selector-button {
         margin-left: 10px;
     }
 
-    .checkbox-cover {
-        // justify-content: flex-end;
-    }
-
     .check-gap {
         margin-right: 0;
     }
@@ -883,10 +873,6 @@ input[type="file"]::file-selector-button {
 
     .select-otr {
         width: 100%;
-    }
-
-    .button-grp {
-        // padding-right: 8px;
     }
 
     .select-otr {
@@ -947,8 +933,6 @@ input[type="file"]::file-selector-button {
         left: 5px;
         top: 2px;
     }
-
-    .radio-cover {}
 
     .radio-cover .radio-btn {
         margin-left: 0;

@@ -1,0 +1,497 @@
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.campaigns-view-wrapper .nav-pills {
+  margin-top: 26px; }
+  .campaigns-view-wrapper .nav-pills .nav-item {
+    background: #FFFFFF;
+    border: 1px solid #FFE6F0;
+    overflow: hidden;
+    border-right-color: transparent; }
+    .campaigns-view-wrapper .nav-pills .nav-item:first-child {
+      border-radius: 9px 0px 0px 9px; }
+    .campaigns-view-wrapper .nav-pills .nav-item:last-child {
+      border-radius: 0px 9px 9px 0px;
+      border-right-color: #FFE6F0; }
+    .campaigns-view-wrapper .nav-pills .nav-item .nav-link {
+      padding: 13px 50px;
+      text-align: left;
+      font-family: "sf-regular";
+      font-size: 13px;
+      color: #CA3C74; }
+      .campaigns-view-wrapper .nav-pills .nav-item .nav-link.active {
+        background: transparent;
+        border-bottom: 1px solid #BA4773;
+        border-radius: 0; }
+.campaigns-view-wrapper .tab-content {
+  margin-top: 9px; }
+  .campaigns-view-wrapper .tab-content .overview-wrap {
+    background: #fff;
+    border-radius: 11px;
+    padding: 70px; }
+    @media (max-width: 1679px) {
+      .campaigns-view-wrapper .tab-content .overview-wrap {
+        padding: 50px; } }
+    @media (max-width: 1367px) {
+      .campaigns-view-wrapper .tab-content .overview-wrap {
+        padding: 40px; } }
+    @media (max-width: 1199px) {
+      .campaigns-view-wrapper .tab-content .overview-wrap {
+        padding: 40px; } }
+    @media (max-width: 1023px) {
+      .campaigns-view-wrapper .tab-content .overview-wrap {
+        padding: 30px; } }
+    @media (max-width: 991px) {
+      .campaigns-view-wrapper .tab-content .overview-wrap {
+        padding: 25px; } }
+    @media (max-width: 767px) {
+      .campaigns-view-wrapper .tab-content .overview-wrap {
+        padding: 20px; } }
+    .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content {
+      flex-wrap: wrap; }
+      .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .inner-card-sm {
+        margin-bottom: 40px; }
+        @media (max-width: 1679px) {
+          .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .inner-card-sm {
+            margin-bottom: 35px; } }
+        @media (max-width: 1441px) {
+          .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .inner-card-sm {
+            margin-bottom: 30px;
+            font-size: 16px; } }
+        @media (max-width: 767px) {
+          .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .inner-card-sm {
+            margin-bottom: 25px; } }
+        @media (max-width: 579px) {
+          .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .inner-card-sm {
+            margin-bottom: 20px; } }
+        .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .inner-card-sm .card-title-sm {
+          color: #292929;
+          font-family: 'sf-medium';
+          font-size: 14px; }
+          @media (max-width: 1441px) {
+            .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .inner-card-sm .card-title-sm {
+              font-size: 13px; } }
+          .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .inner-card-sm .card-title-sm img {
+            width: 15px;
+            margin-right: 10px; }
+        .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .inner-card-sm .text-block-sm {
+          color: #939393;
+          font-family: 'sf-medium';
+          font-size: 14px;
+          padding-top: 10px; }
+          @media (max-width: 1441px) {
+            .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .inner-card-sm .text-block-sm {
+              font-size: 13px;
+              padding-top: 6px; } }
+        .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .inner-card-sm .status {
+          display: flex;
+          align-items: center; }
+          .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .inner-card-sm .status .success {
+            display: block;
+            width: 9px;
+            height: 9px;
+            background: #23BEAC;
+            border-radius: 100px;
+            margin-right: 8px; }
+      .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .nodata-sm {
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #CA3C74;
+        width: 100%;
+        font-size: 12px;
+        font-family: 'sf-regular';
+        border-radius: 7px;
+        background-color: #FFE2ED;
+        padding: 5px 10px;
+        height: 38px; }
+        .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .nodata-sm img {
+          margin-right: 8px; }
+      .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left {
+        width: 210px;
+        flex: 0 0 auto; }
+        @media (max-width: 767px) {
+          .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left {
+            width: 100%; } }
+        .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left:last-child .inner-card-sm {
+          margin-bottom: 15px; }
+        .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .img-block {
+          margin-bottom: 35px; }
+          @media (max-width: 1441px) {
+            .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .img-block {
+              padding-bottom: 30px; } }
+          @media (max-width: 767px) {
+            .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .img-block {
+              text-align: center; } }
+          .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .img-block .prof-img-cover {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            overflow: visible;
+            border: solid 6px #FFE2ED;
+            border-radius: 50%;
+            width: 174px;
+            height: 174px;
+            position: relative; }
+            @media (max-width: 1679px) {
+              .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .img-block .prof-img-cover {
+                width: 155px;
+                height: 155px; } }
+            @media (max-width: 767px) {
+              .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .img-block .prof-img-cover {
+                width: 105px;
+                height: 105px; } }
+            .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .img-block .prof-img-cover .premium-img {
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              width: 35px;
+              height: 35px; }
+              @media (max-width: 1679px) {
+                .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .img-block .prof-img-cover .premium-img {
+                  width: 28px;
+                  height: 28px; } }
+              @media (max-width: 1367px) {
+                .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .img-block .prof-img-cover .premium-img {
+                  width: 24px;
+                  height: 24px;
+                  right: 5px;
+                  bottom: 5px; } }
+              @media (max-width: 1199px) {
+                .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .img-block .prof-img-cover .premium-img {
+                  width: 20px;
+                  height: 20px;
+                  right: 0px;
+                  bottom: 0px; } }
+          .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .img-block .prof-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            object-position: center;
+            border-radius: 50%; }
+        .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .left-block-col .inner-card-sm .card-title-sm {
+          position: relative;
+          z-index: 1; }
+          @media (max-width: 1441px) {
+            .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .left-block-col .inner-card-sm .card-title-sm {
+              font-size: 13px; } }
+          .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .left-block-col .inner-card-sm .card-title-sm::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: rgba(242, 152, 186, 0.27);
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            z-index: -1; }
+          .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .left-block-col .inner-card-sm .card-title-sm .t-cover {
+            padding-right: 15px;
+            display: inline-block;
+            background-color: #fff; }
+        .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .left-block-col .inner-card-sm .text-block-sm .rating-row {
+          display: flex;
+          align-items: center; }
+          .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .left-block-col .inner-card-sm .text-block-sm .rating-row img {
+            margin-right: 5px; }
+        .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .left-block-col .inner-card-sm .text-block-sm .rating-point {
+          display: inline-block;
+          padding-left: 10px;
+          color: #401928;
+          font-size: 15px; }
+        @media (max-width: 1679px) {
+          .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .left-block-col .inner-card-sm {
+            margin-bottom: 35px; } }
+        @media (max-width: 1441px) {
+          .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .left-block-col .inner-card-sm {
+            margin-bottom: 30px; } }
+        @media (max-width: 767px) {
+          .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .left-block-col .inner-card-sm {
+            margin-bottom: 25px; } }
+        @media (max-width: 579px) {
+          .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .left-block-col .inner-card-sm {
+            margin-bottom: 20px; } }
+      .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-right {
+        padding-left: 70px;
+        flex: 1 1 auto;
+        width: calc(100% - 210px); }
+        @media (max-width: 767px) {
+          .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-right {
+            padding-left: 0 !important;
+            padding-top: 20px;
+            width: 100%; } }
+        .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-right .btm-line {
+          position: relative;
+          margin-bottom: 40px; }
+          @media (max-width: 579px) {
+            .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-right .btm-line {
+              position: relative;
+              margin-bottom: 30px;
+              padding-bottom: 10px; } }
+        .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-right .right-content-cover .sec-title-sm {
+          color: #CA3C74;
+          font-size: 17px;
+          font-family: 'sf-medium';
+          margin-bottom: 40px; }
+          @media (max-width: 1679px) {
+            .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-right .right-content-cover .sec-title-sm {
+              margin-bottom: 35px; } }
+          @media (max-width: 1441px) {
+            .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-right .right-content-cover .sec-title-sm {
+              margin-bottom: 30px;
+              font-size: 16px; } }
+          @media (max-width: 767px) {
+            .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-right .right-content-cover .sec-title-sm {
+              margin-bottom: 25px; } }
+          @media (max-width: 579px) {
+            .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-right .right-content-cover .sec-title-sm {
+              margin-bottom: 10px; } }
+  .campaigns-view-wrapper .tab-content .progress-wrap {
+    display: flex; }
+    .campaigns-view-wrapper .tab-content .progress-wrap .left-section {
+      width: 514px;
+      flex: 0 0 auto;
+      height: auto;
+      background: #FFFFFF;
+      border: 1px solid #FFE2ED;
+      border-radius: 11px;
+      padding: 71px 57px 55px; }
+      .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-header .form-label {
+        text-align: left;
+        font-size: 14px;
+        font-family: 'sf-Regular';
+        color: #330B1A; }
+      .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-header .form-select {
+        border: 1px solid #E5BFCE;
+        border-radius: 12px;
+        margin-bottom: 15px; }
+      .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-details {
+        background: #FFFAFC;
+        border: 1px solid #FFD6E6;
+        border-radius: 11px;
+        padding: 49px 45px 11px;
+        display: flex;
+        flex-wrap: wrap; }
+        .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-details .progress-details-txt {
+          width: 50%;
+          margin-bottom: 48px; }
+          .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-details .progress-details-txt h3 {
+            font-size: 14px;
+            font-family: "sf-medium";
+            text-align: left;
+            color: #CA3C74;
+            margin-bottom: 13px; }
+          .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-details .progress-details-txt span {
+            font-size: 14px;
+            font-family: "sf-medium";
+            text-align: left;
+            color: #393939; }
+            .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-details .progress-details-txt span img {
+              width: 11px;
+              margin-right: 10px; }
+      .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-list-items {
+        background: #FFFFFF;
+        border: 1px solid #FFD6E6;
+        border-radius: 11px;
+        padding: 28px 27px;
+        margin-top: 15px;
+        display: flex;
+        align-items: center; }
+        .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-list-items .progress-list-img {
+          width: 30px;
+          height: 30px;
+          margin-right: 30px; }
+        .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-list-items .progress-list-txt span {
+          font-family: 'sf-medium';
+          font-size: 15px;
+          text-align: left;
+          color: #393939; }
+        .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-list-items .progress-list-txt h4 {
+          margin-top: 3px;
+          margin-bottom: 0;
+          font-family: 'sf-bold';
+          font-size: 20px;
+          text-align: left;
+          color: #CA3C74; }
+    .campaigns-view-wrapper .tab-content .progress-wrap .right-section {
+      padding-left: 70px;
+      flex: 1 1 auto;
+      width: calc(100% - 525px);
+      margin-left: 11px;
+      background: #FFFFFF;
+      border: 1px solid #FFE2ED;
+      border-radius: 11px;
+      padding: 20px 0px 0px; }
+      .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-header {
+        border-bottom: 1px solid #F8DFEE; }
+        .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-header .title {
+          text-align: center;
+          font-size: 19px;
+          font-family: "sf-medium";
+          color: #330B1A; }
+        .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-header .campaigns-progress {
+          background: #FFFFFF;
+          border: 1px solid #FFE6F0;
+          border-radius: 9px;
+          max-width: 790px;
+          padding: 15px 22px;
+          display: flex;
+          align-items: center;
+          margin: auto;
+          margin-bottom: 25px; }
+          .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-header .campaigns-progress .progress {
+            width: 100%; }
+            .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-header .campaigns-progress .progress .bg-purplle {
+              background-color: #BA4773; }
+            .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-header .campaigns-progress .progress .bg-success {
+              background-color: #23BEAC !important; }
+            .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-header .campaigns-progress .progress .bg-info {
+              background-color: #4D8BED !important; }
+          .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-header .campaigns-progress span {
+            font-size: 12px;
+            font-family: "sf-regular";
+            text-align: left;
+            color: #3B3B3B;
+            padding-left: 18px; }
+      .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body {
+        margin-top: 30px;
+        height: calc(100vh - 240px);
+        position: relative; }
+        .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body::after {
+          content: '';
+          display: block;
+          width: 100%;
+          background: transparent linear-gradient(180deg, #FFFFFF00 0%, #fff 100%);
+          position: absolute;
+          height: 200px;
+          z-index: 99;
+          bottom: 0; }
+        .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul {
+          overflow: auto;
+          height: 100%;
+          padding-bottom: 50px; }
+          .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li {
+            list-style-type: none;
+            position: relative;
+            width: 6px;
+            margin: 0 auto;
+            padding-top: 50px;
+            background: rgba(201, 59, 116, 0.13); }
+            .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li::after {
+              content: "";
+              position: absolute;
+              left: 50%;
+              top: 80px;
+              transform: translateX(-50%);
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              background: inherit;
+              z-index: 1;
+              background: #CA3C74;
+              border: 5px solid #FFE3EE; }
+            .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li:nth-child(even) .timeline-list {
+              left: 45px;
+              transform: none;
+              visibility: visible;
+              opacity: 1; }
+              .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li:nth-child(even) .timeline-list::after {
+                left: -12px;
+                transform: rotate(56deg); }
+            .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li:nth-child(even)::after {
+              background-color: #23BEAC;
+              border-color: #CEFFF9; }
+            .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li:nth-child(odd) .timeline-list {
+              left: -339px; }
+              .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li:nth-child(odd) .timeline-list::after {
+                right: -14px; }
+            .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list {
+              position: relative;
+              bottom: 0;
+              width: 310px;
+              background: #FFFAFC;
+              border-radius: 10px;
+              border: 1px solid #FAD7E5;
+              display: flex;
+              align-items: center; }
+              .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list::after {
+                content: '';
+                width: 0;
+                height: 0;
+                border-top: 10px solid transparent;
+                border-left: 15px solid #FAD7E5;
+                border-bottom: 10px solid transparent;
+                position: absolute;
+                top: 34px; }
+              .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-txt {
+                max-width: 230px;
+                padding: 15px;
+                border-right: 1px solid #ffe9f2;
+                margin-right: 15px; }
+                .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-txt span {
+                  font-size: 11px;
+                  font-family: 'sf-medium';
+                  text-align: left;
+                  color: rgba(25, 8, 14, 0.91);
+                  margin: 0; }
+                .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-txt h3 {
+                  font-size: 15px;
+                  font-family: 'sf-medium';
+                  text-align: left;
+                  color: #CA3C74;
+                  margin-top: 8px; }
+                .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-txt p {
+                  font-family: 'sf-pro-light';
+                  font-size: 10px;
+                  text-align: left;
+                  color: rgba(25, 8, 14, 0.47); }
+                .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-txt .user {
+                  display: flex;
+                  align-items: center; }
+                  .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-txt .user img {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 100px;
+                    object-fit: cover;
+                    margin-right: 6px; }
+                  .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-txt .user .user-txt {
+                    font-family: "sf-regular";
+                    font-size: 11px;
+                    text-align: left;
+                    color: #19080E; }
+              .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-time {
+                width: 50px; }
+                .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-time h6 {
+                  font-size: 13px;
+                  font-family: 'sf-regular';
+                  text-align: center;
+                  color: #000000;
+                  margin: 0;
+                  line-height: 22px; }
+                  .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-time h6 span {
+                    font-family: 'sf-bold';
+                    text-align: center;
+                    font-size: 34px;
+                    color: #CA3C74;
+                    display: block; }
+
+/*# sourceMappingURL=campaigns-view.css.map */
