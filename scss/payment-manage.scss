@@ -305,7 +305,11 @@
         }
     }
 }
-
+.tooltip{
+    font-size: 11px;
+    font-weight: normal;
+     
+}
  // dark theme
  .dark-theme{
     .export-dropdown{
@@ -338,5 +342,21 @@
     .tooltip-inner{
         background-color: #CA3C74;
     }
+    .dd_invoice.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before,
+    .dd_invoice.bs-tooltip-bottom .tooltip-arrow::before{
+        border-bottom-color: #CA3C74;
+    }
+    .dd_invoice.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before, .dd_invoice.bs-tooltip-start .tooltip-arrow::before{
+        border-left-color: #CA3C74;
+    }
+    .dd_invoice.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before, .dd_invoice.bs-tooltip-top .tooltip-arrow::before{
+        border-top-color: #CA3C74;
+    }
+    .form_controler.datepicker_input{
+        .search-control{
+            color: #FFFFFF;
+        }
+    }
+    
  }
  
