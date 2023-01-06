@@ -305,7 +305,7 @@ input[type="file"]::file-selector-button {
         }
 
         .btn-close {
-
+            
             @media ($sm-1367) {
                 background-size: 12px;
                 width: 28px;
@@ -475,7 +475,6 @@ input[type="file"]::file-selector-button {
     opacity: 1;
     padding: 0 !important;
     box-shadow: none !important;
-
     @media ($sm-1367) {
         background-size: 12px;
         width: 28px;
@@ -487,7 +486,6 @@ input[type="file"]::file-selector-button {
         width: 24px;
         height: 24px;
     }
-
     &:hover {
         opacity: 0.9;
     }
@@ -592,7 +590,68 @@ input[type="file"]::file-selector-button {
     }
 }
 
-.campaigns-modal-wrap {
+.date-field{
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        right: 7px;
+        width: 17px;
+        height: 13px;
+        background: url(../img/calendar.svg) no-repeat center center;
+        background-size: contain;
+    }
+    .form_controler{
+        padding-right: 35px;
+    }
+}
+.dropdown-select{
+    .dropdown-menu{
+        width: 100%;
+        font-family: "sf-regular";
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0;
+    li{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #e9e8e8;
+    }
+    .dropdown-item{
+         padding: 10px 18px;
+        display: flex;
+        align-items: center;
+        .mode-card{
+             min-width: 30px;
+             max-width: 30px;
+             margin-right: 10px;
+
+   
+        }
+     }
+    }
+    .dropdown-item.active, .dropdown-item:hover{
+        color: #1e2125;
+        background-color: #f7f7f7;
+    }
+}
+.btn-dropdown{
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    display: inline-flex;
+    align-items: center;
+    .mode-card{
+        margin-right: 15px;
+        max-width: 30px;
+     }
+    .dropdown-item.active, .dropdown-item:active{
+
+    }
+}
+.otp-modal-wrap{
     .modal-dialog {
         max-width: 887px;
     }
@@ -714,9 +773,10 @@ input[type="file"]::file-selector-button {
         }
     }
 }
-
-
 @media(max-width:1679px) {
+    .dropdown-select .dropdown-menu{
+        font-size: 13px;
+    }
     .button-grp .primary-btn {
         min-width: 90px;
     }
@@ -929,7 +989,6 @@ input[type="file"]::file-selector-button {
         margin-bottom: 12px;
     }
 }
-
 @media(max-width:767px) {
     .custom-modal .modal-dialog {
         transform: none;

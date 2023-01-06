@@ -19,9 +19,9 @@
     @include justify-content (center);*/
 .dark-theme {
   background-color: #161819; }
-  .dark-theme .enter-otp-block .payable-amount-block h3, .dark-theme .enter-otp-block .payable-amount-block .bank-block h4, .dark-theme .enter-otp-block .payable-amount-block .payable-form-block .input-holder label, .dark-theme .enter-otp-block .payable-amount-block .payable-form-block p, .dark-theme .enter-otp-block .payable-amount-block .payable-footer-block p, .dark-theme .campaigns-modal-wrap .modal-content .small-modal-content h3 {
+  .dark-theme .enter-otp-block .payable-amount-block h3, .dark-theme .enter-otp-block .payable-amount-block .bank-block h4, .dark-theme .enter-otp-block .payable-amount-block .payable-form-block .input-holder label, .dark-theme .enter-otp-block .payable-amount-block .payable-form-block p, .dark-theme .enter-otp-block .payable-amount-block .payable-footer-block p, .dark-theme .otp-modal-wrap .modal-content .small-modal-content h3 {
     color: #fff; }
-  .dark-theme .campaigns-modal-wrap .modal-content .small-modal-content p {
+  .dark-theme .otp-modal-wrap .modal-content .small-modal-content p {
     color: #71747A !important; }
   .dark-theme .enter-otp-block .payable-amount-block .payable-form-block p span {
     color: #FA5555; }
@@ -303,8 +303,53 @@
     color: #fff !important; }
     .dark-theme .authentication-conditions .indication:first-child::after {
       background: #fff !important; }
-  .dark-theme .authentication .authentication-right-block .authentication-form .authentication-form-header .logo-wrap small {
+  .dark-theme .authentication .authentication-right-block .authentication-form .authentication-form-header .logo-wrap small,
+  .dark-theme .create-campaign .payment-method .payment-title .payment-hd, .dark-theme .create-campaign .apply-coupon .apply-tag b, .dark-theme .create-campaign .apply-coupon .apply-tag {
     color: #fff; }
+  .dark-theme .create-campaign .payment-details {
+    background-color: #292C31; }
+  .dark-theme .create-campaign .payment-details .title-pay, .dark-theme .create-campaign .payment-details .price-list ul li p, .dark-theme .create-campaign .ftr-info strong,
+  .dark-theme .create-campaign .apply-coupon .coupon-list li .content .cpn-title strong {
+    color: #fff; }
+  .dark-theme .create-campaign .ftr-info .total {
+    background-color: #1F2125; }
+  .dark-theme .create-campaign .payment-details {
+    border-color: transparent; }
+  .dark-theme .create-campaign .payment-details .title-pay {
+    border-bottom: 1px solid rgba(221, 221, 221, 0.15); }
+  .dark-theme .create-campaign .ftr-info {
+    border-top: 1px solid rgba(221, 221, 221, 0.15); }
+  .dark-theme .create-campaign .apply-coupon .apply-tag {
+    background-color: #6c2945; }
+  .dark-theme .create-campaign .apply-coupon .apply-tag .close {
+    background-color: #621533; }
+    .dark-theme .create-campaign .apply-coupon .apply-tag .close img {
+      filter: brightness(0) invert(1); }
+  .dark-theme .create-campaign .pay-btn-otr .poweard-stripe img, .dark-theme .btn-dropdown .mode-card img {
+    filter: brightness(0) invert(1); }
+  .dark-theme .create-campaign .apply-coupon .coupon-grp .coupon-field {
+    background-color: #1F2125;
+    border: 1px solid #373737;
+    color: #fff; }
+  .dark-theme .create-campaign .apply-coupon .coupon-grp .error-msg {
+    color: #FF6060; }
+  .dark-theme .create-campaign .apply-coupon .coupon-list li .content p {
+    color: #91959D; }
+  .dark-theme .create-campaign .apply-coupon .coupon-list li .copy-btn {
+    background-color: #101010; }
+  .dark-theme .create-campaign .apply-coupon .coupon-list li {
+    border-color: #373737; }
+  .dark-theme .dropdown-select .dropdown-menu .dropdown-item {
+    background-color: #111;
+    color: #fff; }
+  .dark-theme .dropdown-select .dropdown-menu li {
+    border-color: #373737; }
+  .dark-theme .dropdown-select .dropdown-item.active, .dark-theme .dropdown-select .dropdown-item:hover {
+    background-color: #1F2125; }
+  .dark-theme .create-campaign .apply-coupon .apply-tag b {
+    font-weight: 500; }
+  .dark-theme .create-campaign .info img {
+    filter: brightness(0) invert(1); }
 
 @media (max-width: 1367px) {
   .dark-theme .top-header .left-block .switch-block .form-switch .form-check-input:checked {
@@ -365,5 +410,52 @@
   border-color: #373737;
   background-color: #1F2125;
   color: #fff; }
+
+.dark-theme .progress-container:before {
+  background-color: #373737; }
+
+.dark-theme .circle {
+  background-color: #373737;
+  border-color: #373737; }
+
+.dark-theme .circle.active {
+  border-color: #CA3C74;
+  background-color: #CA3C74; }
+
+.dark-theme .progress-container .circle.checked {
+  border-color: #CA3C74; }
+
+.dark-theme .map-holder {
+  border-color: #373737; }
+
+.dark-theme .results-wrp {
+  border-color: #373737; }
+
+.dark-theme .modal-forms .form_controler.currency {
+  color: #CA3C74; }
+
+.dark-theme .create-campaign .results-wrp .title-txt {
+  color: #fff; }
+
+.dark-theme .circle.active span {
+  color: #fff; }
+
+.dark-theme .create-campaign .variation-space:before {
+  border-color: #373737; }
+
+.dark-theme .create-campaign .switch-block .form-check-input:checked {
+  background-color: #383B3D !important; }
+
+.dark-theme .create-campaign .variation-space .delete-btn {
+  background-color: #343434;
+  border-color: #343434; }
+
+.dark-theme .create-campaign .variation-space .vendor-create-wrp .btn.btn-primary {
+  background-color: #331823 !important;
+  border-color: #CA3C74;
+  color: #fff; }
+
+.dark-theme .create-campaign .variation-space .vendor-create-wrp .btn.btn-primary img {
+  filter: invert(1) brightness(6.5); }
 
 /*# sourceMappingURL=dark-theme.css.map */

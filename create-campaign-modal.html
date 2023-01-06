@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Campaign modal</title>
+    <link rel="icon" type="image/x-icon" href="./img/fav_icon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/side-nav.css">
+    <link rel="stylesheet" href="css/vendor-list.css">
+    <link rel="stylesheet" href="css/filter-style.css">
+    <link rel="stylesheet" href="css/forms-style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/create-campaign.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+</head>
+
+<body class="dark-theme">
+    <header>
+        <div class="logo-wrap">
+            <div class="logo-block">
+                <img src="img/logo.svg" class="main-logo light-logo" alt="logo">
+                <img src="img/logo_white_text.svg" class="main-logo dark-logo" alt="logo">
+                <img src="img/fox-logo.svg" class="mob-logo" alt="logo">
+            </div>
+            <button class="btn sidebarCollapse">
+                <img src="img/ham_menu.svg" alt="ham_menu">
+            </button>
+        </div>
+        <div class="top-header">
+            <div class="left-block">
+                <div class="switch-block">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes"
+                            checked>
+                        <span class="switch-img">
+                        </span>
+                    </div>
+                </div>
+                <div class="search-block">
+                    <input type="text" class="form-control" placeholder="Search for anything…">
+                    <div class="search-box-icon">
+                        <button class="btn">
+                            <img src="img/Icons-Search.svg" alt="search ">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-block">
+                <div class="user-area">
+                    <div class="notification-header dropdown">
+                        <button class="btn" data-bs-toggle="dropdown" aria-expanded="true">
+                            <img src="img/Icons-Bell.svg" alt="notification">
+                            <span class="badge badge-secondary">6</span>
+                        </button>
+                        <div class="dropdown-menu" data-popper-placement="bottom-start">
+                            <div class="notification-header">
+                                <h4 class="notification-header-title">Notifications</h4>
+                                <span class="notification-header-mark">Mark all as read</span>
+                            </div>
+                            <div class="notification-body custom-scroll">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="notification-footer">
+                                <span class="view-all">
+                                    View All Notifications
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-header">
+                        <div class="user-txt">
+                            <div class="dropdown">
+                                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                    <img src="img/Profile.svg" alt="user">
+                                    <h4>Bradley Robin <span>Administrator</span></h4>
+
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="side-nav-wrapper">
+            <div class="side-navigation custom-scroll">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link active">
+                            <figure>
+                                <img src="img/nav-icons/Dashboard.svg" alt="dashboard">
+                            </figure>
+                            <span class="indication">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="vendor_management_list.html" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Vendor-Management.svg" alt="Vendor Management">
+                            </figure>
+                            <span class="indication">Vendor Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="salesperson-management.html" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/sales-person.svg" alt="Salesperson Management">
+                            </figure>
+                            <span class="indication">Salesperson Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#campaign-drop"
+                            aria-expanded="false">
+                            <figure>
+                                <img src="img/nav-icons/Campaigns.svg" alt="Campaigns">
+                            </figure>
+                            <span class="indication">Campaigns</span>
+                        </a>
+                        <!-- collapse -->
+                        <div id="campaign-drop" class="submenu collapse">
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="products.html">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Campaigns</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/payment.svg" alt="Payment Management">
+                            </figure>
+                            <span class="indication">Payment Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Subscription-Management.svg" alt="Subscription Management">
+                            </figure>
+                            <span class="indication">Subscription Management</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Reports-and-Analytics.svg" alt="Reports and Analytics">
+                            </figure>
+                            <span class="indication">Reports and Analytics</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#noti-drop"
+                            aria-expanded="false">
+                            <figure>
+                                <img src="img/nav-icons/notification.svg" alt="Notification">
+                            </figure>
+                            <span class="indication">Notification</span>
+                        </a>
+                        <!-- collapse -->
+                        <div id="noti-drop" class="submenu collapse">
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sub menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sub menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sub menu</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#Permission-drop"
+                            aria-expanded="false">
+                            <figure>
+                                <img src="img/nav-icons/permission.svg" alt="Permission">
+                            </figure>
+                            <span class="indication">Permission</span>
+                        </a>
+                        <!-- collapse -->
+                        <div id="Permission-drop" class="submenu collapse">
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="department-list.html">Department</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="designation.html">Designation</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/settings.svg" alt="Settings">
+                            </figure>
+                            <span class="indication">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dashboard-content custom-scroll">
+            <div class="db-content-inner">
+                <div class="db-title-wrapper d-flex">
+                    <div class="title-block">
+                        Product Management
+                    </div>
+                    <div class="title-block-right d-flex ms-sm-auto">
+                        <div class="custom-search-box input-group"><span class="input-group-text" id="basic-addon1"><img
+                                    src="img/Icons-Search.svg" alt="Search"></span><input type="text"
+                                class="form-control search-control" placeholder="Search" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+                        <div class=" filter-wrp">
+                            <button class="filer-btn collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#demo">
+                                <img src="img/Filter.svg" alt="Filter"> Filter
+                            </button>
+                        </div>
+
+                        <div class="vendor-create-wrp">
+                            <buttton class="btn  btn-primary" data-bs-toggle="modal" data-bs-target="#create-campaign">
+                                <span>Create Campaign</span>
+                                <img src="img/Create-Vendor.svg" alt="Vendor">
+                            </buttton>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="demo" class="collapse filer-btn-collapse">
+                    <form>
+                        <div class="filter-cover">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-12">
+                                    <div class="radio-cover">
+                                        <span class="sort-by">Sort By :</span>
+                                        <label class="radio-btn radio-gap">Ascending
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="radio-btn radio-gap">Ascending
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="checkbox-cover">
+                                        <label class="check-box check-gap">Show premium vendors only
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                        <label class="check-box check-gap">Show blocked vendors only :
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="forms-cover">
+                                        <div class="select-otr">
+                                            <div class="input-holder sm-form-col">
+                                                <div class="select-custom">
+                                                    <select name="" id="" class="form_controler">
+                                                        <option value="">State</option>
+                                                        <option value="">option</option>
+                                                        <option value="">option</option>
+                                                        <option value="">option</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="input-holder sm-form-col">
+                                                <div class="select-custom">
+                                                    <select name="" id="" class="form_controler">
+                                                        <option value="">Rating</option>
+                                                        <option value="">option</option>
+                                                        <option value="">option</option>
+                                                        <option value="">option</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="input-holder sm-form-col">
+                                                <div class="select-custom">
+                                                    <select name="" id="" class="form_controler">
+                                                        <option value="">XP</option>
+                                                        <option value="">option</option>
+                                                        <option value="">option</option>
+                                                        <option value="">option</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="button-grp">
+                                            <button class="primary-btn">Close</button>
+                                            <button class="primary-btn light-bg">Reset</button>
+                                            <button class="primary-btn dark-bg">Apply</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </form>
+                </div>
+                <div class="table-cover custom-scroll custom-table-cover custom-scroll-h">
+                    <table class="custom-listing-table vendor-list-tbl">
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th class="user-email-title">Category</th>
+                                <th>Vendor Name</th>
+                                <th>MRP</th>
+                                <th>Description</th>
+
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Tropicana
+                                </td>
+                                <td>Loremipsum@gmail.com</td>
+                                <td>+91 8129398422</td>
+                                <td>₹ 350</td>
+                                <td>
+                                    Lorem ipsum dolor sit amet.
+                                </td>
+
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tropicana
+                                </td>
+                                <td>Loremipsum@gmail.com</td>
+                                <td>+91 8129398422</td>
+                                <td>₹ 350</td>
+                                <td>
+                                    Lorem ipsum dolor sit amet.
+                                </td>
+
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tropicana
+                                </td>
+                                <td>Loremipsum@gmail.com</td>
+                                <td>+91 8129398422</td>
+                                <td>₹ 350</td>
+                                <td>
+                                    Lorem ipsum dolor sit amet.
+                                </td>
+
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tropicana
+                                </td>
+                                <td>Loremipsum@gmail.com</td>
+                                <td>+91 8129398422</td>
+                                <td>₹ 350</td>
+                                <td>
+                                    Lorem ipsum dolor sit amet.
+                                </td>
+
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tropicana
+                                </td>
+                                <td>Loremipsum@gmail.com</td>
+                                <td>+91 8129398422</td>
+                                <td>₹ 350</td>
+                                <td>
+                                    Lorem ipsum dolor sit amet.
+                                </td>
+
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tropicana
+                                </td>
+                                <td>Loremipsum@gmail.com</td>
+                                <td>+91 8129398422</td>
+                                <td>₹ 350</td>
+                                <td>
+                                    Lorem ipsum dolor sit amet.
+                                </td>
+
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tropicana
+                                </td>
+                                <td>Loremipsum@gmail.com</td>
+                                <td>+91 8129398422</td>
+                                <td>₹ 350</td>
+                                <td>
+                                    Lorem ipsum dolor sit amet.
+                                </td>
+
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tropicana
+                                </td>
+                                <td>Loremipsum@gmail.com</td>
+                                <td>+91 8129398422</td>
+                                <td>₹ 350</td>
+                                <td>
+                                    Lorem ipsum dolor sit amet.
+                                </td>
+
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tropicana
+                                </td>
+                                <td>Loremipsum@gmail.com</td>
+                                <td>+91 8129398422</td>
+                                <td>₹ 350</td>
+                                <td>
+                                    Lorem ipsum dolor sit amet.
+                                </td>
+
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Tropicana
+                                </td>
+                                <td>Loremipsum@gmail.com</td>
+                                <td>+91 8129398422</td>
+                                <td>₹ 350</td>
+                                <td>
+                                    Lorem ipsum dolor sit amet.
+                                </td>
+
+                                <td class="action-btn-group">
+                                    <button class="btn view-btn">
+                                        <img src="img/eye.svg" alt="">
+                                    </button>
+                                    <button class="btn edit-btn">
+                                        <img src="img/edit.svg" alt="">
+                                    </button>
+
+                                    <button class="btn delete-btn">
+                                        <img src="img/delit.svg" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-pagination">
+                  
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link link-disabled previous-link" href="#" aria-label="Previous">
+                                <img src="img/Icon-arrow-left.svg" alt="arrow-left">
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link link-dots" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">22</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <img src="img/Icon-arrow-left.svg" alt="arrow-left">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--  Add Product/Catalogue Modal -->
+    <div class="modal fade modal-forms custom-modal prodModal create-campaign" id="create-campaign"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="">
+                        Create Campaign
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="route-mark">
+                        <div class="progress-container">
+                            <div class="progress" id="progress" style="width:33.33%"></div>
+                            <div class="circle checked">1<span>Basic Info</span></div>
+                            <div class="circle active">2<span>Location/Area</span></div>
+                            <div class="circle">3<span>Checklist</span></div>
+                            <div class="circle">4<span>Payment</span></div>
+                        </div>
+                    </div>
+                    <form action="">
+                        
+                        <div class="modal-forms">
+
+                            <div class="form-otr">
+                      
+                                <!-- tab content one -->
+                                <div class="row form-spacing-01 d-none">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Select Vendor 
+                                                <span class="mandatory">*</span></label>
+                                            <div class="select-custom">
+                                                <select name="" id="" class="form_controler">
+                                                    <option value="">Select</option>
+                                                    <option value="">Vendor 1</option>
+                                                    <option value="">option</option>
+                                                    <option value="">option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Campaign Name <span
+                                                class="mandatory">*</span></label>
+                                            <input type="text" class="form_controler">
+                                        </div>
+                                    </div>
+                            
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Select Portfolio <span
+                                                class="mandatory">*</span></label>
+                                                <div class="select-custom">
+                                                    <select name="" id="" class="form_controler">
+                                                        <option value="">Select</option>
+                                                        <option value="">Category 1</option>
+                                                        <option value="">option</option>
+                                                        <option value="">option</option>
+                                                    </select>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Campaign Start Date <span
+                                                class="mandatory">*</span></label>
+                                                <div class="date-field">
+                                                    <input type="text" class="form_controler">
+                                                    
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="input-holder">
+                                            <!-- Generated markup by the plugin -->
+
+                                            <label for="" class="label">Campaign Expiry <span
+                                                class="mandatory">*</span> 
+                                                <div  class="info" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+                                                    <img src="img/info-black.svg" alt="">
+                                                  </div>
+                                                <div class="" data-toggle="tooltip" ></div></label>
+                                                
+                                            <div class=" col-md-12">
+                                                <div class="radio-cover py-3">
+
+                                                    <label class="radio-btn me-2">End Date
+                                                        <input type="radio" name="prodType" checked>
+                                                        <span class="checkmark"></span>
+                                                    </label>
+
+                                                    <label class="radio-btn radio-gap">Duration
+                                                        <input type="radio" name="prodType" >
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Campaign End date<span
+                                                    class="mandatory">*</span></label>
+                                                    <div class="date-field">
+                                                        <input type="text" class="form_controler">
+                                                    </div>
+                                             </div>
+                                    </div>
+
+                                    <!-- "Campaign Duration" can be seen by clicking on the "Duration" radio button, those sections are commented -->
+                                    <!-- <div class="col-lg-6 col-md-6">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Campaign Duration<span
+                                                    class="mandatory">*</span></label>
+                                                    <div class="select-custom">
+                                                        <select name="" id="" class="form_controler">
+                                                            <option value="">3 Months</option>
+                                                            <option value="">Category 1</option>
+                                                            <option value="">option</option>
+                                                            <option value="">option</option>
+                                                        </select>
+                                                    </div>
+                                              </div>
+                                        </div> -->
+
+                                     <div class="col-12">
+                                            <div class="input-holder">
+                                                <label for="" class="label">Additional Information</label>
+                                                <textarea type="text" class="form_controler" rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                </div>
+                                <!-- tab content one End -->
+
+                                <!-- tab content Two-->
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5">
+                                        <div class="input-holder">
+                                            <label for="" class="label">Select State<span
+                                                    class="mandatory">*</span></label>
+                                            <div class="select-custom">
+                                                <select name="" id="" class="form_controler">
+                                                    <option value="">Select</option>
+                                                    <option value="">Vendor 1</option>
+                                                    <option value="">option</option>
+                                                    <option value="">option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="input-holder">
+                                                    <label for="" class="label">Select State<span
+                                                            class="mandatory">*</span></label>
+                                                    <div class="select-custom">
+                                                        <select name="" id="" class="form_controler">
+                                                            <option value="">Select</option>
+                                                            <option value="">Vendor 1</option>
+                                                            <option value="">option</option>
+                                                            <option value="">option</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="input-holder">
+                                                    <label for="" class="label">Select State<span
+                                                            class="mandatory">*</span></label>
+                                                    <div class="select-custom">
+                                                        <select name="" id="" class="form_controler">
+                                                            <option value="">Select</option>
+                                                            <option value="">Vendor 1</option>
+                                                            <option value="">option</option>
+                                                            <option value="">option</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="input-holder">
+                                            <label for="" class="label">Select State<span
+                                                    class="mandatory">*</span></label>
+                                            <div class="select-custom">
+                                                <select name="" id="" class="form_controler">
+                                                    <option value="">Select</option>
+                                                    <option value="">Vendor 1</option>
+                                                    <option value="">option</option>
+                                                    <option value="">option</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="results-wrp">
+
+                                            <h4 class="title-txt">Results</h4>
+                                            <div class="info-wrp">
+                                                <div class="count">
+                                                    <div class="blks">
+                                                        <h5>Shops</h5>
+                                                        <div class="data-wrp">
+                                                            <img src="img/store.svg"alt=''/>
+                                                            <span>234</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="blks sales">
+                                                        <h5>Sales Representatives</h5>
+                                                        <div class="data-wrp">
+                                                            <img src="img/salesman.svg"alt=''/>
+                                                            <span>78</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="range-slide">
+                                                <label for="customRange2" class="form-label d-flex justify-content-between"><span>0</span> <span>234</span></label>
+                                                <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                                            </div>
+
+                                            <div class="input-holder">
+                                                <label for="" class="label">Estimated Price
+                                                    <div  class="info" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+                                                    <img src="img/info-black.svg" alt="">
+                                                  </div>
+                                                </label>
+                                                <input type="text" class="form_controler currency" placeholder="" value="&#8377; 4500">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-7 col-md-7">
+                                        <div class="map-holder">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- tab content Two End -->
+
+                                <!-- tab content Three -->
+                                <div class="chk-list-wrp">
+                                    <div class="row variation-space">
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="row">
+                                                <div class="col-md">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Field Name<span
+                                                                class="mandatory">*</span></label>
+                                                                <input type="text" class="form_controler" placeholder="" value="Shop name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Field Type<span
+                                                                class="mandatory">*</span></label>
+                                                        <div class="select-custom">
+                                                            <select name="" id="" class="form_controler">
+                                                                <option value="">Text</option>
+                                                                <option value="">Vendor 1</option>
+                                                                <option value="">option</option>
+                                                                <option value="">option</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Required</label>
+                                                        <div class="switch-block">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes"
+                                                                    checked>
+                                                                <span class="switch-img">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row variation-space">
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="row">
+                                                <div class="col-md">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Field Name<span
+                                                                class="mandatory">*</span></label>
+                                                                <input type="text" class="form_controler" placeholder="" value="Phone">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Field Type<span
+                                                                class="mandatory">*</span></label>
+                                                        <div class="select-custom">
+                                                            <select name="" id="" class="form_controler">
+                                                                <option value="">Phone Number</option>
+                                                                <option value="">Vendor 1</option>
+                                                                <option value="">option</option>
+                                                                <option value="">option</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Required</label>
+                                                        <div class="switch-block">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes"
+                                                                    checked>
+                                                                <span class="switch-img">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row variation-space">
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="row">
+                                                <div class="col-md">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Field Name<span
+                                                                class="mandatory">*</span></label>
+                                                                <input type="text" class="form_controler" placeholder="" value="Visiting Card">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Field Type<span
+                                                                class="mandatory">*</span></label>
+                                                        <div class="select-custom">
+                                                            <select name="" id="" class="form_controler">
+                                                                <option value="">Image Upload</option>
+                                                                <option value="">Vendor 1</option>
+                                                                <option value="">option</option>
+                                                                <option value="">option</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Required</label>
+                                                        <div class="switch-block">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes"
+                                                                    checked>
+                                                                <span class="switch-img">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row variation-space">
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="row">
+                                                <div class="col-md">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Field Name<span
+                                                                class="mandatory">*</span></label>
+                                                                <input type="text" class="form_controler" placeholder="" value="Email Address">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Field Type<span
+                                                                class="mandatory">*</span></label>
+                                                        <div class="select-custom">
+                                                            <select name="" id="" class="form_controler">
+                                                                <option value="">Text</option>
+                                                                <option value="">Vendor 1</option>
+                                                                <option value="">option</option>
+                                                                <option value="">option</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="input-holder">
+                                                        <label for="" class="label">Required</label>
+                                                        <div class="switch-block">
+                                                            <div class="form-check form-switch">
+                                                                <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes"
+                                                                    checked>
+                                                                <span class="switch-img">
+                                                                </span>
+                                                            </div>
+                                                            <button class="delete-btn" fdprocessedid="13dlo4">
+                                                                <img src="img/delete-sm.svg" alt="">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row variation-space">
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="vendor-create-wrp">
+                                                <buttton class="btn  btn-primary">
+                                                    <img src="img/add.svg" alt="Vendor">
+                                                    <span>Add New Field</span>
+                                                </buttton>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- tab content Three End -->
+
+                                <!-- tab content Four -->
+                                    <div class="row form-spacing-02 d-none">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="payment-details">
+                                               <div class="title-pay">Payment Details</div>
+                                               <div class="price-list">
+                                                   <ul>
+                                                       <li>
+                                                           <p>Listing Price</p>
+                                                           <p class="price">₹ 2500</p>
+                                                       </li>
+                                                       <li>
+                                                           <p>Vendor Fees</p>
+                                                           <p class="price green">₹ 0</p>
+                                                       </li>
+                                                       <li>
+                                                           <p>Location Charge</p>
+                                                           <p class="price">₹ 16.50</p>
+                                                       </li>
+                                                       <li>
+                                                           <p>Taxable value</p>
+                                                           <p class="price">₹ 16.50</p>
+                                                       </li> 
+                                                       <li>
+                                                           <p>IGST</p>
+                                                           <p class="price">₹ 10.00</p>
+                                                       </li>
+                                                       <li>
+                                                           <p>Coupons</p>
+                                                           <p class="price">—</p>
+                                                       </li>
+   
+                                                   </ul>
+
+                                                </div>
+                                                <div class="ftr-info ">
+                                               
+                                                     <strong>To Pay</strong>
+                                                     <div class="total">₹ 2726.5</div>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                              <div class="payment-method">
+                                                 <div class="payment-title">
+                                                    <div class="payment-hd">
+                                                        Payment Method
+                                                    </div>
+                                             
+                                                    <button class="apply-btn">Apply Coupon</button>
+                                                 </div>
+                                                 
+                                                 <!-- Apply Coupon -->
+                                                 <!-- <div class="apply-coupon">
+                                                    <div class="apply-tag"><b>FOXME250</b>coupon applied <span class="close"><img src="img/close-sm.svg" alt=""></span></div>
+                                                   <div class="coupon-grp">
+                                                    <input class="coupon-field" type="text" placeholder="Coupon Code">
+                                                    <button class="apply_btn">Apply</button>
+                                                    <div class="error-msg">You entered an invalid code, Please try again</div>
+                                                   </div>
+
+                                                    <ul class="coupon-list">
+                                                        <li>
+                                                            <div class="content">
+                                                                <div class="cpn-title">
+                                                                    <div class="cpn-img"><img src="img/fox.svg" alt=""></div>
+                                                                     <strong>FOXME250</strong>
+                                                                </div>
+                                                                <p>Use code FOXME250 & get upto 250 off on campaigns above 1000. Maximum discount 250</p>
+                                                            </div>
+                                                            <button class="copy-btn">
+                                                              <img class="copy-img" src="img/copy.svg" alt="">
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <div class="content">
+                                                                <div class="cpn-title">
+                                                                    <div class="cpn-img"><img src="img/icici.png" alt=""></div>
+                                                                     <strong>FOXME250</strong>
+                                                                </div>
+                                                                <p>Use code FOXME250 & get upto 250 off on campaigns above 1000. Maximum discount 250</p>
+                                                            </div>
+                                                            <button class="copy-btn">
+                                                                <img class="copy-img" src="img/copy.svg" alt="">
+                                                            </button>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="content">
+                                                                <div class="cpn-title">
+                                                                    <div class="cpn-img"><img src="img/fox.svg" alt=""></div>
+                                                                     <strong>FOXME250</strong>
+                                                                </div>
+                                                                <p>Use code FOXME250 & get upto 250 off on campaigns above 1000. Maximum discount 250</p>
+                                                            </div>
+                                                            <button class="copy-btn">
+                                                                <img class="copy-img" src="img/copy.svg" alt="">
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                 </div> -->
+                                              
+                                                 <div class="form">
+                                                 <div class="input-holder">
+                                                    <label for="" class="label">Mode of Payment </label>
+                                                    <div class="dropdown-select select-custom">
+                                                        <button class="btn-dropdown form_controler" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                     <div class="mode-card"> <img src="img/card.svg" alt=""></div>    Debit Card
+                                                        </button>
+                                                        <ul class="dropdown-menu shadow" aria-labelledby="dropdownMenuButton1">
+                                                          <li> 
+                                                            <a class="dropdown-item" href="#">
+                                                                <div class="mode-card"> <img src="img/card.svg" alt=""></div> 
+                                                                Credit Card  
+                                                            </a>
+                                                            </li>
+                                                          <li> 
+                                                            <a class="dropdown-item" href="#">
+                                                                <div class="mode-card"> <img src="img/upi.svg" alt=""></div>
+                                                                 UPI
+                                                            </a>
+                                                            </li>
+                                                            <li> 
+                                                                <a class="dropdown-item" href="#">
+                                                                    <div class="mode-card"> <img src="img/card.svg" alt=""></div> 
+                                                                    Credit Card  
+                                                                </a>
+                                                                </li>
+                                                              
+    
+                                                         
+                                                        </ul>
+                                                      </div>
+                                                </div>
+
+                                                <div class="input-holder">
+                                                    <label for="" class="label">Name on Card</label>
+                                                    <input type="text" class="form_controler">
+                                                </div>
+                                                <!-- Your UPI ID payment mode -->
+                                                <!-- <div class="input-holder">
+                                                    <label for="" class="label">Your UPI ID</label>
+                                                     <div class="filed-v-elmt">
+                                                         <input type="text" class="form_controler">
+                                                         <div class="filed-elmt"><button class="filed-btn">Verify</button></div>
+                                                     </div>
+                                                </div> -->
+
+                                                <div class="input-holder">
+                                                    <label for="" class="label">Card Number</label>
+                                                     <div class="filed-v-elmt">
+                                                         <input type="text" class="form_controler">
+                                                         <div class="filed-elmt"><img src="img/visa.svg" alt=""></div>
+                                                     </div>
+                                                </div>
+
+                                               
+
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+
+                                                        <div class="input-holder">
+                                                            <label for="" class="label">Card Expiry</label>
+                                                            <input type="text" class="form_controler" placeholder="MM/ YYYY">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-6">
+
+                                                        <div class="input-holder">
+                                                            <label for="" class="label">CVV
+                                                              <div  class="info" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+                                                                    <img src="img/info-black.svg" alt="">
+                                                                  </div>
+                                                            </label>
+                                                            <input type="text" class="form_controler" placeholder="Ex: 033">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="input-holder">
+                                                    <div class="checkbox-cover">
+                                                        <label class="check-box">Save my card for future
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="pay-btn-otr">
+                                                    <button class="btn-primary">Pay ₹2726.5</button>
+                                                    <div class="poweard-stripe">
+                                                        <img src="img/poweard-stripe.png" alt="">
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                <!-- tab content Four End -->
+
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-primary">Next</button>
+        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vendor Created Successfully Modal -->
+    <div class="modal fade small-modal" id="VendorSuccessfully" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="small-modal-content">
+                        <i><img src="img/ok-icon.svg" alt="ok-icon"></i>
+                        <h3>Vendor Created Successfully</h3>
+                        <p class="paragraph">Lorem Ipsum is simply dummy text of the prin</p>
+
+                        <button data-bs-toggle="modal" class="primary-btn-modal">Ok</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+    <script src="Js/vendor/bootstrap.min.js"></script>
+    <script src="Js/vendor/jquery.min.js"></script>
+    <script src="Js/vendor/script.js"></script>
+    </script>
+</body>
+
+</html>
