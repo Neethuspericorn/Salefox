@@ -498,7 +498,8 @@
       min-height: auto; } }
 .create-campaign .switch-block {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  height: 45px; }
   .create-campaign .switch-block .delete-btn {
     margin-left: auto;
     margin-right: 10px; }
