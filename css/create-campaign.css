@@ -375,24 +375,6 @@
       height: 15px;
       position: absolute; }
 
-.btn {
-  background-color: #CA3C74;
-  color: #fff;
-  border: 0;
-  border-radius: 6px;
-  cursor: pointer;
-  font-family: inherit;
-  padding: 8px 30px;
-  margin: 5px;
-  font-size: 14px; }
-  .btn:active {
-    transform: scale(0.98); }
-  .btn:focus {
-    outline: 0; }
-  .btn:disabled {
-    background-color: #E3E6EE;
-    cursor: not-allowed; }
-
 .create-campaign .chk-list-wrp {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -484,7 +466,10 @@
     justify-content: center;
     max-width: 180px;
     border-radius: 11px;
-    padding: 15px 10px; }
+    padding: 15px 10px;
+    font-size: 14px; }
+    .create-campaign .variation-space .vendor-create-wrp .btn.btn-primary span {
+      font-size: 14px; }
     .create-campaign .variation-space .vendor-create-wrp .btn.btn-primary img {
       margin-right: 10px; }
 .create-campaign .variation-space .delete-btn {
