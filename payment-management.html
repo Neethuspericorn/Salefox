@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/dark-theme.css">
 </head>
 
-<body class="dark-theme">
+<body class="">
     <header>
         <div class="logo-wrap">
             <div class="logo-block">
@@ -284,9 +284,9 @@
                                 Export
                             </button>
                             <ul class="dropdown-menu export-dropdown" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#"><img src="img/excel_with_bg.svg" alt="Excel"> Excel</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="img/csv_with_bg.svg" alt="csv"> CSV</a></li>
-                                <li><a class="dropdown-item" href="#"><img src="img/pdf_with_bg.svg" alt="pdf"> PDF</a></li>
+                                <li><a class="dropdown-item" href="#"> <span class="imgwrp"><img src="img/excel.svg" alt="Excel"></span> Excel</a></li>
+                                <li><a class="dropdown-item" href="#"> <span class="imgwrp"><img src="img/csv.svg" alt="csv"></span> CSV</a></li>
+                                <li><a class="dropdown-item" href="#"> <span class="imgwrp"><img src="img/pdf.svg" alt="pdf"></span> PDF</a></li>
                             </ul>
                         </div>
                     </div>
@@ -350,7 +350,7 @@
                     </div>
                 </div>
 
-                <div class="filer-btn-collapse">
+                <div class="filer-btn-collapse payment-manage-filter">
                     <form>
                         <div class="filter-cover">
                             <div class="row">
@@ -411,7 +411,17 @@
                                                 </div>
                                             </div>
                                             <div class="input-holder sm-form-col">
-                                                <input type="text" class="form_controler">
+                                                <div class="form_controler datepicker_input p-0 input-group">
+                                                    <input type="text" class="search-control"  value="29-04-2021 - 09-05-2021" aria-label="Username" aria-describedby="datepickers">
+                                                    <span class="input-group-text" id="datepickers">
+                                                        <img src="img/calendar.svg" alt="date">
+                                                    </span>
+                                                </div>
+                                                 
+                                                 
+                                                <!-- hidden inputs for fetching values if necessary -->
+                                                <input type="hidden" id="fromDate" name="fromDate">
+                                                <input type="hidden" id="toDate" name="toDate">
                                             </div>
                                         </div>
 
@@ -766,7 +776,7 @@
     <!--  payment Info Modal -->
     <div class="modal fade modal-forms vendor-info-modal payment-info-modal" id="paymentInfo" tabindex="-1"
         aria-labelledby="paymentInfoLabelLabel" aria-hidden="true" role="dialog">
-        <div class="modal-dialog">
+        <div class="modal-dialog  modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="paymentInfoLabel">
@@ -783,7 +793,12 @@
                                 </span>
                             </div>
                             <div class="left-block-col row">
-                                
+                                <div class="inner-card-sm col-sm-6 col-md-12">
+                                    <div class="card-title-sm no-line">
+                                        <span class="t-cover">Amount :</span>
+                                    </div>
+                                    <h4 class="amt-title">₹61,324.00</h4>
+                                </div>
 
                                 <div class="inner-card-sm col-sm-6 col-md-12">
                                     <div class="card-title-sm">

@@ -38,11 +38,20 @@
         color: #CA3C74;
         padding: 10px 0px;
         transition: all ease-in-out 0.2s;
-        img{
+        .imgwrp{
             margin-right: 10px;
             width: 24px;
             height: 24px;
             object-fit: contain;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #FBE6EF;
+            border-radius: 50%;
+            img{
+                max-width: 40%;
+                object-fit: contain;
+            }
         }
         &:hover{
             background-color: unset;
@@ -55,8 +64,13 @@
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
-    width: 50vw;
-    max-width: 132px;
+    width: 132px;
+    &:after{
+        border-top: 0.4em solid;
+        border-right: 0.4em solid transparent;
+        border-bottom: 0;
+        border-left: 0.4em solid transparent; 
+    }
 }
 
 .payment-infos{
@@ -159,6 +173,9 @@
 
 
 .payment-info-modal{
+    .modal-content{
+        min-height: 60vh;
+    }
     .text-block-sm {
         .view-btn {
             border-radius: 50%;
@@ -223,3 +240,99 @@
     align-items: center;
  }
 
+.amt-title{
+    color: #EF3A81;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.form_controler.datepicker_input{
+    min-width: 240px;
+    padding-left: 15px !important;
+    cursor: pointer;
+    .search-control{
+        flex: 1;
+    }
+}
+
+.payment-manage-filter{
+    .select-otr{
+        flex: 1;
+        @media screen and (max-width: 1430px){
+             gap: 8px;
+             width: 100%;
+             flex: 0 0 100%;
+             flex-wrap: wrap;
+             flex-direction: unset;
+        }
+    }
+    .form_controler{
+        flex-wrap: nowrap;
+        .input-group-text{
+            flex: 0 0 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .search-control{
+            flex: 0 0 calc(100% - 40px);
+        }
+    }
+    .sm-form-col{
+
+        &:last-child{
+            margin-right: auto;
+            @media screen and (min-width: 1520px){
+                margin-left: 43px;
+            }
+        }
+        @media screen and (max-width: 1430px){
+            margin-left: 0;
+            flex: 0 0 calc(50% - 4px);
+            margin: 0;
+        }
+        @media screen and (max-width: 992px){
+            margin-left: 0;
+            flex: 0 0 100%;
+            margin: 0;
+        }
+    }
+
+    .button-grp{
+        @media screen and (max-width: 1430px){
+            margin-top: 15px;
+        }
+    }
+}
+
+ // dark theme
+ .dark-theme{
+    .export-dropdown{
+         background-color: #1D1D1D;
+         border: 1px solid #676767;
+         .imgwrp{
+            background-color: #101010;
+         }
+         li{
+            & + li{
+                .dropdown-item{
+                    border-top: 1px solid #b4b4b424;
+                }
+            }
+        }
+    }
+
+    .export-btn{
+        background-color: #CA3C74 !important;
+        color: #FFFFFF;
+        max-width: 132px;
+        margin-left: auto !important;
+    }
+
+    .payment-info-modal{
+        .download-file{background-color: #27282B; }
+        .text-block-sm .view-btn{background-color: #27282B; }
+    }
+ }
+ 
