@@ -10,25 +10,213 @@ $dark-sec-color: #D53871;
 
 .dark-theme {
     background-color: #161819;
-    .enter-otp-block .payable-amount-block h3, .enter-otp-block .payable-amount-block .bank-block h4, .enter-otp-block .payable-amount-block .payable-form-block .input-holder label, .enter-otp-block .payable-amount-block .payable-form-block p, .enter-otp-block .payable-amount-block .payable-footer-block p, .otp-modal-wrap .modal-content .small-modal-content h3{
+
+    .campaigns-view-wrapper .nav-pills .nav-item {
+        background: #24282E;
+        border: 1px solid #3A414B
+    }
+
+    .campaigns-view-wrapper .tab-content .overview-wrap {
+        background: #1F2125;
+        border: 1px solid #4A4A4A;
+    }
+
+    .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .inner-card-sm .text-block-sm {
+        color: #939393;
+    }
+
+    .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .left-block-col .inner-card-sm .card-title-sm .t-cover {
+        background: transparent !important;
+    }
+
+    .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .left-block-col .inner-card-sm .card-title-sm::before {
+        background-color: transparent !important;
+    }
+
+    .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-header .form-select,
+    .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-list-block .progress-list-items {
+        background-color: #282B2F;
+        border: 1px solid #3F4143;
+    }
+
+    .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-header {
+        border-bottom: 1px solid #4B4B4B;
+    }
+
+    .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li {
+        background: #7B2748;
+    }
+
+    .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list {
+        background: #282B2F;
+        border: 1px solid #4D4D4D;
+    }
+
+    .campaigns-view-wrapper .tab-content .progress-wrap .right-section {
+        background: #1F2125;
+        border: 1px solid #4B4B4B;
+    }
+
+    .campaigns-view-wrapper .tab-content .progress-wrap .left-section,
+    .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-details {
+        background: #1F2125;
+        border: 1px solid #4B4B4B;
+    }
+
+    .enter-otp-block .payable-amount-block h3,
+    .enter-otp-block .payable-amount-block .bank-block h4,
+    .enter-otp-block .payable-amount-block .payable-form-block .input-holder label,
+    .enter-otp-block .payable-amount-block .payable-form-block p,
+    .enter-otp-block .payable-amount-block .payable-footer-block p,
+    .otp-modal-wrap .modal-content .small-modal-content h3,
+    .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .inner-card-sm .card-title-sm,
+    .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-txt span,
+    .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-txt .user .user-txt,
+    .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-header .form-select,
+    .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-details .progress-details-txt span,
+    .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-list-block .progress-list-items .progress-list-txt span,
+    .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-time h6 {
         color: $text-white;
     }
-    .otp-modal-wrap .modal-content .small-modal-content p{
+
+    .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-txt p {
+        color: #BEBEBE;
+    }
+
+    .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body::after {
+        background: transparent linear-gradient(180deg, #1F212500 0%, #1F2125 100%);
+        z-index: 999;
+    }
+
+    .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-header .campaigns-progress {
+        background: #1F2125;
+        border: 1px solid #4B4B4B;
+    }
+
+    .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-details .progress-details-txt span img.light {
+        display: inline-block;
+    }
+
+    .campaigns-view-wrapper .campaigns-view-nav .right-block .custom-search-box {
+        border: 1px solid #2F2F2F;
+        background-color: transparent;
+    }
+
+    .campaigns-view-wrapper .campaigns-view-nav .right-block .custom-search-box .input-group-text {
+        background: #1F2125;
+        border-color: #2F2F2F;
+    }
+
+    .campaigns-view-wrapper .campaigns-view-nav .right-block .filter-wrp .light-bg.primary-btn {
+        background-color: #CA3C74 !important;
+        color: #FFFFFF;
+        max-width: 132px;
+    }
+
+    .raise-feedback-modal .modal-dialog .modal-content .modal-footer .btn-secondary {
+        border: 1px solid #CA3C74;
+        border-radius: 11px;
+        background-color: transparent !important;
+    }
+
+    .raise-feedback-modal .modal-dialog .modal-content {
+        background: #1F2125;
+    }
+
+    .raise-feedback-modal .modal-dialog .modal-content .modal-header .btn-close {
+        background-color: #2F2A2C
+    }
+
+    .raise-feedback-modal .modal-dialog .modal-content .modal-header h5,
+    .raise-feedback-modal .modal-dialog .modal-content .modal-forms label.label,
+    .raise-feedback-modal .modal-dialog .modal-content .modal-forms p {
+        color: $text-white;
+    }
+
+    .raise-feedback-modal .modal-dialog .modal-content .modal-footer .info-modal-btn {
+        background: #31353B;
+        color: #fff;
+    }
+
+    .raise-feedback-modal .modal-dialog .modal-content .modal-footer .info-modal-btn .dark {
+        display: inline-block;
+    }
+
+    .raise-feedback-modal .modal-dialog .modal-content .modal-footer .info-modal-btn .light {
+        display: none;
+    }
+
+    .campaigns-view-wrapper .campaigns-view-nav .right-block .filter-wrp .dropdown-menu {
+        background-color: #1D1D1D;
+        border: 1px solid #676767;
+    }
+
+    .campaigns-view-wrapper .campaigns-view-nav .right-block .filter-wrp .dropdown-menu li .dropdown-item {
+        font-size: 14px;
+        color: #CA3C74;
+        padding: 10px 0px;
+        -webkit-transition: all ease-in-out 0.2s;
+        transition: all ease-in-out 0.2s;
+    }
+
+    .campaigns-view-wrapper .campaigns-view-nav .right-block .filter-wrp .dropdown-menu li {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .campaigns-view-wrapper .campaigns-view-nav .right-block .filter-wrp .dropdown-menu li .imgwrp {
+        background-color: #101010;
+    }
+
+
+    .dark-theme .db-title-wrapper .custom-search-box .input-group-text {
+        background: #1F2125;
+        border-color: #2F2F2F;
+    }
+
+    .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-details .progress-details-txt span img.dark {
+        display: none;
+    }
+
+    .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li::after {
+        background-color: #CA3C74;
+        border: 5px solid #7B2748;
+    }
+
+    .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li:nth-child(even)::after {
+        background-color: #23BEAC;
+        border-color: #12403A;
+    }
+
+    .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list::after {
+        background-image: url('../img/arrow_black.png');
+    }
+
+    .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-txt {
+        border-right-color: #4B4B4B;
+    }
+
+    .otp-modal-wrap .modal-content .small-modal-content p {
         color: #71747A !important;
     }
+
     .enter-otp-block .payable-amount-block .payable-form-block p span {
         color: #FA5555;
     }
-    .enter-otp-block .payable-amount-block .payable-form-block .input-holder .form_controler{
+
+    .enter-otp-block .payable-amount-block .payable-form-block .input-holder .form_controler {
         border: 1px solid #373737;
         background: #161819;
     }
-    .powered-block img.light{
+
+    .powered-block img.light {
         display: none;
     }
-    .powered-block img.dark{
+
+    .powered-block img.dark {
         display: block;
     }
+
     // layout dark
     .side-nav-wrapper,
     header,
@@ -444,6 +632,7 @@ $dark-sec-color: #D53871;
     .authentication-right-block {
         background: #151618 !important;
     }
+
     .designation-modal .modal-forms .designation-modal-accordion .card .card-body .designation-modal-list .designation-modal-items .titles,
     .designation-modal .modal-forms .designation-modal-accordion .card .card-header .accordion-button {
         color: $white-color;
@@ -462,6 +651,7 @@ $dark-sec-color: #D53871;
         background-image: url(../img/down-acc-wht.svg);
 
     }
+
     .title,
     .forgot,
     .form-check-label,
@@ -527,77 +717,100 @@ $dark-sec-color: #D53871;
     }
 
     .authentication .authentication-right-block .authentication-form .authentication-form-header .logo-wrap small,
-    .create-campaign .payment-method .payment-title .payment-hd,.create-campaign .apply-coupon .apply-tag b,.create-campaign .apply-coupon .apply-tag {
+    .create-campaign .payment-method .payment-title .payment-hd,
+    .create-campaign .apply-coupon .apply-tag b,
+    .create-campaign .apply-coupon .apply-tag {
         color: #fff;
     }
 
     // Create Campaign
-    .create-campaign .payment-details{
+    .create-campaign .payment-details {
         background-color: #292C31;
     }
-    .create-campaign .payment-details .title-pay,.create-campaign .payment-details .price-list ul li p,.create-campaign .ftr-info strong,
-    .create-campaign .apply-coupon .coupon-list li .content .cpn-title strong{
+
+    .create-campaign .payment-details .title-pay,
+    .create-campaign .payment-details .price-list ul li p,
+    .create-campaign .ftr-info strong,
+    .create-campaign .apply-coupon .coupon-list li .content .cpn-title strong {
         color: #fff;
     }
-    .create-campaign .ftr-info .total{
+
+    .create-campaign .ftr-info .total {
         background-color: #1F2125;
     }
-    .create-campaign .payment-details{
+
+    .create-campaign .payment-details {
         border-color: transparent;
     }
-    .create-campaign .payment-details .title-pay{
+
+    .create-campaign .payment-details .title-pay {
         border-bottom: 1px solid rgba(221, 221, 221, 0.15);
     }
-    .create-campaign .ftr-info{
+
+    .create-campaign .ftr-info {
         border-top: 1px solid rgba(221, 221, 221, 0.15);
 
     }
-    .create-campaign .apply-coupon .apply-tag{
+
+    .create-campaign .apply-coupon .apply-tag {
         background-color: #6c2945;
     }
-    .create-campaign .apply-coupon .apply-tag .close{
-  background-color: #621533;
-   img{
-    filter:  brightness(0) invert(1);
-   }
+
+    .create-campaign .apply-coupon .apply-tag .close {
+        background-color: #621533;
+
+        img {
+            filter: brightness(0) invert(1);
+        }
     }
-    .create-campaign .pay-btn-otr .poweard-stripe img, .btn-dropdown .mode-card img{
+
+    .create-campaign .pay-btn-otr .poweard-stripe img,
+    .btn-dropdown .mode-card img {
         filter: brightness(0) invert(1);
     }
-    .create-campaign .apply-coupon .coupon-grp .coupon-field{
+
+    .create-campaign .apply-coupon .coupon-grp .coupon-field {
         background-color: #1F2125;
-    border: 1px solid #373737;
-    color: #fff;
+        border: 1px solid #373737;
+        color: #fff;
     }
-    .create-campaign .apply-coupon .coupon-grp .error-msg{
+
+    .create-campaign .apply-coupon .coupon-grp .error-msg {
         color: #FF6060;
     }
-    .create-campaign .apply-coupon .coupon-list li .content p{
+
+    .create-campaign .apply-coupon .coupon-list li .content p {
         color: #91959D;
     }
-    .create-campaign .apply-coupon .coupon-list li .copy-btn{
+
+    .create-campaign .apply-coupon .coupon-list li .copy-btn {
         background-color: #101010;
     }
-    .create-campaign .apply-coupon .coupon-list li{
+
+    .create-campaign .apply-coupon .coupon-list li {
         border-color: #373737;
     }
-    .dropdown-select .dropdown-menu .dropdown-item{
+
+    .dropdown-select .dropdown-menu .dropdown-item {
         background-color: #111;
         color: #fff;
     }
-    .dropdown-select .dropdown-menu li{
+
+    .dropdown-select .dropdown-menu li {
         border-color: #373737;
     }
-    .dropdown-select .dropdown-item.active, .dropdown-select .dropdown-item:hover{
+
+    .dropdown-select .dropdown-item.active,
+    .dropdown-select .dropdown-item:hover {
         background-color: #1F2125;
 
     }
 
-    .create-campaign .apply-coupon .apply-tag b{
+    .create-campaign .apply-coupon .apply-tag b {
         font-weight: 500;
     }
 
-    .create-campaign .info img{
+    .create-campaign .info img {
         filter: brightness(0) invert(1);
 
     }
@@ -726,50 +939,63 @@ $dark-sec-color: #D53871;
 
 // page salesperson :niyas-07-12-22
 
-.dark-theme .progress-container:before{
+.dark-theme .progress-container:before {
     background-color: #373737;
 }
-.dark-theme .circle{
+
+.dark-theme .circle {
     background-color: #373737;
     border-color: #373737;
 }
-.dark-theme .circle.active{
+
+.dark-theme .circle.active {
     border-color: #CA3C74;
     background-color: #CA3C74;
 }
-.dark-theme .progress-container .circle.checked{
+
+.dark-theme .progress-container .circle.checked {
     border-color: #CA3C74;
 }
-.dark-theme .map-holder{
+
+.dark-theme .map-holder {
     border-color: #373737;
 }
-.dark-theme .results-wrp{
-    border-color:#373737
+
+.dark-theme .results-wrp {
+    border-color: #373737
 }
+
 .dark-theme .modal-forms .form_controler.currency {
     color: #CA3C74;
 }
-.dark-theme .create-campaign .results-wrp .title-txt{
+
+.dark-theme .create-campaign .results-wrp .title-txt {
     color: #fff;
 }
-.dark-theme .circle.active span{
+
+.dark-theme .circle.active span {
     color: #fff;
 }
+
 .dark-theme .create-campaign .variation-space:before {
     border-color: #373737;
 }
-.dark-theme .create-campaign .switch-block .form-check-input:checked{
+
+.dark-theme .create-campaign .switch-block .form-check-input:checked {
     background-color: #383B3D !important;
 }
-.dark-theme .create-campaign .variation-space .delete-btn{
+
+.dark-theme .create-campaign .variation-space .delete-btn {
     background-color: #343434;
     border-color: #343434;
 }
-.dark-theme .create-campaign .variation-space .vendor-create-wrp .btn.btn-primary{
+
+.dark-theme .create-campaign .variation-space .vendor-create-wrp .btn.btn-primary {
     background-color: #331823 !important;
     border-color: #CA3C74;
     color: #fff;
 }
-.dark-theme .create-campaign .variation-space .vendor-create-wrp .btn.btn-primary img{
-filter: invert(1) brightness(6.5);
+
+.dark-theme .create-campaign .variation-space .vendor-create-wrp .btn.btn-primary img {
+    filter: invert(1) brightness(6.5);
 }
