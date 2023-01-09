@@ -389,7 +389,10 @@
                 border: 1px solid #FFE2ED;
                 border-radius: 11px;
                 padding: 71px 57px 55px;
-
+                @media ($sm-1679) {
+                    width: 400px;
+                    padding: 60px 47px 45px;
+                }
                 .progress-wrap-header {
                     .form-label {
                         text-align: left;
@@ -498,7 +501,7 @@
                         background: #FFFFFF;
                         border: 1px solid #FFE6F0;
                         border-radius: 9px;
-                        max-width: 790px;
+                        max-width: 80%;
                         padding: 15px 22px;
                         display: flex;
                         align-items: center;
@@ -685,7 +688,7 @@
                                         text-align: center;
                                         color: #000000;
                                         margin: 0;
-                                        line-height: 22px;
+                                        line-height: 26px;
 
                                         span {
                                             font-family: 'sf-bold';

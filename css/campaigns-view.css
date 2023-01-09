@@ -275,6 +275,10 @@
       border: 1px solid #FFE2ED;
       border-radius: 11px;
       padding: 71px 57px 55px; }
+      @media (max-width: 1679px) {
+        .campaigns-view-wrapper .tab-content .progress-wrap .left-section {
+          width: 400px;
+          padding: 60px 47px 45px; } }
       .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-header .form-label {
         text-align: left;
         font-size: 14px;
@@ -352,7 +356,7 @@
           background: #FFFFFF;
           border: 1px solid #FFE6F0;
           border-radius: 9px;
-          max-width: 790px;
+          max-width: 80%;
           padding: 15px 22px;
           display: flex;
           align-items: center;
@@ -486,7 +490,7 @@
                   text-align: center;
                   color: #000000;
                   margin: 0;
-                  line-height: 22px; }
+                  line-height: 26px; }
                   .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-time h6 span {
                     font-family: 'sf-bold';
                     text-align: center;
