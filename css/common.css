@@ -372,5 +372,40 @@ button.tatic-btn-primary {
 @media (max-width: 1679px) {
   .db-title .db-title-left .db-title-txt {
     font-size: 20px; } }
+.progress-tooltip-box .tooltip-inner {
+  background-color: #171717;
+  box-shadow: 0px 13px 11px #00000017;
+  padding: 24px;
+  max-width: 300px;
+  border-radius: 10px; }
+  .progress-tooltip-box .tooltip-inner p img {
+    width: 40px;
+    width: 24px;
+    border-radius: 100px;
+    height: 24px;
+    margin-right: 8px; }
+  .progress-tooltip-box .tooltip-inner p span {
+    font-size: 13px;
+    font-family: 'sf-medium';
+    text-align: left;
+    color: #FFFFFF; }
+  .progress-tooltip-box .tooltip-inner h4 {
+    text-align: left;
+    font-size: 14px;
+    font-family: 'sf-regular';
+    color: #FFFFFF; }
+    .progress-tooltip-box .tooltip-inner h4 span {
+      width: 8px;
+      height: 8px;
+      background: #4D8BED;
+      margin-right: 10px;
+      border-radius: 100px;
+      display: inline-block; }
+    .progress-tooltip-box .tooltip-inner h4 b {
+      text-align: left;
+      font-size: 14px;
+      font-family: 'sf-bold';
+      color: #FFFFFF;
+      margin-left: 8px; }
 
 /*# sourceMappingURL=common.css.map */

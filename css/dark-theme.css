@@ -19,8 +19,118 @@
     @include justify-content (center);*/
 .dark-theme {
   background-color: #161819; }
-  .dark-theme .enter-otp-block .payable-amount-block h3, .dark-theme .enter-otp-block .payable-amount-block .bank-block h4, .dark-theme .enter-otp-block .payable-amount-block .payable-form-block .input-holder label, .dark-theme .enter-otp-block .payable-amount-block .payable-form-block p, .dark-theme .enter-otp-block .payable-amount-block .payable-footer-block p, .dark-theme .otp-modal-wrap .modal-content .small-modal-content h3 {
+  .dark-theme .campaigns-view-wrapper .nav-pills .nav-item {
+    background: #24282E;
+    border: 1px solid #3A414B; }
+  .dark-theme .campaigns-view-wrapper .tab-content .overview-wrap {
+    background: #1F2125;
+    border: 1px solid #4A4A4A; }
+  .dark-theme .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .inner-card-sm .text-block-sm {
+    color: #939393; }
+  .dark-theme .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .left-block-col .inner-card-sm .card-title-sm .t-cover {
+    background: transparent !important; }
+  .dark-theme .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .block-left .left-block-col .inner-card-sm .card-title-sm::before {
+    background-color: transparent !important; }
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-header .form-select,
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-list-block .progress-list-items {
+    background-color: #282B2F;
+    border: 1px solid #3F4143; }
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-header {
+    border-bottom: 1px solid #4B4B4B; }
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li {
+    background: #7B2748; }
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list {
+    background: #282B2F;
+    border: 1px solid #4D4D4D; }
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .right-section {
+    background: #1F2125;
+    border: 1px solid #4B4B4B; }
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .left-section,
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-details {
+    background: #1F2125;
+    border: 1px solid #4B4B4B; }
+  .dark-theme .enter-otp-block .payable-amount-block h3,
+  .dark-theme .enter-otp-block .payable-amount-block .bank-block h4,
+  .dark-theme .enter-otp-block .payable-amount-block .payable-form-block .input-holder label,
+  .dark-theme .enter-otp-block .payable-amount-block .payable-form-block p,
+  .dark-theme .enter-otp-block .payable-amount-block .payable-footer-block p,
+  .dark-theme .otp-modal-wrap .modal-content .small-modal-content h3,
+  .dark-theme .campaigns-view-wrapper .tab-content .overview-wrap .vendor-info-body-content .inner-card-sm .card-title-sm,
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-txt span,
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-txt .user .user-txt,
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-header .form-select,
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-details .progress-details-txt span,
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-list-block .progress-list-items .progress-list-txt span,
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-time h6 {
     color: #fff; }
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-txt p {
+    color: #BEBEBE; }
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body::after {
+    background: transparent linear-gradient(180deg, #1F212500 0%, #1F2125 100%);
+    z-index: 999; }
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-header .campaigns-progress {
+    background: #1F2125;
+    border: 1px solid #4B4B4B; }
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-details .progress-details-txt span img.light {
+    display: inline-block; }
+  .dark-theme .campaigns-view-wrapper .campaigns-view-nav .right-block .custom-search-box {
+    border: 1px solid #2F2F2F;
+    background-color: transparent; }
+  .dark-theme .campaigns-view-wrapper .campaigns-view-nav .right-block .custom-search-box .input-group-text {
+    background: #1F2125;
+    border-color: #2F2F2F; }
+  .dark-theme .campaigns-view-wrapper .campaigns-view-nav .right-block .filter-wrp .light-bg.primary-btn {
+    background-color: #CA3C74 !important;
+    color: #FFFFFF;
+    max-width: 132px; }
+  .dark-theme .raise-feedback-modal .modal-dialog .modal-content .modal-footer .btn-secondary {
+    border: 1px solid #CA3C74;
+    border-radius: 11px;
+    background-color: transparent !important; }
+  .dark-theme .raise-feedback-modal .modal-dialog .modal-content {
+    background: #1F2125; }
+  .dark-theme .raise-feedback-modal .modal-dialog .modal-content .modal-header .btn-close {
+    background-color: #2F2A2C; }
+  .dark-theme .raise-feedback-modal .modal-dialog .modal-content .modal-header h5,
+  .dark-theme .raise-feedback-modal .modal-dialog .modal-content .modal-forms label.label,
+  .dark-theme .raise-feedback-modal .modal-dialog .modal-content .modal-forms p {
+    color: #fff; }
+  .dark-theme .raise-feedback-modal .modal-dialog .modal-content .modal-footer .info-modal-btn {
+    background: #31353B;
+    color: #fff; }
+  .dark-theme .raise-feedback-modal .modal-dialog .modal-content .modal-footer .info-modal-btn .dark {
+    display: inline-block; }
+  .dark-theme .raise-feedback-modal .modal-dialog .modal-content .modal-footer .info-modal-btn .light {
+    display: none; }
+  .dark-theme .campaigns-view-wrapper .campaigns-view-nav .right-block .filter-wrp .dropdown-menu {
+    background-color: #1D1D1D;
+    border: 1px solid #676767; }
+  .dark-theme .campaigns-view-wrapper .campaigns-view-nav .right-block .filter-wrp .dropdown-menu li .dropdown-item {
+    font-size: 14px;
+    color: #CA3C74;
+    padding: 10px 0px;
+    -webkit-transition: all ease-in-out 0.2s;
+    transition: all ease-in-out 0.2s; }
+  .dark-theme .campaigns-view-wrapper .campaigns-view-nav .right-block .filter-wrp .dropdown-menu li {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .dark-theme .campaigns-view-wrapper .campaigns-view-nav .right-block .filter-wrp .dropdown-menu li .imgwrp {
+    background-color: #101010; }
+  .dark-theme .dark-theme .db-title-wrapper .custom-search-box .input-group-text {
+    background: #1F2125;
+    border-color: #2F2F2F; }
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .left-section .progress-wrap-details .progress-details-txt span img.dark {
+    display: none; }
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li::after {
+    background-color: #CA3C74;
+    border: 5px solid #7B2748; }
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li:nth-child(even)::after {
+    background-color: #23BEAC;
+    border-color: #12403A; }
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list::after {
+    background-image: url("../img/arrow_black.png"); }
+  .dark-theme .campaigns-view-wrapper .tab-content .progress-wrap .right-section .timeline-block-body ul li .timeline-list .timeline-txt {
+    border-right-color: #4B4B4B; }
   .dark-theme .otp-modal-wrap .modal-content .small-modal-content p {
     color: #71747A !important; }
   .dark-theme .enter-otp-block .payable-amount-block .payable-form-block p span {
@@ -304,11 +414,15 @@
     .dark-theme .authentication-conditions .indication:first-child::after {
       background: #fff !important; }
   .dark-theme .authentication .authentication-right-block .authentication-form .authentication-form-header .logo-wrap small,
-  .dark-theme .create-campaign .payment-method .payment-title .payment-hd, .dark-theme .create-campaign .apply-coupon .apply-tag b, .dark-theme .create-campaign .apply-coupon .apply-tag {
+  .dark-theme .create-campaign .payment-method .payment-title .payment-hd,
+  .dark-theme .create-campaign .apply-coupon .apply-tag b,
+  .dark-theme .create-campaign .apply-coupon .apply-tag {
     color: #fff; }
   .dark-theme .create-campaign .payment-details {
     background-color: #292C31; }
-  .dark-theme .create-campaign .payment-details .title-pay, .dark-theme .create-campaign .payment-details .price-list ul li p, .dark-theme .create-campaign .ftr-info strong,
+  .dark-theme .create-campaign .payment-details .title-pay,
+  .dark-theme .create-campaign .payment-details .price-list ul li p,
+  .dark-theme .create-campaign .ftr-info strong,
   .dark-theme .create-campaign .apply-coupon .coupon-list li .content .cpn-title strong {
     color: #fff; }
   .dark-theme .create-campaign .ftr-info .total {
@@ -325,7 +439,8 @@
     background-color: #621533; }
     .dark-theme .create-campaign .apply-coupon .apply-tag .close img {
       filter: brightness(0) invert(1); }
-  .dark-theme .create-campaign .pay-btn-otr .poweard-stripe img, .dark-theme .btn-dropdown .mode-card img {
+  .dark-theme .create-campaign .pay-btn-otr .poweard-stripe img,
+  .dark-theme .btn-dropdown .mode-card img {
     filter: brightness(0) invert(1); }
   .dark-theme .create-campaign .apply-coupon .coupon-grp .coupon-field {
     background-color: #1F2125;
@@ -344,7 +459,8 @@
     color: #fff; }
   .dark-theme .dropdown-select .dropdown-menu li {
     border-color: #373737; }
-  .dark-theme .dropdown-select .dropdown-item.active, .dark-theme .dropdown-select .dropdown-item:hover {
+  .dark-theme .dropdown-select .dropdown-item.active,
+  .dark-theme .dropdown-select .dropdown-item:hover {
     background-color: #1F2125; }
   .dark-theme .create-campaign .apply-coupon .apply-tag b {
     font-weight: 500; }
