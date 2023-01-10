@@ -1,0 +1,277 @@
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.profile-wraper {
+  background-color: #fff;
+  border-radius: 11px;
+  padding: 63px 66px; }
+  @media (max-width: 1441px) {
+    .profile-wraper {
+      padding: 50px 56px; } }
+  @media (max-width: 1367px) {
+    .profile-wraper {
+      padding: 40px 46px; } }
+  @media (max-width: 1199px) {
+    .profile-wraper {
+      padding: 30px 36px; } }
+  @media (max-width: 991px) {
+    .profile-wraper {
+      padding: 20px 26px; } }
+  @media (max-width: 767px) {
+    .profile-wraper {
+      padding: 15px; } }
+  .profile-wraper .profile-pic-block {
+    display: flex; }
+    .profile-wraper .profile-pic-block .profile-pic-wrap {
+      position: relative; }
+    .profile-wraper .profile-pic-block .profile-pic {
+      width: 174px;
+      height: 174px;
+      border-radius: 100%;
+      object-fit: cover;
+      border: 10px solid #FFE2ED; }
+      @media (max-width: 1679px) {
+        .profile-wraper .profile-pic-block .profile-pic {
+          width: 160px;
+          height: 160px; } }
+      @media (max-width: 1367px) {
+        .profile-wraper .profile-pic-block .profile-pic {
+          width: 140px;
+          height: 140px; } }
+      @media (max-width: 1199px) {
+        .profile-wraper .profile-pic-block .profile-pic {
+          width: 120px;
+          height: 120px; } }
+      @media (max-width: 991px) {
+        .profile-wraper .profile-pic-block .profile-pic {
+          width: 90px;
+          height: 90px;
+          border: 5px solid #FFE2ED; } }
+    .profile-wraper .profile-pic-block .add-photo {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 39px;
+      height: 39px;
+      background: #CA3C74;
+      border: 2px solid #FFFFFF;
+      border-radius: 100px;
+      padding: 8px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      @media (max-width: 1679px) {
+        .profile-wraper .profile-pic-block .add-photo {
+          width: 34px;
+          height: 34px;
+          bottom: 0;
+          right: 0; } }
+      .profile-wraper .profile-pic-block .add-photo .form-control {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        opacity: 0; }
+    .profile-wraper .profile-pic-block .btn-edit {
+      margin: auto;
+      margin-right: 0;
+      margin-top: 0;
+      width: 116px;
+      height: 43px;
+      background: #FFE2ED;
+      border-radius: 9px;
+      font-size: 13px;
+      font-family: 'sf-regular';
+      color: #CA3C74;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      @media (max-width: 1679px) {
+        .profile-wraper .profile-pic-block .btn-edit {
+          width: 100px;
+          height: 43px; } }
+      @media (max-width: 1199px) {
+        .profile-wraper .profile-pic-block .btn-edit {
+          width: 80px;
+          height: 36px; } }
+      @media (max-width: 767px) {
+        .profile-wraper .profile-pic-block .btn-edit {
+          width: 40px; } }
+      @media (max-width: 767px) {
+        .profile-wraper .profile-pic-block .btn-edit span {
+          display: none; } }
+      .profile-wraper .profile-pic-block .btn-edit img {
+        margin-right: 16px; }
+        @media (max-width: 1199px) {
+          .profile-wraper .profile-pic-block .btn-edit img {
+            margin-right: 12px; } }
+        @media (max-width: 767px) {
+          .profile-wraper .profile-pic-block .btn-edit img {
+            margin: auto; } }
+  .profile-wraper .form-otr {
+    margin-top: 30px; }
+    @media (max-width: 1281px) {
+      .profile-wraper .form-otr {
+        margin-top: 10px; } }
+    @media (max-width: 991px) {
+      .profile-wraper .form-otr {
+        margin-top: 0px; } }
+    .profile-wraper .form-otr .input-holder {
+      margin-top: 30px; }
+      @media (max-width: 1281px) {
+        .profile-wraper .form-otr .input-holder {
+          margin-top: 20px; } }
+      .profile-wraper .form-otr .input-holder .input-group {
+        background: #FFFAFC;
+        border: 1px solid #E5BFCE;
+        border-radius: 9px;
+        padding: 5px 0;
+        height: 40px; }
+        .profile-wraper .form-otr .input-holder .input-group .input-group-text {
+          padding: 0;
+          background: transparent;
+          border: none; }
+          .profile-wraper .form-otr .input-holder .input-group .input-group-text .form-select {
+            background-color: transparent;
+            background-position: left 0.75rem center;
+            background-image: url("../img/down_arrow-btn.svg");
+            padding: 0;
+            padding-left: 28px;
+            padding-right: 10px;
+            background-size: 10px;
+            border: none; }
+        .profile-wraper .form-otr .input-holder .input-group .form_controler {
+          border: none;
+          background-color: transparent !important;
+          border-left: 1px solid #E5BFCE;
+          height: 30px; }
+    .profile-wraper .form-otr .footer-btn {
+      display: flex;
+      margin: auto;
+      margin-right: 0;
+      justify-content: flex-end;
+      margin-top: 162px; }
+      @media (max-width: 1679px) {
+        .profile-wraper .form-otr .footer-btn {
+          margin-top: 140px; } }
+      @media (max-width: 1441px) {
+        .profile-wraper .form-otr .footer-btn {
+          margin-top: 110px; } }
+      @media (max-width: 1199px) {
+        .profile-wraper .form-otr .footer-btn {
+          margin-top: 80px; } }
+      @media (max-width: 991px) {
+        .profile-wraper .form-otr .footer-btn {
+          margin-top: 50px; } }
+      .profile-wraper .form-otr .footer-btn .btn {
+        width: 165px;
+        height: 51px;
+        border-radius: 11px; }
+        @media (max-width: 1679px) {
+          .profile-wraper .form-otr .footer-btn .btn {
+            width: 160px;
+            height: 48px; } }
+        @media (max-width: 1441px) {
+          .profile-wraper .form-otr .footer-btn .btn {
+            width: 150px;
+            height: 44px; } }
+        @media (max-width: 1199px) {
+          .profile-wraper .form-otr .footer-btn .btn {
+            width: 110px;
+            height: 40px; } }
+        .profile-wraper .form-otr .footer-btn .btn.btn-secondarys {
+          margin-right: 17px; }
+          @media (max-width: 1199px) {
+            .profile-wraper .form-otr .footer-btn .btn.btn-secondarys {
+              margin-right: 10px; } }
+
+.change-password .input-holder {
+  margin: 0 !important; }
+
+.logout-modal .modal-dialog {
+  max-width: 635px; }
+  .logout-modal .modal-dialog .modal-content {
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #E6E6E6;
+    border-radius: 18px;
+    padding: 60px; }
+    @media (max-width: 1679px) {
+      .logout-modal .modal-dialog .modal-content {
+        padding: 50px; } }
+    @media (max-width: 1367px) {
+      .logout-modal .modal-dialog .modal-content {
+        padding: 40px; } }
+    @media (max-width: 1199px) {
+      .logout-modal .modal-dialog .modal-content {
+        padding: 30px; } }
+    @media (max-width: 991px) {
+      .logout-modal .modal-dialog .modal-content {
+        padding: 20px; } }
+    @media (max-width: 767px) {
+      .logout-modal .modal-dialog .modal-content {
+        padding: 15px; } }
+    .logout-modal .modal-dialog .modal-content .modal-header {
+      border: none; }
+    .logout-modal .modal-dialog .modal-content .modal-body .logout-img img {
+      width: 122px;
+      height: 122px;
+      display: block;
+      margin: auto; }
+      @media (max-width: 1367px) {
+        .logout-modal .modal-dialog .modal-content .modal-body .logout-img img {
+          width: 100px;
+          height: 100px; } }
+      @media (max-width: 1199px) {
+        .logout-modal .modal-dialog .modal-content .modal-body .logout-img img {
+          width: 80px;
+          height: 80px; } }
+    .logout-modal .modal-dialog .modal-content .modal-body p {
+      margin-top: 14px;
+      font-size: 22px;
+      font-family: 'sf-regular';
+      text-align: center;
+      color: #410F22; }
+      @media (max-width: 1367px) {
+        .logout-modal .modal-dialog .modal-content .modal-body p {
+          font-size: 20px; } }
+      @media (max-width: 1199px) {
+        .logout-modal .modal-dialog .modal-content .modal-body p {
+          font-size: 16px; } }
+      @media (max-width: 991px) {
+        .logout-modal .modal-dialog .modal-content .modal-body p {
+          font-size: 14px; } }
+    .logout-modal .modal-dialog .modal-content .modal-footer {
+      border: none; }
+      .logout-modal .modal-dialog .modal-content .modal-footer .btn-secondarys {
+        width: 165px;
+        height: 51px;
+        border-radius: 11px; }
+        @media (max-width: 1679px) {
+          .logout-modal .modal-dialog .modal-content .modal-footer .btn-secondarys {
+            border-radius: 5px;
+            width: 135px;
+            height: 40px; } }
+        @media (max-width: 767px) {
+          .logout-modal .modal-dialog .modal-content .modal-footer .btn-secondarys {
+            width: 95px;
+            height: 35px; } }
+
+/*# sourceMappingURL=profile.css.map */

@@ -307,6 +307,14 @@ body {
       background-color: #BA4773;
       border-color: #BA4773;
       opacity: 0.9; }
+  .btn-secondarys {
+    background: #fff;
+    border: 1px solid #BA4773;
+    color: #BA4773; }
+    .btn-secondarys:hover {
+      background-color: #BA4773;
+      border-color: #BA4773;
+      opacity: 0.9; }
 
 .custom-scroll::-webkit-scrollbar {
   width: 5px; }
@@ -360,10 +368,12 @@ button.tatic-btn-primary {
       padding: 10px 25px;
       font: normal normal 400 12px/14px sf-regular; } }
 
+primary
 .form-control {
   background: #FCF4F8;
   border: 1px solid #FCF5F9;
   border-radius: 6px; }
+  primary
   .form-control:focus {
     box-shadow: none;
     background: #FCF4F8;
