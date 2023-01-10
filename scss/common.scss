@@ -426,6 +426,17 @@ body {
             opacity: 0.9;
         }
     }
+    &-secondarys {
+        background: #fff;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+
+        &:hover {
+            background-color: $primary-color;
+            border-color: $primary-color;
+            opacity: 0.9;
+        }
+    }
 }
 
 .custom-scroll::-webkit-scrollbar {
@@ -498,7 +509,7 @@ button {
         }
     }
 }
-
+primary
 .form-control {
     background: #FCF4F8;
     border: 1px solid #FCF5F9;
