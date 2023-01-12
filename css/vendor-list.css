@@ -211,6 +211,8 @@
       .vendor-info-modal .vendor-info-body-content .block-left .left-block-col .inner-card-sm .card-title-sm {
         position: relative;
         z-index: 1; }
+        .vendor-info-modal .vendor-info-body-content .block-left .left-block-col .inner-card-sm .card-title-sm.no-line:before {
+          display: none; }
         .vendor-info-modal .vendor-info-body-content .block-left .left-block-col .inner-card-sm .card-title-sm::before {
           content: '';
           position: absolute;

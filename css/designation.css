@@ -166,6 +166,43 @@
               box-shadow: none;
               border-color: #CA3C74; }
 
+.designation-modal .inner-card-sm {
+  margin-bottom: 40px; }
+  @media (max-width: 1679px) {
+    .designation-modal .inner-card-sm {
+      margin-bottom: 35px; } }
+  @media (max-width: 1441px) {
+    .designation-modal .inner-card-sm {
+      margin-bottom: 30px; } }
+  @media (max-width: 767px) {
+    .designation-modal .inner-card-sm {
+      margin-bottom: 20px; } }
+  .designation-modal .inner-card-sm .card-title-sm {
+    color: #292929;
+    font-family: 'sf-medium';
+    font-size: 14px; }
+    @media (max-width: 1441px) {
+      .designation-modal .inner-card-sm .card-title-sm {
+        font-size: 13px; } }
+  .designation-modal .inner-card-sm .text-block-sm {
+    color: #939393;
+    font-family: 'sf-medium';
+    font-size: 14px;
+    padding-top: 10px; }
+    @media (max-width: 1441px) {
+      .designation-modal .inner-card-sm .text-block-sm {
+        font-size: 13px;
+        padding-bottom: 6px; } }
+.designation-modal .modal-footer .btn {
+  background: #FFE2ED;
+  border-radius: 9px;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'sf-regular';
+  color: #CA3C74; }
+  .designation-modal .modal-footer .btn img {
+    margin-right: 8px; }
+
 @media (max-width: 1023px) {
   .designation-content-inner .db-title-wrapper {
     display: flex !important; }

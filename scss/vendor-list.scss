@@ -252,6 +252,8 @@
                 font-family: 'sf-medium';
                 font-size: 14px;
                 padding-top: 10px;
+
+                
             }
         }
 
@@ -314,11 +316,13 @@
                     .card-title-sm {
                         position: relative;
                         z-index: 1;
-                        &.no-line{
-                            &:before{
+
+                        &.no-line {
+                            &:before {
                                 display: none;
                             }
                         }
+
                         &::before {
                             content: '';
                             position: absolute;
@@ -480,10 +484,12 @@
                                 right: 5px;
                                 bottom: 5px;
                             }
+
                             @media ($sm-1199) {
                                 width: 20px;
                                 height: 20px;
                             }
+
                             @media ($sm-1199) {
                                 right: 0px;
                                 bottom: 0px;

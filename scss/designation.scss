@@ -235,7 +235,59 @@
     }
 }
 
+.designation-modal {
+    .inner-card-sm {
+        margin-bottom: 40px;
 
+        @media ($sm-1679) {
+            margin-bottom: 35px;
+        }
+
+        @media ($sm-1441) {
+            margin-bottom: 30px;
+        }
+
+        @media ($sm-767) {
+            margin-bottom: 20px;
+        }
+
+        .card-title-sm {
+            color: #292929;
+            font-family: 'sf-medium';
+            font-size: 14px;
+
+            @media ($sm-1441) {
+                font-size: 13px;
+            }
+        }
+
+        .text-block-sm {
+            color: #939393;
+            font-family: 'sf-medium';
+            font-size: 14px;
+            padding-top: 10px;
+
+            @media ($sm-1441) {
+                font-size: 13px;
+                padding-bottom: 6px;
+            }
+        }
+    }
+    .modal-footer {
+        .btn {
+            background: #FFE2ED;
+            border-radius: 9px;
+            text-align: center;
+            font-size: 12px;
+            font-family: 'sf-regular';
+            color: #CA3C74;
+
+            img {
+                margin-right: 8px;
+            }
+        }
+    }
+}
 @media ($sm-1023) {
     .designation-content-inner .db-title-wrapper {
         display: flex !important;

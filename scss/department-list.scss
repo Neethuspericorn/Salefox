@@ -318,6 +318,7 @@
     .vendor-info-modal .modal-content {
         padding: 20px 10px;
     }
+
     .custom-table-cover .custom-listing-table tbody tr td.action-btn-group .btn {
         margin-right: 7px;
     }
@@ -390,6 +391,7 @@
     .vendor-info-modal .modal-content {
         padding: 20px 0;
     }
+
     .vendor-info-modal .modal-footer .info-modal-btn {
         margin-left: 5px;
         height: 34px;
@@ -434,8 +436,47 @@
         border: none;
     }
 
+    .inner-card-sm {
+        margin-bottom: 40px;
+
+        @media ($sm-1679) {
+            margin-bottom: 35px;
+        }
+
+        @media ($sm-1441) {
+            margin-bottom: 30px;
+        }
+
+        @media ($sm-767) {
+            margin-bottom: 20px;
+        }
+
+        .card-title-sm {
+            color: #292929;
+            font-family: 'sf-medium';
+            font-size: 14px;
+
+            @media ($sm-1441) {
+                font-size: 13px;
+            }
+        }
+
+        .text-block-sm {
+            color: #939393;
+            font-family: 'sf-medium';
+            font-size: 14px;
+            padding-top: 10px;
+
+            @media ($sm-1441) {
+                font-size: 13px;
+                padding-bottom: 6px;
+            }
+        }
+    }
+
     .form_controler {
         height: 51px;
+
         @media ($sm-1679) {
             height: 47px;
         }
@@ -464,6 +505,7 @@
                     padding: 15px 30px;
                     display: flex;
                     align-items: center;
+
                     @media ($sm-1679) {
                         padding: 12px 30px;
                     }
@@ -515,6 +557,7 @@
                         background-color: #F7DCE6;
                         border: none !important;
                         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+
                         &:checked {
                             background-color: #CA3C74;
                             border: none !important;
@@ -557,6 +600,8 @@
                             height: 40px;
                         }
 
+
+
                         .titles {
                             font-size: 14px;
                             text-align: left;
@@ -596,3 +641,19 @@
     }
 }
 
+.view-department-modal {
+    .modal-footer {
+        .btn {
+            background: #FFE2ED;
+            border-radius: 9px;
+            text-align: center;
+            font-size: 12px;
+            font-family: 'sf-regular';
+            color: #CA3C74;
+
+            img {
+                margin-right: 8px;
+            }
+        }
+    }
+}

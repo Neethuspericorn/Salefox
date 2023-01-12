@@ -129,7 +129,7 @@ $dark-sec-color: #D53871;
 
     .raise-feedback-modal .modal-dialog .modal-content .modal-header h5,
     .raise-feedback-modal .modal-dialog .modal-content .modal-forms label.label,
-    .raise-feedback-modal .modal-dialog .modal-content .modal-forms p {
+    .raise-feedback-modal .modal-dialog .modal-content .modal-forms p , .designation-modal .inner-card-sm .card-title-sm, .add-department-modal .inner-card-sm .card-title-sm{
         color: $text-white;
     }
 
@@ -145,7 +145,9 @@ $dark-sec-color: #D53871;
     .raise-feedback-modal .modal-dialog .modal-content .modal-footer .info-modal-btn .light {
         display: none;
     }
-
+    .product-info-modal .block-left .action-btn-group .btn.doc-btn, .product-info-modal .block-right .btm-line .products-list-block .products-item-block{
+        background: #FFE2ED !important;
+    }
     .campaigns-view-wrapper .campaigns-view-nav .right-block .filter-wrp .dropdown-menu {
         background-color: #1D1D1D;
         border: 1px solid #676767;
