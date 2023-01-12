@@ -93,7 +93,7 @@
     background-color: #2F2A2C; }
   .dark-theme .raise-feedback-modal .modal-dialog .modal-content .modal-header h5,
   .dark-theme .raise-feedback-modal .modal-dialog .modal-content .modal-forms label.label,
-  .dark-theme .raise-feedback-modal .modal-dialog .modal-content .modal-forms p {
+  .dark-theme .raise-feedback-modal .modal-dialog .modal-content .modal-forms p, .dark-theme .designation-modal .inner-card-sm .card-title-sm, .dark-theme .add-department-modal .inner-card-sm .card-title-sm {
     color: #fff; }
   .dark-theme .raise-feedback-modal .modal-dialog .modal-content .modal-footer .info-modal-btn {
     background: #31353B;
