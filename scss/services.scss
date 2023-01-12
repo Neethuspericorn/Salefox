@@ -1,22 +1,81 @@
 @import "partials/variables";
 @import "partials/mixins";
 
-textarea.form_controler{
+textarea.form_controler {
     min-height: 50px;
     height: unset !important;
 }
 
-.serviceModal{
-    .modal-dialog{
+.serviceModal {
+    .modal-dialog {
         max-width: 1040px;
         padding-left: 20px;
         padding-right: 20px;
     }
-    .modal-content{
-        
-        @media screen and (min-width: 1441px){
+
+    .modal-content {
+
+        @media screen and (min-width: 1441px) {
             padding-left: 55px;
             padding-right: 55px;
+        }
+    }
+}
+
+.product-info-modal {
+    .block-left {
+        .img-block {
+            .prof-img-cover {
+                overflow: visible !important;
+                position: relative;
+
+                .premium-img {
+                    position: absolute;
+                    right: 5px;
+                    bottom: 5px;
+                }
+            }
+        }
+    }
+
+    .block-right {
+        .btm-line {
+            &::before {
+                background-color: transparent !important;
+            }
+
+            .products-list-block {
+                display: flex;
+                align-items: center;
+                margin-top: 15px;
+
+                .products-item-block {
+                    width: 105px;
+                    height: 34px;
+                    background: rgba(255, 226, 237, 0.62);
+                    border-radius: 17px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    padding-right: 15px;
+                    text-align: center;
+                    font-size: 14px;
+                    font-family: 'sf-regular';
+                    color: #6F1E3D;
+                    margin-right: 15px;
+
+                    img {
+                        width: 21px;
+                        height: 21px;
+                        background: #FFC1D9;
+                        border-radius: 100px;
+                        padding: 5px;
+                        position: absolute;
+                        right: 10px;
+                    }
+                }
+            }
         }
     }
 }

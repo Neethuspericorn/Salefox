@@ -297,6 +297,33 @@
     margin-top: 5px; } }
 .add-department-modal .modal-footer {
   border: none; }
+.add-department-modal .inner-card-sm {
+  margin-bottom: 40px; }
+  @media (max-width: 1679px) {
+    .add-department-modal .inner-card-sm {
+      margin-bottom: 35px; } }
+  @media (max-width: 1441px) {
+    .add-department-modal .inner-card-sm {
+      margin-bottom: 30px; } }
+  @media (max-width: 767px) {
+    .add-department-modal .inner-card-sm {
+      margin-bottom: 20px; } }
+  .add-department-modal .inner-card-sm .card-title-sm {
+    color: #292929;
+    font-family: 'sf-medium';
+    font-size: 14px; }
+    @media (max-width: 1441px) {
+      .add-department-modal .inner-card-sm .card-title-sm {
+        font-size: 13px; } }
+  .add-department-modal .inner-card-sm .text-block-sm {
+    color: #939393;
+    font-family: 'sf-medium';
+    font-size: 14px;
+    padding-top: 10px; }
+    @media (max-width: 1441px) {
+      .add-department-modal .inner-card-sm .text-block-sm {
+        font-size: 13px;
+        padding-bottom: 6px; } }
 .add-department-modal .form_controler {
   height: 51px; }
   @media (max-width: 1679px) {
@@ -335,7 +362,6 @@
           border-radius: 50%;
           background-color: #FFF2F8;
           background-size: 8px;
-
           background-position: center;
           background-repeat: no-repeat;
           background-image: url("../img/down-acc.svg"); }
@@ -414,5 +440,15 @@
             .add-department-modal .designation-modal-accordion .card .card-body .designation-modal-list .designation-modal-items .form-switch .form-check-input:focus {
               box-shadow: none;
               border-color: #CA3C74; }
+
+.view-department-modal .modal-footer .btn {
+  background: #FFE2ED;
+  border-radius: 9px;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'sf-regular';
+  color: #CA3C74; }
+  .view-department-modal .modal-footer .btn img {
+    margin-right: 8px; }
 
 /*# sourceMappingURL=department-list.css.map */

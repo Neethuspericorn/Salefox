@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesperson Management</title>
+    <link rel="icon" type="image/x-icon" href="./img/fav_icon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/side-nav.css">
+    <link rel="stylesheet" href="css/forms-style.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+</head>
+
+<body class="dark-">
+    <header>
+        <div class="logo-wrap">
+            <div class="logo-block">
+                <img src="img/logo.svg" class="main-logo light-logo" alt="logo">
+                <img src="img/logo_white_text.svg" class="main-logo dark-logo" alt="logo">
+                <img src="img/fox-logo.svg" class="mob-logo" alt="logo">
+            </div>
+            <button class="btn sidebarCollapse">
+                <img src="img/ham_menu.svg" alt="ham_menu">
+            </button>
+        </div>
+        <div class="top-header">
+            <div class="left-block">
+                <div class="switch-block">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes"
+                            checked>
+                        <span class="switch-img">
+                        </span>
+                    </div>
+                </div>
+                <div class="search-block">
+                    <input type="text" class="form-control" placeholder="Search for anything…">
+                    <div class="search-box-icon">
+                        <button class="btn">
+                            <img src="img/Icons-Search.svg" alt="search ">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-block">
+                <div class="user-area">
+                    <div class="notification-header dropdown">
+                        <button class="btn" data-bs-toggle="dropdown" aria-expanded="true">
+                            <img src="img/Icons-Bell.svg" alt="notification">
+                            <span class="badge badge-secondary">6</span>
+                        </button>
+                        <!-- <div class="dropdown-menu" data-popper-placement="bottom-start">
+                            <div class="notification-header">
+                                <h4 class="notification-header-title">Notifications</h4>
+                                <span class="notification-header-mark">Mark all as read</span>
+                            </div>
+                            <div class="notification-body custom-scroll">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="notification-footer">
+                                <span class="view-all">
+                                    View All Notifications
+                                </span>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="user-header">
+                        <div class="user-txt">
+                            <div class="dropdown">
+                                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                    <img src="img/Profile.svg" alt="user">
+                                    <h4>Bradley Robin <span>Administrator</span></h4>
+
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="profile.html">
+                                            <span class="dropdown-img">
+                                                <img src="img/logout.svg" alt="logout">
+                                            </span>
+                                            <span class="dropdown-txt">Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="change-password.html">
+                                            <span class="dropdown-img">
+                                                <img src="img/lock.svg" alt="lock">
+                                            </span>
+                                            <span class="dropdown-txt">Change Password</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="dropdown-img">
+                                                <img src="img/user.svg" alt="user">
+                                            </span>
+                                            <span class="dropdown-txt">Logout</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="side-nav-wrapper">
+            <div class="side-navigation custom-scroll">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link active">
+                            <figure>
+                                <img src="img/nav-icons/Dashboard.svg" alt="dashboard">
+                            </figure>
+                            <span class="indication">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="vendor_management_list.html" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Vendor-Management.svg" alt="Vendor Management">
+                            </figure>
+                            <span class="indication">Vendor Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="salesperson-management.html" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/sales-person.svg" alt="Salesperson Management">
+                            </figure>
+                            <span class="indication">Salesperson Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#campaign-drop"
+                            aria-expanded="false">
+                            <figure>
+                                <img src="img/nav-icons/Campaigns.svg" alt="Campaigns">
+                            </figure>
+                            <span class="indication">Campaigns</span>
+                        </a>
+                        <!-- collapse -->
+                        <div id="campaign-drop" class="submenu collapse">
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="products.html">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="campaigns.html">Campaigns</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="payment-management.html" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/payment.svg" alt="Payment Management">
+                            </figure>
+                            <span class="indication">Payment Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Subscription-Management.svg" alt="Subscription Management">
+                            </figure>
+                            <span class="indication">Subscription Management</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Reports-and-Analytics.svg" alt="Reports and Analytics">
+                            </figure>
+                            <span class="indication">Reports and Analytics</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#noti-drop"
+                            aria-expanded="false">
+                            <figure>
+                                <img src="img/nav-icons/notification.svg" alt="Notification">
+                            </figure>
+                            <span class="indication">Notification</span>
+                        </a>
+                        <!-- collapse -->
+                        <div id="noti-drop" class="submenu collapse">
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sub menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sub menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sub menu</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#Permission-drop"
+                            aria-expanded="false">
+                            <figure>
+                                <img src="img/nav-icons/permission.svg" alt="Permission">
+                            </figure>
+                            <span class="indication">Permission</span>
+                        </a>
+                        <!-- collapse -->
+                        <div id="Permission-drop" class="submenu collapse">
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="department-list.html">Department</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="designation.html">Designation</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/settings.svg" alt="Settings">
+                            </figure>
+                            <span class="indication">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dashboard-content custom-scroll">
+            <div class="db-content-inner">
+                <div class="db-title-wrapper d-flex">
+                    <div class="title-block">
+                        Profile
+                    </div>
+
+                </div>
+
+                <div class="profile-wraper">
+                    <div class="profile-pic-block">
+                        <div class="profile-pic-wrap">
+                            <img src="img/my-account-pic.png" class="profile-pic" alt="profile">
+                            <span class="add-photo">
+                                <img src="img/add-photo.svg" class="add-photo-icon" alt="add-photo">
+                                <input class="form-control" type="file" />
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-otr">
+                        <h4 class="title-txt">Business Information</h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    <label for="" class="label">Business Name</label>
+                                    <input type="text" class="form_controler">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    <label for="" class="label">Business Category</label>
+                                    <select class="form-select  form_controler" aria-label="Default select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    <label for="" class="label">Company Files</label>
+                                    <div class="input-group company-input-group">
+                                        <span class="input-group-text ">
+                                            <img src="img/pdf.svg" alt="pdf" />
+                                        </span>
+                                        <input type="text" class="form-control form_controler">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    <label for="" class="label">Website</label>
+                                    <input type="text" class="form_controler">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    <label for="" class="label">Phone Number</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected="">+91</option>
+                                                <option value="1">+41</option>
+                                                <option value="2">+39</option>
+                                                <option value="3">+38</option>
+                                            </select>
+                                        </span>
+                                        <input type="text" class="form-control form_controler">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    <label for="" class="label">Landline</label>
+                                    <input type="text" class="form_controler">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    <label for="" class="label">Email</label>
+                                    <input type="text" class="form_controler">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    <label for="" class="label">Address</label>
+                                    <input type="text" class="form_controler">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    <label for="" class="label">Country</label>
+                                    <div class="input-group company-input-group flag-block">
+                                        <span class="input-group-text ">
+                                            <img src="img/flag_round.png" alt="pdf" />
+                                        </span>
+                                        <select class="form-select form_controler">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    <label for="" class="label">State/Province</label>
+                                    <input type="text" class="form_controler">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    <label for="" class="label">Zip Code</label>
+                                    <input type="text" class="form_controler">
+                                </div>
+                            </div>
+                            <h4  class="title-txt">Point of Contact</h4>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    <label for="" class="label">First Name</label>
+                                    <input type="text" class="form_controler">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    <label for="" class="label">Last Name</label>
+                                    <input type="text" class="form_controler">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    <label for="" class="label">Designation</label>
+                                    <input type="text" class="form_controler">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    <label for="" class="label">Phone Number</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected="">+91</option>
+                                                <option value="1">+41</option>
+                                                <option value="2">+39</option>
+                                                <option value="3">+38</option>
+                                            </select>
+                                        </span>
+                                        <input type="text" class="form-control form_controler">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    <label for="" class="label">Email Address</label>
+                                    <input type="text" class="form_controler">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    <label for="" class="label">GST Number</label>
+                                    <input type="text" class="form_controler">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    <label for="" class="label">PAN Number</label>
+                                    <input type="text" class="form_controler">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-holder">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-btn">
+                            <button type="button" class="btn btn-secondarys">Cancel</button>
+                            <button type="button" class="btn btn-primary">Save</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Js/vendor/bootstrap.min.js"></script>
+    <script src="Js/vendor/jquery.min.js"></script>
+    <script src="Js/vendor/script.js"></script>
+</body>
+
+</html>

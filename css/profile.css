@@ -133,17 +133,57 @@
     @media (max-width: 991px) {
       .profile-wraper .form-otr {
         margin-top: 0px; } }
+    .profile-wraper .form-otr .title-txt {
+      text-align: left;
+      font-size: 20px;
+      font-family: 'sf-medium';
+      color: #BA4773;
+      margin: 0;
+      margin-top: 60px; }
+      @media (max-width: 1679px) {
+        .profile-wraper .form-otr .title-txt {
+          margin-top: 40px; } }
+      @media (max-width: 1367px) {
+        .profile-wraper .form-otr .title-txt {
+          margin-top: 30px;
+          font-size: 18px; } }
+      @media (max-width: 1199px) {
+        .profile-wraper .form-otr .title-txt {
+          margin-top: 20px; } }
+      @media (max-width: 991px) {
+        .profile-wraper .form-otr .title-txt {
+          margin-top: 15px;
+          font-size: 16px; } }
     .profile-wraper .form-otr .input-holder {
       margin-top: 30px; }
       @media (max-width: 1281px) {
         .profile-wraper .form-otr .input-holder {
           margin-top: 20px; } }
+      .profile-wraper .form-otr .input-holder .form-select {
+        background-position: right 0.75rem center;
+        background-image: url("../img/down_arrow-btn.svg");
+        background-repeat: no-repeat; }
       .profile-wraper .form-otr .input-holder .input-group {
         background: #FFFAFC;
         border: 1px solid #E5BFCE;
         border-radius: 9px;
         padding: 5px 0;
         height: 40px; }
+        .profile-wraper .form-otr .input-holder .input-group.company-input-group {
+          padding: 0 !important; }
+          .profile-wraper .form-otr .input-holder .input-group.company-input-group .input-group-text {
+            min-width: 30px;
+            display: block;
+            margin: auto; }
+          .profile-wraper .form-otr .input-holder .input-group.company-input-group .form_controler {
+            border: none !important;
+            height: auto; }
+            .profile-wraper .form-otr .input-holder .input-group.company-input-group .form_controler.form-select {
+              background-position: right 0.75rem center;
+              background-image: url("../img/down_arrow-btn.svg");
+              background-repeat: no-repeat; }
+        .profile-wraper .form-otr .input-holder .input-group.flag-block {
+          padding-left: 8px !important; }
         .profile-wraper .form-otr .input-holder .input-group .input-group-text {
           padding: 0;
           background: transparent;
@@ -204,74 +244,5 @@
 
 .change-password .input-holder {
   margin: 0 !important; }
-
-.logout-modal .modal-dialog {
-  max-width: 635px; }
-  .logout-modal .modal-dialog .modal-content {
-    background: #FFFFFF;
-    box-shadow: 0px 3px 6px #00000029;
-    border: 1px solid #E6E6E6;
-    border-radius: 18px;
-    padding: 60px; }
-    @media (max-width: 1679px) {
-      .logout-modal .modal-dialog .modal-content {
-        padding: 50px; } }
-    @media (max-width: 1367px) {
-      .logout-modal .modal-dialog .modal-content {
-        padding: 40px; } }
-    @media (max-width: 1199px) {
-      .logout-modal .modal-dialog .modal-content {
-        padding: 30px; } }
-    @media (max-width: 991px) {
-      .logout-modal .modal-dialog .modal-content {
-        padding: 20px; } }
-    @media (max-width: 767px) {
-      .logout-modal .modal-dialog .modal-content {
-        padding: 15px; } }
-    .logout-modal .modal-dialog .modal-content .modal-header {
-      border: none; }
-    .logout-modal .modal-dialog .modal-content .modal-body .logout-img img {
-      width: 122px;
-      height: 122px;
-      display: block;
-      margin: auto; }
-      @media (max-width: 1367px) {
-        .logout-modal .modal-dialog .modal-content .modal-body .logout-img img {
-          width: 100px;
-          height: 100px; } }
-      @media (max-width: 1199px) {
-        .logout-modal .modal-dialog .modal-content .modal-body .logout-img img {
-          width: 80px;
-          height: 80px; } }
-    .logout-modal .modal-dialog .modal-content .modal-body p {
-      margin-top: 14px;
-      font-size: 22px;
-      font-family: 'sf-regular';
-      text-align: center;
-      color: #410F22; }
-      @media (max-width: 1367px) {
-        .logout-modal .modal-dialog .modal-content .modal-body p {
-          font-size: 20px; } }
-      @media (max-width: 1199px) {
-        .logout-modal .modal-dialog .modal-content .modal-body p {
-          font-size: 16px; } }
-      @media (max-width: 991px) {
-        .logout-modal .modal-dialog .modal-content .modal-body p {
-          font-size: 14px; } }
-    .logout-modal .modal-dialog .modal-content .modal-footer {
-      border: none; }
-      .logout-modal .modal-dialog .modal-content .modal-footer .btn-secondarys {
-        width: 165px;
-        height: 51px;
-        border-radius: 11px; }
-        @media (max-width: 1679px) {
-          .logout-modal .modal-dialog .modal-content .modal-footer .btn-secondarys {
-            border-radius: 5px;
-            width: 135px;
-            height: 40px; } }
-        @media (max-width: 767px) {
-          .logout-modal .modal-dialog .modal-content .modal-footer .btn-secondarys {
-            width: 95px;
-            height: 35px; } }
 
 /*# sourceMappingURL=profile.css.map */

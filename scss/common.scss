@@ -3,6 +3,7 @@
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 ul,
@@ -432,7 +433,7 @@ body {
         color: $primary-color;
 
         &:hover {
-            background-color: $primary-color;
+            background-color: #fff;
             border-color: $primary-color;
             opacity: 0.9;
         }
@@ -509,7 +510,7 @@ button {
         }
     }
 }
-primary
+
 .form-control {
     background: #FCF4F8;
     border: 1px solid #FCF5F9;

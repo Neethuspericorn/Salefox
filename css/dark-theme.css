@@ -102,6 +102,8 @@
     display: inline-block; }
   .dark-theme .raise-feedback-modal .modal-dialog .modal-content .modal-footer .info-modal-btn .light {
     display: none; }
+  .dark-theme .product-info-modal .block-left .action-btn-group .btn.doc-btn, .dark-theme .product-info-modal .block-right .btm-line .products-list-block .products-item-block {
+    background: #FFE2ED !important; }
   .dark-theme .campaigns-view-wrapper .campaigns-view-nav .right-block .filter-wrp .dropdown-menu {
     background-color: #1D1D1D;
     border: 1px solid #676767; }
