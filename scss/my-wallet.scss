@@ -1,0 +1,480 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+.my-wallet-block {
+    background: #FFFFFF;
+    border: 1px solid #FFE2ED;
+    border-radius: 11px;
+    padding: 41px 44px 41px 49px;
+    margin-bottom: 11px;
+    display: flex;
+    justify-content: space-between;
+
+    @media ($sm-1679) {
+        padding: 30px 34px 31px 39px;
+    }
+
+    @media ($sm-1281) {
+        padding: 25px 30px 25px 30px;
+    }
+
+    @media ($sm-1023) {
+        flex-direction: column;
+    }
+
+    .wallet-box {
+        display: flex;
+        align-items: center;
+
+        @media ($sm-1281) {
+            width: 180px;
+        }
+
+        @media ($sm-1199) {
+            display: block;
+            width: 120px;
+        }
+
+        @media ($sm-1023) {
+            margin-bottom: 20px;
+            display: flex;
+            width: 100%;
+        }
+
+        .wallet-img-block {
+            width: 64px;
+            min-width: 64px;
+            height: 64px;
+            background: #D93573;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 18px;
+
+            @media($sm-1441) {
+                width: 54px;
+                min-width: 54px;
+                height: 54px;
+            }
+
+            @media($sm-1367) {
+                width: 45px;
+                min-width: 45px;
+                height: 45px;
+            }
+
+            @media($sm-1023) {
+                width: 45px;
+                height: 45px;
+                min-width: 45px;
+            }
+
+            img {
+                width: 23px;
+                height: 23px;
+                max-width: 100%;
+
+                @media($sm-1441) {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                @media($sm-1367) {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+
+        .wallet-txt-block {
+            h3 {
+                font: bold 24px/29px 'sf-bold';
+
+                @media ($sm-1679) {
+                    font-size: 22px;
+                }
+
+                @media ($sm-1367) {
+                    font-size: 20px;
+                }
+
+                @media ($sm-1281) {
+                    margin: 0;
+                }
+            }
+
+            span {
+                text-align: right;
+                font: normal 15px/18px 'sf-regular';
+                letter-spacing: 0px;
+                color: #393939;
+
+                @media ($sm-1367) {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .wallet-list {
+        padding: 0 28px;
+
+        @media ($sm-1679) {
+            padding: 0 20px;
+        }
+
+        @media ($sm-1367) {
+            padding: 0 14px;
+        }
+
+        @media ($sm-1023) {
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+
+
+            li {
+                width: 112px;
+                height: 40px;
+                background: #FFFCFD;
+                border: 1px solid #E5BFCE;
+                border-radius: 9px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 15px;
+                text-align: center;
+                font: normal 14px/16px 'sf-regular';
+                letter-spacing: 0px;
+                color: #CA3C74;
+
+                @media ($sm-1679) {
+                    width: 100px;
+                }
+
+                @media ($sm-1441) {
+                    width: 70px;
+                    margin-right: 10px;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &.active {
+                    background: #FFDEEC;
+                    border: 1px solid #E5BFCE;
+                    border-radius: 9px;
+                }
+            }
+        }
+    }
+
+    .my-wallet-form-block {
+
+        .my-wallet-form {
+            display: flex;
+
+            @media ($sm-579) {
+                display: block;
+            }
+
+            .input-group {
+                .input-group-text {
+                    background-color: transparent;
+                    border: none;
+                    text-align: center;
+                    font: normal 14px/16px 'sf-regular';
+                    letter-spacing: 0px;
+                    color: #CA3C74;
+                    height: 40px;
+                }
+
+                .form-control {
+                    background: #FFFFFF;
+                    border: 1px solid #E5BFCE;
+                    border-radius: 9px !important;
+                    font: normal 12px/14px 'sf-regular';
+                    letter-spacing: 0px;
+                    color: #FACADC;
+                    margin-right: 15px;
+                    width: 186px;
+                    height: 40px;
+
+                    @media ($sm-1679) {
+                        width: 150px;
+                    }
+
+                    @media ($sm-1441) {
+                        width: 100px;
+                    }
+
+                    @media ($sm-1367) {
+                        width: 70px;
+                    }
+
+                    @media ($sm-579) {
+                        margin: 0;
+                    }
+                }
+
+            }
+
+            .btn-primary {
+                background: #CA3C74;
+                border-radius: 9px !important;
+                width: 330px;
+                font: normal 14px/16px 'sf-regular';
+                height: 40px;
+
+                @media ($sm-1679) {
+                    width: 280px;
+                }
+
+                @media ($sm-1441) {
+                    width: 290px;
+                }
+
+                @media ($sm-1367) {
+                    font-size: 13px;
+                }
+
+                @media ($sm-579) {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+.mywallet-tbl {
+    .amount-txt-img {
+        width: 9px;
+        height: 9px;
+        margin-left: 17px;
+
+        @media ($sm-1281) {
+            margin-left: 10px;
+        }
+
+        @media ($sm-991) {
+            margin-left: 6px;
+        }
+    }
+}
+
+.walle-modal {
+
+
+    .modal-dialog {
+        max-width: 604px;
+
+        .modal-content {
+            padding-left: 94px;
+            padding-right: 94px;
+            padding-bottom: 50px;
+
+            @media($sm-1679) {
+                padding-left: 70px;
+                padding-right: 70px;
+                padding-bottom: 40px;
+            }
+
+            @media($sm-1441) {
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+
+            @media($sm-1367) {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+            @media($sm-1281) {
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-bottom: 30px;
+            }
+            @media($sm-991) {
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+            }
+
+            .modal-header {
+                .modal-title {
+                    margin-top: 40px;
+                    font-size: 20px;
+                    font-family: 'sf-medium';
+                    color: #000;
+
+                    @media($sm-1679) {
+                        margin-top: 30px;
+                    }
+
+                    @media($sm-1367) {
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            .payment-method {
+                .payment-title {
+                    display: flex;
+                    align-items: center;
+                    min-height: 50px;
+
+                    @media($sm-1367) {
+                        min-height: 30px;
+                    }
+
+                    .payment-hd {
+                        font-family: 'sf-medium';
+                        font-size: 16px;
+                        line-height: 28px;
+                        display: inline-flex;
+                        align-items: center;
+                        letter-spacing: 0px;
+                        font-weight: normal;
+                        color: #000;
+
+                        @media($sm-1281) {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .apply-btn {
+                        border: 0;
+                        margin-left: auto;
+                        background-color: transparent;
+                        color: #CA3C74;
+                        font-family: 'sf-medium';
+                        font-size: 15px;
+                        line-height: 28px;
+
+                        @media($sm-1281) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .form {
+                    margin-top: 20px;
+
+                    .input-holder {
+                        margin-bottom: 20px;
+
+                        @media($sm-991) {
+                            margin-bottom: 10px;
+                        }
+
+                        .label {
+                            display: inline-flex;
+                            align-items: center;
+                        }
+
+                        .select-custom {
+                            position: relative;
+
+                            .form_controler {
+                                background-color: #fff;
+                                height: 50px;
+                            }
+
+                            .mode-card {
+                                margin-right: 15px;
+                                max-width: 30px;
+                            }
+                        }
+
+                        .form_controler {
+                            border: 1px solid #E5BFCE;
+                            border-radius: 12px;
+                            background: #fff;
+                        }
+
+                        .filed-v-elmt {
+                            position: relative;
+
+                            .filed-elmt {
+                                position: absolute;
+                                top: 50%;
+                                right: 0px;
+                                transform: translate(-50%, -50%);
+
+                                img {
+                                    width: 40px;
+                                }
+                            }
+                        }
+
+                        .checkbox-cover {
+                            display: flex;
+                            align-items: center;
+
+                            .check-box {
+                                padding-right: 0;
+                                padding-left: 25px;
+
+                                .checkmark {
+                                    left: 0;
+                                    border: 1px solid #E5BFCE;
+                                    border-radius: 4px;
+                                    width: 16px;
+                                    height: 16px;
+                                }
+                            }
+                        }
+
+                    }
+
+                    .pay-btn-otr {
+                        margin-top: 30px;
+
+                        @media($sm-1199) {
+                            margin-top: 20px;
+                        }
+
+                        .btn-primary {
+                            font-family: 'sf-regular';
+                            font-size: 14px;
+                            border: 0;
+                            border-radius: 11px;
+                            width: 100%;
+                            height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            box-shadow: none;
+
+                            @media($sm-1199) {
+                                height: 40px;
+                            }
+                        }
+
+                        .poweard-stripe {
+                            display: block;
+                            margin: auto;
+                            text-align: center;
+                            margin-top: 30px;
+
+                            @media($sm-1199) {
+                                margin-top: 20px;
+                            }
+
+                            img {
+                                width: 110px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

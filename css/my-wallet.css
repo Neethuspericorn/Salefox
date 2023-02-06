@@ -1,0 +1,359 @@
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** all Mobile Screen (iphone 6,7,8) ***/
+/*** mobile Landscape Size ***/
+/*** medium devices (tablets, less than 992px) ***/
+/*** iPad in landscape ***/
+/**** smaller than desktop 1200 (devices and browsers) ***/
+/*** laptop with MDPI (medium density per inch) resolution ***/
+/*** SP developers resolution ***/
+/*** laptop with HiDPI (High Dots Per Inch) resolution ***/
+/*** WSXGA (Wide Super Extended Graphics Array) resolution ***/
+/* placeholder mixin */
+/* how to use this variabile*/
+/* .forms{
+   @include placeholder{
+    opacity: 1;color: #a5aeb7;
+  } */
+/* @include transition (.2s ease-out all); */
+/*    @include flexbox();
+    @include justify-content (center);*/
+.my-wallet-block {
+  background: #FFFFFF;
+  border: 1px solid #FFE2ED;
+  border-radius: 11px;
+  padding: 41px 44px 41px 49px;
+  margin-bottom: 11px;
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 1679px) {
+    .my-wallet-block {
+      padding: 30px 34px 31px 39px; } }
+  @media (max-width: 1281px) {
+    .my-wallet-block {
+      padding: 25px 30px 25px 30px; } }
+  @media (max-width: 1023px) {
+    .my-wallet-block {
+      flex-direction: column; } }
+  .my-wallet-block .wallet-box {
+    display: flex;
+    align-items: center; }
+    @media (max-width: 1281px) {
+      .my-wallet-block .wallet-box {
+        width: 180px; } }
+    @media (max-width: 1199px) {
+      .my-wallet-block .wallet-box {
+        display: block;
+        width: 120px; } }
+    @media (max-width: 1023px) {
+      .my-wallet-block .wallet-box {
+        margin-bottom: 20px;
+        display: flex;
+        width: 100%; } }
+    .my-wallet-block .wallet-box .wallet-img-block {
+      width: 64px;
+      min-width: 64px;
+      height: 64px;
+      background: #D93573;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 18px; }
+      @media (max-width: 1441px) {
+        .my-wallet-block .wallet-box .wallet-img-block {
+          width: 54px;
+          min-width: 54px;
+          height: 54px; } }
+      @media (max-width: 1367px) {
+        .my-wallet-block .wallet-box .wallet-img-block {
+          width: 45px;
+          min-width: 45px;
+          height: 45px; } }
+      @media (max-width: 1023px) {
+        .my-wallet-block .wallet-box .wallet-img-block {
+          width: 45px;
+          height: 45px;
+          min-width: 45px; } }
+      .my-wallet-block .wallet-box .wallet-img-block img {
+        width: 23px;
+        height: 23px;
+        max-width: 100%; }
+        @media (max-width: 1441px) {
+          .my-wallet-block .wallet-box .wallet-img-block img {
+            width: 20px;
+            height: 20px; } }
+        @media (max-width: 1367px) {
+          .my-wallet-block .wallet-box .wallet-img-block img {
+            width: 18px;
+            height: 18px; } }
+    .my-wallet-block .wallet-box .wallet-txt-block h3 {
+      font: bold 24px/29px 'sf-bold'; }
+      @media (max-width: 1679px) {
+        .my-wallet-block .wallet-box .wallet-txt-block h3 {
+          font-size: 22px; } }
+      @media (max-width: 1367px) {
+        .my-wallet-block .wallet-box .wallet-txt-block h3 {
+          font-size: 20px; } }
+      @media (max-width: 1281px) {
+        .my-wallet-block .wallet-box .wallet-txt-block h3 {
+          margin: 0; } }
+    .my-wallet-block .wallet-box .wallet-txt-block span {
+      text-align: right;
+      font: normal 15px/18px 'sf-regular';
+      letter-spacing: 0px;
+      color: #393939; }
+      @media (max-width: 1367px) {
+        .my-wallet-block .wallet-box .wallet-txt-block span {
+          font-size: 13px; } }
+  .my-wallet-block .wallet-list {
+    padding: 0 28px; }
+    @media (max-width: 1679px) {
+      .my-wallet-block .wallet-list {
+        padding: 0 20px; } }
+    @media (max-width: 1367px) {
+      .my-wallet-block .wallet-list {
+        padding: 0 14px; } }
+    @media (max-width: 1023px) {
+      .my-wallet-block .wallet-list {
+        padding: 0;
+        margin-bottom: 30px; } }
+    .my-wallet-block .wallet-list ul {
+      display: flex;
+      align-items: center; }
+      .my-wallet-block .wallet-list ul li {
+        width: 112px;
+        height: 40px;
+        background: #FFFCFD;
+        border: 1px solid #E5BFCE;
+        border-radius: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        text-align: center;
+        font: normal 14px/16px 'sf-regular';
+        letter-spacing: 0px;
+        color: #CA3C74; }
+        @media (max-width: 1679px) {
+          .my-wallet-block .wallet-list ul li {
+            width: 100px; } }
+        @media (max-width: 1441px) {
+          .my-wallet-block .wallet-list ul li {
+            width: 70px;
+            margin-right: 10px; } }
+        .my-wallet-block .wallet-list ul li:last-child {
+          margin-right: 0; }
+        .my-wallet-block .wallet-list ul li.active {
+          background: #FFDEEC;
+          border: 1px solid #E5BFCE;
+          border-radius: 9px; }
+  .my-wallet-block .my-wallet-form-block .my-wallet-form {
+    display: flex; }
+    @media (max-width: 579px) {
+      .my-wallet-block .my-wallet-form-block .my-wallet-form {
+        display: block; } }
+    .my-wallet-block .my-wallet-form-block .my-wallet-form .input-group .input-group-text {
+      background-color: transparent;
+      border: none;
+      text-align: center;
+      font: normal 14px/16px 'sf-regular';
+      letter-spacing: 0px;
+      color: #CA3C74;
+      height: 40px; }
+    .my-wallet-block .my-wallet-form-block .my-wallet-form .input-group .form-control {
+      background: #FFFFFF;
+      border: 1px solid #E5BFCE;
+      border-radius: 9px !important;
+      font: normal 12px/14px 'sf-regular';
+      letter-spacing: 0px;
+      color: #FACADC;
+      margin-right: 15px;
+      width: 186px;
+      height: 40px; }
+      @media (max-width: 1679px) {
+        .my-wallet-block .my-wallet-form-block .my-wallet-form .input-group .form-control {
+          width: 150px; } }
+      @media (max-width: 1441px) {
+        .my-wallet-block .my-wallet-form-block .my-wallet-form .input-group .form-control {
+          width: 100px; } }
+      @media (max-width: 1367px) {
+        .my-wallet-block .my-wallet-form-block .my-wallet-form .input-group .form-control {
+          width: 70px; } }
+      @media (max-width: 579px) {
+        .my-wallet-block .my-wallet-form-block .my-wallet-form .input-group .form-control {
+          margin: 0; } }
+    .my-wallet-block .my-wallet-form-block .my-wallet-form .btn-primary {
+      background: #CA3C74;
+      border-radius: 9px !important;
+      width: 330px;
+      font: normal 14px/16px 'sf-regular';
+      height: 40px; }
+      @media (max-width: 1679px) {
+        .my-wallet-block .my-wallet-form-block .my-wallet-form .btn-primary {
+          width: 280px; } }
+      @media (max-width: 1441px) {
+        .my-wallet-block .my-wallet-form-block .my-wallet-form .btn-primary {
+          width: 290px; } }
+      @media (max-width: 1367px) {
+        .my-wallet-block .my-wallet-form-block .my-wallet-form .btn-primary {
+          font-size: 13px; } }
+      @media (max-width: 579px) {
+        .my-wallet-block .my-wallet-form-block .my-wallet-form .btn-primary {
+          width: 100%;
+          margin-top: 20px; } }
+
+.mywallet-tbl .amount-txt-img {
+  width: 9px;
+  height: 9px;
+  margin-left: 17px; }
+  @media (max-width: 1281px) {
+    .mywallet-tbl .amount-txt-img {
+      margin-left: 10px; } }
+  @media (max-width: 991px) {
+    .mywallet-tbl .amount-txt-img {
+      margin-left: 6px; } }
+
+.walle-modal .modal-dialog {
+  max-width: 604px; }
+  .walle-modal .modal-dialog .modal-content {
+    padding-left: 94px;
+    padding-right: 94px;
+    padding-bottom: 50px; }
+    @media (max-width: 1679px) {
+      .walle-modal .modal-dialog .modal-content {
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-bottom: 40px; } }
+    @media (max-width: 1441px) {
+      .walle-modal .modal-dialog .modal-content {
+        padding-left: 60px;
+        padding-right: 60px; } }
+    @media (max-width: 1367px) {
+      .walle-modal .modal-dialog .modal-content {
+        padding-left: 50px;
+        padding-right: 50px; } }
+    @media (max-width: 1281px) {
+      .walle-modal .modal-dialog .modal-content {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 30px; } }
+    @media (max-width: 991px) {
+      .walle-modal .modal-dialog .modal-content {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px; } }
+    .walle-modal .modal-dialog .modal-content .modal-header .modal-title {
+      margin-top: 40px;
+      font-size: 20px;
+      font-family: 'sf-medium';
+      color: #000; }
+      @media (max-width: 1679px) {
+        .walle-modal .modal-dialog .modal-content .modal-header .modal-title {
+          margin-top: 30px; } }
+      @media (max-width: 1367px) {
+        .walle-modal .modal-dialog .modal-content .modal-header .modal-title {
+          margin-top: 20px; } }
+    .walle-modal .modal-dialog .modal-content .payment-method .payment-title {
+      display: flex;
+      align-items: center;
+      min-height: 50px; }
+      @media (max-width: 1367px) {
+        .walle-modal .modal-dialog .modal-content .payment-method .payment-title {
+          min-height: 30px; } }
+      .walle-modal .modal-dialog .modal-content .payment-method .payment-title .payment-hd {
+        font-family: 'sf-medium';
+        font-size: 16px;
+        line-height: 28px;
+        display: inline-flex;
+        align-items: center;
+        letter-spacing: 0px;
+        font-weight: normal;
+        color: #000; }
+        @media (max-width: 1281px) {
+          .walle-modal .modal-dialog .modal-content .payment-method .payment-title .payment-hd {
+            font-size: 14px; } }
+      .walle-modal .modal-dialog .modal-content .payment-method .payment-title .apply-btn {
+        border: 0;
+        margin-left: auto;
+        background-color: transparent;
+        color: #CA3C74;
+        font-family: 'sf-medium';
+        font-size: 15px;
+        line-height: 28px; }
+        @media (max-width: 1281px) {
+          .walle-modal .modal-dialog .modal-content .payment-method .payment-title .apply-btn {
+            font-size: 14px; } }
+    .walle-modal .modal-dialog .modal-content .payment-method .form {
+      margin-top: 20px; }
+      .walle-modal .modal-dialog .modal-content .payment-method .form .input-holder {
+        margin-bottom: 20px; }
+        @media (max-width: 991px) {
+          .walle-modal .modal-dialog .modal-content .payment-method .form .input-holder {
+            margin-bottom: 10px; } }
+        .walle-modal .modal-dialog .modal-content .payment-method .form .input-holder .label {
+          display: inline-flex;
+          align-items: center; }
+        .walle-modal .modal-dialog .modal-content .payment-method .form .input-holder .select-custom {
+          position: relative; }
+          .walle-modal .modal-dialog .modal-content .payment-method .form .input-holder .select-custom .form_controler {
+            background-color: #fff;
+            height: 50px; }
+          .walle-modal .modal-dialog .modal-content .payment-method .form .input-holder .select-custom .mode-card {
+            margin-right: 15px;
+            max-width: 30px; }
+        .walle-modal .modal-dialog .modal-content .payment-method .form .input-holder .form_controler {
+          border: 1px solid #E5BFCE;
+          border-radius: 12px;
+          background: #fff; }
+        .walle-modal .modal-dialog .modal-content .payment-method .form .input-holder .filed-v-elmt {
+          position: relative; }
+          .walle-modal .modal-dialog .modal-content .payment-method .form .input-holder .filed-v-elmt .filed-elmt {
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            transform: translate(-50%, -50%); }
+            .walle-modal .modal-dialog .modal-content .payment-method .form .input-holder .filed-v-elmt .filed-elmt img {
+              width: 40px; }
+        .walle-modal .modal-dialog .modal-content .payment-method .form .input-holder .checkbox-cover {
+          display: flex;
+          align-items: center; }
+          .walle-modal .modal-dialog .modal-content .payment-method .form .input-holder .checkbox-cover .check-box {
+            padding-right: 0;
+            padding-left: 25px; }
+            .walle-modal .modal-dialog .modal-content .payment-method .form .input-holder .checkbox-cover .check-box .checkmark {
+              left: 0;
+              border: 1px solid #E5BFCE;
+              border-radius: 4px;
+              width: 16px;
+              height: 16px; }
+      .walle-modal .modal-dialog .modal-content .payment-method .form .pay-btn-otr {
+        margin-top: 30px; }
+        @media (max-width: 1199px) {
+          .walle-modal .modal-dialog .modal-content .payment-method .form .pay-btn-otr {
+            margin-top: 20px; } }
+        .walle-modal .modal-dialog .modal-content .payment-method .form .pay-btn-otr .btn-primary {
+          font-family: 'sf-regular';
+          font-size: 14px;
+          border: 0;
+          border-radius: 11px;
+          width: 100%;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: none; }
+          @media (max-width: 1199px) {
+            .walle-modal .modal-dialog .modal-content .payment-method .form .pay-btn-otr .btn-primary {
+              height: 40px; } }
+        .walle-modal .modal-dialog .modal-content .payment-method .form .pay-btn-otr .poweard-stripe {
+          display: block;
+          margin: auto;
+          text-align: center;
+          margin-top: 30px; }
+          @media (max-width: 1199px) {
+            .walle-modal .modal-dialog .modal-content .payment-method .form .pay-btn-otr .poweard-stripe {
+              margin-top: 20px; } }
+          .walle-modal .modal-dialog .modal-content .payment-method .form .pay-btn-otr .poweard-stripe img {
+            width: 110px; }
+
+/*# sourceMappingURL=my-wallet.css.map */

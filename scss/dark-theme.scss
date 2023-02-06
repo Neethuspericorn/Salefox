@@ -11,6 +11,18 @@ $dark-sec-color: #D53871;
 .dark-theme {
     background-color: #161819;
 
+    .payment-details{
+        background: $layout-dark;
+    }
+    .payment-method .payment-title .payment-hd, .payment-details .title-pay, .payment-details .price-list ul li p, .payment-details .ftr-info strong{
+        color: $text-white;
+    }
+    .my-wallet-block{
+        background:$layout-dark;
+        .wallet-txt-block h3, .wallet-txt-block span{
+            color: $text-white;
+        }
+    }
     .campaigns-view-wrapper .nav-pills .nav-item {
         background: #24282E;
         border: 1px solid #3A414B
