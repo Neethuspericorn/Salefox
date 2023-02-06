@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wallet</title>
+    <link rel="icon" type="image/x-icon" href="./img/fav_icon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/side-nav.css">
+    <link rel="stylesheet" href="css/vendor-list.css">
+    <link rel="stylesheet" href="css/forms-style.css">
+    <link rel="stylesheet" href="css/my-wallet.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+</head>
+
+<body class="dark-">
+    <header>
+        <div class="logo-wrap">
+            <div class="logo-block">
+                <img src="img/logo.svg" class="main-logo light-logo" alt="logo">
+                <img src="img/logo_white_text.svg" class="main-logo dark-logo" alt="logo">
+                <img src="img/fox-logo.svg" class="mob-logo" alt="logo">
+            </div>
+            <button class="btn sidebarCollapse">
+                <img src="img/ham_menu.svg" alt="ham_menu">
+            </button>
+        </div>
+        <div class="top-header">
+            <div class="left-block">
+                <div class="switch-block">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes"
+                            checked>
+                        <span class="switch-img">
+                        </span>
+                    </div>
+                </div>
+                <div class="search-block">
+                    <input type="text" class="form-control" placeholder="Search for anything…">
+                    <div class="search-box-icon">
+                        <button class="btn">
+                            <img src="img/Icons-Search.svg" alt="search ">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-block">
+                <div class="user-area">
+                    <div class="notification-header dropdown">
+                        <button class="btn" data-bs-toggle="dropdown" aria-expanded="true">
+                            <img src="img/Icons-Bell.svg" alt="notification">
+                            <span class="badge badge-secondary">6</span>
+                        </button>
+                        <!-- <div class="dropdown-menu" data-popper-placement="bottom-start">
+                            <div class="notification-header">
+                                <h4 class="notification-header-title">Notifications</h4>
+                                <span class="notification-header-mark">Mark all as read</span>
+                            </div>
+                            <div class="notification-body custom-scroll">
+                                <ul>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="list">
+                                                <div class="userIcon">
+                                                    <img src="img/Profile.svg" class="user-img" alt="">
+                                                </div>
+                                                <div class="details">
+                                                    <h4>Salbin Antony <small>2 Mins ago</small></h4>
+                                                    <p>Signed up as a player Lorem ipsum dolor sit amet, consectetur
+                                                        adip is cing elit sed do eiusmod tempor</p>
+                                                    <span>View Details</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="notification-footer">
+                                <span class="view-all">
+                                    View All Notifications
+                                </span>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="user-header">
+                        <div class="user-txt">
+                            <div class="dropdown">
+                                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                    <img src="img/Profile.svg" alt="user">
+                                    <h4>Bradley Robin <span>Administrator</span></h4>
+
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="profile.html">
+                                            <span class="dropdown-img">
+                                                <img src="img/logout.svg" alt="logout">
+                                            </span>
+                                            <span class="dropdown-txt">Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="dropdown-img">
+                                                <img src="img/lock.svg" alt="lock">
+                                            </span>
+                                            <span class="dropdown-txt">Change Password</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="dropdown-img">
+                                                <img src="img/user.svg" alt="user">
+                                            </span>
+                                            <span class="dropdown-txt">Logout</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="side-nav-wrapper">
+            <div class="side-navigation custom-scroll">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link active">
+                            <figure>
+                                <img src="img/nav-icons/Dashboard.svg" alt="dashboard">
+                            </figure>
+                            <span class="indication">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="vendor_management_list.html" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Vendor-Management.svg" alt="Vendor Management">
+                            </figure>
+                            <span class="indication">Vendor Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="salesperson-management.html" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/sales-person.svg" alt="Salesperson Management">
+                            </figure>
+                            <span class="indication">Salesperson Management</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#campaign-drop"
+                            aria-expanded="false">
+                            <figure>
+                                <img src="img/nav-icons/Campaigns.svg" alt="Campaigns">
+                            </figure>
+                            <span class="indication">Campaigns</span>
+                        </a>
+                        <!-- collapse -->
+                        <div id="campaign-drop" class="submenu collapse">
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="products.html">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="campaigns.html">Campaigns</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="payment-management.html" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/payment.svg" alt="Payment Management">
+                            </figure>
+                            <span class="indication">Payment Management</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="payment-management.html" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Wallet.svg" alt="Payment Management">
+                            </figure>
+                            <span class="indication">Wallet</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Subscription-Management.svg" alt="Subscription Management">
+                            </figure>
+                            <span class="indication">Subscription Management</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/Reports-and-Analytics.svg" alt="Reports and Analytics">
+                            </figure>
+                            <span class="indication">Reports and Analytics</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#noti-drop"
+                            aria-expanded="false">
+                            <figure>
+                                <img src="img/nav-icons/notification.svg" alt="Notification">
+                            </figure>
+                            <span class="indication">Notification</span>
+                        </a>
+                        <!-- collapse -->
+                        <div id="noti-drop" class="submenu collapse">
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sub menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sub menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sub menu</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-dropdown" data-bs-toggle="collapse" data-bs-target="#Permission-drop"
+                            aria-expanded="false">
+                            <figure>
+                                <img src="img/nav-icons/permission.svg" alt="Permission">
+                            </figure>
+                            <span class="indication">Permission</span>
+                        </a>
+                        <!-- collapse -->
+                        <div id="Permission-drop" class="submenu collapse">
+                            <ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="department-list.html">Department</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="designation.html">Designation</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <figure>
+                                <img src="img/nav-icons/settings.svg" alt="Settings">
+                            </figure>
+                            <span class="indication">Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dashboard-content custom-scroll">
+            <div class="db-content-inner">
+                <div class="db-title-wrapper d-flex">
+                    <div class="title-block">
+                        My Wallet
+                    </div>
+
+                </div>
+                <div class="my-wallet-block">
+
+                    <div class="wallet-block-col">
+                        <div class="wallet-box">
+                            <div class="wallet-img-block">
+                                <img src="img/wallet.svg" alt="wallet">
+                            </div>
+                            <div class="wallet-txt-block">
+                                <h3>₹2,700</h3>
+                                <span>Available Balance</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wallet-list">
+                        <ul class="unstyle ">
+                            <li><span>+₹200</span></li>
+                            <li><span>+₹500</span></li>
+                            <li><span>+₹1000</span></li>
+                            <li class="active"><span>+₹2000</span></li>
+                        </ul>
+                    </div>
+                    <div class="my-wallet-form-block">
+                        <div class="my-wallet-form">
+                            <div class="input-group ">
+                                <span class="input-group-text">₹</span>
+                                <input type="text" class="form-control" placeholder="Custom Amount">
+                            </div>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#addWalletModal">Proceed to add ₹ 2,000</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-cover custom-scroll custom-scroll-h custom-table-cover mywallet-tbl">
+                    <table class="custom-listing-table vendor-list-tbl">
+                        <thead>
+                            <tr>
+                                <th class="text-start">Name</th>
+                                <th class="campaign-td">Amount</th>
+                                <th>Date and Time</th>
+                                <th>Category</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Refund Received</td>
+                                <td>₹6324.00 <img src="img/arrow_down_green.svg" class="amount-txt-img" alt=""></td>
+                                <td>21 January 2021 11.21 AM</td>
+                                <td>New Campaign</td>
+                            </tr>
+                            <tr>
+                                <td>Refund Received</td>
+                                <td>₹6324.00 <img src="img/arrow_up_red.svg" class="amount-txt-img" alt=""></td>
+                                <td>21 January 2021 11.21 AM</td>
+                                <td>New Campaign</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-pagination">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link link-disabled previous-link" href="#" aria-label="Previous">
+                                <img src="img/Icon-arrow-left.svg" alt="arrow-left">
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link link-dots" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">22</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <img src="img/Icon-arrow-left.svg" alt="arrow-left">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade modal-forms vendor-info-modal  walle-modal" id="addWalletModal" tabindex="-1"
+        aria-labelledby="vendorInfoLabel" aria-hidden="true" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vendorInfoLabel">
+                        Wallet Topup
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="payment-method">
+                        <div class="payment-title">
+                           <div class="payment-hd">
+                               Payment Method
+                           </div>
+                    
+                           <button class="apply-btn">Apply Coupon</button>
+                        </div>
+                        
+                     
+                        <div class="form">
+                        <div class="input-holder">
+                           <label for="" class="label">Mode of Payment </label>
+                           <div class="dropdown-select select-custom">
+                               <button class="btn-dropdown form_controler" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="mode-card"> <img src="img/card.svg" alt=""></div>    Debit Card
+                               </button>
+                               <ul class="dropdown-menu shadow" aria-labelledby="dropdownMenuButton1">
+                                 <li> 
+                                   <a class="dropdown-item" href="#">
+                                       <div class="mode-card"> <img src="img/card.svg" alt=""></div> 
+                                       Credit Card  
+                                   </a>
+                                   </li>
+                                 <li> 
+                                   <a class="dropdown-item" href="#">
+                                       <div class="mode-card"> <img src="img/upi.svg" alt=""></div>
+                                        UPI
+                                   </a>
+                                   </li>
+                                   <li> 
+                                       <a class="dropdown-item" href="#">
+                                           <div class="mode-card"> <img src="img/card.svg" alt=""></div> 
+                                           Credit Card  
+                                       </a>
+                                       </li>
+                                     
+
+                                
+                               </ul>
+                             </div>
+                       </div>
+
+                       <div class="input-holder">
+                           <label for="" class="label">Name on Card</label>
+                           <input type="text" class="form_controler">
+                       </div>
+
+                       <div class="input-holder">
+                           <label for="" class="label">Card Number</label>
+                            <div class="filed-v-elmt">
+                                <input type="text" class="form_controler">
+                                <div class="filed-elmt"><img src="img/visa.svg" alt=""></div>
+                            </div>
+                       </div>
+
+                      
+
+                       <div class="row">
+                           <div class="col-lg-6">
+
+                               <div class="input-holder">
+                                   <label for="" class="label">Card Expiry</label>
+                                   <input type="text" class="form_controler" placeholder="MM/ YYYY">
+                               </div>
+                           </div>
+
+                           <div class="col-lg-6">
+
+                               <div class="input-holder">
+                                   <label for="" class="label">CVV
+                                     <div class="info" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+                                           <img src="img/info-black.svg" alt="">
+                                         </div>
+                                   </label>
+                                   <input type="text" class="form_controler" placeholder="Ex: 033">
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="input-holder">
+                           <div class="checkbox-cover">
+                               <label class="check-box">Save my card for future
+                                   <input type="checkbox">
+                                   <span class="checkmark"></span>
+                               </label>
+                           </div>
+                       </div>
+
+
+                       <div class="pay-btn-otr">
+                           <button class="btn-primary">Pay ₹2726.5</button>
+                           <div class="poweard-stripe">
+                               <img src="img/poweard-stripe.png" alt="">
+
+                           </div>
+                       </div>
+
+                   </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Js/vendor/bootstrap.min.js"></script>
+    <script src="Js/vendor/jquery.min.js"></script>
+    <script src="Js/vendor/script.js"></script>
+</body>
+
+</html>

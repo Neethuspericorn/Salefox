@@ -19,6 +19,14 @@
     @include justify-content (center);*/
 .dark-theme {
   background-color: #161819; }
+  .dark-theme .payment-details {
+    background: #1F2125; }
+  .dark-theme .payment-method .payment-title .payment-hd, .dark-theme .payment-details .title-pay, .dark-theme .payment-details .price-list ul li p, .dark-theme .payment-details .ftr-info strong {
+    color: #fff; }
+  .dark-theme .my-wallet-block {
+    background: #1F2125; }
+    .dark-theme .my-wallet-block .wallet-txt-block h3, .dark-theme .my-wallet-block .wallet-txt-block span {
+      color: #fff; }
   .dark-theme .campaigns-view-wrapper .nav-pills .nav-item {
     background: #24282E;
     border: 1px solid #3A414B; }

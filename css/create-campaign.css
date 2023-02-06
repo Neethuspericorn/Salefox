@@ -581,7 +581,8 @@
   .create-campaign .pay-btn-otr {
     margin-top: 30px; } }
 @media (max-width: 991px) {
-  .form-spacing-01, .form-spacing-02 {
+  .form-spacing-01,
+  .form-spacing-02 {
     padding: 0; }
 
   .create-campaign .payment-method {
@@ -597,7 +598,8 @@
   .create-campaign .payment-method {
     margin-top: 35px; } }
 @media (max-width: 479px) {
-  .create-campaign .payment-details .price-list ul, .create-campaign .payment-details .title-pay {
+  .create-campaign .payment-details .price-list ul,
+  .create-campaign .payment-details .title-pay {
     padding: 0; }
 
   .create-campaign .ftr-info {
@@ -625,7 +627,8 @@
   .create-campaign .apply-coupon .coupon-list li .content {
     padding-right: 5px; }
 
-  .create-campaign .payment-details, .create-campaign .apply-coupon .coupon-list li {
+  .create-campaign .payment-details,
+  .create-campaign .apply-coupon .coupon-list li {
     border-radius: 8px; }
 
   .create-campaign .apply-coupon .coupon-list li {
